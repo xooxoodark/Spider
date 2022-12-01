@@ -26,30 +26,39 @@ class Connect {
     });
 
     await sleep(500);
-    const controller = new globalThis.AbortController();
-    const timeout = setTimeout(() => {
-      controller.abort();
-    }, 5000);
 
     try {
-      await fetch("https://api.myip.com/", {
-        agent: new SocksProxyAgent(`socks5://127.0.0.1:${port}`),
-        signal: controller.signal,
+      await fetch("http://ipapi.co/json", {
+        agent: new SocksProxyAgent(
+          {
+            hostname: "127.0.0.1",
+            port: port,
+            protocol: "socks5",
+            tls: {
+              rejectUnauthorized: false,
+            },
+          },
+          {
+            timeout: 20000,
+          }
+        ),
       }).then(async (res) => {
         if (res.status == 200) {
-          cc = "XX";
-          cn = "Other";
-        }
-
-        try {
           const data = JSON.parse(await res.text());
-          if (data.cc) cc = data.cc;
-          if (data.country) cn = data.country;
-        } catch (e) {}
+          if (data.error) {
+            error = data.error;
+          } else {
+            cc = "XX"; // Default country code
+            cn = "Other"; // Default country name
+            // Change value above if data is present
+            if (data.country_code) cc = data.country_code;
+            if (data.country_name) cn = data.country_name;
+          }
+        }
       });
     } catch (e: any) {
       // console.log(e.message);
-      if ((e.message as string).match("aborted")) {
+      if ((e.message as string).match(/(aborted|socket hang up)/)) {
         error = "Timeout!";
       } else {
         error = e.message;
@@ -63,8 +72,6 @@ class Connect {
         resolve(0);
       });
     });
-
-    clearTimeout(timeout);
 
     return {
       error,
@@ -86,7 +93,7 @@ class Connect {
     writeFileSync(savePath, JSON.stringify(v2rayConfig, null, 2));
 
     this.connectionNumber++;
-    if (this.connectionNumber > 300) {
+    if (this.connectionNumber > 50) {
       this.connectionNumber = 1;
     }
     return await this._connect(savePath, v2rayConfig.inbounds[1].port);

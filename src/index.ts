@@ -119,7 +119,7 @@ exec("pkill v2ray");
               remark: `${result.length + 1} ⌜クモ⌟ ${mode} -> ${countryFlag}`, // my watermark (remark) lol
             });
 
-            logger.log(LogLevel.success, `${result.length} ${account.remark}: ${mode} -> ${countryFlag}`);
+            logger.log(LogLevel.success, `${result.length} -> ${account.remark}: ${mode} -> ${countryFlag}`);
 
             let server = account.address;
             if (mode == "CDN") server = account.host;
@@ -162,6 +162,14 @@ exec("pkill v2ray");
   if (url != "local") {
     if (!existsSync("./resources/database")) mkdirSync("./resources/database");
     writeFileSync(`./resources/database/${filename}.json`, JSON.stringify(connectedAccounts, null, 2));
+
+    let message = `=====SCAN RESULT=====\n`;
+    message += `Source: <code>${url}</code>\n`;
+    message += `Found: <code>${connectedAccounts.length}</code>`;
+    await bot.bot.api.sendMessage("732796378", message, {
+      disable_web_page_preview: true,
+      parse_mode: "HTML",
+    });
     exit(0);
   }
 
