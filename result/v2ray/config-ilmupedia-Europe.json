@@ -84,6 +84,46 @@
       "settings": {
         "vnext": [
           {
+            "address": "51.75.160.126",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "b739a204-ea0d-428b-bbf5-a632ec05edcf",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/vmess"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-7 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
             "address": "194.38.9.6",
             "port": 48181,
             "users": [
@@ -153,7 +193,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-15 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-14 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -164,7 +204,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 443,
             "users": [
               {
@@ -193,7 +233,7 @@
           "serverName": "fr1.trump2023.org"
         }
       },
-      "tag": "proxy-18 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-16 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -233,7 +273,7 @@
           "serverName": "opfr1.v2rayfree1.xyz"
         }
       },
-      "tag": "proxy-19 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-18 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -273,47 +313,7 @@
           "serverName": "uk2.v2rayserv.com"
         }
       },
-      "tag": "proxy-27 ⌜クモ⌟ CDN -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.75.160.126",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "b739a204-ea0d-428b-bbf5-a632ec05edcf",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/vmess"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-31 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-26 ⌜クモ⌟ CDN -> 🇫🇷"
     }
   ],
   "dns": {

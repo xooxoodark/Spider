@@ -1,6 +1,6 @@
 proxies:
   - name: '3 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 141.147.181.219
+    server: suzhihan.eu.org
     type: vmess
     port: 443
     uuid: 0b873cff-11ab-4716-c41a-04f886135091
@@ -13,22 +13,6 @@ proxies:
     servername: news.microsoft.com
     ws-opts: 
       path: /roewesu
-      headers:
-        Host: news.microsoft.com
-  - name: '6 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: vsg1.0bad.com
-    type: vmess
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /chat
       headers:
         Host: news.microsoft.com
   - name: '8 ⌜クモ⌟ SNI -> 🇸🇬'
@@ -48,7 +32,7 @@ proxies:
       headers:
         Host: news.microsoft.com
   - name: '9 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: suzhihan.eu.org
+    server: 141.147.181.219
     type: vmess
     port: 443
     uuid: 0b873cff-11ab-4716-c41a-04f886135091
@@ -56,7 +40,7 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     servername: news.microsoft.com
     ws-opts: 
@@ -79,7 +63,7 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: v2ray1.zhujicn2.org
-  - name: '30 ⌜クモ⌟ SNI -> 🇮🇱'
+  - name: '29 ⌜クモ⌟ SNI -> 🇮🇱'
     server: 129.159.139.101
     type: vmess
     port: 443
