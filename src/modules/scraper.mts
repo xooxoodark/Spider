@@ -27,19 +27,23 @@ class Scraper {
     }
 
     const text = await res.text();
-    let configs: string[] = text.match(/(.+:\/\/.+)/gim) || [];
-    if (!configs.length) {
-      try {
+    let configs: string[];
+
+    try {
+      configs = JSON.parse(text);
+    } catch (e: any) {
+      configs = text.match(/(.+:\/\/.+)/gim) || [];
+      if (!configs.length) {
         configs = base64Decode(text)?.split(/(\r)?\n/) || [];
-      } catch (e: any) {
-        logger.log(LogLevel.error, e.name);
-        return {
-          error: true,
-          result: [],
-        };
       }
     }
 
+    if (!configs.length) {
+      return {
+        error: true,
+        result: [],
+      };
+    }
     for (const config of configs) {
       if (!config) continue;
       if (!acceptedType.includes((config.match(/(.+):\/\//) || [])[1])) continue;
