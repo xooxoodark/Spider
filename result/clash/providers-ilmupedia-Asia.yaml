@@ -15,7 +15,7 @@ proxies:
       path: /zh-cn
       headers:
         Host: news.microsoft.com
-  - name: '9 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '10 ⌜クモ⌟ SNI -> 🇸🇬'
     server: f1f3227.f3.glados-config.net
     type: vmess
     port: 3331
@@ -29,22 +29,6 @@ proxies:
     servername: news.microsoft.com
     ws-opts: 
       path: /s/f1f3227.fm.apple.com:111548
-      headers:
-        Host: news.microsoft.com
-  - name: '10 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 141.147.181.219
-    type: vmess
-    port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /roewesu
       headers:
         Host: news.microsoft.com
   - name: '12 ⌜クモ⌟ SNI -> 🇭🇰'
@@ -79,22 +63,6 @@ proxies:
       path: /zh-cn
       headers:
         Host: news.microsoft.com
-  - name: '14 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: suzhihan.eu.org
-    type: vmess
-    port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /roewesu
-      headers:
-        Host: news.microsoft.com
   - name: '18 ⌜クモ⌟ SNI -> 🇯🇵'
     server: jp1.sanfen001.pics
     type: vmess
@@ -111,7 +79,7 @@ proxies:
       path: /zh-cn
       headers:
         Host: news.microsoft.com
-  - name: '22 ⌜クモ⌟ CDN -> 🇨🇳'
+  - name: '21 ⌜クモ⌟ CDN -> 🇨🇳'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -127,7 +95,7 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: v2ray1.zhujicn2.org
-  - name: '32 ⌜クモ⌟ SNI -> 🇮🇱'
+  - name: '33 ⌜クモ⌟ SNI -> 🇮🇱'
     server: 129.159.139.101
     type: vmess
     port: 443
