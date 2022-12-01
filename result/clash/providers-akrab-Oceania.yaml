@@ -1,5 +1,5 @@
 proxies:
-  - name: '4 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '1 ⌜クモ⌟ SNI -> 🇦🇺'
     server: 139.99.135.182
     type: vmess
     port: 443
@@ -8,10 +8,10 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /vmess
       headers:
-        Host: click.zoom.us
+        Host: options.teams.microsoft.com

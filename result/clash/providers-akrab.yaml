@@ -1,9 +1,9 @@
 proxies:
-  - name: '1 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: vsg1.0bad.com
+  - name: '1 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 139.99.135.182
     type: vmess
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: e7df0582-d168-43af-bfff-90c25af7d085
     alterId: 0
     cipher: auto
     tls: true
@@ -12,7 +12,7 @@ proxies:
     network: ws
     servername: click.zoom.us
     ws-opts: 
-      path: /chat
+      path: /vmess
       headers:
         Host: click.zoom.us
   - name: '2 ⌜クモ⌟ SNI -> 🇬🇧'
@@ -26,11 +26,11 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: promo.ruangguru.com
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /vmess
       headers:
-        Host: promo.ruangguru.com
+        Host: options.teams.microsoft.com
   - name: '3 ⌜クモ⌟ SNI -> 🇸🇬'
     server: f1f3227.f3.glados-config.net
     type: vmess
@@ -42,28 +42,12 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /s/f1f3227.fm.apple.com:111548
       headers:
-        Host: click.zoom.us
-  - name: '4 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 139.99.135.182
-    type: vmess
-    port: 443
-    uuid: e7df0582-d168-43af-bfff-90c25af7d085
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: click.zoom.us
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: click.zoom.us
-  - name: '5 ⌜クモ⌟ CDN -> 🇺🇸'
+        Host: options.teams.microsoft.com
+  - name: '4 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -79,7 +63,7 @@ proxies:
       path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm
       headers:
         Host: 001frg.pages.dev
-  - name: '6 ⌜クモ⌟ SNI -> 🇭🇰'
+  - name: '5 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk12.sanfen001.pics
     type: vmess
     port: 443
@@ -90,12 +74,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: options.teams.microsoft.com
+    servername: promo.ruangguru.com
     ws-opts: 
       path: /zh-cn
       headers:
-        Host: options.teams.microsoft.com
-  - name: '7 ⌜クモ⌟ SNI -> 🇭🇰'
+        Host: promo.ruangguru.com
+  - name: '6 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk3.sanfen001.pics
     type: vmess
     port: 443
@@ -111,7 +95,7 @@ proxies:
       path: /zh-cn
       headers:
         Host: click.zoom.us
-  - name: '8 ⌜クモ⌟ SNI -> 🇷🇺'
+  - name: '7 ⌜クモ⌟ SNI -> 🇷🇺'
     server: 194.38.9.6
     type: vmess
     port: 48181
