@@ -10,12 +10,28 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /vmess
       headers:
-        Host: click.zoom.us
-  - name: '2 ⌜クモ⌟ SNI -> 🇬🇧'
+        Host: options.teams.microsoft.com
+  - name: '2 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: vsg1.0bad.com
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: promo.ruangguru.com
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: promo.ruangguru.com
+  - name: '3 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 51.75.160.126
     type: vmess
     port: 443
@@ -26,12 +42,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
     ws-opts: 
       path: /vmess
       headers:
-        Host: options.teams.microsoft.com
-  - name: '3 ⌜クモ⌟ SNI -> 🇸🇬'
+        Host: click.zoom.us
+  - name: '4 ⌜クモ⌟ SNI -> 🇸🇬'
     server: f1f3227.f3.glados-config.net
     type: vmess
     port: 3331
@@ -47,7 +63,23 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: options.teams.microsoft.com
-  - name: '4 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '5 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 141.147.181.219
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: promo.ruangguru.com
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: promo.ruangguru.com
+  - name: '6 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -63,7 +95,7 @@ proxies:
       path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm
       headers:
         Host: 001frg.pages.dev
-  - name: '5 ⌜クモ⌟ SNI -> 🇭🇰'
+  - name: '7 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk12.sanfen001.pics
     type: vmess
     port: 443
@@ -74,12 +106,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: promo.ruangguru.com
+    servername: click.zoom.us
     ws-opts: 
       path: /zh-cn
       headers:
-        Host: promo.ruangguru.com
-  - name: '6 ⌜クモ⌟ SNI -> 🇭🇰'
+        Host: click.zoom.us
+  - name: '8 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk3.sanfen001.pics
     type: vmess
     port: 443
@@ -95,7 +127,23 @@ proxies:
       path: /zh-cn
       headers:
         Host: promo.ruangguru.com
-  - name: '7 ⌜クモ⌟ SNI -> 🇷🇺'
+  - name: '9 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: suzhihan.eu.org
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: click.zoom.us
+  - name: '10 ⌜クモ⌟ SNI -> 🇷🇺'
     server: 194.38.9.6
     type: vmess
     port: 48181
@@ -106,12 +154,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: tcp
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
     ws-opts: 
       path: /
       headers:
-        Host: options.teams.microsoft.com
-  - name: '8 ⌜クモ⌟ SNI -> 🇺🇸'
+        Host: click.zoom.us
+  - name: '11 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 67.21.72.44
     type: vmess
     port: 443
@@ -127,23 +175,7 @@ proxies:
       path: /path/120208301422
       headers:
         Host: options.teams.microsoft.com
-  - name: '9 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: main.millionaireaisle.com
-    type: vmess
-    port: 443
-    uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: clash1.trump2023.net
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: clash1.trump2023.net
-  - name: '10 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '12 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -159,7 +191,39 @@ proxies:
       path: /VHONOFZ3
       headers:
         Host: lg1.cfcdn2.xyz
-  - name: '11 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '13 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: clash1.trump2023.net
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: clash1.trump2023.net
+  - name: '14 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 67.21.72.41
+    type: vmess
+    port: 443
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    alterId: 64
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: options.teams.microsoft.com
+    ws-opts: 
+      path: /path/173418141123
+      headers:
+        Host: options.teams.microsoft.com
+  - name: '15 ⌜クモ⌟ SNI -> 🇯🇵'
     server: jp1.sanfen001.pics
     type: vmess
     port: 443
@@ -170,12 +234,12 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
     ws-opts: 
       path: /zh-cn
       headers:
-        Host: options.teams.microsoft.com
-  - name: '12 ⌜クモ⌟ CDN -> 🇺🇸'
+        Host: click.zoom.us
+  - name: '16 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 2053
@@ -191,7 +255,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '13 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '17 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 2053
@@ -207,7 +271,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '14 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '18 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -218,12 +282,12 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /chat
       headers:
-        Host: click.zoom.us
-  - name: '15 ⌜クモ⌟ CDN -> 🇺🇸'
+        Host: options.teams.microsoft.com
+  - name: '19 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -239,7 +303,7 @@ proxies:
       path: /ECTCJ0DF
       headers:
         Host: lg1.trump2023.us
-  - name: '16 ⌜クモ⌟ CDN -> 🇨🇳'
+  - name: '20 ⌜クモ⌟ CDN -> 🇨🇳'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -255,7 +319,7 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: v2ray1.zhujicn2.org
-  - name: '17 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '21 ⌜クモ⌟ CDN -> 🇫🇷'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -271,7 +335,7 @@ proxies:
       path: /9JZFDTKE
       headers:
         Host: fr1.trump2023.org
-  - name: '18 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '22 ⌜クモ⌟ SNI -> 🇺🇸'
     server: f1f3227.u1.glados-config.net
     type: vmess
     port: 3331
@@ -287,7 +351,7 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: options.teams.microsoft.com
-  - name: '19 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '23 ⌜クモ⌟ CDN -> 🇫🇷'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -303,7 +367,7 @@ proxies:
       path: /IYKLD53M
       headers:
         Host: opfr1.v2rayfree1.xyz
-  - name: '20 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '24 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 2053
@@ -319,7 +383,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '21 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '25 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 51.81.220.195
     type: vmess
     port: 443
@@ -330,12 +394,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: promo.ruangguru.com
+    servername: click.zoom.us
     ws-opts: 
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
-        Host: promo.ruangguru.com
-  - name: '22 ⌜クモ⌟ SNI -> 🇺🇸'
+        Host: click.zoom.us
+  - name: '26 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 51.81.220.195
     type: vmess
     port: 443
@@ -346,12 +410,12 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
-        Host: click.zoom.us
-  - name: '23 ⌜クモ⌟ CDN -> 🇺🇸'
+        Host: options.teams.microsoft.com
+  - name: '27 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -367,23 +431,7 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: v2ray2.ssr-free2.xyz
-  - name: '24 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: main.millionaireaisle.com
-    type: vmess
-    port: 443
-    uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: clash6.ssr-free.xyz
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: clash6.ssr-free.xyz
-  - name: '25 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '28 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -399,7 +447,7 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: v2ray2.ssr-free2.xyz
-  - name: '26 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '29 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 2053
@@ -415,7 +463,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '27 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '30 ⌜クモ⌟ CDN -> 🇫🇷'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -431,7 +479,7 @@ proxies:
       path: /
       headers:
         Host: uk2.v2rayserv.com
-  - name: '28 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '31 ⌜クモ⌟ SNI -> 🇺🇸'
     server: us-lb.sshkit.org
     type: vmess
     port: 443
@@ -442,12 +490,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
-        Host: click.zoom.us
-  - name: '29 ⌜クモ⌟ SNI -> 🇺🇸'
+        Host: options.teams.microsoft.com
+  - name: '32 ⌜クモ⌟ SNI -> 🇺🇸'
     server: us-lb.sshkit.org
     type: vmess
     port: 443
@@ -463,7 +511,7 @@ proxies:
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
         Host: promo.ruangguru.com
-  - name: '30 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '33 ⌜クモ⌟ CDN -> 🇺🇸'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -479,7 +527,7 @@ proxies:
       path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm
       headers:
         Host: 002hngh.pages.dev
-  - name: '31 ⌜クモ⌟ SNI -> 🇮🇱'
+  - name: '34 ⌜クモ⌟ SNI -> 🇮🇱'
     server: 129.159.139.101
     type: vmess
     port: 443
