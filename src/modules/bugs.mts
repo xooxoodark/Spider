@@ -31,10 +31,10 @@ class Bugs {
     if (format == "Clash") {
       if (mode == "sni") {
         return account
-          .replace(account.match(/servername:(.+)/)[1], ` ${sni}`)
-          .replace(account.match(/Host:(.+)/)[1], ` ${sni}`);
+          .replace(account.match(/servername:.*/)[0], `servername: ${sni}`)
+          .replace(account.match(/Host:.*/)[0], `Host: ${sni}`);
       } else {
-        return account.replace(account.match(/server:(.+)/)[1], ` ${cdn}`);
+        return account.replace(account.match(/server:.*/)[0], `server: ${cdn}`);
       }
     } else if (format == "V2ray") {
       if (mode == "sni") {

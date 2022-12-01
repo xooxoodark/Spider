@@ -12,14 +12,13 @@ import { sleep } from "./modules/helper.mjs";
 import { logger, LogLevel } from "./modules/logger.mjs";
 import { Scraper } from "./modules/scraper.mjs";
 import { bot } from "./modules/tg.mjs";
-import { ConnectServer, Country, Region, V2Object } from "./modules/types.mjs";
+import { ConnectServer, Country, Data, Region, V2Object } from "./modules/types.mjs";
 
 const countries: Country[] = JSON.parse(readFileSync("./countries.json").toString());
 const bugBundles: string[] = readdirSync("./resources/bugs");
-const url: string = readFileSync("./source").toString();
+const { url, filename } = JSON.parse(process.argv[2]) as Data;
 const modes: string[] = ["cdn", "sni"];
 const maxConcurrentTest = 10;
-const maxResult: number = 50;
 
 // Kill all v2ray process
 exec("pkill v2ray");
@@ -28,6 +27,22 @@ exec("pkill v2ray");
   // Scavenge accounts but doesn't fill the bugs
   const accounts: V2Object[] = await (async () => {
     let accounts: V2Object[] = [];
+    if (url == "local") {
+      if (!existsSync("./resources/database")) {
+        logger.log(LogLevel.error, "Result not found!");
+        exit(0);
+      }
+
+      const resultFiles = readdirSync("./resources/database");
+      for (const files of resultFiles) {
+        if (files.match(".json")) {
+          accounts.push(...(JSON.parse(readFileSync(`./resources/database/${files}`).toString()) as V2Object[]));
+        }
+      }
+
+      return accounts;
+    }
+
     await Scraper.scrape(url).then((res) => {
       if (res.error) exit(1);
 
@@ -121,7 +136,7 @@ exec("pkill v2ray");
         resolve(concurrentTest.shift());
       });
 
-      if (result.length >= maxResult) break;
+      // if (result.length >= 1) break; // test purpose
       do {
         await sleep(1000);
       } while (concurrentTest.length > maxConcurrentTest);
@@ -144,6 +159,13 @@ exec("pkill v2ray");
 
     return result;
   })();
+
+  // If the url is valid url, save the result to ./resources
+  if (url != "local") {
+    if (!existsSync("./resources/database")) mkdirSync("./resources/database");
+    writeFileSync(`./resources/database/${filename}.json`, JSON.stringify(connectedAccounts, null, 2));
+    exit(0);
+  }
 
   // Convert result to various format
   // But first, we split them by region and country
@@ -195,7 +217,7 @@ exec("pkill v2ray");
       clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
       config.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
     }
-    writeFileSync(`./result/v2ray/config-${bugBundle}.yaml`, JSON.stringify(config, null, 2));
+    writeFileSync(`./result/v2ray/config-${bugBundle}.json`, JSON.stringify(config, null, 2));
     writeFileSync(`./result/clash/providers-${bugBundle}.yaml`, clashProxies.join("\n"));
 
     // Per country
@@ -206,7 +228,7 @@ exec("pkill v2ray");
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         config.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
       }
-      writeFileSync(`./result/v2ray/config-${bugBundle}-${country}.yaml`, JSON.stringify(config, null, 2));
+      writeFileSync(`./result/v2ray/config-${bugBundle}-${country}.json`, JSON.stringify(config, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${country}.yaml`, clashProxies.join("\n"));
     }
 
@@ -218,7 +240,7 @@ exec("pkill v2ray");
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         config.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
       }
-      writeFileSync(`./result/v2ray/config-${bugBundle}-${region}.yaml`, JSON.stringify(config, null, 2));
+      writeFileSync(`./result/v2ray/config-${bugBundle}-${region}.json`, JSON.stringify(config, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${region}.yaml`, clashProxies.join("\n"));
     }
   }
@@ -243,4 +265,6 @@ exec("pkill v2ray");
       if (proxiesByRegion["Asia"].length == 1) break;
     } while (!connected);
   }
+
+  exit(0);
 })();

@@ -51,3 +51,8 @@ export interface ConnectServer {
   cn: string;
   mode?: "sni" | "cdn";
 }
+
+export interface Data {
+  url: string;
+  filename: string;
+}

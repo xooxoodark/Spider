@@ -28,13 +28,15 @@ jobs:
           unzip ./bin/v2ray.zip -d ./bin/
           rm -rf ./bin/v2ray.zip
       - name: Start Crawling
+        env:
+          DATA: ${{ github.event.client_payload.message }}
         run: |
-          npm install && npx tsc && node ./app/index.js
+          npm install && npx tsc && node ./app/index.js '$DATA'
       - name: Add & Commit
         if: ${{ success() }}
         uses: EndBug/add-and-commit@v7.2.1
         with:
-          add: ./result
+          add: '["./result", "./resources/database"]'
           default_author: github_actions
           fetch: false
           tag_push: "--force"

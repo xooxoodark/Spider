@@ -25,11 +25,11 @@ class Connect {
       }
     });
 
-    await sleep(2000);
+    await sleep(500);
     const controller = new globalThis.AbortController();
     const timeout = setTimeout(() => {
       controller.abort();
-    }, 10000);
+    }, 5000);
 
     try {
       await fetch("https://api.myip.com/", {
