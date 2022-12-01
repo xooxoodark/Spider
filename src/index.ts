@@ -19,6 +19,7 @@ const bugBundles: string[] = readdirSync("./resources/bugs");
 const url: string = readFileSync("./source").toString();
 const modes: string[] = ["cdn", "sni"];
 const maxConcurrentTest = 100;
+const maxResult: number = 100;
 
 // Kill all v2ray process
 exec("pkill v2ray");
@@ -120,6 +121,7 @@ exec("pkill v2ray");
         resolve(concurrentTest.shift());
       });
 
+      if (result.length >= maxResult) break;
       do {
         await sleep(1000);
       } while (concurrentTest.length > maxConcurrentTest);
