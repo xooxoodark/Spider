@@ -49,6 +49,8 @@ class Connect {
       // console.log(e.message);
       if ((e.message as string).match("aborted")) {
         error = "Timeout!";
+      } else {
+        error = e.name;
       }
     }
 

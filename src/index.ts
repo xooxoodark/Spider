@@ -103,7 +103,7 @@ exec("pkill v2ray");
               remark: `${result.length + 1} ⌜クモ⌟ ${mode} -> ${countryFlag}`, // my watermark (remark) lol
             });
 
-            logger.log(LogLevel.success, `${account.remark}: ${mode} -> ${countryFlag}`);
+            logger.log(LogLevel.success, `${result.length} ${account.remark}: ${mode} -> ${countryFlag}`);
 
             let server = account.address;
             if (mode == "CDN") server = account.host;
