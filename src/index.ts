@@ -125,9 +125,21 @@ exec("pkill v2ray");
       } while (concurrentTest.length > maxConcurrentTest);
     }
 
+    let isTimeout = false;
+    const timeout = setTimeout(() => {
+      isTimeout = true;
+    }, 300000);
+
     do {
-      await sleep(200);
+      await sleep(1000);
+
+      if (isTimeout) {
+        clearTimeout(timeout);
+        exec("pkill v2ray");
+        break;
+      }
     } while (concurrentTest[0]);
+
     return result;
   })();
 
