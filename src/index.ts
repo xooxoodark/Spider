@@ -16,7 +16,7 @@ import { ConnectServer, Country, Region, V2Object } from "./modules/types.mjs";
 
 const countries: Country[] = JSON.parse(readFileSync("./countries.json").toString());
 const bugBundles: string[] = readdirSync("./resources/bugs");
-const url: string = process.argv[2];
+const url: string = readFileSync("./source").toString();
 const modes: string[] = ["cdn", "sni"];
 const maxConcurrentTest = 20;
 

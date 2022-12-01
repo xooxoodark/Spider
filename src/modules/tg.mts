@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 import { Bot as TgBot, InlineKeyboard } from "grammy";
-import { Country, Region, V2Object } from "./types.mjs";
+import { V2Object } from "./types.mjs";
 import { countryCodeEmoji } from "country-code-emoji";
 import { converter } from "./converter.mjs";
 
