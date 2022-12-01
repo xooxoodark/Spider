@@ -32,7 +32,7 @@ proxies:
       headers:
         Host: v2ray.wefuckgfw.ga
   - name: '5 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -63,6 +63,22 @@ proxies:
       path: /path/120208301422
       headers:
         Host: news.microsoft.com
+  - name: '9 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: f1f3227.u1.glados-config.net
+    type: vmess
+    port: 3331
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /s/f1f3227.fm.apple.com:111548
+      headers:
+        Host: news.microsoft.com
   - name: '12 ⌜クモ⌟ CDN -> 🇺🇸'
     server: news.microsoft.com
     type: vmess
@@ -80,7 +96,7 @@ proxies:
       headers:
         Host: 001frg.pages.dev
   - name: '17 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: cacerts.digicert.com
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
@@ -96,7 +112,7 @@ proxies:
       headers:
         Host: lg1.cfcdn2.xyz
   - name: '18 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
@@ -111,7 +127,7 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: clash1.trump2023.net
-  - name: '20 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '19 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 67.21.72.41
     type: vmess
     port: 443
@@ -127,22 +143,22 @@ proxies:
       path: /path/173418141123
       headers:
         Host: news.microsoft.com
-  - name: '24 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: f1f3227.u1.glados-config.net
+  - name: '22 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: news.microsoft.com
     type: vmess
-    port: 3331
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: news.microsoft.com
+    servername: lg1.trump2023.us
     ws-opts: 
-      path: /s/f1f3227.fm.apple.com:111548
+      path: /ECTCJ0DF
       headers:
-        Host: news.microsoft.com
+        Host: lg1.trump2023.us
   - name: '26 ⌜クモ⌟ CDN -> 🇺🇸'
     server: news.microsoft.com
     type: vmess
@@ -192,7 +208,7 @@ proxies:
       headers:
         Host: news.microsoft.com
   - name: '29 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: cacerts.digicert.com
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
@@ -288,7 +304,7 @@ proxies:
       headers:
         Host: news.microsoft.com
   - name: '36 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b

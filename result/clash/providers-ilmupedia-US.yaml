@@ -16,7 +16,7 @@ proxies:
       headers:
         Host: v2ray.wefuckgfw.ga
   - name: '4 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 2053
     uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
@@ -63,8 +63,24 @@ proxies:
       path: /path/120208301422
       headers:
         Host: news.microsoft.com
+  - name: '9 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: f1f3227.u1.glados-config.net
+    type: vmess
+    port: 3331
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /s/f1f3227.fm.apple.com:111548
+      headers:
+        Host: news.microsoft.com
   - name: '12 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: cacerts.digicert.com
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b
@@ -80,7 +96,7 @@ proxies:
       headers:
         Host: 001frg.pages.dev
   - name: '17 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
@@ -111,7 +127,7 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: clash1.trump2023.net
-  - name: '20 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '19 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 67.21.72.41
     type: vmess
     port: 443
@@ -127,24 +143,24 @@ proxies:
       path: /path/173418141123
       headers:
         Host: news.microsoft.com
-  - name: '24 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: f1f3227.u1.glados-config.net
+  - name: '22 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: cacerts.digicert.com
     type: vmess
-    port: 3331
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: news.microsoft.com
+    servername: lg1.trump2023.us
     ws-opts: 
-      path: /s/f1f3227.fm.apple.com:111548
+      path: /ECTCJ0DF
       headers:
-        Host: news.microsoft.com
+        Host: lg1.trump2023.us
   - name: '26 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 2053
     uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
@@ -208,7 +224,7 @@ proxies:
       headers:
         Host: v2ray2.ssr-free2.xyz
   - name: '30 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -240,7 +256,7 @@ proxies:
       headers:
         Host: v2ray2.ssr-free2.xyz
   - name: '32 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 2053
     uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
