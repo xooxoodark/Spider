@@ -47,3 +47,51 @@ proxies:
       path: /zh-cn
       headers:
         Host: news.microsoft.com
+  - name: '11 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: jp1.sanfen001.pics
+    type: vmess
+    port: 443
+    uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: news.microsoft.com
+  - name: '16 ⌜クモ⌟ CDN -> 🇨🇳'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 4679f00e-90ce-430d-9714-6a19367ba112
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: v2ray1.zhujicn2.org
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray1.zhujicn2.org
+  - name: '31 ⌜クモ⌟ SNI -> 🇮🇱'
+    server: 129.159.139.101
+    type: vmess
+    port: 443
+    uuid: b7519a6f-c1de-4667-e606-b60c65d19078
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
