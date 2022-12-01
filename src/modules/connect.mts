@@ -22,8 +22,6 @@ class Connect {
         error = "No Internet!";
       } else if (res.toString().match(/(error)/i)) {
         error = res.toString().match(/error:(.+)/i)[1];
-      } else {
-        error = "Unexpected Error";
       }
     });
 
