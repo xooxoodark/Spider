@@ -104,16 +104,16 @@
         "security": "tls",
         "wsSettings": {
           "headers": {
-            "Host": "options.teams.microsoft.com"
+            "Host": "click.zoom.us"
           },
           "path": "/vmess"
         },
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "click.zoom.us"
         }
       },
-      "tag": "proxy-8 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-6 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -144,13 +144,13 @@
         "security": "tls",
         "wsSettings": {
           "headers": {
-            "Host": "click.zoom.us"
+            "Host": "promo.ruangguru.com"
           },
           "path": "/chat"
         },
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
+          "serverName": "promo.ruangguru.com"
         }
       },
       "tag": "proxy-15 ⌜クモ⌟ SNI -> 🇬🇧"
@@ -204,6 +204,46 @@
       "settings": {
         "vnext": [
           {
+            "address": "194.38.9.6",
+            "port": 48181,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "2F094845-E2BD-EBF7-DEB7-995992436FAF",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "wsSettings": {
+          "headers": {
+            "Host": "promo.ruangguru.com"
+          },
+          "path": "/"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        }
+      },
+      "tag": "proxy-18 ⌜クモ⌟ SNI -> 🇷🇺"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
             "address": "main.millionaireaisle.com",
             "port": 443,
             "users": [
@@ -233,7 +273,7 @@
           "serverName": "fr1.trump2023.org"
         }
       },
-      "tag": "proxy-18 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-19 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -273,47 +313,7 @@
           "serverName": "opfr1.v2rayfree1.xyz"
         }
       },
-      "tag": "proxy-19 ⌜クモ⌟ CDN -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "194.38.9.6",
-            "port": 48181,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "2F094845-E2BD-EBF7-DEB7-995992436FAF",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "wsSettings": {
-          "headers": {
-            "Host": "options.teams.microsoft.com"
-          },
-          "path": "/"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
-        }
-      },
-      "tag": "proxy-21 ⌜クモ⌟ SNI -> 🇷🇺"
+      "tag": "proxy-20 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -353,7 +353,7 @@
           "serverName": "uk2.v2rayserv.com"
         }
       },
-      "tag": "proxy-26 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-28 ⌜クモ⌟ CDN -> 🇬🇧"
     }
   ],
   "dns": {
