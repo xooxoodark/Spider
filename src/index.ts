@@ -27,7 +27,7 @@ exec("pkill v2ray");
   // Scavenge accounts but doesn't fill the bugs
   const accounts: V2Object[] = await (async () => {
     let accounts: V2Object[] = [];
-    if (url == "local") {
+    if (!url) {
       if (!existsSync("./resources/database")) {
         logger.log(LogLevel.error, "Result not found!");
         exit(0);
@@ -159,7 +159,7 @@ exec("pkill v2ray");
   })();
 
   // If the url is valid url, save the result to ./resources
-  if (url != "local") {
+  if (url) {
     if (!existsSync("./resources/database")) mkdirSync("./resources/database");
     writeFileSync(`./resources/database/${filename}.json`, JSON.stringify(connectedAccounts, null, 2));
 
