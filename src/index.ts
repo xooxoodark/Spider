@@ -145,7 +145,7 @@ exec("pkill v2ray");
     let isTimeout = false;
     const timeout = setTimeout(() => {
       isTimeout = true;
-    }, 300000);
+    }, 120000);
 
     do {
       await sleep(1000);
