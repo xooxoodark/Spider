@@ -7,8 +7,6 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    concurrency:
-      group: crawl
 
     steps:
       - uses: actions/checkout@v3
