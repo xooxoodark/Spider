@@ -150,13 +150,11 @@ exec("pkill v2ray");
     do {
       await sleep(1000);
 
-      if (isTimeout) {
-        clearTimeout(timeout);
-        exec("pkill v2ray");
-        break;
-      }
+      if (isTimeout) break;
     } while (concurrentTest[0]);
 
+    clearTimeout(timeout);
+    exec("pkill v2ray");
     return result;
   })();
 
