@@ -82,6 +82,9 @@ class Connect {
     writeFileSync(savePath, JSON.stringify(v2rayConfig, null, 2));
 
     this.connectionNumber++;
+    if (this.connectionNumber > 300) {
+      this.connectionNumber = 1;
+    }
     return await this._connect(savePath, v2rayConfig.inbounds[1].port);
   }
 

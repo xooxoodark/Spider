@@ -18,7 +18,7 @@ const countries: Country[] = JSON.parse(readFileSync("./countries.json").toStrin
 const bugBundles: string[] = readdirSync("./resources/bugs");
 const url: string = readFileSync("./source").toString();
 const modes: string[] = ["cdn", "sni"];
-const maxConcurrentTest = 20;
+const maxConcurrentTest = 100;
 
 // Kill all v2ray process
 exec("pkill v2ray");
