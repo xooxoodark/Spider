@@ -1,5 +1,5 @@
 proxies:
-  - name: '10 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '9 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 51.75.160.126
     type: vmess
     port: 443
@@ -47,7 +47,7 @@ proxies:
       path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '23 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '24 ⌜クモ⌟ CDN -> 🇫🇷'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -63,8 +63,8 @@ proxies:
       path: /9JZFDTKE
       headers:
         Host: fr1.trump2023.org
-  - name: '24 ⌜クモ⌟ CDN -> 🇫🇷'
-    server: news.microsoft.com
+  - name: '25 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -79,8 +79,8 @@ proxies:
       path: /IYKLD53M
       headers:
         Host: opfr1.v2rayfree1.xyz
-  - name: '33 ⌜クモ⌟ CDN -> 🇫🇷'
-    server: news.microsoft.com
+  - name: '32 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 0764a598-82c4-4b41-ba10-551a625beed5
@@ -95,19 +95,3 @@ proxies:
       path: /
       headers:
         Host: uk2.v2rayserv.com
-  - name: '38 ⌜クモ⌟ SNI -> 🇩🇪'
-    server: 45.146.252.141
-    type: vmess
-    port: 443
-    uuid: b29defe7-36ee-47bf-b731-c4cccabc4200
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: news.microsoft.com

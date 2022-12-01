@@ -1,6 +1,6 @@
 proxies:
-  - name: '2 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+  - name: '3 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: cacerts.digicert.com
     type: vmess
     port: 2053
     uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
@@ -15,8 +15,8 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '3 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: cacerts.digicert.com
+  - name: '4 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: news.microsoft.com
     type: vmess
     port: 2053
     uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
@@ -31,23 +31,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '6 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
-    type: vmess
-    port: 443
-    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: lg30.cfcdn3.xyz
-    ws-opts: 
-      path: /ray
-      headers:
-        Host: lg30.cfcdn3.xyz
-  - name: '7 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '5 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 67.21.72.44
     type: vmess
     port: 443
@@ -63,7 +47,23 @@ proxies:
       path: /path/120208301422
       headers:
         Host: news.microsoft.com
-  - name: '9 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '6 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '8 ⌜クモ⌟ SNI -> 🇺🇸'
     server: f1f3227.u1.glados-config.net
     type: vmess
     port: 3331
@@ -79,7 +79,7 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: news.microsoft.com
-  - name: '13 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '12 ⌜クモ⌟ CDN -> 🇺🇸'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -99,22 +99,6 @@ proxies:
     server: cacerts.digicert.com
     type: vmess
     port: 443
-    uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: lg1.cfcdn2.xyz
-    ws-opts: 
-      path: /VHONOFZ3
-      headers:
-        Host: lg1.cfcdn2.xyz
-  - name: '18 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 443
     uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
     alterId: 0
     cipher: auto
@@ -127,6 +111,22 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: clash1.trump2023.net
+  - name: '18 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: lg1.cfcdn2.xyz
+    ws-opts: 
+      path: /VHONOFZ3
+      headers:
+        Host: lg1.cfcdn2.xyz
   - name: '19 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 67.21.72.41
     type: vmess
@@ -143,7 +143,23 @@ proxies:
       path: /path/173418141123
       headers:
         Host: news.microsoft.com
-  - name: '25 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '22 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '26 ⌜クモ⌟ CDN -> 🇺🇸'
     server: cacerts.digicert.com
     type: vmess
     port: 2053
@@ -159,7 +175,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '26 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '27 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 51.81.220.195
     type: vmess
     port: 443
@@ -175,7 +191,7 @@ proxies:
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
         Host: news.microsoft.com
-  - name: '27 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '28 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 51.81.220.195
     type: vmess
     port: 443
@@ -191,24 +207,8 @@ proxies:
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
         Host: news.microsoft.com
-  - name: '28 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
-    type: vmess
-    port: 443
-    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: v2ray2.ssr-free2.xyz
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: v2ray2.ssr-free2.xyz
   - name: '29 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: cacerts.digicert.com
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
@@ -224,7 +224,7 @@ proxies:
       headers:
         Host: v2ray2.ssr-free2.xyz
   - name: '30 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -242,25 +242,25 @@ proxies:
   - name: '31 ⌜クモ⌟ CDN -> 🇺🇸'
     server: cacerts.digicert.com
     type: vmess
-    port: 2053
-    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
+    port: 443
+    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: v2ray.wefuckgfw.ga
+    servername: v2ray2.ssr-free2.xyz
     ws-opts: 
-      path: /DQsafRJn/
+      path: /dongtaiwang.com
       headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '32 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: namer-us-sea-01-edgecast.qdns.live
+        Host: v2ray2.ssr-free2.xyz
+  - name: '33 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: us-lb.sshkit.org
     type: vmess
-    port: 2053
-    uuid: 935dfe1a-c512-31bc-9e97-b1ab73826047
-    alterId: 0
+    port: 443
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 
     cipher: auto
     tls: true
     udp: true
@@ -268,7 +268,7 @@ proxies:
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /
+      path: /sshkit/Variu88/634dab7abadf1/
       headers:
         Host: news.microsoft.com
   - name: '34 ⌜クモ⌟ SNI -> 🇺🇸'
@@ -287,23 +287,7 @@ proxies:
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
         Host: news.microsoft.com
-  - name: '35 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: us-lb.sshkit.org
-    type: vmess
-    port: 443
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /sshkit/Variu88/634dab7abadf1/
-      headers:
-        Host: news.microsoft.com
-  - name: '36 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '35 ⌜クモ⌟ CDN -> 🇺🇸'
     server: news.microsoft.com
     type: vmess
     port: 443
