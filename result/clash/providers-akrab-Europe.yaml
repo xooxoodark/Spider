@@ -15,7 +15,7 @@ proxies:
       path: /vmess
       headers:
         Host: promo.ruangguru.com
-  - name: '13 ⌜クモ⌟ SNI -> 🇷🇺'
+  - name: '15 ⌜クモ⌟ SNI -> 🇷🇺'
     server: 194.38.9.6
     type: vmess
     port: 48181
@@ -31,7 +31,7 @@ proxies:
       path: /
       headers:
         Host: click.zoom.us
-  - name: '18 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '20 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -47,23 +47,7 @@ proxies:
       path: /chat
       headers:
         Host: options.teams.microsoft.com
-  - name: '21 ⌜クモ⌟ CDN -> 🇫🇷'
-    server: main.millionaireaisle.com
-    type: vmess
-    port: 443
-    uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: fr1.trump2023.org
-    ws-opts: 
-      path: /9JZFDTKE
-      headers:
-        Host: fr1.trump2023.org
-  - name: '22 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '23 ⌜クモ⌟ CDN -> 🇫🇷'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -79,7 +63,23 @@ proxies:
       path: /IYKLD53M
       headers:
         Host: opfr1.v2rayfree1.xyz
-  - name: '34 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '29 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: uk2.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: uk2.v2rayserv.com
+  - name: '33 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 45.146.252.141
     type: vmess
     port: 443
@@ -90,8 +90,8 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /vmess
       headers:
-        Host: click.zoom.us
+        Host: options.teams.microsoft.com
