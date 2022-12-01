@@ -1,0 +1,49 @@
+proxies:
+  - name: '9 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 51.75.160.126
+    type: vmess
+    port: 443
+    uuid: b739a204-ea0d-428b-bbf5-a632ec05edcf
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /vmess
+      headers:
+        Host: news.microsoft.com
+  - name: '15 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: vuk2.0bad.com
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: news.microsoft.com
+  - name: '27 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: uk2.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: uk2.v2rayserv.com
