@@ -191,6 +191,7 @@ exec("pkill v2ray");
 
   const proxiesByCountry: any = {};
 
+  process.stdout.write("Splitting result...");
   for (const account of connectedAccounts) {
     const cc = account.cc as string;
     if (proxiesByCountry[cc]) {
@@ -205,8 +206,10 @@ exec("pkill v2ray");
       }
     }
   }
+  process.stdout.write("done\n");
 
   // Fill the bugs and write result
+  process.stdout.write("Fill the bugs and write result...");
   if (!existsSync("./result")) mkdirSync("./result");
   if (!existsSync("./result/clash")) mkdirSync("./result/clash");
   if (!existsSync("./result/v2ray")) mkdirSync("./result/v2ray");
@@ -253,8 +256,10 @@ exec("pkill v2ray");
 
   // Write the enitre raw result (withour edit except remark)
   writeFileSync(`./result/result.json`, JSON.stringify(connectedAccounts, null, 2));
+  process.stdout.write("done\n");
 
   // Send one asian server to channel
+  process.stdout.write("Send sample to channel...");
   if (proxiesByRegion["Asia"].length >= 1) {
     let connected = false;
     do {
@@ -271,6 +276,8 @@ exec("pkill v2ray");
       if (proxiesByRegion["Asia"].length == 1) break;
     } while (!connected);
   }
+  process.stdout.write("done\n");
 
+  process.stdout.write("Process complete!");
   exit(0);
 })();
