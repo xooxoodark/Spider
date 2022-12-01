@@ -27,7 +27,7 @@ class Connect {
       }
     });
 
-    await sleep(200);
+    await sleep(2000);
     const controller = new globalThis.AbortController();
     const timeout = setTimeout(() => {
       controller.abort();
