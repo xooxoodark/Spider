@@ -1,21 +1,5 @@
 proxies:
-  - name: '1 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 139.99.135.182
-    type: vmess
-    port: 443
-    uuid: e7df0582-d168-43af-bfff-90c25af7d085
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: news.microsoft.com
-  - name: '2 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '1 ⌜クモ⌟ SNI -> 🇸🇬'
     server: vsg1.0bad.com
     type: vmess
     port: 443
@@ -31,7 +15,7 @@ proxies:
       path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '3 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '2 ⌜クモ⌟ SNI -> 🇸🇬'
     server: f1f3227.f3.glados-config.net
     type: vmess
     port: 3331
@@ -45,5 +29,85 @@ proxies:
     servername: news.microsoft.com
     ws-opts: 
       path: /s/f1f3227.fm.apple.com:111548
+      headers:
+        Host: news.microsoft.com
+  - name: '3 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: 001frg.pages.dev
+    ws-opts: 
+      path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm
+      headers:
+        Host: 001frg.pages.dev
+  - name: '4 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: hk12.sanfen001.pics
+    type: vmess
+    port: 443
+    uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: news.microsoft.com
+  - name: '5 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 141.147.181.219
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: news.microsoft.com
+  - name: '6 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: hk3.sanfen001.pics
+    type: vmess
+    port: 443
+    uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: news.microsoft.com
+  - name: '7 ⌜クモ⌟ SNI -> 🇷🇺'
+    server: 194.38.9.6
+    type: vmess
+    port: 48181
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
       headers:
         Host: news.microsoft.com
