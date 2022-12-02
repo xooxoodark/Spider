@@ -79,13 +79,52 @@ dns:
 proxies:
 proxy-groups:
   - name: Telescope
+    type: select
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 1200
+    tolerance: 50
+    proxies:
+      - SELECT
+      - FALLBACK
+      - LOAD-BALANCE
+      - URL-TEST
+  - name: SELECT
+    type: select
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 1200
+    tolerance: 50
+    use:
+      - Asia
+      - Oceania
+  - name: FALLBACK
+    type: fallback
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 1200
+    tolerance: 50
+    use:
+      - Asia
+      - Oceania
+  - name: LOAD-BALANCE
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 1200
+    tolerance: 50
+    use:
+      - Asia
+      - Oceania
+  - name: URL-TEST
     type: url-test
     strategy: consistent-hashing
     url: http://hi.bonds.id/ping
     interval: 1200
     tolerance: 50
     use:
-      - 🏴‍☠️ Asia
+      - Asia
+      - Oceania
   - name: WA
     type: select
     proxies:
@@ -99,10 +138,19 @@ proxy-groups:
       - DIRECT
       - REJECT
 proxy-providers:
-  🏴‍☠️ Asia:
+  Asia:
     type: http
     path: ./providers1.yaml
-    url: "https://raw.githubusercontent.com/dickymuliafiqri/Spider/master/result/clash/providers-akrab-Asia.yaml"
+    url: "https://raw.githubusercontent.com/dickymuliafiqri/Spider/main/result/clash/providers-akrab-Asia.yaml"
+    interval: 900
+    health-check:
+      enable: true
+      url: "http://cp.cloudflare.com/generate_204"
+      interval: 300
+  Oceania:
+    type: http
+    path: ./providers2.yaml
+    url: "https://raw.githubusercontent.com/dickymuliafiqri/Spider/main/result/clash/providers-akrab-Oceania.yaml"
     interval: 900
     health-check:
       enable: true
