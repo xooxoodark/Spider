@@ -1,9 +1,9 @@
 proxies:
-  - name: '13 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: nl.v2-ray.com
+  - name: '15 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 163.172.213.74
     type: vmess
     port: 443
-    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    uuid: 45d0eb68-955c-4760-91cd-fa6bf07b693f
     alterId: 0
     cipher: auto
     tls: true
@@ -12,26 +12,10 @@ proxies:
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /fastssh/hkgzs01/6315d407657f6/
+      path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: news.microsoft.com
-  - name: '16 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: nl.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /fastssh/hkgzs01/6315d407657f6/
-      headers:
-        Host: news.microsoft.com
-  - name: '20 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '58 ⌜クモ⌟ CDN -> 🇳🇱'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -47,7 +31,23 @@ proxies:
       path: /pkhhvws
       headers:
         Host: amshare.jingledev.me
-  - name: '29 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '59 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: amshare.jingledev.me
+    ws-opts: 
+      path: /pkhhvws
+      headers:
+        Host: amshare.jingledev.me
+  - name: '74 ⌜クモ⌟ SNI -> 🇳🇱'
     server: nl.v2-ray.com
     type: vmess
     port: 443
@@ -63,7 +63,7 @@ proxies:
       path: /fastssh/vghrayang/634931ec14667/
       headers:
         Host: news.microsoft.com
-  - name: '30 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '75 ⌜クモ⌟ SNI -> 🇳🇱'
     server: nl.v2-ray.com
     type: vmess
     port: 443
@@ -79,11 +79,11 @@ proxies:
       path: /fastssh/vghrayang/634931ec14667/
       headers:
         Host: news.microsoft.com
-  - name: '44 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 163.172.213.74
+  - name: '95 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: nl.v2-ray.com
     type: vmess
     port: 443
-    uuid: 45d0eb68-955c-4760-91cd-fa6bf07b693f
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
     alterId: 
     cipher: auto
     tls: true
@@ -92,6 +92,22 @@ proxies:
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /fastssh/sezarhacks/633be1a74319b/
+      path: /fastssh/hkgzs01/6315d407657f6/
+      headers:
+        Host: news.microsoft.com
+  - name: '97 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: nl.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    alterId: 
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /fastssh/hkgzs01/6315d407657f6/
       headers:
         Host: news.microsoft.com
