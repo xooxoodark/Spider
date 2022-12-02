@@ -1,9 +1,9 @@
 proxies:
-  - name: '41 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 51.75.160.126
+  - name: '12 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: vuk2.0bad.com
     type: vmess
     port: 443
-    uuid: b739a204-ea0d-428b-bbf5-a632ec05edcf
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     tls: true
@@ -12,6 +12,38 @@ proxies:
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /vmess
+      path: /chat
       headers:
         Host: news.microsoft.com
+  - name: '34 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: uk2.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: uk2.v2rayserv.com
+  - name: '37 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2.chigua.tk
+    ws-opts: 
+      path: /vmess
+      headers:
+        Host: v2.chigua.tk

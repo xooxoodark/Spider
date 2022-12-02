@@ -113,7 +113,47 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-8 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-9 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.129.34.102",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 2,
+                "encryption": "",
+                "flow": "",
+                "id": "ec736482-173e-3eff-9114-b49df8056e7d",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-43 ⌜クモ⌟ SNI -> 🇰🇷"
     }
   ],
   "dns": {

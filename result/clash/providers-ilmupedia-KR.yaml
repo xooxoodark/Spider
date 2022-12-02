@@ -1,5 +1,5 @@
 proxies:
-  - name: '8 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '9 ⌜クモ⌟ SNI -> 🇰🇷'
     server: lc-kr02-direct01.lc-kr02.lc-node.com
     type: vmess
     port: 443
@@ -9,6 +9,22 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '43 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 161.129.34.102
+    type: vmess
+    port: 443
+    uuid: ec736482-173e-3eff-9114-b49df8056e7d
+    alterId: 2
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
     network: ws
     servername: news.microsoft.com
     ws-opts: 
