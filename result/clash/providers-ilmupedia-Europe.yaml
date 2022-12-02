@@ -1,5 +1,5 @@
 proxies:
-  - name: '6 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '5 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 51.75.160.126
     type: vmess
     port: 443
@@ -15,70 +15,54 @@ proxies:
       path: /vmess
       headers:
         Host: news.microsoft.com
-  - name: '15 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: vuk2.0bad.com
+  - name: '14 ⌜クモ⌟ CDN -> 🇩🇪'
+    server: cacerts.digicert.com
     type: vmess
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /chat
-      headers:
-        Host: news.microsoft.com
-  - name: '17 ⌜クモ⌟ CDN -> 🇫🇷'
-    server: news.microsoft.com
-    type: vmess
-    port: 443
-    uuid: 4679f00e-90ce-430d-9714-6a19367ba112
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: v2ray1.zhujicn2.org
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: v2ray1.zhujicn2.org
-  - name: '18 ⌜クモ⌟ SNI -> 🇷🇺'
-    server: 194.38.9.6
-    type: vmess
-    port: 48181
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    port: 2083
+    uuid: 1ffeca67-a2bc-471b-b138-369d6762967d
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
+    network: ws
+    servername: 30.tehvp.xyz
     ws-opts: 
       path: /
       headers:
-        Host: news.microsoft.com
-  - name: '19 ⌜クモ⌟ CDN -> 🇫🇷'
-    server: cacerts.digicert.com
+        Host: 30.tehvp.xyz
+  - name: '15 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: news.microsoft.com
     type: vmess
     port: 443
-    uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
+    uuid: 4e21574f-1796-4f0a-86c0-4430fe99d3a1
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
-    servername: fr1.trump2023.org
+    servername: fr1.cachexy.ga
     ws-opts: 
-      path: /9JZFDTKE
+      path: /p9Dq67Nx/
       headers:
-        Host: fr1.trump2023.org
+        Host: fr1.cachexy.ga
+  - name: '18 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: uk2.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: uk2.v2rayserv.com
   - name: '20 ⌜クモ⌟ CDN -> 🇫🇷'
     server: news.microsoft.com
     type: vmess
@@ -95,19 +79,115 @@ proxies:
       path: /IYKLD53M
       headers:
         Host: opfr1.v2rayfree1.xyz
-  - name: '28 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '21 ⌜クモ⌟ CDN -> 🇱🇺'
     server: cacerts.digicert.com
     type: vmess
     port: 443
-    uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+    uuid: 6fb9a750-55b8-4e6e-857b-242b795399dc
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: buyvm.imkcp.eu.org
+    ws-opts: 
+      path: /imkcpyyds
+      headers:
+        Host: buyvm.imkcp.eu.org
+  - name: '24 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 4679f00e-90ce-430d-9714-6a19367ba112
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: uk2.v2rayserv.com
+    servername: v2ray1.zhujicn2.org
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray1.zhujicn2.org
+  - name: '27 ⌜クモ⌟ CDN -> 🇨🇭'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: ad48ebeb-f949-472b-9717-e8c8f0f7984d
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.liuyiyang19891222.tk
     ws-opts: 
       path: /
       headers:
-        Host: uk2.v2rayserv.com
+        Host: www.liuyiyang19891222.tk
+  - name: '28 ⌜クモ⌟ SNI -> 🇷🇺'
+    server: 194.38.9.6
+    type: vmess
+    port: 48181
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '29 ⌜クモ⌟ CDN -> 🇨🇭'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: ad48ebeb-f949-472b-9717-e8c8f0f7984d
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.liuyiyang19891222.tk
+    ws-opts: 
+      path: /
+      headers:
+        Host: www.liuyiyang19891222.tk
+  - name: '30 ⌜クモ⌟ SNI -> 🇷🇺'
+    server: 194.38.9.6
+    type: vmess
+    port: 48181
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '31 ⌜クモ⌟ SNI -> 🇷🇺'
+    server: 194.38.9.6
+    type: vmess
+    port: 48181
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
