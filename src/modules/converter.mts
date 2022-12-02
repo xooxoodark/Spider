@@ -1,6 +1,7 @@
-import { base64Decode, base64Encode } from "./helper.mjs";
+import { URLSearchParams } from "url";
+import { base64Decode, base64Encode, urlParser } from "./helper.mjs";
 import { logger, LogLevel } from "./logger.mjs";
-import { V2Object, Vmess } from "./types.mjs";
+import { Trojan, V2Object, Vmess } from "./types.mjs";
 
 type ConvertFrom = "Vmess" | "Trojan" | "SS";
 
@@ -20,7 +21,7 @@ class Converter {
             vpn: "vmess",
             address: config.add,
             port: config.port,
-            alterId: config.aid,
+            alterId: config.aid || 0,
             host: config.host,
             id: config.id,
             network: config.net,
@@ -33,7 +34,31 @@ class Converter {
             remark: config.ps,
           } as V2Object;
         } catch (e: any) {
-          logger.log(LogLevel.error, e.name);
+          logger.log(LogLevel.error, e.message);
+          return { error: e.name } as V2Object;
+        }
+      case "Trojan":
+        url = urlParser(configUrl);
+        try {
+          return {
+            vpn: url.protocol?.replace("-go", ""),
+            address: url.hostname,
+            port: parseInt(url.port || "443"),
+            host: url.query.host,
+            id: url.auth,
+            network: url.query.type,
+            path: url.query.path,
+            skipCertVerify: true,
+            tls: url.query.security,
+            sni: url.query.sni,
+            flow: url.query.flow,
+            level: url.query.level,
+            method: url.query.method,
+            ota: url.query.ota ? true : false,
+            remark: url.hash?.replace("#", ""),
+          } as V2Object;
+        } catch (e: any) {
+          logger.log(LogLevel.error, e.message);
           return { error: e.name } as V2Object;
         }
       default:
@@ -49,7 +74,7 @@ class Converter {
           concurrency: 8,
           enabled: false,
         },
-        protocol: "vmess",
+        protocol: account.vpn,
         settings: {
           vnext: [
             {
@@ -71,19 +96,61 @@ class Converter {
         streamSettings: {
           network: account.network,
           security: account.tls,
-          wsSettings: {
-            headers: {
-              Host: account.host,
-            },
-            path: account.path,
-          },
           tlsSettings: {
             allowInsecure: true,
-            serverName: account.sni,
+            serverName: account.sni || account.host,
           },
         },
         tag: `proxy-${account.remark}`,
       };
+
+      if (account.network == "ws") {
+        proxy.streamSettings.wsSettings = {
+          headers: {
+            Host: account.host,
+          },
+          path: account.path,
+        };
+      }
+    } else if (account.vpn == "trojan") {
+      proxy = {
+        mux: {
+          concurrency: 8,
+          enabled: false,
+        },
+        protocol: account.vpn,
+        settings: {
+          servers: [
+            {
+              address: account.address,
+              flow: account.flow ? account.flow : "",
+              level: parseInt(account.level || "8"),
+              method: account.method ? account.method : "chacha20-poly1305",
+              ota: account.ota,
+              password: account.id,
+              port: account.port,
+            },
+          ],
+        },
+        streamSettings: {
+          network: account.network,
+          security: account.tls,
+          tlsSettings: {
+            allowInsecure: true,
+            serverName: account.sni || account.host,
+          },
+        },
+        tag: `proxy-${account.remark}`,
+      };
+
+      if (account.network == "ws") {
+        proxy.streamSettings.wsSettings = {
+          headers: {
+            Host: account.host,
+          },
+          path: account.path,
+        };
+      }
     }
 
     return proxy;
@@ -104,17 +171,34 @@ class Converter {
       proxy.push(`    skip-cert-verify: ${account.skipCertVerify}`);
       proxy.push(`    network: ${account.network}`);
       proxy.push(`    servername: ${account.sni || account.host}`);
-      proxy.push(`    ws-opts: `);
-      proxy.push(`      path: ${account.path}`);
-      proxy.push(`      headers:`);
-      proxy.push(`        Host: ${account.host}`);
+      if (account.network == "ws") {
+        proxy.push(`    ws-opts: `);
+        proxy.push(`      path: ${account.path}`);
+        proxy.push(`      headers:`);
+        proxy.push(`        Host: ${account.host}`);
+      }
+    } else if (account.vpn == "trojan") {
+      proxy.push(`  - name: '${account.remark}'`);
+      proxy.push(`    server: ${account.address}`);
+      proxy.push(`    type: ${account.vpn}`);
+      proxy.push(`    port: ${account.port}`);
+      proxy.push(`    password: ${account.id}`);
+      proxy.push(`    udp: true`);
+      proxy.push(`    skip-cert-verify: ${account.skipCertVerify}`);
+      proxy.push(`    network: ${account.network}`);
+      proxy.push(`    servername: ${account.sni || account.host}`);
+      if (account.network == "ws") {
+        proxy.push(`    ws-opts: `);
+        proxy.push(`      path: ${account.path}`);
+        proxy.push(`      headers:`);
+        proxy.push(`        Host: ${account.host}`);
+      }
     }
 
     return proxy.join("\n");
   }
 
-  toBase64(account: V2Object) {
-    let base64: string = "FvcK";
+  toUrl(account: V2Object) {
     if (account.vpn == "vmess") {
       let vmess: Vmess = {
         add: account.address,
@@ -134,9 +218,22 @@ class Converter {
         scy: "",
       };
 
-      base64 = base64Encode(JSON.stringify(vmess));
+      return `${account.vpn}://${base64Encode(JSON.stringify(vmess))}`;
+    } else if (account.vpn == "trojan") {
+      let trojan: Trojan = {
+        type: account.network,
+        security: account.tls ? "tls" : "",
+        path: account.path,
+        host: account.host,
+      } as Trojan;
+      if (account.tls) {
+        trojan.sni = account.sni || account.host;
+      }
+
+      return `${account.vpn}://${account.id}@${account.address}:${account.port}?${new URLSearchParams(
+        trojan as any
+      ).toString()}#${encodeURIComponent(account.remark)}`;
     }
-    return `${account.vpn}://${base64}`;
   }
 }
 

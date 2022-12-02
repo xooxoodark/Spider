@@ -14,5 +14,5 @@ Anyway, i hate spider <^>
 
 - [ ] Support
   - [x] Vmess
-  - [ ] Trojan
+  - [x] Trojan
   - [ ] Shadowsocks

@@ -15,6 +15,7 @@ class Bot {
     message += `Regional/Region: ${account.countryName} ${countryCodeEmoji(account.cc as string)}\n`;
     message += "---------------------------\n";
     message += "Info:\n";
+    message += `Type: <code>${account.vpn}</code>`;
     message += `Remark: <code>${account.remark}</code>\n`;
     message += `Address: <code>${account.address}</code>\n`;
     message += `Port: <code>${account.port}</code>\n`;
@@ -23,8 +24,8 @@ class Bot {
     message += `Path: <code>${account.path}</code>\n`;
     message += `TLS: <code>${account.tls ? true : false}</code>\n`;
     message += `Mode: <code>${account.cdn ? "CDN" : "SNI"}</code>\n`;
-    message += `SNI: <code>${account.sni}</code>\n\n`;
-    message += `⌜<code>${converter.toBase64(account)}</code>⌟\n\n`;
+    message += `SNI: <code>${account.sni || account.host}</code>\n\n`;
+    message += `⌜<code>${converter.toUrl(account)}</code>⌟\n\n`;
     message += `Config: <a href="https://github.com/dickymuliafiqri/Spider/tree/master/resources/config">Config Example</a>\n`;
     message += `Sub: <a href="https://github.com/dickymuliafiqri/Spider/tree/master/result">Subscription</a>\n`;
     message += `Join: @v2scrape\n\n`;

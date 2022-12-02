@@ -1,4 +1,4 @@
-export const acceptedType: string[] = ["vmess"];
+export const acceptedType: string[] = ["vmess", "trojan"];
 export const path: string = process.cwd();
 
 import { exec } from "child_process";
@@ -18,7 +18,7 @@ const countries: Country[] = JSON.parse(readFileSync("./countries.json").toStrin
 const bugBundles: string[] = readdirSync("./resources/bugs");
 const { url, filename } = JSON.parse(process.argv[2]) as Data;
 const modes: string[] = ["cdn", "sni"];
-const maxConcurrentTest = 10;
+const maxConcurrentTest = 20;
 
 // Kill all v2ray process
 exec("pkill v2ray");
@@ -46,11 +46,19 @@ exec("pkill v2ray");
     await Scraper.scrape(url).then((res) => {
       if (res.error) exit(1);
 
+      let vmessCount = 0;
+      let trojanCount = 0;
       for (const account of res.result) {
         if (account.startsWith("vmess")) {
           accounts.push(converter.toObject("Vmess", account));
+          vmessCount++;
+        } else if (account.startsWith("trojan")) {
+          accounts.push(converter.toObject("Trojan", account));
+          trojanCount++;
         }
       }
+      console.log(`Add: Vmess -> ${vmessCount}`);
+      console.log(`Add: Trojan -> ${trojanCount}`);
     });
     return accounts;
   })();
@@ -67,7 +75,7 @@ exec("pkill v2ray");
     for (let account of accounts) {
       concurrentTest.push(account.id);
 
-      logger.log(LogLevel.try, `${account.remark}...`);
+      // logger.log(LogLevel.try, `[${account.vpn}] -> ${account.remark}...`);
       new Promise(async (resolve) => {
         const connectResult: ConnectServer[] = [];
         const onTest: string[] = [];
@@ -147,7 +155,7 @@ exec("pkill v2ray");
     let isTimeout = false;
     const timeout = setTimeout(() => {
       isTimeout = true;
-    }, 120000);
+    }, 60000);
 
     do {
       await sleep(1000);

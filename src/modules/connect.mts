@@ -18,7 +18,7 @@ class Connect {
 
     v2ray.stdout.on("data", (res: any) => {
       // console.log(res.toString());
-      if (res.toString().match(/(context deadline exceeded|timeout|write on closed pipe)/i)) {
+      if (res.toString().match(/(context deadline exceeded|timeout)/i)) {
         error = "No Internet!";
       } else if (res.toString().match(/(error)/i)) {
         error = res.toString().match(/error:(.+)/i)[1];
@@ -39,7 +39,7 @@ class Connect {
             },
           },
           {
-            timeout: 20000,
+            timeout: 10000,
           }
         ),
       }).then(async (res) => {

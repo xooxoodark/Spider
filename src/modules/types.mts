@@ -14,6 +14,10 @@ export interface V2Object {
   security: string;
   skipCertVerify: boolean;
   sni: string;
+  flow?: string;
+  level?: string;
+  method?: string;
+  ota?: boolean;
   remark: string;
   cdn?: boolean;
   cc?: string;
@@ -37,6 +41,20 @@ export interface Vmess {
   "skip-cert-verify": boolean;
   sni: string;
   cdn: boolean;
+}
+
+export interface Trojan {
+  address: string;
+  port: number;
+  id: string;
+  security: string;
+  host: string;
+  type: string;
+  sni: string;
+  remark: string;
+  path: string;
+  cdn: boolean;
+  allowInsecure: boolean;
 }
 
 export interface Country {

@@ -1,4 +1,5 @@
 import { logger, LogLevel } from "./logger.mjs";
+import { parse, UrlWithParsedQuery } from "url";
 
 async function sleep(ms: number) {
   return await new Promise((resolve) => {
@@ -28,4 +29,8 @@ function base64Encode(text: string): string {
   return "";
 }
 
-export { sleep, base64Decode, base64Encode };
+function urlParser(url: string): UrlWithParsedQuery {
+  return parse(url, true);
+}
+
+export { sleep, base64Decode, base64Encode, urlParser };

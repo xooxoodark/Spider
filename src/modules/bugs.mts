@@ -30,22 +30,36 @@ class Bugs {
     const cdn = this.cdn;
     if (format == "Clash") {
       if (mode == "sni") {
-        return account
-          .replace(account.match(/servername:.*/)[0], `servername: ${sni}`)
-          .replace(account.match(/Host:.*/)[0], `Host: ${sni}`);
+        if (account.match(/Host:.*/)) {
+          account = account.replace(account.match(/Host:.*/)[0], `Host: ${sni}`);
+        }
+        account = account.replace(account.match(/servername:.*/)[0], `servername: ${sni}`);
       } else {
-        return account.replace(account.match(/server:.*/)[0], `server: ${cdn}`);
+        account = account.replace(account.match(/server:.*/)[0], `server: ${cdn}`);
       }
     } else if (format == "V2ray") {
-      if (mode == "sni") {
-        account.streamSettings.wsSettings.headers.Host = sni;
-        account.streamSettings.tlsSettings.serverName = sni;
-      } else {
-        account.settings.vnext[0].address = cdn;
+      if (account.protocol == "vmess") {
+        if (mode == "sni") {
+          if (account.streamSettings.wsSettings) {
+            account.streamSettings.wsSettings.headers.Host = sni;
+          }
+          account.streamSettings.tlsSettings.serverName = sni;
+        } else {
+          account.settings.vnext[0].address = cdn;
+        }
+      } else if (account.protocol == "trojan") {
+        if (mode == "sni") {
+          if (account.streamSettings.wsSettings) {
+            account.streamSettings.wsSettings.headers.Host = sni;
+          }
+          account.streamSettings.tlsSettings.serverName = sni;
+        } else {
+          account.settings.servers[0].address = cdn;
+        }
       }
-
-      return account;
     }
+
+    return account;
   }
 }
 
