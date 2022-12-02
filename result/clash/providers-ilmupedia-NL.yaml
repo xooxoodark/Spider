@@ -1,5 +1,5 @@
 proxies:
-  - name: '13 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '12 ⌜クモ⌟ SNI -> 🇳🇱'
     server: nl.v2-ray.com
     type: vmess
     port: 443
@@ -15,6 +15,22 @@ proxies:
       path: /fastssh/hkgzs01/6315d407657f6/
       headers:
         Host: news.microsoft.com
+  - name: '21 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: amshare.jingledev.me
+    ws-opts: 
+      path: /pkhhvws
+      headers:
+        Host: amshare.jingledev.me
   - name: '27 ⌜クモ⌟ SNI -> 🇳🇱'
     server: nl.v2-ray.com
     type: vmess
@@ -31,23 +47,23 @@ proxies:
       path: /fastssh/vghrayang/634931ec14667/
       headers:
         Host: news.microsoft.com
-  - name: '28 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: news.microsoft.com
+  - name: '28 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: nl.v2-ray.com
     type: vmess
     port: 443
-    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
+    uuid: 341ceac8-4d54-4b4c-ac1b-88d7615b10b6
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
-    servername: amshare.jingledev.me
+    servername: news.microsoft.com
     ws-opts: 
-      path: /pkhhvws
+      path: /fastssh/vghrayang/634931ec14667/
       headers:
-        Host: amshare.jingledev.me
-  - name: '33 ⌜クモ⌟ SNI -> 🇳🇱'
+        Host: news.microsoft.com
+  - name: '35 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443

@@ -31,7 +31,7 @@ proxies:
       path: /home
       headers:
         Host: news.microsoft.com
-  - name: '6 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '10 ⌜クモ⌟ SNI -> 🇯🇵'
     server: suzhihan.eu.org
     type: vmess
     port: 443
@@ -47,23 +47,7 @@ proxies:
       path: /roewesu
       headers:
         Host: news.microsoft.com
-  - name: '11 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: lc-kr02-direct01.lc-kr02.lc-node.com
-    type: vmess
-    port: 443
-    uuid: ec736482-173e-3eff-9114-b49df8056e7d
-    alterId: 2
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '14 ⌜クモ⌟ SNI -> 🇮🇱'
+  - name: '13 ⌜クモ⌟ SNI -> 🇮🇱'
     server: 129.159.139.101
     type: vmess
     port: 443
@@ -79,7 +63,7 @@ proxies:
       path: /
       headers:
         Host: news.microsoft.com
-  - name: '21 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '19 ⌜クモ⌟ SNI -> 🇰🇷'
     server: m4.40010010.xyz
     type: vmess
     port: 37121
@@ -109,37 +93,5 @@ proxies:
     servername: news.microsoft.com
     ws-opts: 
       path: /v2ray
-      headers:
-        Host: news.microsoft.com
-  - name: '34 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: f1f3227.f3.glados-config.net
-    type: vmess
-    port: 3331
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /s/f1f3227.fm.apple.com:111548
-      headers:
-        Host: news.microsoft.com
-  - name: '38 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 141.147.181.219
-    type: vmess
-    port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /roewesu
       headers:
         Host: news.microsoft.com

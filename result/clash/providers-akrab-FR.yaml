@@ -1,5 +1,5 @@
 proxies:
-  - name: '7 ⌜クモ⌟ SNI -> 🇫🇷'
+  - name: '6 ⌜クモ⌟ SNI -> 🇫🇷'
     server: 5.249.165.96
     type: vmess
     port: 443
@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: click.zoom.us
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /vmess
       headers:
-        Host: click.zoom.us
+        Host: options.teams.microsoft.com
   - name: '23 ⌜クモ⌟ CDN -> 🇫🇷'
     server: main.millionaireaisle.com
     type: vmess
@@ -47,7 +47,39 @@ proxies:
       path: /9JZFDTKE
       headers:
         Host: fr1.trump2023.org
-  - name: '37 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '29 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 4e21574f-1796-4f0a-86c0-4430fe99d3a1
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: fr1.cachexy.ga
+    ws-opts: 
+      path: /p9Dq67Nx/
+      headers:
+        Host: fr1.cachexy.ga
+  - name: '30 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 4e21574f-1796-4f0a-86c0-4430fe99d3a1
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: fr1.cachexy.ga
+    ws-opts: 
+      path: /p9Dq67Nx/
+      headers:
+        Host: fr1.cachexy.ga
+  - name: '36 ⌜クモ⌟ CDN -> 🇫🇷'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
