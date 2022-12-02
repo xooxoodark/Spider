@@ -104,6 +104,46 @@
         "security": "tls",
         "wsSettings": {
           "headers": {
+            "Host": "options.teams.microsoft.com"
+          },
+          "path": "/"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        }
+      },
+      "tag": "proxy-9 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "m4.40010010.xyz",
+            "port": 37121,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "575e4d92-1056-44c2-8cac-75ef1c859ad5",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "wsSettings": {
+          "headers": {
             "Host": "click.zoom.us"
           },
           "path": "/"
@@ -113,7 +153,7 @@
           "serverName": "click.zoom.us"
         }
       },
-      "tag": "proxy-14 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-23 ⌜クモ⌟ SNI -> 🇰🇷"
     }
   ],
   "dns": {

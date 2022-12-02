@@ -1,5 +1,37 @@
 proxies:
-  - name: '35 ⌜クモ⌟ CDN -> 🇯🇵'
+  - name: '5 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: suzhihan.eu.org
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: click.zoom.us
+  - name: '10 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: vjp1.0bad.com
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: promo.ruangguru.com
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: promo.ruangguru.com
+  - name: '33 ⌜クモ⌟ CDN -> 🇯🇵'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
