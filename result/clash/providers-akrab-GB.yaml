@@ -1,5 +1,5 @@
 proxies:
-  - name: '8 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '6 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 51.75.160.126
     type: vmess
     port: 443
@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
     ws-opts: 
       path: /vmess
       headers:
-        Host: options.teams.microsoft.com
+        Host: click.zoom.us
   - name: '11 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
@@ -31,7 +31,7 @@ proxies:
       path: /chat
       headers:
         Host: options.teams.microsoft.com
-  - name: '35 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '32 ⌜クモ⌟ CDN -> 🇬🇧'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
