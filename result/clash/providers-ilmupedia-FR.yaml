@@ -1,5 +1,5 @@
 proxies:
-  - name: '19 ⌜クモ⌟ SNI -> 🇫🇷'
+  - name: '17 ⌜クモ⌟ SNI -> 🇫🇷'
     server: 5.249.165.96
     type: vmess
     port: 443
@@ -15,8 +15,24 @@ proxies:
       path: /vmess
       headers:
         Host: news.microsoft.com
-  - name: '29 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '23 ⌜クモ⌟ CDN -> 🇫🇷'
     server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 4679f00e-90ce-430d-9714-6a19367ba112
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: v2ray1.zhujicn2.org
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray1.zhujicn2.org
+  - name: '28 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
