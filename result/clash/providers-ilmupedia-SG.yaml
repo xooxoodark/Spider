@@ -1,21 +1,5 @@
 proxies:
-  - name: '5 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 168.138.171.65
-    type: vmess
-    port: 443
-    uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /987
-      headers:
-        Host: news.microsoft.com
-  - name: '7 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '1 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 15.235.147.186
     type: vmess
     port: 443
@@ -31,7 +15,39 @@ proxies:
       path: /sshkit/Ertusg86/635014638c264/
       headers:
         Host: news.microsoft.com
-  - name: '19 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '6 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 168.138.171.65
+    type: vmess
+    port: 443
+    uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /home
+      headers:
+        Host: news.microsoft.com
+  - name: '16 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: vsg1.0bad.com
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: news.microsoft.com
+  - name: '23 ⌜クモ⌟ SNI -> 🇸🇬'
     server: lll.277428.xyz
     type: vmess
     port: 40771
@@ -40,14 +56,14 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
     ws-opts: 
-      path: 
+      path: /
       headers:
         Host: news.microsoft.com
-  - name: '20 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '24 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 23.106.249.2
     type: vmess
     port: 443
@@ -63,7 +79,7 @@ proxies:
       path: /path/243535322906
       headers:
         Host: news.microsoft.com
-  - name: '21 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '25 ⌜クモ⌟ SNI -> 🇸🇬'
     server: sg-ovh2.v2-ray.com
     type: vmess
     port: 443
@@ -95,7 +111,7 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: news.microsoft.com
-  - name: '48 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '45 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 139.162.16.228
     type: vmess
     port: 40771
