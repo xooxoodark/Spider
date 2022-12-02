@@ -1,145 +1,17 @@
 proxies:
-  - name: '43 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp13.tejiewm.com
+  - name: '35 ⌜クモ⌟ CDN -> 🇯🇵'
+    server: news.microsoft.com
     type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
+    port: 443
+    uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
+    network: ws
+    servername: v2.chigua.tk
     ws-opts: 
-      path: /
+      path: /vmess
       headers:
-        Host: news.microsoft.com
-  - name: '44 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp8.tejiewm.com
-    type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '45 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp16.tejiewm.com
-    type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '46 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp1.czs1000.com
-    type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '47 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp14.tejiewm.com
-    type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '48 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp15.tejiewm.com
-    type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '49 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp5.tejiewm.com
-    type: vmess
-    port: 8886
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '50 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp4.czs1000.com
-    type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '51 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp7.tejiewm.com
-    type: vmess
-    port: 4101
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
+        Host: v2.chigua.tk

@@ -1,5 +1,5 @@
 proxies:
-  - name: '7 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '6 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 51.75.160.126
     type: vmess
     port: 443
@@ -15,23 +15,7 @@ proxies:
       path: /vmess
       headers:
         Host: news.microsoft.com
-  - name: '55 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: kr4.czs1000.com
-    type: vmess
-    port: 6687
-    uuid: 1bd4689b-7bf7-4ff8-a144-ae6dbfa909f9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '70 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '25 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -47,8 +31,8 @@ proxies:
       path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '89 ⌜クモ⌟ CDN -> 🇬🇧'
-    server: news.microsoft.com
+  - name: '41 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 0764a598-82c4-4b41-ba10-551a625beed5
