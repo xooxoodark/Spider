@@ -56,6 +56,7 @@ exec("pkill v2ray");
   })();
 
   // Test the result
+  logger.log(LogLevel.info, "Start the test!");
   const connectedAccounts = await (async () => {
     const bugs = new Bugs();
     const result: V2Object[] = [];
@@ -66,6 +67,7 @@ exec("pkill v2ray");
     for (let account of accounts) {
       concurrentTest.push(account.id);
 
+      logger.log(LogLevel.try, `${account.remark}...`);
       new Promise(async (resolve) => {
         const connectResult: ConnectServer[] = [];
         const onTest: string[] = [];

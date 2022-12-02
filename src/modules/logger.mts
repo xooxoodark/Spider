@@ -3,6 +3,8 @@ import chalk from "chalk";
 export enum LogLevel {
   success = "Success",
   error = "Error",
+  try = "Try",
+  info = "Info",
 }
 
 class Logger {
@@ -29,6 +31,12 @@ class Logger {
         break;
       case LogLevel.success:
         console.log(`${chalk.green.bold(this.wrap("Success"))}: ${message}`);
+        break;
+      case LogLevel.try:
+        console.log(`${chalk.yellow.bold(this.wrap("Try"))}: ${message}`);
+        break;
+      case LogLevel.info:
+        console.log(`${chalk.blue.bold(this.wrap("Info"))}: ${message}`);
         break;
       default:
         break;
