@@ -1,9 +1,9 @@
 proxies:
-  - name: '12 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: sg-lb.vhax.net
+  - name: '7 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: vsg1.0bad.com
     type: vmess
     port: 443
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     tls: true
@@ -12,11 +12,11 @@ proxies:
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /sshkit/Ertusg86/635014638c264/
+      path: /chat
       headers:
         Host: news.microsoft.com
   - name: '13 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 15.235.147.186
+    server: sg-lb.vhax.net
     type: vmess
     port: 443
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -47,23 +47,23 @@ proxies:
       path: /roewesu
       headers:
         Host: news.microsoft.com
-  - name: '18 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: f1f3227.f3.glados-config.net
+  - name: '15 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 15.235.147.186
     type: vmess
-    port: 3331
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    port: 443
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /s/f1f3227.fm.apple.com:111548
+      path: /sshkit/Ertusg86/635014638c264/
       headers:
         Host: news.microsoft.com
-  - name: '25 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '30 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 141.147.181.219
     type: vmess
     port: 443
