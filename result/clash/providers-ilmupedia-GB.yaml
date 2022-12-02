@@ -1,5 +1,5 @@
 proxies:
-  - name: '12 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '11 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -15,8 +15,8 @@ proxies:
       path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '34 ⌜クモ⌟ CDN -> 🇬🇧'
-    server: news.microsoft.com
+  - name: '32 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 0764a598-82c4-4b41-ba10-551a625beed5
@@ -31,19 +31,3 @@ proxies:
       path: /
       headers:
         Host: uk2.v2rayserv.com
-  - name: '37 ⌜クモ⌟ CDN -> 🇬🇧'
-    server: news.microsoft.com
-    type: vmess
-    port: 443
-    uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2.chigua.tk
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: v2.chigua.tk
