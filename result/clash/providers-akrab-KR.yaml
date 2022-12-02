@@ -1,5 +1,5 @@
 proxies:
-  - name: '15 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '14 ⌜クモ⌟ SNI -> 🇰🇷'
     server: lc-kr02-direct01.lc-kr02.lc-node.com
     type: vmess
     port: 443
@@ -10,8 +10,24 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: promo.ruangguru.com
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /
+      headers:
+        Host: options.teams.microsoft.com
+  - name: '25 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: m4.40010010.xyz
+    type: vmess
+    port: 37121
+    uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: promo.ruangguru.com
+    ws-opts: 
+      path: /hls/cctv5phd.m3u8
       headers:
         Host: promo.ruangguru.com

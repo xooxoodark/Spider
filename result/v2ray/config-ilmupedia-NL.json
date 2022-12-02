@@ -153,7 +153,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-14 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-16 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -164,7 +164,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -193,47 +193,7 @@
           "serverName": "amshare.jingledev.me"
         }
       },
-      "tag": "proxy-21 ⌜クモ⌟ CDN -> 🇳🇱"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "nl.v2-ray.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "341ceac8-4d54-4b4c-ac1b-88d7615b10b6",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/fastssh/vghrayang/634931ec14667/"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-28 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-20 ⌜クモ⌟ CDN -> 🇳🇱"
     },
     {
       "mux": {
@@ -284,6 +244,46 @@
       "settings": {
         "vnext": [
           {
+            "address": "nl.v2-ray.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "341ceac8-4d54-4b4c-ac1b-88d7615b10b6",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/fastssh/vghrayang/634931ec14667/"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-30 ⌜クモ⌟ SNI -> 🇳🇱"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
             "address": "163.172.213.74",
             "port": 443,
             "users": [
@@ -313,7 +313,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-35 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-44 ⌜クモ⌟ SNI -> 🇳🇱"
     }
   ],
   "dns": {
