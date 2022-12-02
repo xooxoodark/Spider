@@ -174,7 +174,7 @@ exec("pkill v2ray");
     writeFileSync(`./resources/database/${filename}.json`, JSON.stringify(connectedAccounts, null, 2));
 
     let message = `=====SCAN RESULT=====\n`;
-    message += `Source: <code>${url}</code>\n`;
+    message += `Source: ${url}\n`;
     message += `Found: <code>${connectedAccounts.length}</code>`;
     await bot.bot.api.sendMessage("732796378", message, {
       disable_web_page_preview: true,

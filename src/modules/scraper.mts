@@ -18,6 +18,7 @@ class Scraper {
     });
 
     if (res.status != 200) {
+      console.log("\n");
       logger.log(LogLevel.error, res.statusText);
 
       return {
