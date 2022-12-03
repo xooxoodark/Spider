@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -124,7 +124,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -153,7 +153,47 @@
           "path": "/sshkit/1736960111/63859be1a762c/"
         }
       },
-      "tag": "proxy-9 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-11 ⌜クモ⌟ CDN -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "141.147.181.219",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "0b873cff-11ab-4716-c41a-04f886135091",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/roewesu"
+        }
+      },
+      "tag": "proxy-30 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -187,36 +227,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-30 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "jgwdb2.gaox.ml",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "c19d1432-8b3e-4818-8837-3d160cf65908",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-31 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-32 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -285,7 +296,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-35 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-37 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -296,7 +307,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -325,7 +336,7 @@
           "path": "/sshocean"
         }
       },
-      "tag": "proxy-36 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-38 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -365,7 +376,7 @@
           "path": "/s/f1f3227.fm.apple.com:111548"
         }
       },
-      "tag": "proxy-37 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-39 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -376,13 +387,13 @@
       "settings": {
         "servers": [
           {
-            "address": "34.96.143.229",
+            "address": "jgwcc1.gaox.ml",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "cQfwTIN1SC",
-            "port": 23442
+            "password": "7118b5f4-0ea4-4c11-be7f-11471cb91e4a",
+            "port": 443
           }
         ]
       },
@@ -394,7 +405,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-49 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-50 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -424,6 +435,35 @@
         }
       },
       "tag": "proxy-51 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jgwdb3.gaox.ml",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8d2d5953-d649-4034-94f2-72f2df2623da",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-54 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -463,7 +503,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-52 ⌜クモ⌟ SNI -> 🇮🇱"
+      "tag": "proxy-55 ⌜クモ⌟ SNI -> 🇮🇱"
     },
     {
       "mux": {
@@ -492,7 +532,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-53 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-56 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -503,13 +543,13 @@
       "settings": {
         "servers": [
           {
-            "address": "jgwcc1.gaox.ml",
+            "address": "34.96.143.229",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "7118b5f4-0ea4-4c11-be7f-11471cb91e4a",
-            "port": 443
+            "password": "cQfwTIN1SC",
+            "port": 23442
           }
         ]
       },
@@ -521,123 +561,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-55 ⌜クモ⌟ SNI -> 🇰🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "jgwdb3.gaox.ml",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "8d2d5953-d649-4034-94f2-72f2df2623da",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-56 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.79.156.168",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "89d5bfe0-6ea1-11ed-b138-225401db9d57",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-61 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.145.107",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-            "port": 2053
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-62 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.136.14.70",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "6A30qqSh8W",
-            "port": 15410
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-63 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-60 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -666,29 +590,24 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-64 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-61 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "139.162.16.228",
-            "port": 40771,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "61194810-5193-48bc-eb0a-7978a059d681",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "160.16.145.107",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+            "port": 2053
           }
         ]
       },
@@ -700,7 +619,36 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-68 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-64 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.136.14.70",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "6A30qqSh8W",
+            "port": 15410
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-65 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -729,7 +677,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-69 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-66 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -758,105 +706,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-70 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "sg.liangyuandian.top",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "58dcd460-65df-47b1-b062-517df30bef29",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-72 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "jp.liangyuandian.top",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "58dcd460-65df-47b1-b062-517df30bef29",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-73 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cacerts.digicert.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "sg1.loc-m.xyz"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "sg1.loc-m.xyz"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-76 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-67 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -887,16 +737,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "sg6.loc-m.xyz"
+          "serverName": "sg1.loc-m.xyz"
         },
         "wsSettings": {
           "headers": {
-            "Host": "sg6.loc-m.xyz"
+            "Host": "sg1.loc-m.xyz"
           },
           "path": "/"
         }
       },
-      "tag": "proxy-77 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-71 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -907,7 +757,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -936,7 +786,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-78 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-72 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -976,7 +826,221 @@
           "path": "/"
         }
       },
-      "tag": "proxy-79 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-73 ⌜クモ⌟ CDN -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "news.microsoft.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "sg3.loc-m.xyz"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "sg3.loc-m.xyz"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-74 ⌜クモ⌟ CDN -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "ap.liangyuandian.top",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "58dcd460-65df-47b1-b062-517df30bef29",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-75 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "de.liangyuandian.top",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "58dcd460-65df-47b1-b062-517df30bef29",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-76 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "ca.liangyuandian.top",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "58dcd460-65df-47b1-b062-517df30bef29",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-77 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "sg.liangyuandian.top",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "58dcd460-65df-47b1-b062-517df30bef29",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-78 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jp.liangyuandian.top",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "58dcd460-65df-47b1-b062-517df30bef29",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-79 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "uk.liangyuandian.top",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "58dcd460-65df-47b1-b062-517df30bef29",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-80 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -1007,16 +1071,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "sg3.loc-m.xyz"
+          "serverName": "sg6.loc-m.xyz"
         },
         "wsSettings": {
           "headers": {
-            "Host": "sg3.loc-m.xyz"
+            "Host": "sg6.loc-m.xyz"
           },
           "path": "/"
         }
       },
-      "tag": "proxy-80 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-83 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -1056,123 +1120,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-81 ⌜クモ⌟ CDN -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "de.liangyuandian.top",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "58dcd460-65df-47b1-b062-517df30bef29",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-82 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ca.liangyuandian.top",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "58dcd460-65df-47b1-b062-517df30bef29",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-83 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "uk.liangyuandian.top",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "58dcd460-65df-47b1-b062-517df30bef29",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-84 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ap.liangyuandian.top",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "58dcd460-65df-47b1-b062-517df30bef29",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-85 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-84 ⌜クモ⌟ CDN -> 🇯🇵"
     },
     {
       "mux": {
@@ -1183,7 +1131,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -1212,7 +1160,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-88 ⌜クモ⌟ CDN -> 🇯🇵"
+      "tag": "proxy-85 ⌜クモ⌟ CDN -> 🇯🇵"
     },
     {
       "mux": {
@@ -1241,7 +1189,36 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-95 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-90 ⌜クモ⌟ SNI -> 🇭🇰"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jgwdb4.gaox.ml",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-91 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -1270,29 +1247,24 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-96 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-93 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "lll.277428.xyz",
-            "port": 40771,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "61194810-5193-48bc-eb0a-7978a059d681",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "103.167.34.206",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "60d47bb6-47d1-45b1-b67b-4d236a4a5957",
+            "port": 443
           }
         ]
       },
@@ -1304,7 +1276,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-97 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-94 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -1334,35 +1306,6 @@
         }
       },
       "tag": "proxy-98 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "103.167.34.206",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "60d47bb6-47d1-45b1-b67b-4d236a4a5957",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-100 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -1402,7 +1345,7 @@
           "path": "/sshkit/dfsdafdsa/63848baf653eb/"
         }
       },
-      "tag": "proxy-107 ⌜クモ⌟ CDN -> 🇮🇩"
+      "tag": "proxy-100 ⌜クモ⌟ CDN -> 🇮🇩"
     },
     {
       "mux": {
@@ -1413,41 +1356,12 @@
       "settings": {
         "servers": [
           {
-            "address": "150.230.96.103",
+            "address": "150.230.217.213",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "da777aae-defb-41d0-a183-2c27da2b4677",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-110 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "138.2.45.243",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "c19d1432-8b3e-4818-8837-3d160cf65908",
+            "password": "c09eb137-bf68-4658-84e0-102d94b74168",
             "port": 443
           }
         ]
@@ -1461,6 +1375,35 @@
         }
       },
       "tag": "proxy-111 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "138.2.113.248",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "9c822f05-cfdc-479a-9534-60f3d4127435",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-112 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1489,7 +1432,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-112 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-113 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -1500,12 +1443,12 @@
       "settings": {
         "servers": [
           {
-            "address": "152.67.162.166",
+            "address": "168.138.43.89",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
+            "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
             "port": 443
           }
         ]
@@ -1518,7 +1461,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-114 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-114 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -1558,12 +1501,12 @@
       "settings": {
         "servers": [
           {
-            "address": "194.156.99.39",
+            "address": "152.67.190.183",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "xxoo",
+            "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
             "port": 443
           }
         ]
@@ -1576,65 +1519,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-116 ⌜クモ⌟ SNI -> 🇭🇰"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "138.2.113.248",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "9c822f05-cfdc-479a-9534-60f3d4127435",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-119 ⌜クモ⌟ SNI -> 🇰🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "trojan-ctb-sg01.globalssh.xyz",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "123456",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-120 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-116 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -1663,36 +1548,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-121 ⌜クモ⌟ SNI -> 🇮🇳"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.67.190.183",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-122 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-117 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -1732,7 +1588,7 @@
           "path": "/path/243535322906"
         }
       },
-      "tag": "proxy-123 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-118 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -1743,12 +1599,12 @@
       "settings": {
         "servers": [
           {
-            "address": "jgwhdlb2.gaox.ml",
+            "address": "trojan-ctb-sg01.globalssh.xyz",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "54080134-2cba-4535-8599-95650bd9aa54",
+            "password": "123456",
             "port": 443
           }
         ]
@@ -1761,7 +1617,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-124 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-119 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -1790,7 +1646,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-126 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-120 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1801,12 +1657,12 @@
       "settings": {
         "servers": [
           {
-            "address": "168.138.43.89",
+            "address": "194.156.99.39",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
+            "password": "xxoo",
             "port": 443
           }
         ]
@@ -1819,7 +1675,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-127 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-121 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -1830,12 +1686,12 @@
       "settings": {
         "servers": [
           {
-            "address": "jgwdb4.gaox.ml",
+            "address": "jgw2.gaox.ml",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
+            "password": "f2117e99-9b6e-47fd-b0a9-634a0b15b998",
             "port": 443
           }
         ]
@@ -1848,46 +1704,94 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-128 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-122 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "161.129.34.102",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ec736482-173e-3eff-9114-b49df8056e7d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "138.2.113.84",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "b291d129-ee55-4801-a9b8-b5316e5c37b7",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          }
         }
       },
-      "tag": "proxy-130 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-123 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jgwcc3.gaox.ml",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "b291d129-ee55-4801-a9b8-b5316e5c37b7",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-124 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jgwhdlb2.gaox.ml",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "54080134-2cba-4535-8599-95650bd9aa54",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-125 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -1927,47 +1831,7 @@
           "path": "/fastssh/dghh/6347fe8113b09/"
         }
       },
-      "tag": "proxy-131 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sg-ovh2.v2-ray.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/fastssh/dghh/6347fe8113b09/"
-        }
-      },
-      "tag": "proxy-132 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-126 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -2007,7 +1871,116 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-133 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-127 ⌜クモ⌟ SNI -> 🇮🇩"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sg-ovh2.v2-ray.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/fastssh/dghh/6347fe8113b09/"
+        }
+      },
+      "tag": "proxy-128 ⌜クモ⌟ SNI -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sg-atha.v2-ray.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "854fc069-23bc-4dd9-9c14-9f3bc50a3b76",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/fastssh/jdjdjdn/6347fefa86953/"
+        }
+      },
+      "tag": "proxy-129 ⌜クモ⌟ SNI -> 🇮🇩"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "152.67.162.166",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-132 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -2047,7 +2020,7 @@
           "path": "/v2ray"
         }
       },
-      "tag": "proxy-134 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-133 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -2058,11 +2031,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "lc-kr02-direct01.lc-kr02.lc-node.com",
+            "address": "161.129.34.102",
             "port": 443,
             "users": [
               {
-                "alterId": 2,
+                "alterId": 0,
                 "encryption": "",
                 "flow": "",
                 "id": "ec736482-173e-3eff-9114-b49df8056e7d",
@@ -2083,11 +2056,50 @@
         "wsSettings": {
           "headers": {
             "Host": "news.microsoft.com"
-          },
-          "path": "/"
+          }
         }
       },
-      "tag": "proxy-140 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-135 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vsg1.0bad.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "927094d3-d678-4763-8591-e240d0bcae87",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/chat"
+        }
+      },
+      "tag": "proxy-137 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -2127,47 +2139,7 @@
           "path": "/v2ray"
         }
       },
-      "tag": "proxy-142 ⌜クモ⌟ SNI -> 🇹🇼"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "az.hk01.paopaocloud.cyou",
-            "port": 10003,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-143 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-143 ⌜クモ⌟ SNI -> 🇹🇼"
     },
     {
       "mux": {
@@ -2196,36 +2168,47 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-144 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-146 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "official.seoulcitygovernment.com.ua",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-            "port": 8443
+            "address": "lc-kr02-direct01.lc-kr02.lc-node.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 2,
+                "encryption": "",
+                "flow": "",
+                "id": "ec736482-173e-3eff-9114-b49df8056e7d",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/"
         }
       },
-      "tag": "proxy-148 ⌜クモ⌟ SNI -> 🇹🇼"
+      "tag": "proxy-147 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -2265,7 +2248,36 @@
           "path": "/reffs7y26g0ua"
         }
       },
-      "tag": "proxy-149 ⌜クモ⌟ CDN -> 🇰🇷"
+      "tag": "proxy-148 ⌜クモ⌟ CDN -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "official.seoulcitygovernment.com.ua",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+            "port": 8443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-151 ⌜クモ⌟ SNI -> 🇹🇼"
     },
     {
       "mux": {
@@ -2277,76 +2289,6 @@
         "servers": [
           {
             "address": "news.microsoft.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "4X1ebJpQWg",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "sg.yydsdy.top"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "sg.yydsdy.top"
-          },
-          "path": "/c6c05fbac0e4"
-        }
-      },
-      "tag": "proxy-151 ⌜クモ⌟ CDN -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "cacerts.digicert.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "4X1ebJpQWg",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "sg.yydsdy.top"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "sg.yydsdy.top"
-          },
-          "path": "/c6c05fbac0e4"
-        }
-      },
-      "tag": "proxy-152 ⌜クモ⌟ CDN -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "cacerts.digicert.com",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
@@ -2410,7 +2352,42 @@
           "path": "/path/243535322906"
         }
       },
-      "tag": "proxy-155 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-154 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "cacerts.digicert.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "4X1ebJpQWg",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "sg.yydsdy.top"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "sg.yydsdy.top"
+          },
+          "path": "/c6c05fbac0e4"
+        }
+      },
+      "tag": "proxy-155 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -2421,14 +2398,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "15.235.147.186",
-            "port": 443,
+            "address": "lll.277428.xyz",
+            "port": 40771,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "6fea1649-425b-4092-bf53-29792152c925",
+                "id": "61194810-5193-48bc-eb0a-7978a059d681",
                 "level": 8,
                 "security": "auto"
               }
@@ -2437,20 +2414,48 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/sshkit/Ertusg86/635014638c264/"
         }
       },
-      "tag": "proxy-167 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-156 ⌜クモ⌟ SNI -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "139.162.16.228",
+            "port": 40771,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "61194810-5193-48bc-eb0a-7978a059d681",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-168 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -2486,40 +2491,58 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "f1f3227.f3.glados-config.net",
-            "port": 3331,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "57e0cb4d-eae5-48ec-8091-149dc2b309e0",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "219.94.250.108",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+            "port": 2053
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/s/f1f3227.fm.apple.com:111548"
         }
       },
-      "tag": "proxy-172 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-172 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.79.156.168",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "89d5bfe0-6ea1-11ed-b138-225401db9d57",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-173 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -2559,65 +2582,47 @@
           "path": "/s/f1f3227.fm.apple.com:111548"
         }
       },
-      "tag": "proxy-173 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-176 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "219.94.250.108",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-            "port": 2053
+            "address": "f1f3227.f3.glados-config.net",
+            "port": 3331,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "57e0cb4d-eae5-48ec-8091-149dc2b309e0",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/s/f1f3227.fm.apple.com:111548"
         }
       },
-      "tag": "proxy-175 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "official.seoulcityhall.com.ua",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-            "port": 8080
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-177 ⌜クモ⌟ SNI -> 🇹🇼"
+      "tag": "proxy-177 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -2657,6 +2662,35 @@
       "settings": {
         "servers": [
           {
+            "address": "official.seoulcityhall.com.ua",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+            "port": 8080
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-179 ⌜クモ⌟ SNI -> 🇹🇼"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "202.181.102.180",
             "flow": "",
             "level": 8,
@@ -2675,7 +2709,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-179 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-181 ⌜クモ⌟ SNI -> 🇯🇵"
     }
   ],
   "dns": {

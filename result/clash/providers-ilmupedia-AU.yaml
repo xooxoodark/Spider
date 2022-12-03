@@ -1,5 +1,5 @@
 proxies:
-  - name: '26 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '46 ⌜クモ⌟ SNI -> 🇦🇺'
     server: vau1.0bad.com
     type: vmess
     port: 443
@@ -15,7 +15,16 @@ proxies:
       path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '102 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '58 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: jgwxn3.gaox.ml
+    type: trojan
+    port: 443
+    password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '92 ⌜クモ⌟ SNI -> 🇦🇺'
     server: jgwxn4.gaox.ml
     type: trojan
     port: 443

@@ -1,5 +1,21 @@
 proxies:
-  - name: '86 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '42 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: vuk2.0bad.com
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: click.zoom.us
+  - name: '81 ⌜クモ⌟ CDN -> 🇬🇧'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -15,7 +31,7 @@ proxies:
       path: /vmess
       headers:
         Host: cms-bytes-chemicals-rs.trycloudflare.com
-  - name: '89 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '86 ⌜クモ⌟ CDN -> 🇬🇧'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -31,7 +47,7 @@ proxies:
       path: /
       headers:
         Host: uk.loc-m.xyz
-  - name: '94 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '89 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 51.195.202.124
     type: trojan
     port: 443
@@ -40,7 +56,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: click.zoom.us
-  - name: '113 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '102 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 146.19.230.241
     type: trojan
     port: 443
@@ -48,8 +64,8 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: options.teams.microsoft.com
-  - name: '141 ⌜クモ⌟ CDN -> 🇬🇧'
+    servername: click.zoom.us
+  - name: '136 ⌜クモ⌟ CDN -> 🇬🇧'
     server: main.millionaireaisle.com
     type: vmess
     port: 2053
@@ -65,16 +81,7 @@ proxies:
       path: /eisasqa
       headers:
         Host: foxuk.fovi.tk
-  - name: '154 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: content-provider20.cdn-delivery.akamaicd.com
-    type: trojan
-    port: 443
-    password: shefelnak
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: options.teams.microsoft.com
-  - name: '156 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '158 ⌜クモ⌟ CDN -> 🇬🇧'
     server: main.millionaireaisle.com
     type: vmess
     port: 2053
@@ -90,7 +97,7 @@ proxies:
       path: /
       headers:
         Host: v15.583181.xyz
-  - name: '157 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '159 ⌜クモ⌟ CDN -> 🇬🇧'
     server: main.millionaireaisle.com
     type: vmess
     port: 8443
@@ -106,3 +113,12 @@ proxies:
       path: /
       headers:
         Host: v16.583181.xyz
+  - name: '165 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: jgwld1.gaox.ml
+    type: trojan
+    port: 443
+    password: 02e653c9-7c93-46a9-999d-11834bd0c577
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: promo.ruangguru.com
