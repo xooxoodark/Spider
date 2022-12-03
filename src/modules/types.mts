@@ -68,6 +68,7 @@ export interface ConnectServer {
   cc: string;
   cn: string;
   mode?: "sni" | "cdn";
+  ip?: string;
 }
 
 export interface Data {

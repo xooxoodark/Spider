@@ -138,11 +138,19 @@ exec("pkill v2ray");
             let server = account.address;
             if (mode == "CDN") server = account.host;
 
-            // ID filter
+            // ID filter by hostname
             if (scannedAccount[server]) {
               if (!scannedAccount[server].includes(account.id)) scannedAccount[server].push(account.id);
             } else {
               scannedAccount[server] = [account.id];
+            }
+            // ID filter by IP address
+            if (connect.ip) {
+              if (scannedAccount[connect.ip]) {
+                if (!scannedAccount[connect.ip].includes(account.id)) scannedAccount[connect.ip].push(account.id);
+              } else {
+                scannedAccount[connect.ip] = [account.id];
+              }
             }
           }
         }

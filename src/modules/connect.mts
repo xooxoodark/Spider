@@ -13,6 +13,7 @@ class Connect {
     let error: string = "";
     let cc: string = "";
     let cn: string = "";
+    let ip: string = "";
 
     const v2ray = spawn("./bin/v2ray", ["run", "-c", `${config}`]);
 
@@ -50,9 +51,11 @@ class Connect {
           } else {
             cc = "XX"; // Default country code
             cn = "Other"; // Default country name
+            ip = "";
             // Change value above if data is present
             if (data.country_code) cc = data.country_code;
             if (data.country_name) cn = data.country_name;
+            if (data.ip) ip = data.ip;
           }
         }
       });
@@ -77,6 +80,7 @@ class Connect {
       error,
       cc,
       cn,
+      ip,
     };
   }
 
