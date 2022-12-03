@@ -72,8 +72,10 @@ exec("pkill v2ray");
     const result: V2Object[] = [];
 
     let scannedAccount: any = {};
+    let isCompleteScan: boolean = false;
 
-    for (let account of accounts) {
+    for (const i in accounts) {
+      let account = accounts[i];
       // logger.log(LogLevel.try, `[${account.vpn}] -> ${account.remark}...`);
       new Promise(async (resolve) => {
         const connectResult: ConnectServer[] = [];
@@ -145,6 +147,7 @@ exec("pkill v2ray");
           }
         }
 
+        if (parseInt(i) + 1 >= accounts.length) isCompleteScan = true;
         resolve(0);
       });
 
@@ -165,6 +168,11 @@ exec("pkill v2ray");
 
     do {
       await sleep(1000);
+
+      if (isCompleteScan) {
+        await sleep(10000);
+        break;
+      }
     } while (await isV2rayRunning());
     return result;
   })();
