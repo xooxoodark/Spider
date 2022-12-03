@@ -52,13 +52,15 @@ exec("pkill v2ray");
         if (account.startsWith("vmess")) {
           accounts.push(converter.toObject("Vmess", account));
           vmessCount++;
+          console.log(`Add: Vmess -> ${vmessCount}`);
         } else if (account.startsWith("trojan")) {
           accounts.push(converter.toObject("Trojan", account));
           trojanCount++;
+          console.log(`Add: Trojan -> ${trojanCount}`);
         }
       }
-      console.log(`Add: Vmess -> ${vmessCount}`);
-      console.log(`Add: Trojan -> ${trojanCount}`);
+      console.log(`Total: Vmess -> ${vmessCount}`);
+      console.log(`Total: Trojan -> ${trojanCount}`);
     });
     return accounts;
   })();
@@ -115,7 +117,7 @@ exec("pkill v2ray");
         for (const connect of connectResult) {
           const mode = connect.mode?.toUpperCase();
           if (connect.error || !connect.cc || !connect.cn) {
-            logger.log(LogLevel.error, `${account.remark}: ${mode} -> ${connect.error}`);
+            logger.log(LogLevel.error, `[${account.vpn}] ${account.remark}: ${mode} -> ${connect.error}`);
           } else {
             const countryFlag = connect.cc == "XX" ? "🇺🇳" : countryCodeEmoji(connect.cc);
             result.push({
@@ -126,7 +128,10 @@ exec("pkill v2ray");
               remark: `${result.length + 1} ⌜クモ⌟ ${mode} -> ${countryFlag}`, // my watermark (remark) lol
             });
 
-            logger.log(LogLevel.success, `${result.length} -> ${account.remark}: ${mode} -> ${countryFlag}`);
+            logger.log(
+              LogLevel.success,
+              `[${account.vpn}] ${result.length} -> ${account.remark}: ${mode} -> ${countryFlag}`
+            );
 
             let server = account.address;
             if (mode == "CDN") server = account.host;
@@ -139,6 +144,8 @@ exec("pkill v2ray");
             }
           }
         }
+
+        resolve(0);
       });
 
       while ((await isV2rayRunning()) > maxConcurrentTest) {
@@ -148,7 +155,6 @@ exec("pkill v2ray");
     }
 
     do {
-      console.log("Waiting for previous process...");
       await sleep(1000);
     } while (await isV2rayRunning());
     return result;
