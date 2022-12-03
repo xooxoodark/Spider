@@ -1,5 +1,5 @@
 proxies:
-  - name: '49 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '41 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -15,7 +15,16 @@ proxies:
       path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '97 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '84 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 132.145.51.172
+    type: trojan
+    port: 443
+    password: 02e653c9-7c93-46a9-999d-11834bd0c577
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '85 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 146.19.230.241
     type: trojan
     port: 443
@@ -24,27 +33,61 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '125 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '123 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: content-provider22.cdn-delivery.akamaicd.com
+    type: trojan
+    port: 443
+    password: shefelnak
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '129 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: content-provider20.cdn-delivery.akamaicd.com
+    type: trojan
+    port: 443
+    password: shefelnak
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '137 ⌜クモ⌟ CDN -> 🇬🇧'
     server: cacerts.digicert.com
     type: vmess
-    port: 2053
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    port: 443
+    uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: foxuk.fovi.tk
+    servername: cms-bytes-chemicals-rs.trycloudflare.com
     ws-opts: 
-      path: /eisasqa
+      path: /vmess
       headers:
-        Host: foxuk.fovi.tk
-  - name: '140 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: content-provider22.cdn-delivery.akamaicd.com
+        Host: cms-bytes-chemicals-rs.trycloudflare.com
+  - name: '155 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 2053
+    uuid: a9ce394c-2b69-4802-b02c-e4bbc881d9ac
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v15.583181.xyz
+    ws-opts: 
+      path: /
+      headers:
+        Host: v15.583181.xyz
+  - name: '161 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 51.195.202.124
     type: trojan
     port: 443
-    password: shefelnak
+    password: 267af089-734c-48ca-9d47-88b0435d541b
     udp: true
     skip-cert-verify: true
     network: tcp

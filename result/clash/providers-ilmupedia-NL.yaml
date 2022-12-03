@@ -1,5 +1,5 @@
 proxies:
-  - name: '46 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '40 ⌜クモ⌟ SNI -> 🇳🇱'
     server: tj2.dalazhi.cyou
     type: trojan
     port: 443
@@ -8,7 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '54 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '58 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 94.102.54.65
     type: trojan
     port: 443
@@ -17,16 +17,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '62 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 94.102.53.19
-    type: trojan
-    port: 443
-    password: TestingServer@@
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '68 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '60 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 94.102.54.66
     type: trojan
     port: 443
@@ -35,7 +26,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '69 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '65 ⌜クモ⌟ SNI -> 🇳🇱'
     server: content-provider1.cdn-delivery.akamaicd.com
     type: trojan
     port: 443
@@ -44,24 +35,17 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '73 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: cacerts.digicert.com
-    type: vmess
+  - name: '66 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 94.102.53.19
+    type: trojan
     port: 443
-    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
-    alterId: 0
-    cipher: auto
-    tls: true
+    password: TestingServer@@
     udp: true
     skip-cert-verify: true
-    network: ws
-    servername: amshare.jingledev.me
-    ws-opts: 
-      path: /pkhhvws
-      headers:
-        Host: amshare.jingledev.me
-  - name: '77 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: cacerts.digicert.com
+    network: tcp
+    servername: news.microsoft.com
+  - name: '69 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 38fc19f8-5fc3-4f9a-8f89-a9154761cfdc
@@ -76,8 +60,8 @@ proxies:
       path: /
       headers:
         Host: hlz.loyou.me
-  - name: '79 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: news.microsoft.com
+  - name: '70 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 38fc19f8-5fc3-4f9a-8f89-a9154761cfdc
@@ -92,7 +76,7 @@ proxies:
       path: /
       headers:
         Host: m.quorecs.tk
-  - name: '141 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '128 ⌜クモ⌟ CDN -> 🇳🇱'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -108,7 +92,7 @@ proxies:
       path: /lXvA0Vse/
       headers:
         Host: hl1.cachexy.ga
-  - name: '154 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '163 ⌜クモ⌟ SNI -> 🇳🇱'
     server: content-provider13.cdn-delivery.akamaicd.com
     type: trojan
     port: 443
