@@ -147,15 +147,30 @@ exec("pkill v2ray");
       });
 
       // if (result.length >= 1) break; // test purpose
-      do {
-        await sleep(1000);
-      } while (concurrentTest.length > maxConcurrentTest);
+      let loop = concurrentTest.length >= maxConcurrentTest;
+      let reset = false;
+      const timeout = setTimeout(() => (reset = true), 15000);
+      while (loop) {
+        logger.log(LogLevel.info, "Max concurrent reached!");
+        if (reset) {
+          logger.log(LogLevel.info, "CONCURRENT RESET!");
+          exec("pkill v2ray");
+          do {
+            concurrentTest.shift();
+          } while (concurrentTest.length > 1);
+
+          break;
+        }
+        await sleep(5000);
+      }
+
+      clearTimeout(timeout);
     }
 
     let isTimeout = false;
     const timeout = setTimeout(() => {
       isTimeout = true;
-    }, 60000);
+    }, 20000);
 
     do {
       await sleep(1000);
