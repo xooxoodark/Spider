@@ -148,10 +148,19 @@ exec("pkill v2ray");
         resolve(0);
       });
 
+      let isStuck = false;
+      const timeout = setTimeout(() => (isStuck = true), 60000);
       while ((await isV2rayRunning()) > maxConcurrentTest) {
-        // logger.log(LogLevel.info, "Max concurrent reached!");
-        await sleep(1000);
+        logger.log(LogLevel.info, "Max concurrent reached!");
+        await sleep(10000);
+
+        if (isStuck) {
+          exec("pkill v2ray");
+          break;
+        }
       }
+
+      clearTimeout(timeout);
     }
 
     do {
