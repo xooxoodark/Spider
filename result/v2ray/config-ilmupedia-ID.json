@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -113,7 +113,7 @@
           "path": "/sshkit/dfsdafdsa/63848baf653eb/"
         }
       },
-      "tag": "proxy-19 ⌜クモ⌟ CDN -> 🇮🇩"
+      "tag": "proxy-16 ⌜クモ⌟ CDN -> 🇮🇩"
     },
     {
       "mux": {
@@ -124,7 +124,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 443,
             "users": [
               {
@@ -153,7 +153,36 @@
           "path": "/"
         }
       },
-      "tag": "proxy-30 ⌜クモ⌟ CDN -> 🇮🇩"
+      "tag": "proxy-24 ⌜クモ⌟ CDN -> 🇮🇩"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "id3tr.jagoan.vip",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "vvip-periantara",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-72 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -193,7 +222,7 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-75 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-128 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -233,7 +262,7 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-76 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-129 ⌜クモ⌟ SNI -> 🇮🇩"
     }
   ],
   "dns": {

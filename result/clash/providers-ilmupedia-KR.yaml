@@ -1,6 +1,6 @@
 proxies:
-  - name: '16 ⌜クモ⌟ CDN -> 🇰🇷'
-    server: cacerts.digicert.com
+  - name: '17 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
@@ -15,7 +15,16 @@ proxies:
       path: /reffs7y26g0ua
       headers:
         Host: surongwei.eu.org
-  - name: '41 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '31 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr05.wangxd.life
+    type: trojan
+    port: 3052
+    password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+    udp: true
+    skip-cert-verify: true
+    network: undefined
+    servername: news.microsoft.com
+  - name: '44 ⌜クモ⌟ SNI -> 🇰🇷'
     server: lc-kr02-direct01.lc-kr02.lc-node.com
     type: vmess
     port: 443
@@ -31,16 +40,43 @@ proxies:
       path: /
       headers:
         Host: news.microsoft.com
-  - name: '62 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: kr05.wangxd.life
+  - name: '51 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgwcc1.gaox.ml
     type: trojan
-    port: 3052
-    password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+    port: 443
+    password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
     udp: true
     skip-cert-verify: true
     network: undefined
     servername: news.microsoft.com
-  - name: '83 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '53 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgwcc3.gaox.ml
+    type: trojan
+    port: 443
+    password: b291d129-ee55-4801-a9b8-b5316e5c37b7
+    udp: true
+    skip-cert-verify: true
+    network: undefined
+    servername: news.microsoft.com
+  - name: '64 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgwcc2.gaox.ml
+    type: trojan
+    port: 443
+    password: 9c822f05-cfdc-479a-9534-60f3d4127435
+    udp: true
+    skip-cert-verify: true
+    network: undefined
+    servername: news.microsoft.com
+  - name: '77 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgw2.gaox.ml
+    type: trojan
+    port: 443
+    password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
+    udp: true
+    skip-cert-verify: true
+    network: undefined
+    servername: news.microsoft.com
+  - name: '130 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 161.129.34.102
     type: vmess
     port: 443
@@ -56,7 +92,7 @@ proxies:
       path: undefined
       headers:
         Host: news.microsoft.com
-  - name: '88 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '149 ⌜クモ⌟ SNI -> 🇰🇷'
     server: m4.40010010.xyz
     type: vmess
     port: 37121
@@ -68,7 +104,7 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '96 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '154 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 202.79.171.157
     type: vmess
     port: 443
@@ -84,12 +120,3 @@ proxies:
       path: /path/243535322906
       headers:
         Host: news.microsoft.com
-  - name: '98 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: jgwcc1.gaox.ml
-    type: trojan
-    port: 443
-    password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
-    udp: true
-    skip-cert-verify: true
-    network: undefined
-    servername: news.microsoft.com
