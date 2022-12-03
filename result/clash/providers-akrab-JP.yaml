@@ -1,5 +1,21 @@
 proxies:
-  - name: '41 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '33 ⌜クモ⌟ CDN -> 🇯🇵'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 99e95bb9-a9ef-4d27-dd63-16e69e08f096
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: xiaofficial.tk
+    ws-opts: 
+      path: /rayto80
+      headers:
+        Host: xiaofficial.tk
+  - name: '48 ⌜クモ⌟ SNI -> 🇯🇵'
     server: vjp1.0bad.com
     type: vmess
     port: 443
@@ -15,7 +31,7 @@ proxies:
       path: /chat
       headers:
         Host: click.zoom.us
-  - name: '61 ⌜クモ⌟ CDN -> 🇯🇵'
+  - name: '52 ⌜クモ⌟ CDN -> 🇯🇵'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -31,23 +47,7 @@ proxies:
       path: /
       headers:
         Host: jp3.loc-m.xyz
-  - name: '72 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: suzhihan.eu.org
-    type: vmess
-    port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: options.teams.microsoft.com
-    ws-opts: 
-      path: /roewesu
-      headers:
-        Host: options.teams.microsoft.com
-  - name: '85 ⌜クモ⌟ CDN -> 🇯🇵'
+  - name: '66 ⌜クモ⌟ CDN -> 🇯🇵'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -56,7 +56,7 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: myjp.brucean.cn
     ws-opts: 

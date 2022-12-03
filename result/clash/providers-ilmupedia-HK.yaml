@@ -1,13 +1,17 @@
 proxies:
-  - name: '53 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: 206.119.112.6
+  - name: '85 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: p-hk.accddup.top
     type: vmess
-    port: 8189
-    uuid: a90597c1-bab3-4217-ad6f-0838675c8638
-    alterId: 10
+    port: 56890
+    uuid: c4010ba7-b665-4d61-90ea-1806d6a0ee77
+    alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
-    network: tcp
+    network: ws
     servername: news.microsoft.com
+    ws-opts: 
+      path: /c2d0b638a0f5440eaaedc1ef11f0e5bb
+      headers:
+        Host: news.microsoft.com
