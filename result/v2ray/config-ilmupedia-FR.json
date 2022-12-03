@@ -113,7 +113,7 @@
           "path": "/IYKLD53M"
         }
       },
-      "tag": "proxy-20 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-28 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -153,7 +153,7 @@
           "path": "/9JZFDTKE"
         }
       },
-      "tag": "proxy-30 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-33 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -233,7 +233,7 @@
           "path": "/?ed=2048"
         }
       },
-      "tag": "proxy-43 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-40 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -262,7 +262,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-74 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-65 ⌜クモ⌟ SNI -> 🇫🇷"
     },
     {
       "mux": {
@@ -273,7 +273,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 443,
             "users": [
               {
@@ -302,47 +302,65 @@
           "path": "/p9Dq67Nx/"
         }
       },
-      "tag": "proxy-153 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-101 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "news.microsoft.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "4679f00e-90ce-430d-9714-6a19367ba112",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "content-provider26.cdn-delivery.akamaicd.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "origin",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "v2ray1.zhujicn2.org"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "v2ray1.zhujicn2.org"
-          },
-          "path": "/dongtaiwang.com"
+          "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-157 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-155 ⌜クモ⌟ SNI -> 🇫🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "content-provider26.cdn-delivery.akamaicd.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "origin",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-156 ⌜クモ⌟ SNI -> 🇫🇷"
     },
     {
       "mux": {
@@ -382,36 +400,7 @@
           "path": "/dongtaiwang.com"
         }
       },
-      "tag": "proxy-158 ⌜クモ⌟ CDN -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "content-provider26.cdn-delivery.akamaicd.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "origin",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-166 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-167 ⌜クモ⌟ CDN -> 🇫🇷"
     }
   ],
   "dns": {

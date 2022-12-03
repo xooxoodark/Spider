@@ -1,5 +1,5 @@
 proxies:
-  - name: '8 ⌜クモ⌟ CDN -> 🇩🇪'
+  - name: '15 ⌜クモ⌟ CDN -> 🇩🇪'
     server: cacerts.digicert.com
     type: vmess
     port: 2053
@@ -15,7 +15,7 @@ proxies:
       path: /
       headers:
         Host: haxeu2.zikkcc.ga
-  - name: '10 ⌜クモ⌟ CDN -> 🇩🇪'
+  - name: '16 ⌜クモ⌟ CDN -> 🇩🇪'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -31,7 +31,7 @@ proxies:
       path: /
       headers:
         Host: h2.800876.xyz
-  - name: '49 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '51 ⌜クモ⌟ SNI -> 🇩🇪'
     server: bdvasxmahl.injafarvpnwebelieve.gq
     type: trojan
     port: 443
@@ -40,7 +40,7 @@ proxies:
     skip-cert-verify: true
     network: undefined
     servername: news.microsoft.com
-  - name: '70 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '68 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 188.40.251.19
     type: trojan
     port: 443
@@ -49,19 +49,12 @@ proxies:
     skip-cert-verify: true
     network: undefined
     servername: news.microsoft.com
-  - name: '133 ⌜クモ⌟ CDN -> 🇩🇪'
-    server: news.microsoft.com
-    type: vmess
-    port: 2053
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-    alterId: 0
-    cipher: auto
-    tls: true
+  - name: '166 ⌜クモ⌟ SNI -> 🇩🇪'
+    server: content-provider28.cdn-delivery.akamaicd.com
+    type: trojan
+    port: 443
+    password: origin
     udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: foxdeovz1.fovi.tk
-    ws-opts: 
-      path: /eisasqa
-      headers:
-        Host: foxdeovz1.fovi.tk
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
