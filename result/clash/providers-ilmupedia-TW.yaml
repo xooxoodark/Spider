@@ -1,19 +1,17 @@
 proxies:
-  - name: '68 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: official.seoulcitygovernment.com.ua
-    type: trojan
-    port: 8080
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  - name: '136 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: az.hk01.paopaocloud.cyou
+    type: vmess
+    port: 10035
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
     udp: true
-    skip-cert-verify: true
-    network: undefined
+    skip-cert-verify: false
+    network: ws
     servername: news.microsoft.com
-  - name: '183 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: official.seoulcityhall.com.ua
-    type: trojan
-    port: 2053
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-    udp: true
-    skip-cert-verify: true
-    network: undefined
-    servername: news.microsoft.com
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: news.microsoft.com
