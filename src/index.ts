@@ -149,7 +149,7 @@ exec("pkill v2ray");
       // if (result.length >= 1) break; // test purpose
       let loop = concurrentTest.length >= maxConcurrentTest;
       let reset = false;
-      const timeout = setTimeout(() => (reset = true), 15000);
+      const timeout = setTimeout(() => (reset = true), 60000);
       while (loop) {
         logger.log(LogLevel.info, "Max concurrent reached!");
         if (reset) {
