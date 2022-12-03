@@ -1,5 +1,5 @@
 proxies:
-  - name: '28 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '30 ⌜クモ⌟ CDN -> 🇳🇱'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -15,7 +15,7 @@ proxies:
       path: /
       headers:
         Host: hlz.loyou.me
-  - name: '43 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '46 ⌜クモ⌟ SNI -> 🇳🇱'
     server: tj2.dalazhi.cyou
     type: trojan
     port: 443
@@ -24,7 +24,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '56 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '52 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -40,7 +40,7 @@ proxies:
       path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: news.microsoft.com
-  - name: '87 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '85 ⌜クモ⌟ SNI -> 🇳🇱'
     server: content-provider13.cdn-delivery.akamaicd.com
     type: trojan
     port: 443
@@ -49,8 +49,8 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '96 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: cacerts.digicert.com
+  - name: '107 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 38fc19f8-5fc3-4f9a-8f89-a9154761cfdc
@@ -65,7 +65,7 @@ proxies:
       path: /
       headers:
         Host: m.quorecs.tk
-  - name: '100 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '108 ⌜クモ⌟ CDN -> 🇳🇱'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -81,7 +81,23 @@ proxies:
       path: /pkhhvws
       headers:
         Host: amshare.jingledev.me
-  - name: '181 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '110 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 38fc19f8-5fc3-4f9a-8f89-a9154761cfdc
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: m.quorecs.tk
+    ws-opts: 
+      path: /
+      headers:
+        Host: m.quorecs.tk
+  - name: '167 ⌜クモ⌟ CDN -> 🇳🇱'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -97,39 +113,7 @@ proxies:
       path: /lXvA0Vse/
       headers:
         Host: hl1.cachexy.ga
-  - name: '195 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 443
-    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: nl.v2-ray.com
-    ws-opts: 
-      path: /fastssh/hkgzs01/6315d407657f6/
-      headers:
-        Host: nl.v2-ray.com
-  - name: '196 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: nl.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /fastssh/hkgzs01/6315d407657f6/
-      headers:
-        Host: news.microsoft.com
-  - name: '197 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '182 ⌜クモ⌟ CDN -> 🇳🇱'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -145,7 +129,7 @@ proxies:
       path: /fastssh/hkgzs01/6315d407657f6/
       headers:
         Host: nl.v2-ray.com
-  - name: '198 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '183 ⌜クモ⌟ SNI -> 🇳🇱'
     server: nl.v2-ray.com
     type: vmess
     port: 443
@@ -161,11 +145,43 @@ proxies:
       path: /fastssh/hkgzs01/6315d407657f6/
       headers:
         Host: news.microsoft.com
-  - name: '203 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 94.102.54.65
+  - name: '186 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: nl.v2-ray.com
+    ws-opts: 
+      path: /fastssh/hkgzs01/6315d407657f6/
+      headers:
+        Host: nl.v2-ray.com
+  - name: '187 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: nl.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /fastssh/hkgzs01/6315d407657f6/
+      headers:
+        Host: news.microsoft.com
+  - name: '188 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 94.102.54.66
     type: trojan
     port: 443
-    password: Sp3eDVp
+    password: origin
     udp: true
     skip-cert-verify: true
     network: tcp

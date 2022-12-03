@@ -113,7 +113,7 @@
           "path": "/chat"
         }
       },
-      "tag": "proxy-44 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-47 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -142,7 +142,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-48 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-56 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -171,7 +171,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-68 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-71 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -229,7 +229,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-94 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-91 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -269,7 +269,7 @@
           "path": "/vmess"
         }
       },
-      "tag": "proxy-95 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-92 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -309,7 +309,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-103 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-101 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -349,7 +349,7 @@
           "path": "/eisasqa"
         }
       },
-      "tag": "proxy-159 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-153 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -378,47 +378,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-182 ⌜クモ⌟ SNI -> 🇬🇧"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "investors.spotify.com",
-            "port": 8443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "v16.583181.xyz"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "v16.583181.xyz"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-187 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-169 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -458,36 +418,47 @@
           "path": "/"
         }
       },
-      "tag": "proxy-189 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-174 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "132.145.51.172",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
-            "port": 443
+            "address": "investors.spotify.com",
+            "port": 8443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
+          "serverName": "v16.583181.xyz"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "v16.583181.xyz"
+          },
+          "path": "/"
         }
       },
-      "tag": "proxy-202 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-175 ⌜クモ⌟ CDN -> 🇬🇧"
     }
   ],
   "dns": {
