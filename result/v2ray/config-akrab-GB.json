@@ -113,7 +113,7 @@
           "path": "/sshocean"
         }
       },
-      "tag": "proxy-31 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-27 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -144,16 +144,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
+          "serverName": "options.teams.microsoft.com"
         },
         "wsSettings": {
           "headers": {
-            "Host": "promo.ruangguru.com"
+            "Host": "options.teams.microsoft.com"
           },
           "path": "/chat"
         }
       },
-      "tag": "proxy-41 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-44 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -193,7 +193,65 @@
           "path": "/eisasqa"
         }
       },
-      "tag": "proxy-89 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-88 ⌜クモ⌟ CDN -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jgwld1.gaox.ml",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "click.zoom.us"
+        }
+      },
+      "tag": "proxy-103 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jgwld1.gaox.ml",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        }
+      },
+      "tag": "proxy-104 ⌜クモ⌟ SNI -> 🇬🇧"
     }
   ],
   "dns": {
