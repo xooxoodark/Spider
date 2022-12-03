@@ -30,7 +30,7 @@ class Converter {
             type: config.type,
             security: config.security || "auto",
             skipCertVerify: config["skip-cert-verify"] ? true : false,
-            sni: config.sni,
+            sni: config.sni || config.host,
             remark: config.ps,
           } as V2Object;
         } catch (e: any) {
@@ -46,14 +46,14 @@ class Converter {
             port: parseInt(url.port || "443"),
             host: url.query.host,
             id: url.auth,
-            network: url.query.type,
+            network: url.query.type || "tcp",
             path: url.query.path,
             skipCertVerify: true,
-            tls: url.query.security,
-            sni: url.query.sni,
-            flow: url.query.flow,
-            level: url.query.level,
-            method: url.query.method,
+            tls: url.query.security || true,
+            sni: url.query.sni || url.query.host,
+            flow: url.query.flow || "",
+            level: url.query.level || 8,
+            method: url.query.method || "chacha20-poly1305",
             ota: url.query.ota ? true : false,
             remark: url.hash?.replace("#", ""),
           } as V2Object;
@@ -198,6 +198,42 @@ class Converter {
     return proxy.join("\n");
   }
 
+  toSurfboard(account: V2Object) {
+    let config: string[] = [];
+    if (account.vpn == "vmess") {
+      config.push(`${account.remark} = vmess`);
+      config.push(`${account.address}`);
+      config.push(`${account.port}`);
+      config.push(`username=${account.id}`);
+      config.push(`udp-relay=true`);
+      config.push(`tls=${account.tls ? true : false}`);
+      config.push(`skip-cert-verify=${account.skipCertVerify}`);
+      config.push(`sni=${account.sni || account.host}`);
+
+      if (account.network == "ws") {
+        config.push(`ws=true`);
+        config.push(`ws-path=${account.path}`);
+        config.push(`ws-headers=Host:${account.host}`);
+      }
+    } else if (account.vpn == "trojan") {
+      config.push(`${account.remark} = trojan`);
+      config.push(`${account.address}`);
+      config.push(`${account.port}`);
+      config.push(`password=${account.id}`);
+      config.push(`udp-relay=true`);
+      config.push(`skip-cert-verify=${account.skipCertVerify}`);
+      config.push(`sni=${account.sni || account.host}`);
+
+      if (account.network == "ws") {
+        config.push(`ws=true`);
+        config.push(`ws-path=${account.path}`);
+        config.push(`ws-headers=Host:${account.host}`);
+      }
+    }
+
+    return config.join(", ");
+  }
+
   toUrl(account: V2Object) {
     if (account.vpn == "vmess") {
       let vmess: Vmess = {
@@ -221,14 +257,12 @@ class Converter {
       return `${account.vpn}://${base64Encode(JSON.stringify(vmess))}`;
     } else if (account.vpn == "trojan") {
       let trojan: Trojan = {
-        type: account.network,
         security: account.tls ? "tls" : "",
-        path: account.path,
-        host: account.host,
       } as Trojan;
-      if (account.tls) {
-        trojan.sni = account.sni || account.host;
-      }
+      if (account.type) trojan.type = account.type;
+      if (account.path) trojan.path = account.path;
+      if (account.host) trojan.host = account.host;
+      if (account.tls) trojan.sni = account.sni || account.host;
 
       return `${account.vpn}://${account.id}@${account.address}:${account.port}?${new URLSearchParams(
         trojan as any

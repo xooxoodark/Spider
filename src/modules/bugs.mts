@@ -25,7 +25,7 @@ class Bugs {
     return this._cdn[Math.floor(Math.random() * this._cdn.length)];
   }
 
-  fill(account: any, format: "Clash" | "V2ray", mode: "sni" | "cdn") {
+  fill(account: any, format: "Clash" | "V2ray" | "Surfboard", mode: "sni" | "cdn") {
     const sni = this.sni;
     const cdn = this.cdn;
     if (format == "Clash") {
@@ -56,6 +56,20 @@ class Bugs {
         } else {
           account.settings.servers[0].address = cdn;
         }
+      }
+    } else if (format == "Surfboard") {
+      if (mode == "sni") {
+        if (account.match(/ws-headers=Host:.*/)) {
+          account = account.replace(account.match(/ws-headers=Host:.*/)[0], `ws-headers=Host:${sni}`);
+        }
+        account = account.replace(account.match(/(sni=.*?),/)[1], `sni=${sni}`);
+      } else {
+        account = account.replace(
+          account.match(
+            /(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)/gm
+          )[0],
+          `${cdn}`
+        );
       }
     }
 

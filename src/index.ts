@@ -232,6 +232,7 @@ exec("pkill v2ray");
   if (!existsSync("./result")) mkdirSync("./result");
   if (!existsSync("./result/clash")) mkdirSync("./result/clash");
   if (!existsSync("./result/v2ray")) mkdirSync("./result/v2ray");
+  if (!existsSync("./result/surfboard")) mkdirSync("./result/surfboard");
   for (let bugBundle of bugBundles) {
     bugBundle = bugBundle.replace(".json", "");
     if (bugBundle == "crawl") continue; // bug for test
@@ -241,35 +242,44 @@ exec("pkill v2ray");
     // Entire result
     let clashProxies = ["proxies:"];
     let config = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
+    let proxyBoard = [];
     for (const account of connectedAccounts) {
       clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
       config.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
+      proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
     }
     writeFileSync(`./result/v2ray/config-${bugBundle}.json`, JSON.stringify(config, null, 2));
     writeFileSync(`./result/clash/providers-${bugBundle}.yaml`, clashProxies.join("\n"));
+    writeFileSync(`./result/surfboard/board-${bugBundle}.conf`, proxyBoard.join("\n"));
 
     // Per country
     for (const country of Object.keys(proxiesByCountry)) {
       clashProxies = ["proxies:"];
       config = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
+      proxyBoard = [];
       for (const account of proxiesByCountry[country]) {
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         config.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
+        proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
       }
       writeFileSync(`./result/v2ray/config-${bugBundle}-${country}.json`, JSON.stringify(config, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${country}.yaml`, clashProxies.join("\n"));
+      writeFileSync(`./result/surfboard/board-${bugBundle}-${country}.conf`, proxyBoard.join("\n"));
     }
 
     // Per region
     for (const region of Object.keys(proxiesByRegion)) {
       clashProxies = ["proxies:"];
       config = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
+      proxyBoard = [];
       for (const account of proxiesByRegion[region as Region]) {
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         config.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
+        proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
       }
       writeFileSync(`./result/v2ray/config-${bugBundle}-${region}.json`, JSON.stringify(config, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${region}.yaml`, clashProxies.join("\n"));
+      writeFileSync(`./result/surfboard/board-${bugBundle}-${region}.conf`, proxyBoard.join("\n"));
     }
   }
 
