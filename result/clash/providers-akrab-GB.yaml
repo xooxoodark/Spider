@@ -1,5 +1,5 @@
 proxies:
-  - name: '9 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '36 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -8,14 +8,14 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     servername: click.zoom.us
     ws-opts: 
       path: /chat
       headers:
         Host: click.zoom.us
-  - name: '39 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '75 ⌜クモ⌟ CDN -> 🇬🇧'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -28,6 +28,6 @@ proxies:
     network: ws
     servername: uk2.v2rayserv.com
     ws-opts: 
-      path: /
+      path: /sshocean
       headers:
         Host: uk2.v2rayserv.com

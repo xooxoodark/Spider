@@ -1,5 +1,21 @@
 proxies:
-  - name: '12 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '18 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: surongwei.eu.org
+    ws-opts: 
+      path: /reffs7y26g0ua
+      headers:
+        Host: surongwei.eu.org
+  - name: '37 ⌜クモ⌟ SNI -> 🇰🇷'
     server: lc-kr02-direct01.lc-kr02.lc-node.com
     type: vmess
     port: 443
@@ -15,7 +31,7 @@ proxies:
       path: /
       headers:
         Host: news.microsoft.com
-  - name: '19 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '41 ⌜クモ⌟ SNI -> 🇰🇷'
     server: m4.40010010.xyz
     type: vmess
     port: 37121
@@ -27,23 +43,3 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-    ws-opts: 
-      path: /aries
-      headers:
-        Host: news.microsoft.com
-  - name: '45 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 161.129.34.102
-    type: vmess
-    port: 443
-    uuid: ec736482-173e-3eff-9114-b49df8056e7d
-    alterId: 2
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com

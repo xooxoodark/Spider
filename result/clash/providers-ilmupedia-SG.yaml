@@ -1,5 +1,49 @@
 proxies:
-  - name: '2 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '27 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: sg-lb.vhax.net
+    type: vmess
+    port: 443
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /sshkit/Ertusg86/635014638c264/
+      headers:
+        Host: news.microsoft.com
+  - name: '31 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 168.138.171.65
+    type: vmess
+    port: 443
+    uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '34 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 0bf0cc63-cc4d-4a6f-8770-a7fa5a0d1c55
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: sg2.v2rayserv.com
+    ws-opts: 
+      path: /sshocean
+      headers:
+        Host: sg2.v2rayserv.com
+  - name: '39 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 15.235.147.186
     type: vmess
     port: 443
@@ -15,39 +59,7 @@ proxies:
       path: /sshkit/Ertusg86/635014638c264/
       headers:
         Host: news.microsoft.com
-  - name: '6 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 168.138.171.65
-    type: vmess
-    port: 443
-    uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /home
-      headers:
-        Host: news.microsoft.com
-  - name: '16 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: vsg1.0bad.com
-    type: vmess
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /chat
-      headers:
-        Host: news.microsoft.com
-  - name: '24 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '43 ⌜クモ⌟ SNI -> 🇸🇬'
     server: lll.277428.xyz
     type: vmess
     port: 40771
@@ -59,11 +71,7 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '25 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '44 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 23.106.249.2
     type: vmess
     port: 443
@@ -79,7 +87,7 @@ proxies:
       path: /path/243535322906
       headers:
         Host: news.microsoft.com
-  - name: '26 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '46 ⌜クモ⌟ SNI -> 🇸🇬'
     server: sg-ovh2.v2-ray.com
     type: vmess
     port: 443
@@ -95,35 +103,35 @@ proxies:
       path: /fastssh/dghh/6347fe8113b09/
       headers:
         Host: news.microsoft.com
-  - name: '41 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 5.44.249.43
+  - name: '47 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: cacerts.digicert.com
     type: vmess
-    port: 3331
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    port: 443
+    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: news.microsoft.com
+    servername: sg-ovh2.v2-ray.com
     ws-opts: 
-      path: /s/f1f3227.fm.apple.com:111548
+      path: /fastssh/dghh/6347fe8113b09/
       headers:
-        Host: news.microsoft.com
-  - name: '48 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 139.162.16.228
+        Host: sg-ovh2.v2-ray.com
+  - name: '76 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: cacerts.digicert.com
     type: vmess
-    port: 40771
-    uuid: 61194810-5193-48bc-eb0a-7978a059d681
+    port: 443
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
+    skip-cert-verify: false
+    network: ws
+    servername: sg4-v2ray.sshkit.org
     ws-opts: 
-      path: /
+      path: /sshkit/1736960111/63859be1a762c/
       headers:
-        Host: news.microsoft.com
+        Host: sg4-v2ray.sshkit.org
