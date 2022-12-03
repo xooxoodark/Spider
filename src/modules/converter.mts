@@ -262,7 +262,11 @@ class Converter {
       if (account.type) trojan.type = account.type;
       if (account.path) trojan.path = account.path;
       if (account.host) trojan.host = account.host;
-      if (account.tls) trojan.sni = account.sni || account.host;
+      if (account.tls) {
+        if (account.sni || account.host) {
+          trojan.sni = account.sni || account.host;
+        }
+      }
 
       return `${account.vpn}://${account.id}@${account.address}:${account.port}?${new URLSearchParams(
         trojan as any

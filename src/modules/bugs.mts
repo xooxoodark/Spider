@@ -62,9 +62,7 @@ class Bugs {
         if (account.match(/ws-headers=Host:.*/)) {
           account = account.replace(account.match(/ws-headers=Host:.*/)[0], `ws-headers=Host:${sni}`);
         }
-        if (account.match(/(sni=.*?),/)) {
-          account = account.replace(account.match(/(sni=.*?),/)[1], `sni=${sni}`);
-        }
+        account = account.replace(account.match(/(sni=((.*?)|($)))(,|$)/)[1], `sni=${sni}`);
       } else {
         account = account.replace(
           account.match(
