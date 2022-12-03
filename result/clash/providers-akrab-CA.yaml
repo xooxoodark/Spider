@@ -1,5 +1,5 @@
 proxies:
-  - name: '59 ⌜クモ⌟ SNI -> 🇨🇦'
+  - name: '66 ⌜クモ⌟ SNI -> 🇨🇦'
     server: 148.113.141.99
     type: trojan
     port: 443
@@ -8,7 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: options.teams.microsoft.com
-  - name: '109 ⌜クモ⌟ SNI -> 🇨🇦'
+  - name: '118 ⌜クモ⌟ SNI -> 🇨🇦'
     server: 149.56.141.11
     type: trojan
     port: 443
@@ -16,8 +16,8 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: click.zoom.us
-  - name: '110 ⌜クモ⌟ SNI -> 🇨🇦'
+    servername: options.teams.microsoft.com
+  - name: '119 ⌜クモ⌟ SNI -> 🇨🇦'
     server: cat1.sshocean.net
     type: trojan
     port: 443
@@ -25,8 +25,24 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: options.teams.microsoft.com
-  - name: '166 ⌜クモ⌟ SNI -> 🇨🇦'
+    servername: click.zoom.us
+  - name: '122 ⌜クモ⌟ SNI -> 🇨🇦'
+    server: 35.182.165.120
+    type: vmess
+    port: 443
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: click.zoom.us
+  - name: '185 ⌜クモ⌟ SNI -> 🇨🇦'
     server: t5.583181.xyz
     type: trojan
     port: 1254
@@ -34,4 +50,4 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: options.teams.microsoft.com
+    servername: promo.ruangguru.com
