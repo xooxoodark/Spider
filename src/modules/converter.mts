@@ -41,7 +41,7 @@ class Converter {
         url = urlParser(configUrl);
         try {
           return {
-            vpn: url.protocol?.replace("-go", ""),
+            vpn: "trojan",
             address: url.hostname,
             port: parseInt(url.port || "443"),
             host: url.query.host,
@@ -133,7 +133,7 @@ class Converter {
           ],
         },
         streamSettings: {
-          network: account.network,
+          network: account.network || "tcp",
           security: account.tls,
           tlsSettings: {
             allowInsecure: true,

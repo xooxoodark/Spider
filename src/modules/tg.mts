@@ -15,7 +15,7 @@ class Bot {
     message += `Regional/Region: ${account.countryName} ${countryCodeEmoji(account.cc as string)}\n`;
     message += "---------------------------\n";
     message += "Info:\n";
-    message += `Type: <code>${account.vpn}</code>`;
+    message += `Type: <code>${account.vpn}</code>\n`;
     message += `Remark: <code>${account.remark}</code>\n`;
     message += `Address: <code>${account.address}</code>\n`;
     message += `Port: <code>${account.port}</code>\n`;
