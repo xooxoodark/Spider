@@ -1,21 +1,5 @@
 proxies:
-  - name: '22 ⌜クモ⌟ CDN -> 🇯🇵'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 443
-    uuid: e093b2a2-a8f3-4fca-bfe9-00583387e767
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: myjp.brucean.cn
-    ws-opts: 
-      path: /
-      headers:
-        Host: myjp.brucean.cn
-  - name: '46 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '52 ⌜クモ⌟ SNI -> 🇯🇵'
     server: suzhihan.eu.org
     type: vmess
     port: 443
@@ -31,35 +15,3 @@ proxies:
       path: /roewesu
       headers:
         Host: news.microsoft.com
-  - name: '47 ⌜クモ⌟ CDN -> 🇯🇵'
-    server: news.microsoft.com
-    type: vmess
-    port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: suzhihan.eu.org
-    ws-opts: 
-      path: /roewesu
-      headers:
-        Host: suzhihan.eu.org
-  - name: '86 ⌜クモ⌟ CDN -> 🇯🇵'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 443
-    uuid: 99e95bb9-a9ef-4d27-dd63-16e69e08f096
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: xiaofficial.tk
-    ws-opts: 
-      path: /rayto80
-      headers:
-        Host: xiaofficial.tk

@@ -1,5 +1,5 @@
 proxies:
-  - name: '45 ⌜クモ⌟ SNI -> 🇭🇰'
+  - name: '49 ⌜クモ⌟ SNI -> 🇭🇰'
     server: 206.119.112.6
     type: vmess
     port: 8189
@@ -11,18 +11,34 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '55 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: dsj17.1062cdn.top
+  - name: '72 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: hk1vdf-node.aiqiche123.com
     type: vmess
-    port: 443
-    uuid: caf2e1ff-cf38-11eb-b239-00163cc6d021
-    alterId: 0
+    port: 8189
+    uuid: a90597c1-bab3-4217-ad6f-0838675c8638
+    alterId: 10
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
+  - name: '74 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: ah.yd01.paopaocloud.cyou
+    type: vmess
+    port: 10020
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: news.microsoft.com
   - name: '95 ⌜クモ⌟ SNI -> 🇭🇰'
     server: p-hk.accddup.top
     type: vmess
@@ -32,7 +48,7 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     servername: news.microsoft.com
     ws-opts: 
