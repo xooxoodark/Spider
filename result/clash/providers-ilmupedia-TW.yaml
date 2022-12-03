@@ -1,5 +1,5 @@
 proxies:
-  - name: '94 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '90 ⌜クモ⌟ SNI -> 🇹🇼'
     server: az.hk01.paopaocloud.cyou
     type: vmess
     port: 10035
@@ -15,3 +15,21 @@ proxies:
       path: /v2ray
       headers:
         Host: news.microsoft.com
+  - name: '114 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: official.seoulcitygovernment.com.ua
+    type: trojan
+    port: 8080
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: undefined
+    servername: news.microsoft.com
+  - name: '115 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: official.seoulcityhall.com.ua
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: undefined
+    servername: news.microsoft.com
