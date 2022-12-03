@@ -1,5 +1,21 @@
 proxies:
-  - name: '36 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '37 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: uk2.v2rayserv.com
+    ws-opts: 
+      path: /sshocean
+      headers:
+        Host: uk2.v2rayserv.com
+  - name: '47 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -8,26 +24,26 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: news.microsoft.com
     ws-opts: 
       path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '75 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '64 ⌜クモ⌟ CDN -> 🇬🇧'
     server: news.microsoft.com
     type: vmess
     port: 443
-    uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+    uuid: c2e48fbb-356b-469f-a898-17cc0786046b
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: uk2.v2rayserv.com
+    servername: uk.loc-m.xyz
     ws-opts: 
-      path: /sshocean
+      path: /
       headers:
-        Host: uk2.v2rayserv.com
+        Host: uk.loc-m.xyz
