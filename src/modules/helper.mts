@@ -1,5 +1,6 @@
 import { logger, LogLevel } from "./logger.mjs";
 import { parse, UrlWithParsedQuery } from "url";
+import findProcess from "find-process";
 
 async function sleep(ms: number) {
   return await new Promise((resolve) => {
@@ -33,4 +34,9 @@ function urlParser(url: string): UrlWithParsedQuery {
   return parse(url, true);
 }
 
-export { sleep, base64Decode, base64Encode, urlParser };
+async function isV2rayRunning(): Promise<number> {
+  const list = await findProcess("name", "v2ray");
+  return list.length;
+}
+
+export { sleep, base64Decode, base64Encode, urlParser, isV2rayRunning };

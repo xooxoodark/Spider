@@ -8,7 +8,7 @@ import { exit } from "process";
 import { Bugs } from "./modules/bugs.mjs";
 import { connect } from "./modules/connect.mjs";
 import { converter } from "./modules/converter.mjs";
-import { sleep } from "./modules/helper.mjs";
+import { isV2rayRunning, sleep } from "./modules/helper.mjs";
 import { logger, LogLevel } from "./modules/logger.mjs";
 import { Scraper } from "./modules/scraper.mjs";
 import { bot } from "./modules/tg.mjs";
@@ -18,7 +18,7 @@ const countries: Country[] = JSON.parse(readFileSync("./countries.json").toStrin
 const bugBundles: string[] = readdirSync("./resources/bugs");
 const { url, filename } = JSON.parse(process.argv[2]) as Data;
 const modes: string[] = ["cdn", "sni"];
-const maxConcurrentTest = 20;
+const maxConcurrentTest = 2;
 
 // Kill all v2ray process
 exec("pkill v2ray");
@@ -68,13 +68,10 @@ exec("pkill v2ray");
   const connectedAccounts = await (async () => {
     const bugs = new Bugs();
     const result: V2Object[] = [];
-    const concurrentTest: string[] = [];
 
     let scannedAccount: any = {};
 
     for (let account of accounts) {
-      concurrentTest.push(account.id);
-
       // logger.log(LogLevel.try, `[${account.vpn}] -> ${account.remark}...`);
       new Promise(async (resolve) => {
         const connectResult: ConnectServer[] = [];
@@ -142,43 +139,18 @@ exec("pkill v2ray");
             }
           }
         }
-
-        resolve(concurrentTest.shift());
       });
 
-      // if (result.length >= 1) break; // test purpose
-      let loop = concurrentTest.length >= maxConcurrentTest;
-      let reset = false;
-      const timeout = setTimeout(() => (reset = true), 20000);
-      while (loop) {
-        logger.log(LogLevel.info, "Max concurrent reached!");
-        await sleep(10000);
-        if (reset) {
-          logger.log(LogLevel.info, "CONCURRENT RESET!");
-          exec("pkill v2ray");
-          do {
-            concurrentTest.shift();
-          } while (concurrentTest.length > 1);
-
-          break;
-        }
+      while ((await isV2rayRunning()) > maxConcurrentTest) {
+        // logger.log(LogLevel.info, "Max concurrent reached!");
+        await sleep(1000);
       }
-      clearTimeout(timeout);
     }
 
-    let isTimeout = false;
-    const timeout = setTimeout(() => {
-      isTimeout = true;
-    }, 20000);
-
     do {
+      console.log("Waiting for previous process...");
       await sleep(1000);
-
-      if (isTimeout) break;
-    } while (concurrentTest[0]);
-
-    clearTimeout(timeout);
-    exec("pkill v2ray");
+    } while (await isV2rayRunning());
     return result;
   })();
 
