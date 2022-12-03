@@ -1,5 +1,5 @@
 proxies:
-  - name: '8 ⌜クモ⌟ CDN -> 🇱🇺'
+  - name: '38 ⌜クモ⌟ CDN -> 🇱🇺'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -15,3 +15,19 @@ proxies:
       path: /go
       headers:
         Host: lu1.gogogoo.cyou
+  - name: '126 ⌜クモ⌟ SNI -> 🇱🇺'
+    server: 104.244.73.218
+    type: vmess
+    port: 443
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: options.teams.microsoft.com
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: options.teams.microsoft.com
