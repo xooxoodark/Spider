@@ -1,6 +1,7 @@
 import { base64Decode } from "./helper.mjs";
 import { acceptedType } from "../index.js";
 import { logger, LogLevel } from "./logger.mjs";
+import isBase64 from "is-base64";
 import fetch from "node-fetch";
 
 type ScraperType = {
@@ -30,12 +31,13 @@ class Scraper {
     const text = await res.text();
     let configs: string[];
 
-    try {
-      configs = JSON.parse(text);
-    } catch (e: any) {
-      configs = text.match(/(.+:\/\/.+)/gim) || [];
-      if (!configs.length) {
-        configs = base64Decode(text)?.split(/(\r)?\n/) || [];
+    if (isBase64(text)) {
+      configs = base64Decode(text).match(/(.+:\/\/.+)/gim) || [];
+    } else {
+      try {
+        configs = JSON.parse(text);
+      } catch (e: any) {
+        configs = text.match(/(.+:\/\/.+)/gim) || [];
       }
     }
 
