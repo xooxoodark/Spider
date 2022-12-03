@@ -20,7 +20,7 @@ class Connect {
       // console.log(res.toString());
       if (res.toString().match(/(context deadline exceeded|timeout)/i)) {
         error = "No Internet!";
-      } else if (res.toString().match(/(error)/i)) {
+      } else if (res.toString().match(/error:(.+)/i)) {
         error = res.toString().match(/error:(.+)/i)[1];
       }
     });
