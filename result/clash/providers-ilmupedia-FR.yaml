@@ -1,5 +1,5 @@
 proxies:
-  - name: '20 ⌜クモ⌟ SNI -> 🇫🇷'
+  - name: '19 ⌜クモ⌟ SNI -> 🇫🇷'
     server: 5.249.165.96
     type: vmess
     port: 443
@@ -15,7 +15,16 @@ proxies:
       path: /vmess
       headers:
         Host: news.microsoft.com
-  - name: '69 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '46 ⌜クモ⌟ SNI -> 🇫🇷'
+    server: 176.31.83.90
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '65 ⌜クモ⌟ CDN -> 🇫🇷'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -31,7 +40,7 @@ proxies:
       path: /p9Dq67Nx/
       headers:
         Host: fr1.cachexy.ga
-  - name: '124 ⌜クモ⌟ SNI -> 🇫🇷'
+  - name: '126 ⌜クモ⌟ SNI -> 🇫🇷'
     server: 176.31.83.90
     type: trojan
     port: 443
@@ -40,3 +49,19 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
+  - name: '150 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 4679f00e-90ce-430d-9714-6a19367ba112
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: 62.210.85.207
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: 62.210.85.207
