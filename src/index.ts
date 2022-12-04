@@ -254,14 +254,18 @@ exec("pkill v2ray");
     bugBundle = bugBundle.replace(".json", "");
     if (bugBundle == "crawl") continue; // bug for test
 
+    const proxyModes = ["select", "load-balance", "url-test", "fallback"];
     const bugs = new Bugs(bugBundle);
 
     // Entire result
+    let remarks = [];
     let clashProxies = ["proxies:"];
     let proxyBoard = [];
+    let boardConfig = readFileSync("./resources/config/surfboard/surfboard.conf").toString();
     let rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
     let boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
     for (const account of connectedAccounts) {
+      remarks.push(account.remark);
       clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
       rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
       proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
@@ -269,18 +273,31 @@ exec("pkill v2ray");
 
       boxConfig.outbounds[3].outbounds.push(account.remark);
     }
+    for (const mode of proxyModes) {
+      let proxyMode = `${mode.toUpperCase()} = ${mode}`;
+      for (const remark of remarks) {
+        proxyMode += `,${remark}`;
+      }
+
+      proxyBoard.push(proxyMode);
+    }
+
+    boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}.conf`);
     writeFileSync(`./result/sing-box/config-${bugBundle}.json`, JSON.stringify(boxConfig, null, 2));
     writeFileSync(`./result/v2ray/config-${bugBundle}.json`, JSON.stringify(rayConfig, null, 2));
     writeFileSync(`./result/clash/providers-${bugBundle}.yaml`, clashProxies.join("\n"));
-    writeFileSync(`./result/surfboard/board-${bugBundle}.conf`, proxyBoard.join("\n"));
+    writeFileSync(`./result/surfboard/board-${bugBundle}.conf`, `${boardConfig}${proxyBoard.join("\n")}`);
 
     // Per country
     for (const country of Object.keys(proxiesByCountry)) {
+      let remarks = [];
       clashProxies = ["proxies:"];
       proxyBoard = [];
+      boardConfig = readFileSync("./resources/config/surfboard/surfboard.conf").toString();
       rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
       boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
       for (const account of proxiesByCountry[country]) {
+        remarks.push(account.remark);
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
         proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
@@ -288,19 +305,32 @@ exec("pkill v2ray");
 
         boxConfig.outbounds[3].outbounds.push(account.remark);
       }
+      for (const mode of proxyModes) {
+        let proxyMode = `${mode.toUpperCase()} = ${mode}`;
+        for (const remark of remarks) {
+          proxyMode += `,${remark}`;
+        }
+
+        proxyBoard.push(proxyMode);
+      }
+
+      boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}-${country}.conf`);
       writeFileSync(`./result/v2ray/config-${bugBundle}-${country}.json`, JSON.stringify(rayConfig, null, 2));
       writeFileSync(`./result/sing-box/config-${bugBundle}-${country}.json`, JSON.stringify(boxConfig, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${country}.yaml`, clashProxies.join("\n"));
-      writeFileSync(`./result/surfboard/board-${bugBundle}-${country}.conf`, proxyBoard.join("\n"));
+      writeFileSync(`./result/surfboard/board-${bugBundle}-${country}.conf`, `${boardConfig}${proxyBoard.join("\n")}`);
     }
 
     // Per region
     for (const region of Object.keys(proxiesByRegion)) {
+      let remarks = [];
       clashProxies = ["proxies:"];
       proxyBoard = [];
+      boardConfig = readFileSync("./resources/config/surfboard/surfboard.conf").toString();
       rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
       boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
       for (const account of proxiesByRegion[region as Region]) {
+        remarks.push(account.remark);
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
         proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
@@ -308,10 +338,20 @@ exec("pkill v2ray");
 
         boxConfig.outbounds[3].outbounds.push(account.remark);
       }
+      for (const mode of proxyModes) {
+        let proxyMode = `${mode.toUpperCase()} = ${mode}`;
+        for (const remark of remarks) {
+          proxyMode += `,${remark}`;
+        }
+
+        proxyBoard.push(proxyMode);
+      }
+
+      boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}-${region}.conf`);
       writeFileSync(`./result/v2ray/config-${bugBundle}-${region}.json`, JSON.stringify(rayConfig, null, 2));
       writeFileSync(`./result/sing-box/config-${bugBundle}-${region}.json`, JSON.stringify(boxConfig, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${region}.yaml`, clashProxies.join("\n"));
-      writeFileSync(`./result/surfboard/board-${bugBundle}-${region}.conf`, proxyBoard.join("\n"));
+      writeFileSync(`./result/surfboard/board-${bugBundle}-${region}.conf`, `${boardConfig}${proxyBoard.join("\n")}`);
     }
   }
 

@@ -20,8 +20,8 @@ class Converter {
           return {
             vpn: "vmess",
             address: config.add,
-            port: config.port,
-            alterId: config.aid || 0,
+            port: parseInt(`${config.port}`) || 443,
+            alterId: parseInt(`${config.aid}`) || 0,
             host: config.host,
             id: config.id,
             network: config.net,
@@ -43,7 +43,7 @@ class Converter {
           return {
             vpn: "trojan",
             address: url.hostname,
-            port: parseInt(url.port || "443"),
+            port: parseInt(`${url.port}`) || 443,
             host: url.query.host,
             id: url.auth,
             network: url.query.type || "tcp",
@@ -73,10 +73,10 @@ class Converter {
         type: account.vpn,
         tag: account.remark,
         server: account.address,
-        server_port: parseInt(`${account.port}`),
+        server_port: account.port,
         uuid: account.id,
         security: "auto",
-        alter_id: parseInt(`${account.alterId}` || "0"),
+        alter_id: account.alterId || 0,
         tls: {
           enabled: account.tls ? true : false,
           insecure: account.skipCertVerify || true,
@@ -98,7 +98,7 @@ class Converter {
         type: account.vpn,
         tag: account.remark,
         server: account.address,
-        server_port: parseInt(`${account.port}`),
+        server_port: account.port,
         password: account.id,
         tls: {
           enabled: account.tls ? true : false,
@@ -134,10 +134,10 @@ class Converter {
           vnext: [
             {
               address: account.address,
-              port: parseInt(`${account.port}` || "443"),
+              port: account.port,
               users: [
                 {
-                  alterId: parseInt(`${account.alterId}` || "0"),
+                  alterId: account.alterId,
                   encryption: "",
                   flow: "",
                   id: account.id,
@@ -178,9 +178,9 @@ class Converter {
           servers: [
             {
               address: account.address,
-              flow: account.flow ? account.flow : "",
-              level: parseInt(account.level || "8"),
-              method: account.method ? account.method : "chacha20-poly1305",
+              flow: account.flow,
+              level: account.level,
+              method: account.method,
               ota: account.ota,
               password: account.id,
               port: account.port,
@@ -188,7 +188,7 @@ class Converter {
           ],
         },
         streamSettings: {
-          network: account.network || "tcp",
+          network: account.network,
           security: account.tls,
           tlsSettings: {
             allowInsecure: true,
