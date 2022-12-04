@@ -45,18 +45,18 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "21 ⌜クモ⌟ SNI -> 🇳🇱",
-        "24 ⌜クモ⌟ SNI -> 🇳🇱",
-        "46 ⌜クモ⌟ SNI -> 🇳🇱",
+        "19 ⌜クモ⌟ SNI -> 🇳🇱",
+        "54 ⌜クモ⌟ SNI -> 🇳🇱",
         "67 ⌜クモ⌟ SNI -> 🇳🇱",
         "68 ⌜クモ⌟ SNI -> 🇳🇱",
-        "121 ⌜クモ⌟ SNI -> 🇳🇱",
-        "129 ⌜クモ⌟ CDN -> 🇳🇱"
+        "107 ⌜クモ⌟ SNI -> 🇳🇱",
+        "110 ⌜クモ⌟ SNI -> 🇳🇱",
+        "123 ⌜クモ⌟ CDN -> 🇳🇱"
       ]
     },
     {
       "type": "trojan",
-      "tag": "21 ⌜クモ⌟ SNI -> 🇳🇱",
+      "tag": "19 ⌜クモ⌟ SNI -> 🇳🇱",
       "server": "47.87.238.92",
       "server_port": 443,
       "password": "8f70fde3-a04c-4f6a-b705-aef7406f6ac1",
@@ -67,29 +67,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "24 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "163.172.213.74",
-      "server_port": 443,
-      "uuid": "45d0eb68-955c-4760-91cd-fa6bf07b693f",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fastssh/sezarhacks/633be1a74319b/",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "46 ⌜クモ⌟ SNI -> 🇳🇱",
+      "tag": "54 ⌜クモ⌟ SNI -> 🇳🇱",
       "server": "94.102.54.65",
       "server_port": 443,
       "password": "Sp3eDVp",
@@ -143,7 +122,7 @@
     },
     {
       "type": "trojan",
-      "tag": "121 ⌜クモ⌟ SNI -> 🇳🇱",
+      "tag": "107 ⌜クモ⌟ SNI -> 🇳🇱",
       "server": "185.212.200.75",
       "server_port": 443,
       "password": "Sp3eDVp",
@@ -154,8 +133,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "110 ⌜クモ⌟ SNI -> 🇳🇱",
+      "server": "185.212.200.74",
+      "server_port": 443,
+      "password": "Sp3eDVp",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "129 ⌜クモ⌟ CDN -> 🇳🇱",
+      "tag": "123 ⌜クモ⌟ CDN -> 🇳🇱",
       "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "3f421e27-5bf8-40c9-86cb-7b8c41dddea2",
