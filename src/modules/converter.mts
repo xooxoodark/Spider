@@ -66,6 +66,61 @@ class Converter {
     }
   }
 
+  toSingBox(account: V2Object) {
+    let proxy: any = {};
+    if (account.vpn == "vmess") {
+      proxy = {
+        type: account.vpn,
+        tag: account.remark,
+        server: account.address,
+        server_port: account.port,
+        uuid: account.id,
+        security: "auto",
+        alter_id: parseInt(`${account.alterId}` || "0"),
+        tls: {
+          enabled: account.tls ? true : false,
+          insecure: account.skipCertVerify || true,
+          servername: account.sni || account.host,
+        },
+      };
+
+      if (account.network == "ws") {
+        proxy.transport = {
+          type: "ws",
+          path: account.path,
+          headers: {
+            Host: account.host,
+          },
+        };
+      }
+    } else if (account.vpn == "trojan") {
+      proxy = {
+        type: account.vpn,
+        tag: account.remark,
+        server: account.address,
+        server_port: account.port,
+        password: account.id,
+        tls: {
+          enabled: account.tls ? true : false,
+          insecure: account.skipCertVerify || true,
+          servername: account.sni || account.host,
+        },
+      };
+
+      if (account.network == "ws") {
+        proxy.transport = {
+          type: "ws",
+          path: account.path,
+          headers: {
+            Host: account.host,
+          },
+        };
+      }
+    }
+
+    return proxy;
+  }
+
   toV2ray(account: V2Object) {
     let proxy: any = {};
     if (account.vpn == "vmess") {

@@ -5,6 +5,7 @@ import { SocksProxyAgent } from "socks-proxy-agent";
 import fetch from "node-fetch";
 import { readFileSync, writeFileSync } from "fs";
 import { path } from "../index.js";
+import { isIPv4 } from "is-ip";
 
 class Connect {
   connectionNumber = 1;
@@ -55,7 +56,9 @@ class Connect {
             // Change value above if data is present
             if (data.country_code) cc = data.country_code;
             if (data.country_name) cn = data.country_name;
-            if (data.ip) ip = data.ip;
+            if (data.ip) {
+              if (isIPv4(data.ip)) ip = data.ip;
+            }
           }
         }
       });

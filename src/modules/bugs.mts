@@ -25,7 +25,7 @@ class Bugs {
     return this._cdn[Math.floor(Math.random() * this._cdn.length)];
   }
 
-  fill(account: any, format: "Clash" | "V2ray" | "Surfboard", mode: "sni" | "cdn") {
+  fill(account: any, format: "Clash" | "V2ray" | "Surfboard" | "Sing-Box", mode: "sni" | "cdn") {
     const sni = this.sni;
     const cdn = this.cdn;
     if (format == "Clash") {
@@ -70,6 +70,18 @@ class Bugs {
           )[0],
           `${cdn}`
         );
+      }
+    } else if (format == "Sing-Box") {
+      // Both vmess and trojan have the same format
+      if (account.type.match(/(vmess|trojan)/)) {
+        if (mode == "sni") {
+          if (account.transport?.headers) {
+            account.transport.headers.Host = sni;
+          }
+          account.tls.servername = sni;
+        } else {
+          account.server = cdn;
+        }
       }
     }
 
