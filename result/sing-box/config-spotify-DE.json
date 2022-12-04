@@ -1,7 +1,7 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "output": "",
     "timestamp": true
   },
@@ -10,7 +10,7 @@
       {
         "tag": "cloudflare",
         "address": "1.1.1.1",
-        "detour": "select"
+        "detour": "direct-out"
       }
     ],
     "final": "cloudflare",
@@ -25,7 +25,7 @@
       "listen": "0.0.0.0",
       "listen_port": 10800,
       "domain_strategy": "prefer_ipv4",
-      "set_system_proxy": true
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
@@ -38,29 +38,33 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "12 ⌜クモ⌟ CDN -> 🇩🇪",
-        "69 ⌜クモ⌟ SNI -> 🇩🇪",
-        "178 ⌜クモ⌟ CDN -> 🇩🇪",
-        "191 ⌜クモ⌟ SNI -> 🇩🇪",
-        "217 ⌜クモ⌟ SNI -> 🇩🇪",
-        "218 ⌜クモ⌟ CDN -> 🇩🇪"
+        "16 ⌜クモ⌟ CDN -> 🇩🇪",
+        "52 ⌜クモ⌟ SNI -> 🇩🇪",
+        "53 ⌜クモ⌟ CDN -> 🇩🇪",
+        "62 ⌜クモ⌟ SNI -> 🇩🇪",
+        "184 ⌜クモ⌟ CDN -> 🇩🇪",
+        "196 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "vmess",
-      "tag": "12 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "16 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "investors.spotify.com",
-      "server_port": "2053",
+      "server_port": 2053,
       "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "haxeu2.zikkcc.ga"
+        "server_name": "haxeu2.zikkcc.ga"
       },
       "transport": {
         "type": "ws",
@@ -71,62 +75,17 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "69 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "207.154.243.252",
-      "server_port": 443,
-      "password": "TvBypqQJ9b",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "image-upload4.spotify.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "178 ⌜クモ⌟ CDN -> 🇩🇪",
-      "server": "investors.spotify.com",
-      "server_port": "2053",
-      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "foxdeovz1.fovi.tk"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eisasqa",
-        "headers": {
-          "Host": "foxdeovz1.fovi.tk"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "191 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "188.40.251.19",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "217 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "52 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "135.125.201.213",
-      "server_port": "2083",
+      "server_port": 2083,
       "uuid": "1ffeca67-a2bc-471b-b138-369d6762967d",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "image-upload4.spotify.com"
+        "server_name": "image-upload4.spotify.com"
       },
       "transport": {
         "type": "ws",
@@ -138,16 +97,16 @@
     },
     {
       "type": "vmess",
-      "tag": "218 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "53 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "investors.spotify.com",
-      "server_port": "2083",
+      "server_port": 2083,
       "uuid": "1ffeca67-a2bc-471b-b138-369d6762967d",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "30.tehvp.xyz"
+        "server_name": "30.tehvp.xyz"
       },
       "transport": {
         "type": "ws",
@@ -156,10 +115,59 @@
           "Host": "30.tehvp.xyz"
         }
       }
+    },
+    {
+      "type": "trojan",
+      "tag": "62 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "207.154.243.252",
+      "server_port": 443,
+      "password": "TvBypqQJ9b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "184 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "investors.spotify.com",
+      "server_port": 2053,
+      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "foxdeovz1.fovi.tk"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eisasqa",
+        "headers": {
+          "Host": "foxdeovz1.fovi.tk"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "196 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "188.40.251.19",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
     }
   ],
   "route": {
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
       {
         "network": "tcp",
         "outbound": "select"

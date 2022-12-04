@@ -1,7 +1,7 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "output": "",
     "timestamp": true
   },
@@ -10,7 +10,7 @@
       {
         "tag": "cloudflare",
         "address": "1.1.1.1",
-        "detour": "select"
+        "detour": "direct-out"
       }
     ],
     "final": "cloudflare",
@@ -25,7 +25,7 @@
       "listen": "0.0.0.0",
       "listen_port": 10800,
       "domain_strategy": "prefer_ipv4",
-      "set_system_proxy": true
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
@@ -38,47 +38,51 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "42 ⌜クモ⌟ CDN -> 🇱🇺",
-        "44 ⌜クモ⌟ CDN -> 🇱🇺",
-        "175 ⌜クモ⌟ SNI -> 🇱🇺"
+        "46 ⌜クモ⌟ SNI -> 🇱🇺",
+        "47 ⌜クモ⌟ CDN -> 🇱🇺",
+        "189 ⌜クモ⌟ SNI -> 🇱🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "42 ⌜クモ⌟ CDN -> 🇱🇺",
-      "server": "cacerts.digicert.com",
-      "server_port": "443",
-      "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "lu1.gogogoo.cyou"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/go",
-        "headers": {
-          "Host": "lu1.gogogoo.cyou"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "44 ⌜クモ⌟ CDN -> 🇱🇺",
-      "server": "cacerts.digicert.com",
-      "server_port": "443",
+      "tag": "46 ⌜クモ⌟ SNI -> 🇱🇺",
+      "server": "107.189.11.81",
+      "server_port": 443,
       "uuid": "6fb9a750-55b8-4e6e-857b-242b795399dc",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "buyvm.imkcp.eu.org"
+        "server_name": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/imkcpyyds",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "47 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "cacerts.digicert.com",
+      "server_port": 443,
+      "uuid": "6fb9a750-55b8-4e6e-857b-242b795399dc",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "buyvm.imkcp.eu.org"
       },
       "transport": {
         "type": "ws",
@@ -90,16 +94,16 @@
     },
     {
       "type": "vmess",
-      "tag": "175 ⌜クモ⌟ SNI -> 🇱🇺",
+      "tag": "189 ⌜クモ⌟ SNI -> 🇱🇺",
       "server": "104.244.73.218",
-      "server_port": "443",
+      "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "news.microsoft.com"
+        "server_name": "news.microsoft.com"
       },
       "transport": {
         "type": "ws",
@@ -112,6 +116,10 @@
   ],
   "route": {
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
       {
         "network": "tcp",
         "outbound": "select"

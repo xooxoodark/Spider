@@ -1,7 +1,7 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "output": "",
     "timestamp": true
   },
@@ -10,7 +10,7 @@
       {
         "tag": "cloudflare",
         "address": "1.1.1.1",
-        "detour": "select"
+        "detour": "direct-out"
       }
     ],
     "final": "cloudflare",
@@ -25,7 +25,7 @@
       "listen": "0.0.0.0",
       "listen_port": 10800,
       "domain_strategy": "prefer_ipv4",
-      "set_system_proxy": true
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
@@ -38,62 +38,44 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "94 ⌜クモ⌟ SNI -> 🇹🇼",
-        "181 ⌜クモ⌟ SNI -> 🇹🇼",
-        "198 ⌜クモ⌟ SNI -> 🇹🇼"
+        "192 ⌜クモ⌟ SNI -> 🇹🇼"
       ]
     },
     {
-      "type": "trojan",
-      "tag": "94 ⌜クモ⌟ SNI -> 🇹🇼",
-      "server": "124.218.23.162",
-      "server_port": 8443,
-      "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "promo.ruangguru.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "181 ⌜クモ⌟ SNI -> 🇹🇼",
-      "server": "111.241.171.108",
-      "server_port": "10035",
+      "tag": "192 ⌜クモ⌟ SNI -> 🇹🇼",
+      "server": "111.241.216.100",
+      "server_port": 10035,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       },
       "transport": {
         "type": "ws",
         "path": "/v2ray",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "options.teams.microsoft.com"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "198 ⌜クモ⌟ SNI -> 🇹🇼",
-      "server": "124.218.23.162",
-      "server_port": 8443,
-      "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "click.zoom.us"
       }
     }
   ],
   "route": {
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
       {
         "network": "tcp",
         "outbound": "select"

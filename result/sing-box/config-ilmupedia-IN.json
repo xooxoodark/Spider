@@ -1,7 +1,7 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "output": "",
     "timestamp": true
   },
@@ -10,7 +10,7 @@
       {
         "tag": "cloudflare",
         "address": "1.1.1.1",
-        "detour": "select"
+        "detour": "direct-out"
       }
     ],
     "final": "cloudflare",
@@ -25,7 +25,7 @@
       "listen": "0.0.0.0",
       "listen_port": 10800,
       "domain_strategy": "prefer_ipv4",
-      "set_system_proxy": true
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
@@ -38,66 +38,100 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "37 ⌜クモ⌟ SNI -> 🇮🇳",
-        "75 ⌜クモ⌟ SNI -> 🇮🇳",
-        "91 ⌜クモ⌟ SNI -> 🇮🇳",
-        "157 ⌜クモ⌟ SNI -> 🇮🇳"
+        "39 ⌜クモ⌟ SNI -> 🇮🇳",
+        "71 ⌜クモ⌟ SNI -> 🇮🇳",
+        "73 ⌜クモ⌟ SNI -> 🇮🇳",
+        "141 ⌜クモ⌟ SNI -> 🇮🇳",
+        "144 ⌜クモ⌟ SNI -> 🇮🇳",
+        "164 ⌜クモ⌟ SNI -> 🇮🇳"
       ]
     },
     {
       "type": "trojan",
-      "tag": "37 ⌜クモ⌟ SNI -> 🇮🇳",
+      "tag": "39 ⌜クモ⌟ SNI -> 🇮🇳",
       "server": "152.67.190.183",
       "server_port": 443,
       "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "news.microsoft.com"
+        "server_name": "news.microsoft.com"
       }
     },
     {
       "type": "trojan",
-      "tag": "75 ⌜クモ⌟ SNI -> 🇮🇳",
+      "tag": "71 ⌜クモ⌟ SNI -> 🇮🇳",
       "server": "152.67.162.166",
       "server_port": 443,
       "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "news.microsoft.com"
+        "server_name": "news.microsoft.com"
       }
     },
     {
       "type": "trojan",
-      "tag": "91 ⌜クモ⌟ SNI -> 🇮🇳",
+      "tag": "73 ⌜クモ⌟ SNI -> 🇮🇳",
       "server": "152.67.160.174",
       "server_port": 443,
       "password": "54080134-2cba-4535-8599-95650bd9aa54",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "news.microsoft.com"
+        "server_name": "news.microsoft.com"
       }
     },
     {
       "type": "trojan",
-      "tag": "157 ⌜クモ⌟ SNI -> 🇮🇳",
+      "tag": "141 ⌜クモ⌟ SNI -> 🇮🇳",
+      "server": "152.67.162.166",
+      "server_port": 443,
+      "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "144 ⌜クモ⌟ SNI -> 🇮🇳",
       "server": "152.67.160.174",
       "server_port": 443,
       "password": "54080134-2cba-4535-8599-95650bd9aa54",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "news.microsoft.com"
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "164 ⌜クモ⌟ SNI -> 🇮🇳",
+      "server": "152.67.190.183",
+      "server_port": 443,
+      "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
       }
     }
   ],
   "route": {
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
       {
         "network": "tcp",
         "outbound": "select"

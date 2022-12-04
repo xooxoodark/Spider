@@ -1,7 +1,7 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "output": "",
     "timestamp": true
   },
@@ -10,7 +10,7 @@
       {
         "tag": "cloudflare",
         "address": "1.1.1.1",
-        "detour": "select"
+        "detour": "direct-out"
       }
     ],
     "final": "cloudflare",
@@ -25,7 +25,7 @@
       "listen": "0.0.0.0",
       "listen_port": 10800,
       "domain_strategy": "prefer_ipv4",
-      "set_system_proxy": true
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
@@ -38,27 +38,30 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "21 ⌜クモ⌟ CDN -> 🇵🇱",
-        "125 ⌜クモ⌟ CDN -> 🇵🇱",
-        "137 ⌜クモ⌟ CDN -> 🇵🇱",
-        "205 ⌜クモ⌟ CDN -> 🇵🇱"
+        "20 ⌜クモ⌟ CDN -> 🇵🇱",
+        "106 ⌜クモ⌟ CDN -> 🇵🇱",
+        "214 ⌜クモ⌟ CDN -> 🇵🇱"
       ]
     },
     {
       "type": "vmess",
-      "tag": "21 ⌜クモ⌟ CDN -> 🇵🇱",
+      "tag": "20 ⌜クモ⌟ CDN -> 🇵🇱",
       "server": "main.millionaireaisle.com",
-      "server_port": "443",
+      "server_port": 443,
       "uuid": "c13be7b9-bb72-4424-bb2f-00c468f4f282",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "w.800876.xyz"
+        "server_name": "w.800876.xyz"
       },
       "transport": {
         "type": "ws",
@@ -70,16 +73,16 @@
     },
     {
       "type": "vmess",
-      "tag": "125 ⌜クモ⌟ CDN -> 🇵🇱",
+      "tag": "106 ⌜クモ⌟ CDN -> 🇵🇱",
       "server": "main.millionaireaisle.com",
-      "server_port": "443",
+      "server_port": 443,
       "uuid": "735b9f92-e4ff-4b4d-bfe2-9f093f78c66e",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "consumer-tribune-fetish-rule.trycloudflare.com"
+        "server_name": "consumer-tribune-fetish-rule.trycloudflare.com"
       },
       "transport": {
         "type": "ws",
@@ -91,16 +94,16 @@
     },
     {
       "type": "vmess",
-      "tag": "137 ⌜クモ⌟ CDN -> 🇵🇱",
+      "tag": "214 ⌜クモ⌟ CDN -> 🇵🇱",
       "server": "main.millionaireaisle.com",
-      "server_port": "2053",
+      "server_port": 2053,
       "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "foxpol.fovi.tk"
+        "server_name": "foxpol.fovi.tk"
       },
       "transport": {
         "type": "ws",
@@ -109,31 +112,14 @@
           "Host": "foxpol.fovi.tk"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "205 ⌜クモ⌟ CDN -> 🇵🇱",
-      "server": "main.millionaireaisle.com",
-      "server_port": "2053",
-      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "foxpol2.fovi.tk"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eisasqa",
-        "headers": {
-          "Host": "foxpol2.fovi.tk"
-        }
-      }
     }
   ],
   "route": {
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
       {
         "network": "tcp",
         "outbound": "select"

@@ -1,7 +1,7 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "output": "",
     "timestamp": true
   },
@@ -10,7 +10,7 @@
       {
         "tag": "cloudflare",
         "address": "1.1.1.1",
-        "detour": "select"
+        "detour": "direct-out"
       }
     ],
     "final": "cloudflare",
@@ -25,7 +25,7 @@
       "listen": "0.0.0.0",
       "listen_port": 10800,
       "domain_strategy": "prefer_ipv4",
-      "set_system_proxy": true
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
@@ -38,24 +38,28 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "72 ⌜クモ⌟ SNI -> 🇮🇱"
+        "54 ⌜クモ⌟ SNI -> 🇮🇱"
       ]
     },
     {
       "type": "vmess",
-      "tag": "72 ⌜クモ⌟ SNI -> 🇮🇱",
+      "tag": "54 ⌜クモ⌟ SNI -> 🇮🇱",
       "server": "129.159.139.101",
-      "server_port": "443",
+      "server_port": 443,
       "uuid": "b7519a6f-c1de-4667-e606-b60c65d19078",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "servername": "news.microsoft.com"
+        "server_name": "news.microsoft.com"
       },
       "transport": {
         "type": "ws",
@@ -68,6 +72,10 @@
   ],
   "route": {
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
       {
         "network": "tcp",
         "outbound": "select"
