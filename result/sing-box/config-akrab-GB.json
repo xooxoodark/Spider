@@ -45,20 +45,17 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "14 ⌜クモ⌟ SNI -> 🇬🇧",
-        "24 ⌜クモ⌟ SNI -> 🇬🇧",
-        "31 ⌜クモ⌟ SNI -> 🇬🇧",
-        "58 ⌜クモ⌟ SNI -> 🇬🇧",
-        "82 ⌜クモ⌟ SNI -> 🇬🇧",
-        "132 ⌜クモ⌟ SNI -> 🇬🇧",
-        "137 ⌜クモ⌟ SNI -> 🇬🇧",
-        "144 ⌜クモ⌟ CDN -> 🇬🇧",
-        "145 ⌜クモ⌟ CDN -> 🇬🇧"
+        "23 ⌜クモ⌟ SNI -> 🇬🇧",
+        "51 ⌜クモ⌟ SNI -> 🇬🇧",
+        "122 ⌜クモ⌟ SNI -> 🇬🇧",
+        "124 ⌜クモ⌟ SNI -> 🇬🇧",
+        "133 ⌜クモ⌟ CDN -> 🇬🇧",
+        "135 ⌜クモ⌟ CDN -> 🇬🇧"
       ]
     },
     {
       "type": "trojan",
-      "tag": "14 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "23 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "51.210.146.186",
       "server_port": 443,
       "password": "7c332773-7c11-4d19-a35a-f4e599d408bf",
@@ -70,31 +67,7 @@
     },
     {
       "type": "trojan",
-      "tag": "24 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "132.145.51.172",
-      "server_port": 443,
-      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "31 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "185.16.206.209",
-      "server_port": 443,
-      "password": "shefelnak",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "58 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "51 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "146.19.230.241",
       "server_port": 443,
       "password": "xxoo",
@@ -106,10 +79,10 @@
     },
     {
       "type": "trojan",
-      "tag": "82 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "132.145.51.172",
+      "tag": "122 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "185.16.206.212",
       "server_port": 443,
-      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+      "password": "shefelnak",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -118,7 +91,7 @@
     },
     {
       "type": "trojan",
-      "tag": "132 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "124 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "185.16.206.209",
       "server_port": 443,
       "password": "shefelnak",
@@ -129,41 +102,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "137 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "185.16.206.212",
-      "server_port": 443,
-      "password": "shefelnak",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "144 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "main.millionaireaisle.com",
-      "server_port": 2053,
-      "uuid": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "v15.583181.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "v15.583181.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "145 ⌜クモ⌟ CDN -> 🇬🇧",
+      "tag": "133 ⌜クモ⌟ CDN -> 🇬🇧",
       "server": "main.millionaireaisle.com",
       "server_port": 8443,
       "uuid": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
@@ -179,6 +119,27 @@
         "path": "/",
         "headers": {
           "Host": "v16.583181.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "135 ⌜クモ⌟ CDN -> 🇬🇧",
+      "server": "main.millionaireaisle.com",
+      "server_port": 2053,
+      "uuid": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v15.583181.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "v15.583181.xyz"
         }
       }
     }

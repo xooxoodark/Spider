@@ -45,13 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "34 ⌜クモ⌟ SNI -> 🇮🇪",
-        "88 ⌜クモ⌟ SNI -> 🇮🇪"
+        "31 ⌜クモ⌟ SNI -> 🇮🇪",
+        "83 ⌜クモ⌟ SNI -> 🇮🇪",
+        "90 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "34 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "31 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
@@ -63,10 +64,22 @@
     },
     {
       "type": "trojan",
-      "tag": "88 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "83 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "90 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "51.77.71.131",
+      "server_port": 443,
+      "password": "Sp3eDVp",
       "tls": {
         "enabled": true,
         "insecure": true,
