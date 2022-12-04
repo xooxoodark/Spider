@@ -41,27 +41,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "56 ⌜クモ⌟ SNI -> 🇨🇦",
-        "58 ⌜クモ⌟ SNI -> 🇨🇦",
-        "135 ⌜クモ⌟ SNI -> 🇨🇦",
-        "136 ⌜クモ⌟ SNI -> 🇨🇦"
+        "63 ⌜クモ⌟ SNI -> 🇨🇦",
+        "77 ⌜クモ⌟ SNI -> 🇨🇦",
+        "143 ⌜クモ⌟ SNI -> 🇨🇦",
+        "145 ⌜クモ⌟ SNI -> 🇨🇦"
       ]
     },
     {
       "type": "trojan",
-      "tag": "56 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "t5.583181.xyz",
-      "server_port": 1254,
-      "password": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "58 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "63 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "148.113.141.99",
       "server_port": 443,
       "password": "HdsUZmsHQW",
@@ -73,10 +61,10 @@
     },
     {
       "type": "trojan",
-      "tag": "135 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "149.56.141.11",
-      "server_port": 443,
-      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
+      "tag": "77 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "t5.583181.xyz",
+      "server_port": 1254,
+      "password": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -84,8 +72,29 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "143 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "35.182.165.120",
+      "server_port": "443",
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v2ray",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "136 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "145 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "149.56.141.11",
       "server_port": 443,
       "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",

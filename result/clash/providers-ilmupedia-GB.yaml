@@ -1,5 +1,21 @@
 proxies:
-  - name: '71 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '52 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 213.219.38.12
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: news.microsoft.com
+  - name: '67 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 132.145.51.172
     type: trojan
     port: 443
@@ -8,16 +24,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '75 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 51.195.202.124
-    type: trojan
-    port: 443
-    password: 267af089-734c-48ca-9d47-88b0435d541b
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '94 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '98 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 51.210.146.186
     type: trojan
     port: 443
@@ -26,7 +33,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '97 ⌜クモ⌟ CDN -> 🇬🇧'
+  - name: '103 ⌜クモ⌟ CDN -> 🇬🇧'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -42,8 +49,8 @@ proxies:
       path: /vmess
       headers:
         Host: cms-bytes-chemicals-rs.trycloudflare.com
-  - name: '118 ⌜クモ⌟ CDN -> 🇬🇧'
-    server: news.microsoft.com
+  - name: '126 ⌜クモ⌟ CDN -> 🇬🇧'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63
@@ -58,6 +65,15 @@ proxies:
       path: /
       headers:
         Host: uk.loc-m.xyz
+  - name: '146 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 146.19.230.241
+    type: trojan
+    port: 443
+    password: xxoo
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
   - name: '177 ⌜クモ⌟ CDN -> 🇬🇧'
     server: cacerts.digicert.com
     type: vmess
@@ -74,16 +90,7 @@ proxies:
       path: /eisasqa
       headers:
         Host: foxuk.fovi.tk
-  - name: '194 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 185.16.206.209
-    type: trojan
-    port: 443
-    password: shefelnak
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '203 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '189 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 185.16.206.212
     type: trojan
     port: 443
@@ -92,43 +99,11 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '216 ⌜クモ⌟ CDN -> 🇬🇧'
-    server: news.microsoft.com
-    type: vmess
-    port: 8443
-    uuid: a9ce394c-2b69-4802-b02c-e4bbc881d9ac
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v16.583181.xyz
-    ws-opts: 
-      path: /
-      headers:
-        Host: v16.583181.xyz
-  - name: '217 ⌜クモ⌟ CDN -> 🇬🇧'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 2053
-    uuid: a9ce394c-2b69-4802-b02c-e4bbc881d9ac
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v15.583181.xyz
-    ws-opts: 
-      path: /
-      headers:
-        Host: v15.583181.xyz
-  - name: '228 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 146.19.230.241
+  - name: '193 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 185.16.206.209
     type: trojan
     port: 443
-    password: xxoo
+    password: shefelnak
     udp: true
     skip-cert-verify: true
     network: tcp

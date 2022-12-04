@@ -41,22 +41,41 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "71 ⌜クモ⌟ SNI -> 🇬🇧",
-        "75 ⌜クモ⌟ SNI -> 🇬🇧",
-        "94 ⌜クモ⌟ SNI -> 🇬🇧",
-        "97 ⌜クモ⌟ CDN -> 🇬🇧",
-        "118 ⌜クモ⌟ CDN -> 🇬🇧",
+        "52 ⌜クモ⌟ SNI -> 🇬🇧",
+        "67 ⌜クモ⌟ SNI -> 🇬🇧",
+        "98 ⌜クモ⌟ SNI -> 🇬🇧",
+        "103 ⌜クモ⌟ CDN -> 🇬🇧",
+        "126 ⌜クモ⌟ CDN -> 🇬🇧",
+        "146 ⌜クモ⌟ SNI -> 🇬🇧",
         "177 ⌜クモ⌟ CDN -> 🇬🇧",
-        "194 ⌜クモ⌟ SNI -> 🇬🇧",
-        "203 ⌜クモ⌟ SNI -> 🇬🇧",
-        "216 ⌜クモ⌟ CDN -> 🇬🇧",
-        "217 ⌜クモ⌟ CDN -> 🇬🇧",
-        "228 ⌜クモ⌟ SNI -> 🇬🇧"
+        "189 ⌜クモ⌟ SNI -> 🇬🇧",
+        "193 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
+      "type": "vmess",
+      "tag": "52 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "213.219.38.12",
+      "server_port": "443",
+      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/chat",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "71 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "67 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "132.145.51.172",
       "server_port": 443,
       "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
@@ -68,19 +87,7 @@
     },
     {
       "type": "trojan",
-      "tag": "75 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "51.195.202.124",
-      "server_port": 443,
-      "password": "267af089-734c-48ca-9d47-88b0435d541b",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "94 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "98 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "51.210.146.186",
       "server_port": 443,
       "password": "7c332773-7c11-4d19-a35a-f4e599d408bf",
@@ -92,8 +99,8 @@
     },
     {
       "type": "vmess",
-      "tag": "97 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "news.microsoft.com",
+      "tag": "103 ⌜クモ⌟ CDN -> 🇬🇧",
+      "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "ffffffff-ffff-ffff-ffff-ffffffffffff",
       "security": "auto",
@@ -113,8 +120,8 @@
     },
     {
       "type": "vmess",
-      "tag": "118 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "news.microsoft.com",
+      "tag": "126 ⌜クモ⌟ CDN -> 🇬🇧",
+      "server": "cacerts.digicert.com",
       "server_port": "443",
       "uuid": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
       "security": "auto",
@@ -130,6 +137,18 @@
         "headers": {
           "Host": "uk.loc-m.xyz"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "146 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "146.19.230.241",
+      "server_port": 443,
+      "password": "xxoo",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "news.microsoft.com"
       }
     },
     {
@@ -155,19 +174,7 @@
     },
     {
       "type": "trojan",
-      "tag": "194 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "185.16.206.209",
-      "server_port": 443,
-      "password": "shefelnak",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "203 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "189 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "185.16.206.212",
       "server_port": 443,
       "password": "shefelnak",
@@ -178,53 +185,11 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "216 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "news.microsoft.com",
-      "server_port": 8443,
-      "uuid": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "v16.583181.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "v16.583181.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "217 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "cacerts.digicert.com",
-      "server_port": 2053,
-      "uuid": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "servername": "v15.583181.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "v15.583181.xyz"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "228 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "146.19.230.241",
+      "tag": "193 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "185.16.206.209",
       "server_port": 443,
-      "password": "xxoo",
+      "password": "shefelnak",
       "tls": {
         "enabled": true,
         "insecure": true,
