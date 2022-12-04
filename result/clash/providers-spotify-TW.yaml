@@ -1,5 +1,5 @@
 proxies:
-  - name: '134 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '114 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 111.241.210.64
     type: vmess
     port: 10035
@@ -15,3 +15,12 @@ proxies:
       path: /v2ray
       headers:
         Host: image-upload4.spotify.com
+  - name: '135 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 124.218.23.162
+    type: trojan
+    port: 8443
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com

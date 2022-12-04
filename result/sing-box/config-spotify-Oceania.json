@@ -45,38 +45,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "9 ⌜クモ⌟ SNI -> 🇦🇺",
-        "42 ⌜クモ⌟ SNI -> 🇦🇺",
-        "43 ⌜クモ⌟ SNI -> 🇦🇺",
-        "44 ⌜クモ⌟ CDN -> 🇦🇺",
-        "70 ⌜クモ⌟ SNI -> 🇦🇺",
-        "81 ⌜クモ⌟ SNI -> 🇦🇺"
+        "37 ⌜クモ⌟ SNI -> 🇦🇺",
+        "38 ⌜クモ⌟ CDN -> 🇦🇺",
+        "66 ⌜クモ⌟ SNI -> 🇦🇺",
+        "68 ⌜クモ⌟ SNI -> 🇦🇺",
+        "72 ⌜クモ⌟ SNI -> 🇦🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "9 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "194.195.125.203",
-      "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/chat",
-        "headers": {
-          "Host": "image-upload4.spotify.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "42 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "37 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "152.69.167.11",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -97,28 +75,7 @@
     },
     {
       "type": "vmess",
-      "tag": "43 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "152.69.167.11",
-      "server_port": 443,
-      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/v2ray",
-        "headers": {
-          "Host": "image-upload4.spotify.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "44 ⌜クモ⌟ CDN -> 🇦🇺",
+      "tag": "38 ⌜クモ⌟ CDN -> 🇦🇺",
       "server": "investors.spotify.com",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -139,7 +96,7 @@
     },
     {
       "type": "trojan",
-      "tag": "70 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "66 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "152.67.98.30",
       "server_port": 443,
       "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
@@ -151,7 +108,7 @@
     },
     {
       "type": "trojan",
-      "tag": "81 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "68 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "152.67.98.30",
       "server_port": 443,
       "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
@@ -159,6 +116,27 @@
         "enabled": true,
         "insecure": true,
         "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "72 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "194.195.125.203",
+      "server_port": 443,
+      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/chat",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
       }
     }
   ],
