@@ -99,10 +99,39 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-123 ⌜クモ⌟ SNI -> 🇮🇪"
+      "tag": "proxy-42 ⌜クモ⌟ SNI -> 🇮🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.77.71.134",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "origin",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        }
+      },
+      "tag": "proxy-106 ⌜クモ⌟ SNI -> 🇮🇪"
     }
   ],
   "dns": {

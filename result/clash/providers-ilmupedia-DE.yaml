@@ -1,5 +1,5 @@
 proxies:
-  - name: '25 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '30 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 207.154.243.252
     type: trojan
     port: 443
@@ -8,16 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '37 ⌜クモ⌟ SNI -> 🇩🇪'
-    server: freesaqqanet.xyz
-    type: trojan
-    port: 48512
-    password: nP2wOr91N0
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '39 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '45 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 188.40.251.19
     type: trojan
     port: 443
@@ -26,7 +17,23 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '107 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '76 ⌜クモ⌟ CDN -> 🇩🇪'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: d217db0c-0faa-4270-ea38-e6093d9774e3
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: h2.800876.xyz
+    ws-opts: 
+      path: /
+      headers:
+        Host: h2.800876.xyz
+  - name: '123 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 188.40.251.19
     type: trojan
     port: 443

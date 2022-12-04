@@ -45,12 +45,25 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "123 ⌜クモ⌟ SNI -> 🇮🇪"
+        "42 ⌜クモ⌟ SNI -> 🇮🇪",
+        "106 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "123 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "42 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "51.77.71.134",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "106 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
