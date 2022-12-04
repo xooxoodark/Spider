@@ -113,7 +113,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-3 ⌜クモ⌟ CDN -> 🇵🇱"
+      "tag": "proxy-1 ⌜クモ⌟ CDN -> 🇵🇱"
     },
     {
       "mux": {
@@ -144,10 +144,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
+          "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-12 ⌜クモ⌟ SNI -> 🇷🇺"
+      "tag": "proxy-14 ⌜クモ⌟ SNI -> 🇷🇺"
     },
     {
       "mux": {
@@ -178,16 +178,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
+          "serverName": "click.zoom.us"
         },
         "wsSettings": {
           "headers": {
-            "Host": "promo.ruangguru.com"
+            "Host": "click.zoom.us"
           },
           "path": "/vmess"
         }
       },
-      "tag": "proxy-17 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-20 ⌜クモ⌟ SNI -> 🇫🇷"
     },
     {
       "mux": {
@@ -242,10 +242,39 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        }
+      },
+      "tag": "proxy-32 ⌜クモ⌟ SNI -> 🇩🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.40.251.19",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "origin",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
           "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-25 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-50 ⌜クモ⌟ SNI -> 🇩🇪"
     },
     {
       "mux": {
@@ -271,39 +300,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
-        }
-      },
-      "tag": "proxy-32 ⌜クモ⌟ SNI -> 🇳🇱"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.77.71.134",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "origin",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
           "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-33 ⌜クモ⌟ SNI -> 🇮🇪"
+      "tag": "proxy-53 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -314,70 +314,12 @@
       "settings": {
         "servers": [
           {
-            "address": "176.31.83.90",
+            "address": "132.145.51.172",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "origin",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
-        }
-      },
-      "tag": "proxy-38 ⌜クモ⌟ SNI -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.210.146.186",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "7c332773-7c11-4d19-a35a-f4e599d408bf",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
-        }
-      },
-      "tag": "proxy-48 ⌜クモ⌟ SNI -> 🇬🇧"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.210.146.186",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "7c332773-7c11-4d19-a35a-f4e599d408bf",
+            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
             "port": 443
           }
         ]
@@ -390,134 +332,7 @@
           "serverName": "click.zoom.us"
         }
       },
-      "tag": "proxy-50 ⌜クモ⌟ SNI -> 🇬🇧"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "main.millionaireaisle.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "d217db0c-0faa-4270-ea38-e6093d9774e3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "h2.800876.xyz"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "h2.800876.xyz"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-68 ⌜クモ⌟ CDN -> 🇩🇪"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "146.19.230.241",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "xxoo",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
-        }
-      },
-      "tag": "proxy-70 ⌜クモ⌟ SNI -> 🇬🇧"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.212.200.74",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "Sp3eDVp",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
-        }
-      },
-      "tag": "proxy-98 ⌜クモ⌟ SNI -> 🇳🇱"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.77.71.134",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "origin",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
-        }
-      },
-      "tag": "proxy-100 ⌜クモ⌟ SNI -> 🇮🇪"
+      "tag": "proxy-84 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -543,10 +358,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
+          "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-101 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-95 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -557,12 +372,12 @@
       "settings": {
         "servers": [
           {
-            "address": "176.31.83.90",
+            "address": "185.212.200.74",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "origin",
+            "password": "Sp3eDVp",
             "port": 443
           }
         ]
@@ -572,49 +387,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-102 ⌜クモ⌟ SNI -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "main.millionaireaisle.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ad48ebeb-f949-472b-9717-e8c8f0f7984d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "140.238.170.195"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "140.238.170.195"
-          }
-        }
-      },
-      "tag": "proxy-108 ⌜クモ⌟ CDN -> 🇨🇭"
+      "tag": "proxy-96 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -654,36 +430,7 @@
           "path": "/dongtaiwang.com"
         }
       },
-      "tag": "proxy-109 ⌜クモ⌟ CDN -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.16.206.212",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "shefelnak",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "click.zoom.us"
-        }
-      },
-      "tag": "proxy-112 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-100 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -709,10 +456,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-113 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-103 ⌜クモ⌟ SNI -> 🇩🇪"
     },
     {
       "mux": {
@@ -752,7 +499,7 @@
           "path": "/lXvA0Vse/"
         }
       },
-      "tag": "proxy-115 ⌜クモ⌟ CDN -> 🇳🇱"
+      "tag": "proxy-104 ⌜クモ⌟ CDN -> 🇳🇱"
     },
     {
       "mux": {
@@ -770,7 +517,7 @@
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
+                "id": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
                 "level": 8,
                 "security": "auto"
               }
@@ -783,56 +530,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "v15.583181.xyz"
+          "serverName": "foxpol.fovi.tk"
         },
         "wsSettings": {
           "headers": {
-            "Host": "v15.583181.xyz"
+            "Host": "foxpol.fovi.tk"
           },
-          "path": "/"
+          "path": "/eisasqa"
         }
       },
-      "tag": "proxy-122 ⌜クモ⌟ CDN -> 🇬🇧"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "main.millionaireaisle.com",
-            "port": 8443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "v16.583181.xyz"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "v16.583181.xyz"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-123 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-109 ⌜クモ⌟ CDN -> 🇵🇱"
     },
     {
       "mux": {
@@ -863,16 +570,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
+          "serverName": "options.teams.microsoft.com"
         },
         "wsSettings": {
           "headers": {
-            "Host": "click.zoom.us"
+            "Host": "options.teams.microsoft.com"
           },
           "path": "/ugbovws"
         }
       },
-      "tag": "proxy-128 ⌜クモ⌟ SNI -> 🇫🇮"
+      "tag": "proxy-113 ⌜クモ⌟ SNI -> 🇫🇮"
     }
   ],
   "dns": {
