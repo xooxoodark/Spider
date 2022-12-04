@@ -1,6 +1,6 @@
 proxies:
   - name: '1 ⌜クモ⌟ CDN -> 🇵🇱'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: c13be7b9-bb72-4424-bb2f-00c468f4f282
@@ -15,7 +15,7 @@ proxies:
       path: /
       headers:
         Host: w.800876.xyz
-  - name: '9 ⌜クモ⌟ SNI -> 🇷🇺'
+  - name: '7 ⌜クモ⌟ SNI -> 🇷🇺'
     server: 194.38.9.6
     type: vmess
     port: 48181
@@ -27,7 +27,7 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '21 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '19 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 207.154.243.252
     type: trojan
     port: 443
@@ -36,7 +36,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '25 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '24 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -52,25 +52,32 @@ proxies:
       path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: news.microsoft.com
-  - name: '27 ⌜クモ⌟ SNI -> 🇩🇪'
-    server: freesaqqanet.xyz
-    type: trojan
-    port: 48512
-    password: nP2wOr91N0
+  - name: '41 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 139.162.216.166
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
     udp: true
-    skip-cert-verify: true
-    network: tcp
+    skip-cert-verify: false
+    network: ws
     servername: news.microsoft.com
-  - name: '36 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 185.212.200.75
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: news.microsoft.com
+  - name: '52 ⌜クモ⌟ SNI -> 🇫🇷'
+    server: 176.31.83.90
     type: trojan
     port: 443
-    password: Sp3eDVp
+    password: origin
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '54 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '56 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 47.87.238.92
     type: trojan
     port: 443
@@ -79,7 +86,39 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '65 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '66 ⌜クモ⌟ CDN -> 🇵🇱'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 2053
+    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: 104.28.193.185
+    ws-opts: 
+      path: /eisasqa
+      headers:
+        Host: 104.28.193.185
+  - name: '69 ⌜クモ⌟ CDN -> 🇩🇪'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: d217db0c-0faa-4270-ea38-e6093d9774e3
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: h2.800876.xyz
+    ws-opts: 
+      path: /
+      headers:
+        Host: h2.800876.xyz
+  - name: '73 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 146.19.230.241
     type: trojan
     port: 443
@@ -88,25 +127,68 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '81 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 132.145.51.172
+  - name: '114 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 185.212.200.74
     type: trojan
     port: 443
-    password: 02e653c9-7c93-46a9-999d-11834bd0c577
+    password: Sp3eDVp
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '85 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 132.145.51.172
+  - name: '116 ⌜クモ⌟ SNI -> 🇫🇷'
+    server: 176.31.83.90
     type: trojan
     port: 443
-    password: 02e653c9-7c93-46a9-999d-11834bd0c577
+    password: origin
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '101 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '117 ⌜クモ⌟ SNI -> 🇫🇷'
+    server: 176.31.83.90
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '118 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 185.212.200.75
+    type: trojan
+    port: 443
+    password: Sp3eDVp
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '119 ⌜クモ⌟ SNI -> 🇩🇪'
+    server: 188.40.251.19
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '122 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: 5.255.106.210
+    ws-opts: 
+      path: /lXvA0Vse/
+      headers:
+        Host: 5.255.106.210
+  - name: '123 ⌜クモ⌟ CDN -> 🇫🇷'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -122,32 +204,16 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: 62.210.85.207
-  - name: '103 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 443
-    uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: 5.255.106.210
-    ws-opts: 
-      path: /lXvA0Vse/
-      headers:
-        Host: 5.255.106.210
-  - name: '108 ⌜クモ⌟ SNI -> 🇮🇪'
-    server: 51.77.71.134
+  - name: '124 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 185.16.206.212
     type: trojan
     port: 443
-    password: origin
+    password: shefelnak
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '109 ⌜クモ⌟ SNI -> 🇫🇮'
+  - name: '132 ⌜クモ⌟ SNI -> 🇫🇮'
     server: 65.108.147.129
     type: vmess
     port: 443
@@ -163,8 +229,8 @@ proxies:
       path: /ugbovws
       headers:
         Host: news.microsoft.com
-  - name: '110 ⌜クモ⌟ CDN -> 🇫🇮'
-    server: cacerts.digicert.com
+  - name: '133 ⌜クモ⌟ CDN -> 🇫🇮'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: a110fb8d-5f71-41d6-9386-208d3f501438
@@ -179,7 +245,7 @@ proxies:
       path: /ugbovws
       headers:
         Host: 65.108.147.129
-  - name: '111 ⌜クモ⌟ SNI -> 🇫🇮'
+  - name: '134 ⌜クモ⌟ SNI -> 🇫🇮'
     server: 65.108.147.129
     type: vmess
     port: 443

@@ -45,12 +45,51 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "101 ⌜クモ⌟ CDN -> 🇫🇷"
+        "52 ⌜クモ⌟ SNI -> 🇫🇷",
+        "116 ⌜クモ⌟ SNI -> 🇫🇷",
+        "117 ⌜クモ⌟ SNI -> 🇫🇷",
+        "123 ⌜クモ⌟ CDN -> 🇫🇷"
       ]
     },
     {
+      "type": "trojan",
+      "tag": "52 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "176.31.83.90",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "116 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "176.31.83.90",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "117 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "176.31.83.90",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "101 ⌜クモ⌟ CDN -> 🇫🇷",
+      "tag": "123 ⌜クモ⌟ CDN -> 🇫🇷",
       "server": "investors.spotify.com",
       "server_port": 443,
       "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",

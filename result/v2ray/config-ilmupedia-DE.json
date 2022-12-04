@@ -102,7 +102,47 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-21 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-19 ⌜クモ⌟ SNI -> 🇩🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "news.microsoft.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "d217db0c-0faa-4270-ea38-e6093d9774e3",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "h2.800876.xyz"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "h2.800876.xyz"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-69 ⌜クモ⌟ CDN -> 🇩🇪"
     },
     {
       "mux": {
@@ -113,13 +153,13 @@
       "settings": {
         "servers": [
           {
-            "address": "freesaqqanet.xyz",
+            "address": "188.40.251.19",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "nP2wOr91N0",
-            "port": 48512
+            "password": "origin",
+            "port": 443
           }
         ]
       },
@@ -131,7 +171,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-27 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-119 ⌜クモ⌟ SNI -> 🇩🇪"
     }
   ],
   "dns": {
