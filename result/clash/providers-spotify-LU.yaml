@@ -1,21 +1,21 @@
 proxies:
-  - name: '46 ⌜クモ⌟ SNI -> 🇱🇺'
-    server: 107.189.11.81
+  - name: '51 ⌜クモ⌟ CDN -> 🇱🇺'
+    server: investors.spotify.com
     type: vmess
     port: 443
-    uuid: 6fb9a750-55b8-4e6e-857b-242b795399dc
+    uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: image-upload4.spotify.com
+    servername: 107.189.11.246
     ws-opts: 
-      path: /imkcpyyds
+      path: /go
       headers:
-        Host: image-upload4.spotify.com
-  - name: '47 ⌜クモ⌟ CDN -> 🇱🇺'
+        Host: 107.189.11.246
+  - name: '53 ⌜クモ⌟ CDN -> 🇱🇺'
     server: investors.spotify.com
     type: vmess
     port: 443
@@ -26,12 +26,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: buyvm.imkcp.eu.org
+    servername: 107.189.11.81
     ws-opts: 
       path: /imkcpyyds
       headers:
-        Host: buyvm.imkcp.eu.org
-  - name: '189 ⌜クモ⌟ SNI -> 🇱🇺'
+        Host: 107.189.11.81
+  - name: '187 ⌜クモ⌟ SNI -> 🇱🇺'
     server: 104.244.73.218
     type: vmess
     port: 443
