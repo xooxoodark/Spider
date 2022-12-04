@@ -45,16 +45,104 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "26 ⌜クモ⌟ SNI -> 🇦🇺",
-        "71 ⌜クモ⌟ SNI -> 🇦🇺"
+        "9 ⌜クモ⌟ SNI -> 🇦🇺",
+        "42 ⌜クモ⌟ SNI -> 🇦🇺",
+        "43 ⌜クモ⌟ SNI -> 🇦🇺",
+        "44 ⌜クモ⌟ CDN -> 🇦🇺",
+        "70 ⌜クモ⌟ SNI -> 🇦🇺",
+        "81 ⌜クモ⌟ SNI -> 🇦🇺"
       ]
     },
     {
-      "type": "trojan",
-      "tag": "26 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "140.238.205.173",
+      "type": "vmess",
+      "tag": "9 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "194.195.125.203",
       "server_port": 443,
-      "password": "cb43b7c2-b744-41c5-bcc2-fd7467b332cf",
+      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/chat",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "42 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.69.167.11",
+      "server_port": 443,
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v2ray",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "43 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.69.167.11",
+      "server_port": 443,
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v2ray",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "44 ⌜クモ⌟ CDN -> 🇦🇺",
+      "server": "investors.spotify.com",
+      "server_port": 443,
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "152.69.167.11"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v2ray",
+        "headers": {
+          "Host": "152.69.167.11"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "70 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.67.98.30",
+      "server_port": 443,
+      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -63,7 +151,7 @@
     },
     {
       "type": "trojan",
-      "tag": "71 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "81 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "152.67.98.30",
       "server_port": 443,
       "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",

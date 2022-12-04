@@ -45,13 +45,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "25 ⌜クモ⌟ SNI -> 🇩🇪",
-        "124 ⌜クモ⌟ SNI -> 🇩🇪"
+        "14 ⌜クモ⌟ SNI -> 🇩🇪",
+        "36 ⌜クモ⌟ SNI -> 🇩🇪",
+        "117 ⌜クモ⌟ CDN -> 🇩🇪",
+        "125 ⌜クモ⌟ CDN -> 🇩🇪",
+        "137 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "25 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "14 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -63,7 +66,61 @@
     },
     {
       "type": "trojan",
-      "tag": "124 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "36 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "188.40.251.19",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "117 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "investors.spotify.com",
+      "server_port": 2053,
+      "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "104.28.155.200"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "104.28.155.200"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "125 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "investors.spotify.com",
+      "server_port": 2053,
+      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "104.28.221.41"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eisasqa",
+        "headers": {
+          "Host": "104.28.221.41"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "137 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",

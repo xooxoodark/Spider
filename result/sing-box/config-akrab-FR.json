@@ -45,16 +45,18 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "17 ⌜クモ⌟ SNI -> 🇫🇷",
-        "51 ⌜クモ⌟ SNI -> 🇫🇷",
-        "60 ⌜クモ⌟ CDN -> 🇫🇷",
-        "102 ⌜クモ⌟ SNI -> 🇫🇷",
-        "103 ⌜クモ⌟ SNI -> 🇫🇷"
+        "4 ⌜クモ⌟ SNI -> 🇫🇷",
+        "41 ⌜クモ⌟ SNI -> 🇫🇷",
+        "55 ⌜クモ⌟ CDN -> 🇫🇷",
+        "56 ⌜クモ⌟ CDN -> 🇫🇷",
+        "115 ⌜クモ⌟ SNI -> 🇫🇷",
+        "116 ⌜クモ⌟ SNI -> 🇫🇷",
+        "143 ⌜クモ⌟ CDN -> 🇫🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "17 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "4 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "5.249.165.96",
       "server_port": 443,
       "uuid": "f72b4ccd-9bb9-4682-8401-3d8affed53f2",
@@ -63,31 +65,52 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       },
       "transport": {
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "options.teams.microsoft.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "51 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "41 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "60 ⌜クモ⌟ CDN -> 🇫🇷",
+      "tag": "55 ⌜クモ⌟ CDN -> 🇫🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "fr1.cachexy.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/p9Dq67Nx/",
+        "headers": {
+          "Host": "fr1.cachexy.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "56 ⌜クモ⌟ CDN -> 🇫🇷",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
@@ -108,26 +131,47 @@
     },
     {
       "type": "trojan",
-      "tag": "102 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "115 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "trojan",
-      "tag": "103 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "116 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "143 ⌜クモ⌟ CDN -> 🇫🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "62.210.85.207"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/dongtaiwang.com",
+        "headers": {
+          "Host": "62.210.85.207"
+        }
       }
     }
   ],
