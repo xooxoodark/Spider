@@ -45,14 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "32 ⌜クモ⌟ SNI -> 🇩🇪",
-        "50 ⌜クモ⌟ SNI -> 🇩🇪",
-        "103 ⌜クモ⌟ SNI -> 🇩🇪"
+        "29 ⌜クモ⌟ SNI -> 🇩🇪",
+        "46 ⌜クモ⌟ SNI -> 🇩🇪",
+        "97 ⌜クモ⌟ SNI -> 🇩🇪",
+        "107 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "32 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "29 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -64,7 +65,7 @@
     },
     {
       "type": "trojan",
-      "tag": "50 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "46 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
@@ -76,10 +77,22 @@
     },
     {
       "type": "trojan",
-      "tag": "103 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "97 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "107 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "freesaqqanet.xyz",
+      "server_port": 48512,
+      "password": "nP2wOr91N0",
       "tls": {
         "enabled": true,
         "insecure": true,

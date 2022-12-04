@@ -113,7 +113,87 @@
           "path": "/ugbovws"
         }
       },
-      "tag": "proxy-113 ⌜クモ⌟ SNI -> 🇫🇮"
+      "tag": "proxy-110 ⌜クモ⌟ SNI -> 🇫🇮"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cacerts.digicert.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "a110fb8d-5f71-41d6-9386-208d3f501438",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "65.108.147.129"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "65.108.147.129"
+          },
+          "path": "/ugbovws"
+        }
+      },
+      "tag": "proxy-111 ⌜クモ⌟ CDN -> 🇫🇮"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "65.108.147.129",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "a110fb8d-5f71-41d6-9386-208d3f501438",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/ugbovws"
+        }
+      },
+      "tag": "proxy-112 ⌜クモ⌟ SNI -> 🇫🇮"
     }
   ],
   "dns": {

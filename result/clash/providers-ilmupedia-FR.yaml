@@ -1,22 +1,24 @@
 proxies:
-  - name: '20 ⌜クモ⌟ SNI -> 🇫🇷'
-    server: 5.249.165.96
-    type: vmess
+  - name: '87 ⌜クモ⌟ SNI -> 🇫🇷'
+    server: 176.31.83.90
+    type: trojan
     port: 443
-    uuid: f72b4ccd-9bb9-4682-8401-3d8affed53f2
-    alterId: 0
-    cipher: auto
-    tls: true
+    password: origin
     udp: true
-    skip-cert-verify: false
-    network: ws
+    skip-cert-verify: true
+    network: tcp
     servername: news.microsoft.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: news.microsoft.com
-  - name: '100 ⌜クモ⌟ CDN -> 🇫🇷'
-    server: cacerts.digicert.com
+  - name: '90 ⌜クモ⌟ SNI -> 🇫🇷'
+    server: 176.31.83.90
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '93 ⌜クモ⌟ CDN -> 🇫🇷'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 4679f00e-90ce-430d-9714-6a19367ba112
