@@ -45,19 +45,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "72 ⌜クモ⌟ SNI -> 🇦🇺",
-        "126 ⌜クモ⌟ SNI -> 🇦🇺",
-        "131 ⌜クモ⌟ SNI -> 🇦🇺",
-        "141 ⌜クモ⌟ SNI -> 🇦🇺",
-        "157 ⌜クモ⌟ SNI -> 🇦🇺",
-        "199 ⌜クモ⌟ SNI -> 🇦🇺",
-        "200 ⌜クモ⌟ SNI -> 🇦🇺",
-        "201 ⌜クモ⌟ CDN -> 🇦🇺"
+        "41 ⌜クモ⌟ SNI -> 🇦🇺",
+        "77 ⌜クモ⌟ SNI -> 🇦🇺",
+        "78 ⌜クモ⌟ CDN -> 🇦🇺",
+        "96 ⌜クモ⌟ SNI -> 🇦🇺",
+        "103 ⌜クモ⌟ SNI -> 🇦🇺"
       ]
     },
     {
       "type": "trojan",
-      "tag": "72 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "41 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "140.238.205.173",
       "server_port": 443,
       "password": "cb43b7c2-b744-41c5-bcc2-fd7467b332cf",
@@ -68,74 +65,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "126 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "152.67.98.30",
-      "server_port": 443,
-      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "131 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "194.195.125.203",
-      "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/chat",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "141 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "194.195.125.203",
-      "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/chat",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "157 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "152.67.98.30",
-      "server_port": 443,
-      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "199 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "77 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "152.69.167.11",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -156,28 +87,7 @@
     },
     {
       "type": "vmess",
-      "tag": "200 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "152.69.167.11",
-      "server_port": 443,
-      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/v2ray",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "201 ⌜クモ⌟ CDN -> 🇦🇺",
+      "tag": "78 ⌜クモ⌟ CDN -> 🇦🇺",
       "server": "news.microsoft.com",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -194,6 +104,30 @@
         "headers": {
           "Host": "152.69.167.11"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "96 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.67.98.30",
+      "server_port": 443,
+      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "103 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.67.98.30",
+      "server_port": 443,
+      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
       }
     }
   ],

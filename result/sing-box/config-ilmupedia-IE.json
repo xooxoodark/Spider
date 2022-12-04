@@ -45,70 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "71 ⌜クモ⌟ SNI -> 🇮🇪",
-        "107 ⌜クモ⌟ SNI -> 🇮🇪",
-        "108 ⌜クモ⌟ CDN -> 🇮🇪",
-        "185 ⌜クモ⌟ SNI -> 🇮🇪",
-        "190 ⌜クモ⌟ SNI -> 🇮🇪"
+        "56 ⌜クモ⌟ SNI -> 🇮🇪",
+        "121 ⌜クモ⌟ SNI -> 🇮🇪",
+        "191 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "71 ⌜クモ⌟ SNI -> 🇮🇪",
-      "server": "51.77.71.134",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "107 ⌜クモ⌟ SNI -> 🇮🇪",
-      "server": "3.250.4.53",
-      "server_port": 443,
-      "uuid": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "108 ⌜クモ⌟ CDN -> 🇮🇪",
-      "server": "news.microsoft.com",
-      "server_port": 443,
-      "uuid": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "3.250.4.53"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "3.250.4.53"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "185 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "56 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
@@ -120,7 +64,19 @@
     },
     {
       "type": "trojan",
-      "tag": "190 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "121 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "51.77.71.134",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "191 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.131",
       "server_port": 443,
       "password": "Sp3eDVp",
