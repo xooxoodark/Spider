@@ -113,7 +113,7 @@
           "path": "/s/f1f3227.fm.apple.com:111548"
         }
       },
-      "tag": "proxy-5 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-4 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -183,35 +183,6 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.67.190.183",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-8 ⌜クモ⌟ SNI -> 🇮🇳"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -245,7 +216,47 @@
           "path": "/fastssh/amrozi87/6350416ec330b/"
         }
       },
-      "tag": "proxy-13 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-10 ⌜クモ⌟ SNI -> 🇮🇩"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.233.81.125",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "ceb8a921-ec72-4804-ae92-cbd309f2f213",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "image-upload4.spotify.com"
+          },
+          "path": "/vmess"
+        }
+      },
+      "tag": "proxy-13 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -286,46 +297,6 @@
         }
       },
       "tag": "proxy-14 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "194.233.81.125",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ceb8a921-ec72-4804-ae92-cbd309f2f213",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "image-upload4.spotify.com"
-          },
-          "path": "/vmess"
-        }
-      },
-      "tag": "proxy-15 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -416,6 +387,40 @@
       "settings": {
         "vnext": [
           {
+            "address": "206.119.112.5",
+            "port": 8189,
+            "users": [
+              {
+                "alterId": 10,
+                "encryption": "",
+                "flow": "",
+                "id": "a90597c1-bab3-4217-ad6f-0838675c8638",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-21 ⌜クモ⌟ SNI -> 🇭🇰"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
             "address": "129.159.139.101",
             "port": 443,
             "users": [
@@ -445,41 +450,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-21 ⌜クモ⌟ SNI -> 🇮🇱"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "206.119.112.5",
-            "port": 8189,
-            "users": [
-              {
-                "alterId": 10,
-                "encryption": "",
-                "flow": "",
-                "id": "a90597c1-bab3-4217-ad6f-0838675c8638",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-22 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-23 ⌜クモ⌟ SNI -> 🇮🇱"
     },
     {
       "mux": {
@@ -577,7 +548,7 @@
       "settings": {
         "servers": [
           {
-            "address": "153.121.74.146",
+            "address": "219.94.250.108",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
@@ -606,35 +577,6 @@
       "settings": {
         "servers": [
           {
-            "address": "219.94.250.108",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-            "port": 2053
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-32 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "34.96.143.229",
             "flow": "",
             "level": 8,
@@ -653,7 +595,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-33 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-32 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -682,36 +624,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-34 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "168.138.44.176",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "8d2d5953-d649-4034-94f2-72f2df2623da",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-35 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-33 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -740,65 +653,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-36 ⌜クモ⌟ SNI -> 🇮🇩"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.67.160.174",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "54080134-2cba-4535-8599-95650bd9aa54",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-37 ⌜クモ⌟ SNI -> 🇮🇳"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "1.162.4.214",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "bbab60b8-779f-31e2-916e-571f7d7023c4",
-            "port": 35111
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-38 ⌜クモ⌟ SNI -> 🇹🇼"
+      "tag": "proxy-34 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -827,7 +682,65 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-39 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-35 ⌜クモ⌟ SNI -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "168.138.44.176",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8d2d5953-d649-4034-94f2-72f2df2623da",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-36 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "1.162.4.214",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "bbab60b8-779f-31e2-916e-571f7d7023c4",
+            "port": 35111
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-37 ⌜クモ⌟ SNI -> 🇹🇼"
     },
     {
       "mux": {
@@ -861,7 +774,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-41 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-40 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -872,7 +785,36 @@
       "settings": {
         "servers": [
           {
-            "address": "49.212.221.47",
+            "address": "152.67.160.174",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "54080134-2cba-4535-8599-95650bd9aa54",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-41 ⌜クモ⌟ SNI -> 🇮🇳"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "153.121.74.146",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
@@ -890,65 +832,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-44 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.32.45.156",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "d13a3a08-411b-46eb-87c5-023bc8b61db9",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-47 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.104.120.194",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "e198c059-18e0-4c5e-8358-b4b7850d4d86",
-            "port": 17003
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-48 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-42 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -977,7 +861,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-49 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-43 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -988,13 +872,13 @@
       "settings": {
         "servers": [
           {
-            "address": "45.136.14.70",
+            "address": "45.32.45.156",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "6A30qqSh8W",
-            "port": 15410
+            "password": "d13a3a08-411b-46eb-87c5-023bc8b61db9",
+            "port": 443
           }
         ]
       },
@@ -1006,7 +890,36 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-50 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-44 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.104.120.194",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "e198c059-18e0-4c5e-8358-b4b7850d4d86",
+            "port": 17003
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-45 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -1035,7 +948,36 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-51 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-46 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.136.14.70",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "6A30qqSh8W",
+            "port": 15410
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-49 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -1064,36 +1006,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-52 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "211.72.35.152",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "b84d16a244460e09",
-            "port": 3389
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-53 ⌜クモ⌟ SNI -> 🇹🇼"
+      "tag": "proxy-51 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -1122,7 +1035,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-54 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-52 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -1151,36 +1064,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-55 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "61.224.112.3",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "e198c059-18e0-4c5e-8358-b4b7850d4d86",
-            "port": 17005
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-56 ⌜クモ⌟ SNI -> 🇹🇼"
+      "tag": "proxy-53 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -1209,7 +1093,123 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
+      "tag": "proxy-55 ⌜クモ⌟ SNI -> 🇹🇼"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "211.72.35.152",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "b84d16a244460e09",
+            "port": 3389
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-56 ⌜クモ⌟ SNI -> 🇹🇼"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "61.224.112.3",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "e198c059-18e0-4c5e-8358-b4b7850d4d86",
+            "port": 17005
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
       "tag": "proxy-57 ⌜クモ⌟ SNI -> 🇹🇼"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.212.221.47",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+            "port": 2053
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-58 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "165.154.237.176",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "e198c059-18e0-4c5e-8358-b4b7850d4d86",
+            "port": 17005
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-59 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -1249,13 +1249,13 @@
       "settings": {
         "servers": [
           {
-            "address": "165.154.237.176",
+            "address": "168.138.44.176",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "e198c059-18e0-4c5e-8358-b4b7850d4d86",
-            "port": 17005
+            "password": "8d2d5953-d649-4034-94f2-72f2df2623da",
+            "port": 443
           }
         ]
       },
@@ -1267,47 +1267,36 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-61 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-68 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "172.104.184.21",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "927094d3-d678-4763-8591-e240d0bcae87",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "146.56.176.239",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "21f204d3-b42e-466a-9cb2-b83d868dcd5f",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "image-upload4.spotify.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "image-upload4.spotify.com"
-          },
-          "path": "/chat"
         }
       },
-      "tag": "proxy-65 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-69 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1336,7 +1325,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-69 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-71 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -1347,12 +1336,12 @@
       "settings": {
         "servers": [
           {
-            "address": "168.138.44.176",
+            "address": "152.67.190.183",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "8d2d5953-d649-4034-94f2-72f2df2623da",
+            "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
             "port": 443
           }
         ]
@@ -1365,7 +1354,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-71 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-72 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -1376,41 +1365,12 @@
       "settings": {
         "servers": [
           {
-            "address": "168.138.43.89",
+            "address": "152.67.190.183",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-72 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.67.162.166",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
+            "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
             "port": 443
           }
         ]
@@ -1424,6 +1384,35 @@
         }
       },
       "tag": "proxy-73 ⌜クモ⌟ SNI -> 🇮🇳"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "150.230.217.213",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "c09eb137-bf68-4658-84e0-102d94b74168",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-75 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -1452,7 +1441,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-75 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-77 ⌜クモ⌟ SNI -> 🇯🇵"
     },
     {
       "mux": {
@@ -1481,7 +1470,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-77 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-78 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1492,12 +1481,12 @@
       "settings": {
         "servers": [
           {
-            "address": "194.233.88.109",
+            "address": "146.56.176.239",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "123456",
+            "password": "7c953fab-2d79-4320-b208-59e07b6033fd",
             "port": 443
           }
         ]
@@ -1510,36 +1499,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-78 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.67.162.166",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-79 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-79 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1579,6 +1539,64 @@
       "settings": {
         "servers": [
           {
+            "address": "194.233.88.109",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "123456",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-81 ⌜クモ⌟ SNI -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "152.67.160.174",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "54080134-2cba-4535-8599-95650bd9aa54",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-82 ⌜クモ⌟ SNI -> 🇮🇳"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "168.138.43.89",
             "flow": "",
             "level": 8,
@@ -1608,12 +1626,12 @@
       "settings": {
         "servers": [
           {
-            "address": "152.67.160.174",
+            "address": "168.138.43.89",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "54080134-2cba-4535-8599-95650bd9aa54",
+            "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
             "port": 443
           }
         ]
@@ -1626,7 +1644,36 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-84 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-84 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "152.67.162.166",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-85 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -1655,7 +1702,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-90 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-89 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1684,7 +1731,65 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
+      "tag": "proxy-90 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.56.176.239",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "61f6271b-5e65-46b8-bc80-c6468a1f185e",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
       "tag": "proxy-91 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.56.176.239",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "98a68cfb-42c6-4498-ac6e-7e5c203924a7",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-92 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1713,7 +1818,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-92 ⌜クモ⌟ SNI -> 🇮🇳"
+      "tag": "proxy-93 ⌜クモ⌟ SNI -> 🇮🇳"
     },
     {
       "mux": {
@@ -1753,7 +1858,7 @@
           "path": "/fastssh/dghh/6347fe8113b09/"
         }
       },
-      "tag": "proxy-93 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-94 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -1793,87 +1898,7 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-94 ⌜クモ⌟ SNI -> 🇮🇩"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.79.164.157",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "image-upload4.spotify.com"
-          },
-          "path": "/fastssh/dghh/6347fe8113b09/"
-        }
-      },
-      "tag": "proxy-97 ⌜クモ⌟ SNI -> 🇸🇬"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.104.184.21",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "927094d3-d678-4763-8591-e240d0bcae87",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "image-upload4.spotify.com"
-          },
-          "path": "/chat"
-        }
-      },
-      "tag": "proxy-98 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-95 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -1913,7 +1938,7 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-100 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-96 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -1924,12 +1949,12 @@
       "settings": {
         "servers": [
           {
-            "address": "139.162.45.139",
+            "address": "146.56.176.239",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "FLpONjB2Lb",
+            "password": "ec129ab2-3c89-4e25-8b97-aee479ac06f1",
             "port": 443
           }
         ]
@@ -1942,7 +1967,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-105 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-102 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -1981,7 +2006,47 @@
           }
         }
       },
-      "tag": "proxy-106 ⌜クモ⌟ SNI -> 🇰🇷"
+      "tag": "proxy-103 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.104.171.193",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "927094d3-d678-4763-8591-e240d0bcae87",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "image-upload4.spotify.com"
+          },
+          "path": "/chat"
+        }
+      },
+      "tag": "proxy-104 ⌜クモ⌟ SNI -> 🇸🇬"
     },
     {
       "mux": {
@@ -1992,12 +2057,12 @@
       "settings": {
         "servers": [
           {
-            "address": "38.9.140.66",
+            "address": "139.162.45.139",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "vvip-periantara",
+            "password": "FLpONjB2Lb",
             "port": 443
           }
         ]
@@ -2010,7 +2075,152 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-107 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-105 ⌜クモ⌟ SNI -> 🇸🇬"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.56.176.239",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "96e08c45-762a-48d2-8b65-0088c3c5e3d4",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-113 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "124.218.23.162",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+            "port": 8443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-114 ⌜クモ⌟ SNI -> 🇹🇼"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.56.176.239",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "33073a7c-e6d5-4271-9b19-4416afcc25b5",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-116 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.56.176.239",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "545034ab-8179-46ea-a7d4-a5c992cce000",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-118 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.56.176.239",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "da647e58-8f85-450f-b123-568c492c297c",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-119 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -2045,7 +2255,7 @@
           "path": "/c6c05fbac0e4"
         }
       },
-      "tag": "proxy-114 ⌜クモ⌟ CDN -> 🇸🇬"
+      "tag": "proxy-122 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -2056,25 +2266,31 @@
       "settings": {
         "servers": [
           {
-            "address": "124.218.23.162",
+            "address": "investors.spotify.com",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
-            "port": 8443
+            "password": "4X1ebJpQWg",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
+          "serverName": "192.53.114.129"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "192.53.114.129"
+          },
+          "path": "/c6c05fbac0e4"
         }
       },
-      "tag": "proxy-115 ⌜クモ⌟ SNI -> 🇹🇼"
+      "tag": "proxy-123 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -2085,54 +2301,31 @@
       "settings": {
         "servers": [
           {
-            "address": "18.183.18.218",
+            "address": "investors.spotify.com",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "bbab60b8-779f-31e2-916e-571f7d7023c4",
-            "port": 35114
+            "password": "4X1ebJpQWg",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
+          "serverName": "192.53.114.129"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "192.53.114.129"
+          },
+          "path": "/c6c05fbac0e4"
         }
       },
-      "tag": "proxy-122 ⌜クモ⌟ SNI -> 🇯🇵"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "34.96.143.229",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "KshsCdgYST",
-            "port": 23444
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "image-upload4.spotify.com"
-        }
-      },
-      "tag": "proxy-123 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-124 ⌜クモ⌟ CDN -> 🇸🇬"
     },
     {
       "mux": {
@@ -2143,14 +2336,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "investors.spotify.com",
+            "address": "202.79.171.135",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 64,
                 "encryption": "",
                 "flow": "",
-                "id": "0b873cff-11ab-4716-c41a-04f886135091",
+                "id": "fb3583a3-7717-4fe5-9146-3301861f9f41",
                 "level": 8,
                 "security": "auto"
               }
@@ -2163,16 +2356,74 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "141.147.181.219"
+          "serverName": "image-upload4.spotify.com"
         },
         "wsSettings": {
           "headers": {
-            "Host": "141.147.181.219"
+            "Host": "image-upload4.spotify.com"
           },
-          "path": "/roewesu"
+          "path": "/path/243535322906"
         }
       },
-      "tag": "proxy-124 ⌜クモ⌟ CDN -> 🇯🇵"
+      "tag": "proxy-125 ⌜クモ⌟ SNI -> 🇰🇷"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "38.9.140.66",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "vvip-periantara",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-126 ⌜クモ⌟ SNI -> 🇮🇩"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "138.2.115.240",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "3a2c0c6c-9ee5-c05f-c951-fcd73831983e",
+            "port": 3052
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-127 ⌜クモ⌟ SNI -> 🇰🇷"
     },
     {
       "mux": {
@@ -2212,7 +2463,36 @@
           "path": "/roewesu"
         }
       },
-      "tag": "proxy-125 ⌜クモ⌟ SNI -> 🇯🇵"
+      "tag": "proxy-133 ⌜クモ⌟ SNI -> 🇯🇵"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "34.96.143.229",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "KshsCdgYST",
+            "port": 23444
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        }
+      },
+      "tag": "proxy-134 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -2246,7 +2526,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-126 ⌜クモ⌟ SNI -> 🇸🇬"
+      "tag": "proxy-136 ⌜クモ⌟ SNI -> 🇸🇬"
     }
   ],
   "dns": {

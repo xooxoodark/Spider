@@ -46,8 +46,10 @@
       "tag": "select",
       "outbounds": [
         "11 ⌜クモ⌟ SNI -> 🇫🇷",
-        "101 ⌜クモ⌟ SNI -> 🇫🇷",
-        "112 ⌜クモ⌟ CDN -> 🇫🇷"
+        "38 ⌜クモ⌟ SNI -> 🇫🇷",
+        "109 ⌜クモ⌟ SNI -> 🇫🇷",
+        "111 ⌜クモ⌟ SNI -> 🇫🇷",
+        "115 ⌜クモ⌟ CDN -> 🇫🇷"
       ]
     },
     {
@@ -73,7 +75,31 @@
     },
     {
       "type": "trojan",
-      "tag": "101 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "38 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "176.31.83.90",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "109 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "176.31.83.90",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "111 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
@@ -85,8 +111,8 @@
     },
     {
       "type": "vmess",
-      "tag": "112 ⌜クモ⌟ CDN -> 🇫🇷",
-      "server": "news.microsoft.com",
+      "tag": "115 ⌜クモ⌟ CDN -> 🇫🇷",
+      "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",
       "security": "auto",
