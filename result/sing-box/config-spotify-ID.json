@@ -45,15 +45,17 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "10 ⌜クモ⌟ SNI -> 🇮🇩",
-        "60 ⌜クモ⌟ SNI -> 🇮🇩",
-        "105 ⌜クモ⌟ SNI -> 🇮🇩",
-        "106 ⌜クモ⌟ SNI -> 🇮🇩"
+        "16 ⌜クモ⌟ SNI -> 🇮🇩",
+        "46 ⌜クモ⌟ SNI -> 🇮🇩",
+        "59 ⌜クモ⌟ SNI -> 🇮🇩",
+        "108 ⌜クモ⌟ SNI -> 🇮🇩",
+        "109 ⌜クモ⌟ SNI -> 🇮🇩",
+        "123 ⌜クモ⌟ SNI -> 🇮🇩"
       ]
     },
     {
       "type": "vmess",
-      "tag": "10 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "16 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "45.12.80.151",
       "server_port": 443,
       "uuid": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
@@ -74,7 +76,19 @@
     },
     {
       "type": "trojan",
-      "tag": "60 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "46 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "38.9.140.66",
+      "server_port": 443,
+      "password": "vvip-periantara",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "59 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "103.167.34.206",
       "server_port": 443,
       "password": "60d47bb6-47d1-45b1-b67b-4d236a4a5957",
@@ -86,7 +100,7 @@
     },
     {
       "type": "vmess",
-      "tag": "105 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "108 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "45.12.80.151",
       "server_port": 443,
       "uuid": "854fc069-23bc-4dd9-9c14-9f3bc50a3b76",
@@ -107,7 +121,7 @@
     },
     {
       "type": "vmess",
-      "tag": "106 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "109 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "45.12.80.151",
       "server_port": 443,
       "uuid": "854fc069-23bc-4dd9-9c14-9f3bc50a3b76",
@@ -124,6 +138,18 @@
         "headers": {
           "Host": "image-upload4.spotify.com"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "123 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "38.9.140.66",
+      "server_port": 443,
+      "password": "vvip-periantara",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
       }
     }
   ],

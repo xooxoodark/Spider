@@ -1,5 +1,5 @@
 proxies:
-  - name: '65 ⌜クモ⌟ SNI -> 🇫🇮'
+  - name: '66 ⌜クモ⌟ SNI -> 🇫🇮'
     server: 65.108.147.129
     type: vmess
     port: 443
@@ -15,23 +15,7 @@ proxies:
       path: /ugbovws
       headers:
         Host: image-upload4.spotify.com
-  - name: '67 ⌜クモ⌟ SNI -> 🇫🇮'
-    server: 65.108.147.129
-    type: vmess
-    port: 443
-    uuid: a110fb8d-5f71-41d6-9386-208d3f501438
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /ugbovws
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '68 ⌜クモ⌟ CDN -> 🇫🇮'
+  - name: '67 ⌜クモ⌟ CDN -> 🇫🇮'
     server: investors.spotify.com
     type: vmess
     port: 443
@@ -47,3 +31,19 @@ proxies:
       path: /ugbovws
       headers:
         Host: 65.108.147.129
+  - name: '68 ⌜クモ⌟ SNI -> 🇫🇮'
+    server: 65.108.147.129
+    type: vmess
+    port: 443
+    uuid: a110fb8d-5f71-41d6-9386-208d3f501438
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /ugbovws
+      headers:
+        Host: image-upload4.spotify.com
