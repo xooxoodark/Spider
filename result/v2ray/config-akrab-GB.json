@@ -102,7 +102,7 @@
           "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-23 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-45 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -131,7 +131,7 @@
           "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-51 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-46 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -142,12 +142,12 @@
       "settings": {
         "servers": [
           {
-            "address": "185.16.206.212",
+            "address": "132.145.51.172",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "shefelnak",
+            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
             "port": 443
           }
         ]
@@ -157,10 +157,79 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "click.zoom.us"
         }
       },
-      "tag": "proxy-122 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-114 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "132.145.51.172",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        }
+      },
+      "tag": "proxy-115 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.79.140.229",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "927094d3-d678-4763-8591-e240d0bcae87",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "promo.ruangguru.com"
+          },
+          "path": "/chat"
+        }
+      },
+      "tag": "proxy-143 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -186,10 +255,39 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        }
+      },
+      "tag": "proxy-151 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.16.206.212",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "shefelnak",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
           "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-124 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-157 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -229,7 +327,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-133 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-160 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -269,7 +367,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-135 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-161 ⌜クモ⌟ CDN -> 🇬🇧"
     }
   ],
   "dns": {

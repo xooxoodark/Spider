@@ -45,15 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "1 ⌜クモ⌟ SNI -> 🇫🇷",
-        "45 ⌜クモ⌟ SNI -> 🇫🇷",
-        "91 ⌜クモ⌟ SNI -> 🇫🇷",
-        "131 ⌜クモ⌟ CDN -> 🇫🇷"
+        "20 ⌜クモ⌟ SNI -> 🇫🇷",
+        "69 ⌜クモ⌟ CDN -> 🇫🇷",
+        "124 ⌜クモ⌟ SNI -> 🇫🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "1 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "20 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "5.249.165.96",
       "server_port": 443,
       "uuid": "f72b4ccd-9bb9-4682-8401-3d8affed53f2",
@@ -73,32 +72,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "45 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "91 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "131 ⌜クモ⌟ CDN -> 🇫🇷",
+      "tag": "69 ⌜クモ⌟ CDN -> 🇫🇷",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
@@ -115,6 +90,18 @@
         "headers": {
           "Host": "fr1.cachexy.ga"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "124 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "176.31.83.90",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
       }
     }
   ],

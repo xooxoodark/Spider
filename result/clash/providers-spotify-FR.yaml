@@ -1,5 +1,5 @@
 proxies:
-  - name: '1 ⌜クモ⌟ SNI -> 🇫🇷'
+  - name: '20 ⌜クモ⌟ SNI -> 🇫🇷'
     server: 5.249.165.96
     type: vmess
     port: 443
@@ -15,25 +15,7 @@ proxies:
       path: /vmess
       headers:
         Host: image-upload4.spotify.com
-  - name: '45 ⌜クモ⌟ SNI -> 🇫🇷'
-    server: 176.31.83.90
-    type: trojan
-    port: 443
-    password: origin
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '91 ⌜クモ⌟ SNI -> 🇫🇷'
-    server: 176.31.83.90
-    type: trojan
-    port: 443
-    password: origin
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '131 ⌜クモ⌟ CDN -> 🇫🇷'
+  - name: '69 ⌜クモ⌟ CDN -> 🇫🇷'
     server: investors.spotify.com
     type: vmess
     port: 443
@@ -49,3 +31,12 @@ proxies:
       path: /p9Dq67Nx/
       headers:
         Host: fr1.cachexy.ga
+  - name: '124 ⌜クモ⌟ SNI -> 🇫🇷'
+    server: 176.31.83.90
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
