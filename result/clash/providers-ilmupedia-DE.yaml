@@ -1,5 +1,5 @@
 proxies:
-  - name: '53 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '25 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 207.154.243.252
     type: trojan
     port: 443
@@ -8,23 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '157 ⌜クモ⌟ CDN -> 🇩🇪'
-    server: news.microsoft.com
-    type: vmess
-    port: 2053
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: 104.28.221.41
-    ws-opts: 
-      path: /eisasqa
-      headers:
-        Host: 104.28.221.41
-  - name: '171 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '124 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 188.40.251.19
     type: trojan
     port: 443
@@ -33,35 +17,3 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '210 ⌜クモ⌟ CDN -> 🇩🇪'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 2083
-    uuid: 1ffeca67-a2bc-471b-b138-369d6762967d
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: 135.125.201.213
-    ws-opts: 
-      path: /
-      headers:
-        Host: 135.125.201.213
-  - name: '211 ⌜クモ⌟ SNI -> 🇩🇪'
-    server: 135.125.201.213
-    type: vmess
-    port: 2083
-    uuid: 1ffeca67-a2bc-471b-b138-369d6762967d
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com

@@ -45,16 +45,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "60 ⌜クモ⌟ SNI -> 🇨🇦",
-        "61 ⌜クモ⌟ SNI -> 🇨🇦",
-        "91 ⌜クモ⌟ SNI -> 🇨🇦",
-        "92 ⌜クモ⌟ SNI -> 🇨🇦",
-        "94 ⌜クモ⌟ SNI -> 🇨🇦"
+        "36 ⌜クモ⌟ SNI -> 🇨🇦",
+        "52 ⌜クモ⌟ SNI -> 🇨🇦",
+        "65 ⌜クモ⌟ SNI -> 🇨🇦",
+        "66 ⌜クモ⌟ SNI -> 🇨🇦",
+        "145 ⌜クモ⌟ SNI -> 🇨🇦"
       ]
     },
     {
       "type": "trojan",
-      "tag": "60 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "36 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "t5.583181.xyz",
       "server_port": 1254,
       "password": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
@@ -66,7 +66,7 @@
     },
     {
       "type": "trojan",
-      "tag": "61 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "52 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "148.113.141.99",
       "server_port": 443,
       "password": "HdsUZmsHQW",
@@ -78,31 +78,19 @@
     },
     {
       "type": "trojan",
-      "tag": "91 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "65 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "149.56.141.11",
       "server_port": 443,
       "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "92 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "149.56.141.11",
-      "server_port": 443,
-      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "94 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "66 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "35.182.165.120",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -111,14 +99,26 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/v2ray",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "promo.ruangguru.com"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "145 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "192.46.223.110",
+      "server_port": 1254,
+      "password": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
       }
     }
   ],

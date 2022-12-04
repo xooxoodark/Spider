@@ -1,5 +1,21 @@
 proxies:
-  - name: '177 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '115 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 111.241.210.64
+    type: vmess
+    port: 10035
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: options.teams.microsoft.com
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: options.teams.microsoft.com
+  - name: '130 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 124.218.23.162
     type: trojan
     port: 8443
@@ -7,4 +23,4 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: options.teams.microsoft.com
+    servername: promo.ruangguru.com

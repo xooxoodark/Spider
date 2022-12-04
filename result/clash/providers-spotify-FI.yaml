@@ -1,0 +1,17 @@
+proxies:
+  - name: '147 ⌜クモ⌟ SNI -> 🇫🇮'
+    server: 65.108.147.129
+    type: vmess
+    port: 443
+    uuid: a110fb8d-5f71-41d6-9386-208d3f501438
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /ugbovws
+      headers:
+        Host: image-upload4.spotify.com

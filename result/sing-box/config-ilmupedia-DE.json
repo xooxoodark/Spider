@@ -45,16 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "53 ⌜クモ⌟ SNI -> 🇩🇪",
-        "157 ⌜クモ⌟ CDN -> 🇩🇪",
-        "171 ⌜クモ⌟ SNI -> 🇩🇪",
-        "210 ⌜クモ⌟ CDN -> 🇩🇪",
-        "211 ⌜クモ⌟ SNI -> 🇩🇪"
+        "25 ⌜クモ⌟ SNI -> 🇩🇪",
+        "124 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "53 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "25 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -65,29 +62,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "157 ⌜クモ⌟ CDN -> 🇩🇪",
-      "server": "news.microsoft.com",
-      "server_port": 2053,
-      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "104.28.221.41"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eisasqa",
-        "headers": {
-          "Host": "104.28.221.41"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "171 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "124 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
@@ -95,48 +71,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "210 ⌜クモ⌟ CDN -> 🇩🇪",
-      "server": "news.microsoft.com",
-      "server_port": 2083,
-      "uuid": "1ffeca67-a2bc-471b-b138-369d6762967d",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "135.125.201.213"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "135.125.201.213"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "211 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "135.125.201.213",
-      "server_port": 2083,
-      "uuid": "1ffeca67-a2bc-471b-b138-369d6762967d",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
       }
     }
   ],
