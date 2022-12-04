@@ -45,13 +45,25 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "27 ⌜クモ⌟ SNI -> 🇮🇪",
-        "68 ⌜クモ⌟ SNI -> 🇮🇪"
+        "45 ⌜クモ⌟ SNI -> 🇮🇪",
+        "101 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "27 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "45 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "51.77.71.134",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "101 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
@@ -59,18 +71,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "68 ⌜クモ⌟ SNI -> 🇮🇪",
-      "server": "51.77.71.134",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
       }
     }
   ],
