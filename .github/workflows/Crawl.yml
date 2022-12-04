@@ -24,9 +24,10 @@ jobs:
       - name: Install sing-box
         run: |
           mkdir ./bin
-          curl "https://github.com/SagerNet/sing-box/releases/download/v1.1/sing-box-1.1-linux-amd64.tar.gz" -L -o ./bin/sing-box.zip
-          unzip ./bin/sing-box.zip -d ./bin/
+          curl "https://github.com/SagerNet/sing-box/releases/download/v1.1/sing-box-1.1-linux-amd64.tar.gz" -L -o ./bin/sing-box.tar.gz
+          tar -xf ./bin/sing-box.zip -C ./bin
           rm -rf ./bin/sing-box.zip
+          mv ./bin/sing-box-1.1-linux-amd64/* ./bin/
       - name: Start Crawling
         env:
           DATA: ${{ github.event.client_payload.message }}
