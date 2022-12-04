@@ -104,16 +104,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "click.zoom.us"
         },
         "wsSettings": {
           "headers": {
-            "Host": "options.teams.microsoft.com"
+            "Host": "click.zoom.us"
           },
           "path": "/chat"
         }
       },
-      "tag": "proxy-45 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-49 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -142,7 +142,36 @@
           "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-60 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-66 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.195.202.124",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "267af089-734c-48ca-9d47-88b0435d541b",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "click.zoom.us"
+        }
+      },
+      "tag": "proxy-88 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -168,10 +197,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-97 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-98 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -211,7 +240,7 @@
           "path": "/vmess"
         }
       },
-      "tag": "proxy-98 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-99 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -251,7 +280,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-116 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-118 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -277,10 +306,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-131 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-134 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -320,7 +349,7 @@
           "path": "/eisasqa"
         }
       },
-      "tag": "proxy-170 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-180 ⌜クモ⌟ CDN -> 🇬🇧"
     },
     {
       "mux": {
@@ -346,10 +375,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-186 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-195 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -378,47 +407,7 @@
           "serverName": "click.zoom.us"
         }
       },
-      "tag": "proxy-188 ⌜クモ⌟ SNI -> 🇬🇧"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "main.millionaireaisle.com",
-            "port": 2053,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "v15.583181.xyz"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "v15.583181.xyz"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-208 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-196 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -458,7 +447,47 @@
           "path": "/"
         }
       },
-      "tag": "proxy-209 ⌜クモ⌟ CDN -> 🇬🇧"
+      "tag": "proxy-215 ⌜クモ⌟ CDN -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "main.millionaireaisle.com",
+            "port": 2053,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "v15.583181.xyz"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "v15.583181.xyz"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-216 ⌜クモ⌟ CDN -> 🇬🇧"
     }
   ],
   "dns": {
