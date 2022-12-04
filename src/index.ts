@@ -52,11 +52,9 @@ exec("pkill sing-box");
         if (account.startsWith("vmess")) {
           accounts.push(converter.toObject("Vmess", account));
           vmessCount++;
-          console.log(`Add: Vmess -> ${vmessCount}`);
         } else if (account.startsWith("trojan")) {
           accounts.push(converter.toObject("Trojan", account));
           trojanCount++;
-          console.log(`Add: Trojan -> ${trojanCount}`);
         }
       }
       console.log(`Total: Vmess -> ${vmessCount}`);
@@ -76,7 +74,7 @@ exec("pkill sing-box");
 
     for (const i in accounts) {
       let account = accounts[i];
-      // logger.log(LogLevel.try, `[${account.vpn}] -> ${account.remark}...`);
+      if (account.error) continue;
       new Promise(async (resolve) => {
         const connectResult: ConnectServer[] = [];
         const onTest: string[] = [];
