@@ -99,7 +99,7 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
+          "serverName": "promo.ruangguru.com"
         }
       },
       "tag": "proxy-40 ⌜クモ⌟ SNI -> 🇨🇦"
@@ -131,36 +131,47 @@
           "serverName": "click.zoom.us"
         }
       },
-      "tag": "proxy-61 ⌜クモ⌟ SNI -> 🇨🇦"
+      "tag": "proxy-74 ⌜クモ⌟ SNI -> 🇨🇦"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "149.56.141.11",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
-            "port": 443
+            "address": "35.182.165.120",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "click.zoom.us"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "click.zoom.us"
+          },
+          "path": "/v2ray"
         }
       },
-      "tag": "proxy-75 ⌜クモ⌟ SNI -> 🇨🇦"
+      "tag": "proxy-76 ⌜クモ⌟ SNI -> 🇨🇦"
     }
   ],
   "dns": {

@@ -45,32 +45,41 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "121 ⌜クモ⌟ SNI -> 🇫🇷",
-        "122 ⌜クモ⌟ SNI -> 🇫🇷"
+        "47 ⌜クモ⌟ SNI -> 🇫🇷",
+        "109 ⌜クモ⌟ CDN -> 🇫🇷"
       ]
     },
     {
       "type": "trojan",
-      "tag": "121 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "47 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
-      "type": "trojan",
-      "tag": "122 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
+      "type": "vmess",
+      "tag": "109 ⌜クモ⌟ CDN -> 🇫🇷",
+      "server": "main.millionaireaisle.com",
       "server_port": 443,
-      "password": "origin",
+      "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "fr1.cachexy.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/p9Dq67Nx/",
+        "headers": {
+          "Host": "fr1.cachexy.ga"
+        }
       }
     }
   ],
