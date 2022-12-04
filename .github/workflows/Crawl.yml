@@ -39,6 +39,7 @@ jobs:
           add: '["./result", "./resources/database"]'
           default_author: github_actions
           fetch: true
+          pull: "--rebase"
           tag_push: "--force"
           message: "Update VPN"
       - name: Scavenge next source
