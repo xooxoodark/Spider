@@ -45,15 +45,28 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "43 ⌜クモ⌟ SNI -> 🇫🇷",
-        "89 ⌜クモ⌟ SNI -> 🇫🇷",
+        "37 ⌜クモ⌟ SNI -> 🇫🇷",
+        "42 ⌜クモ⌟ SNI -> 🇫🇷",
+        "88 ⌜クモ⌟ SNI -> 🇫🇷",
         "90 ⌜クモ⌟ SNI -> 🇫🇷",
-        "125 ⌜クモ⌟ CDN -> 🇫🇷"
+        "92 ⌜クモ⌟ CDN -> 🇫🇷"
       ]
     },
     {
+      "type": "trojan",
+      "tag": "37 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "176.31.83.90",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "43 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "42 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "5.249.165.96",
       "server_port": 443,
       "uuid": "f72b4ccd-9bb9-4682-8401-3d8affed53f2",
@@ -74,7 +87,7 @@
     },
     {
       "type": "trojan",
-      "tag": "89 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "88 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
@@ -98,22 +111,22 @@
     },
     {
       "type": "vmess",
-      "tag": "125 ⌜クモ⌟ CDN -> 🇫🇷",
-      "server": "news.microsoft.com",
+      "tag": "92 ⌜クモ⌟ CDN -> 🇫🇷",
+      "server": "cacerts.digicert.com",
       "server_port": 443,
-      "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
+      "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "fr1.cachexy.ga"
+        "server_name": "62.210.85.207"
       },
       "transport": {
         "type": "ws",
-        "path": "/p9Dq67Nx/",
+        "path": "/dongtaiwang.com",
         "headers": {
-          "Host": "fr1.cachexy.ga"
+          "Host": "62.210.85.207"
         }
       }
     }

@@ -102,7 +102,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-18 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-19 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -131,7 +131,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-41 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-40 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -171,7 +171,7 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-77 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-73 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -211,36 +211,47 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-78 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-74 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "38.9.140.66",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "vvip-periantara",
-            "port": 443
+            "address": "45.12.80.151",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
           "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/fastssh/amrozi87/6350416ec330b/"
         }
       },
-      "tag": "proxy-95 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-110 ⌜クモ⌟ SNI -> 🇮🇩"
     }
   ],
   "dns": {

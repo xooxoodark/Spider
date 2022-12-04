@@ -45,28 +45,45 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "54 ⌜クモ⌟ SNI -> 🇦🇺"
+        "13 ⌜クモ⌟ SNI -> 🇦🇺",
+        "44 ⌜クモ⌟ SNI -> 🇦🇺",
+        "53 ⌜クモ⌟ SNI -> 🇦🇺"
       ]
     },
     {
-      "type": "vmess",
-      "tag": "54 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "194.195.253.128",
+      "type": "trojan",
+      "tag": "13 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "140.238.205.173",
       "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
-      "security": "auto",
-      "alter_id": 0,
+      "password": "cb43b7c2-b744-41c5-bcc2-fd7467b332cf",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "44 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.67.98.30",
+      "server_port": 443,
+      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "53 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.67.98.30",
+      "server_port": 443,
+      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "click.zoom.us"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/chat",
-        "headers": {
-          "Host": "click.zoom.us"
-        }
       }
     }
   ],

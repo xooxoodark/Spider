@@ -1,14 +1,5 @@
 proxies:
-  - name: '5 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 138.2.115.240
-    type: trojan
-    port: 3052
-    password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '10 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '11 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 144.24.72.126
     type: trojan
     port: 443
@@ -17,7 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '11 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '12 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 138.2.113.84
     type: trojan
     port: 443
@@ -26,7 +17,16 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '12 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '17 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 146.56.189.146
+    type: trojan
+    port: 443
+    password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '29 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 138.2.113.248
     type: trojan
     port: 443
@@ -35,25 +35,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '15 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 146.56.189.146
-    type: trojan
-    port: 443
-    password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '48 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 146.56.176.239
-    type: trojan
-    port: 443
-    password: db9b6698-f01c-4fe1-93ca-d752c956c2d3
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '59 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '46 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 144.24.72.126
     type: trojan
     port: 443
@@ -62,20 +44,29 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '63 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 146.56.176.239
-    type: trojan
-    port: 443
-    password: e3dcc71e-f058-43bf-bf0d-5bdf20dec071
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '66 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '55 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 146.56.189.146
     type: trojan
     port: 443
     password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '63 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 146.56.176.239
+    type: trojan
+    port: 443
+    password: 881091b5-4172-4329-a0e7-17fca1e72292
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '64 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 146.56.176.239
+    type: trojan
+    port: 443
+    password: 3753719b-eb37-4f34-ab60-ae3a70486b27
     udp: true
     skip-cert-verify: true
     network: tcp
@@ -98,34 +89,23 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '80 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 146.56.176.239
-    type: trojan
+  - name: '85 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 161.129.34.102
+    type: vmess
     port: 443
-    password: d30afdba-ca55-463a-b26e-27080698a2a6
+    uuid: ec736482-173e-3eff-9114-b49df8056e7d
+    alterId: 0
+    cipher: auto
+    tls: true
     udp: true
-    skip-cert-verify: true
-    network: tcp
+    skip-cert-verify: false
+    network: ws
     servername: news.microsoft.com
-  - name: '97 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 146.56.176.239
-    type: trojan
-    port: 443
-    password: 545034ab-8179-46ea-a7d4-a5c992cce000
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
+    ws-opts: 
+      path: undefined
+      headers:
+        Host: news.microsoft.com
   - name: '99 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 146.56.176.239
-    type: trojan
-    port: 443
-    password: 036ba5aa-fcb7-4e6f-95b5-a857cb354aa8
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '104 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 202.79.171.135
     type: vmess
     port: 443
