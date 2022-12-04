@@ -46,21 +46,22 @@
       "tag": "select",
       "outbounds": [
         "7 ⌜クモ⌟ SNI -> 🇸🇬",
-        "10 ⌜クモ⌟ SNI -> 🇸🇬",
-        "11 ⌜クモ⌟ SNI -> 🇸🇬",
-        "14 ⌜クモ⌟ SNI -> 🇸🇬",
-        "42 ⌜クモ⌟ SNI -> 🇸🇬",
-        "46 ⌜クモ⌟ SNI -> 🇸🇬",
-        "49 ⌜クモ⌟ SNI -> 🇸🇬",
-        "56 ⌜クモ⌟ SNI -> 🇸🇬",
-        "81 ⌜クモ⌟ SNI -> 🇸🇬",
-        "93 ⌜クモ⌟ SNI -> 🇸🇬",
-        "102 ⌜クモ⌟ SNI -> 🇸🇬",
+        "8 ⌜クモ⌟ SNI -> 🇸🇬",
+        "12 ⌜クモ⌟ SNI -> 🇸🇬",
+        "13 ⌜クモ⌟ SNI -> 🇸🇬",
+        "15 ⌜クモ⌟ SNI -> 🇸🇬",
+        "41 ⌜クモ⌟ SNI -> 🇸🇬",
+        "44 ⌜クモ⌟ SNI -> 🇸🇬",
+        "47 ⌜クモ⌟ SNI -> 🇸🇬",
+        "58 ⌜クモ⌟ SNI -> 🇸🇬",
+        "77 ⌜クモ⌟ SNI -> 🇸🇬",
+        "89 ⌜クモ⌟ SNI -> 🇸🇬",
+        "92 ⌜クモ⌟ SNI -> 🇸🇬",
         "105 ⌜クモ⌟ SNI -> 🇸🇬",
         "113 ⌜クモ⌟ CDN -> 🇸🇬",
         "114 ⌜クモ⌟ CDN -> 🇸🇬",
         "115 ⌜クモ⌟ CDN -> 🇸🇬",
-        "123 ⌜クモ⌟ SNI -> 🇸🇬"
+        "127 ⌜クモ⌟ SNI -> 🇸🇬"
       ]
     },
     {
@@ -74,12 +75,33 @@
       "tls": {
         "enabled": true,
         "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "8 ⌜クモ⌟ SNI -> 🇸🇬",
+      "server": "172.105.113.246",
+      "server_port": 443,
+      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
         "server_name": "options.teams.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/chat",
+        "headers": {
+          "Host": "options.teams.microsoft.com"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "10 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "12 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "194.233.81.125",
       "server_port": 443,
       "uuid": "ceb8a921-ec72-4804-ae92-cbd309f2f213",
@@ -100,7 +122,7 @@
     },
     {
       "type": "vmess",
-      "tag": "11 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "13 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "194.233.81.125",
       "server_port": 443,
       "uuid": "ceb8a921-ec72-4804-ae92-cbd309f2f213",
@@ -121,7 +143,7 @@
     },
     {
       "type": "vmess",
-      "tag": "14 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "15 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "5.44.249.45",
       "server_port": 3331,
       "uuid": "57e0cb4d-eae5-48ec-8091-149dc2b309e0",
@@ -142,31 +164,31 @@
     },
     {
       "type": "trojan",
-      "tag": "42 ⌜クモ⌟ SNI -> 🇸🇬",
-      "server": "51.79.156.168",
-      "server_port": 443,
-      "password": "89d5bfe0-6ea1-11ed-b138-225401db9d57",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "46 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "41 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "159.223.89.239",
       "server_port": 443,
       "password": "bb5b1337-fa9e-4e00-b8c6-1110e626171d",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "44 ⌜クモ⌟ SNI -> 🇸🇬",
+      "server": "51.79.156.168",
+      "server_port": 443,
+      "password": "89d5bfe0-6ea1-11ed-b138-225401db9d57",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "49 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "47 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "139.162.16.228",
       "server_port": 40771,
       "uuid": "61194810-5193-48bc-eb0a-7978a059d681",
@@ -175,36 +197,36 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "trojan",
-      "tag": "56 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "58 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "165.22.97.242",
       "server_port": 17002,
       "password": "e198c059-18e0-4c5e-8358-b4b7850d4d86",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "trojan",
-      "tag": "81 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "77 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "194.233.88.109",
       "server_port": 443,
       "password": "123456",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "93 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "89 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "51.79.164.157",
       "server_port": 443,
       "uuid": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
@@ -213,34 +235,22 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "click.zoom.us"
       },
       "transport": {
         "type": "ws",
         "path": "/fastssh/dghh/6347fe8113b09/",
         "headers": {
-          "Host": "options.teams.microsoft.com"
+          "Host": "click.zoom.us"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "102 ⌜クモ⌟ SNI -> 🇸🇬",
-      "server": "139.162.45.139",
-      "server_port": 443,
-      "password": "FLpONjB2Lb",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "105 ⌜クモ⌟ SNI -> 🇸🇬",
-      "server": "172.105.113.246",
+      "tag": "92 ⌜クモ⌟ SNI -> 🇸🇬",
+      "server": "51.79.164.157",
       "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "uuid": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
       "security": "auto",
       "alter_id": 0,
       "tls": {
@@ -250,10 +260,22 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/chat",
+        "path": "/fastssh/dghh/6347fe8113b09/",
         "headers": {
           "Host": "promo.ruangguru.com"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "105 ⌜クモ⌟ SNI -> 🇸🇬",
+      "server": "139.162.45.139",
+      "server_port": 443,
+      "password": "FLpONjB2Lb",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
       }
     },
     {
@@ -315,7 +337,7 @@
     },
     {
       "type": "vmess",
-      "tag": "123 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "127 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "lll.277428.xyz",
       "server_port": 40771,
       "uuid": "61194810-5193-48bc-eb0a-7978a059d681",
@@ -324,7 +346,7 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "click.zoom.us"
       }
     }
   ],

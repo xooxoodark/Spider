@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 443,
             "users": [
               {
@@ -114,6 +114,46 @@
         }
       },
       "tag": "proxy-2 ⌜クモ⌟ CDN -> 🇵🇱"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "news.microsoft.com",
+            "port": 2053,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "104.28.193.185"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "104.28.193.185"
+          },
+          "path": "/eisasqa"
+        }
+      },
+      "tag": "proxy-117 ⌜クモ⌟ CDN -> 🇵🇱"
     }
   ],
   "dns": {
