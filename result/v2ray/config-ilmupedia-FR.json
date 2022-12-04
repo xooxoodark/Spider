@@ -113,7 +113,7 @@
           "path": "/vmess"
         }
       },
-      "tag": "proxy-19 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-16 ⌜クモ⌟ SNI -> 🇫🇷"
     },
     {
       "mux": {
@@ -142,7 +142,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-46 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-45 ⌜クモ⌟ SNI -> 🇫🇷"
     },
     {
       "mux": {
@@ -153,7 +153,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 443,
             "users": [
               {
@@ -182,36 +182,47 @@
           "path": "/p9Dq67Nx/"
         }
       },
-      "tag": "proxy-65 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-59 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "176.31.83.90",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "origin",
-            "port": 443
+            "address": "cacerts.digicert.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "news.microsoft.com"
+          "serverName": "fr1.cachexy.ga"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "fr1.cachexy.ga"
+          },
+          "path": "/p9Dq67Nx/"
         }
       },
-      "tag": "proxy-126 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-60 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -251,7 +262,7 @@
           "path": "/dongtaiwang.com"
         }
       },
-      "tag": "proxy-150 ⌜クモ⌟ CDN -> 🇫🇷"
+      "tag": "proxy-130 ⌜クモ⌟ CDN -> 🇫🇷"
     }
   ],
   "dns": {
