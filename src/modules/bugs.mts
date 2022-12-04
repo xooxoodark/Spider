@@ -78,7 +78,7 @@ class Bugs {
           if (account.transport?.headers) {
             account.transport.headers.Host = sni;
           }
-          account.tls.servername = sni;
+          account.tls.server_name = sni;
         } else {
           account.server = cdn;
         }

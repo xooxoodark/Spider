@@ -73,14 +73,14 @@ class Converter {
         type: account.vpn,
         tag: account.remark,
         server: account.address,
-        server_port: account.port,
+        server_port: parseInt(`${account.port}`),
         uuid: account.id,
         security: "auto",
         alter_id: parseInt(`${account.alterId}` || "0"),
         tls: {
           enabled: account.tls ? true : false,
           insecure: account.skipCertVerify || true,
-          servername: account.sni || account.host,
+          server_name: account.sni || account.host,
         },
       };
 
@@ -98,12 +98,12 @@ class Converter {
         type: account.vpn,
         tag: account.remark,
         server: account.address,
-        server_port: account.port,
+        server_port: parseInt(`${account.port}`),
         password: account.id,
         tls: {
           enabled: account.tls ? true : false,
           insecure: account.skipCertVerify || true,
-          servername: account.sni || account.host,
+          server_name: account.sni || account.host,
         },
       };
 

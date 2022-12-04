@@ -34,9 +34,9 @@ function urlParser(url: string): UrlWithParsedQuery {
   return parse(url, true);
 }
 
-async function isV2rayRunning(): Promise<number> {
-  const list = await findProcess("name", "v2ray");
+async function isSingBoxRunning(): Promise<number> {
+  const list = await findProcess("name", "sing-box");
   return list.length;
 }
 
-export { sleep, base64Decode, base64Encode, urlParser, isV2rayRunning };
+export { sleep, base64Decode, base64Encode, urlParser, isSingBoxRunning };

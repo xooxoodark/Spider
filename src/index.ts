@@ -8,7 +8,7 @@ import { exit } from "process";
 import { Bugs } from "./modules/bugs.mjs";
 import { connect } from "./modules/connect.mjs";
 import { converter } from "./modules/converter.mjs";
-import { isV2rayRunning, sleep } from "./modules/helper.mjs";
+import { isSingBoxRunning, sleep } from "./modules/helper.mjs";
 import { logger, LogLevel } from "./modules/logger.mjs";
 import { Scraper } from "./modules/scraper.mjs";
 import { bot } from "./modules/tg.mjs";
@@ -100,7 +100,7 @@ exec("pkill v2ray");
           onTest.push(mode);
           new Promise((resolve) => {
             connect
-              .connect(bugs.fill(converter.toV2ray(account), "V2ray", mode as "sni" | "cdn"))
+              .connect(bugs.fill(converter.toSingBox(account), "Sing-Box", mode as "sni" | "cdn"))
               .then((res: ConnectServer) =>
                 connectResult.push({
                   ...res,
@@ -163,12 +163,12 @@ exec("pkill v2ray");
 
       let isStuck = false;
       const timeout = setTimeout(() => (isStuck = true), 60000);
-      while ((await isV2rayRunning()) > maxConcurrentTest) {
+      while ((await isSingBoxRunning()) > maxConcurrentTest) {
         logger.log(LogLevel.info, "Max concurrent reached!");
         await sleep(10000);
 
         if (isStuck) {
-          exec("pkill v2ray");
+          exec("pkill sing-box");
           break;
         }
       }
@@ -184,7 +184,7 @@ exec("pkill v2ray");
         await sleep(10000);
         break;
       }
-    } while (await isV2rayRunning());
+    } while (await isSingBoxRunning());
     return result;
   })();
 
@@ -262,7 +262,7 @@ exec("pkill v2ray");
       proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
       boxConfig.outbounds.push(bugs.fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni"));
 
-      boxConfig.outbounds[2].outbounds.push(account.remark);
+      boxConfig.outbounds[3].outbounds.push(account.remark);
     }
     writeFileSync(`./result/sing-box/config-${bugBundle}.json`, JSON.stringify(boxConfig, null, 2));
     writeFileSync(`./result/v2ray/config-${bugBundle}.json`, JSON.stringify(rayConfig, null, 2));
@@ -281,7 +281,7 @@ exec("pkill v2ray");
         proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
         boxConfig.outbounds.push(bugs.fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni"));
 
-        boxConfig.outbounds[2].outbounds.push(account.remark);
+        boxConfig.outbounds[3].outbounds.push(account.remark);
       }
       writeFileSync(`./result/v2ray/config-${bugBundle}-${country}.json`, JSON.stringify(rayConfig, null, 2));
       writeFileSync(`./result/sing-box/config-${bugBundle}-${country}.json`, JSON.stringify(boxConfig, null, 2));
@@ -301,7 +301,7 @@ exec("pkill v2ray");
         proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
         boxConfig.outbounds.push(bugs.fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni"));
 
-        boxConfig.outbounds[2].outbounds.push(account.remark);
+        boxConfig.outbounds[3].outbounds.push(account.remark);
       }
       writeFileSync(`./result/v2ray/config-${bugBundle}-${region}.json`, JSON.stringify(rayConfig, null, 2));
       writeFileSync(`./result/sing-box/config-${bugBundle}-${region}.json`, JSON.stringify(boxConfig, null, 2));

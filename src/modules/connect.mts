@@ -16,14 +16,13 @@ class Connect {
     let cn: string = "";
     let ip: string = "";
 
-    const v2ray = spawn("./bin/v2ray", ["run", "-c", `${config}`]);
+    const singBox = spawn("./bin/sing-box", ["run", "-c", `${config}`]);
 
-    v2ray.stdout.on("data", (res: any) => {
+    singBox.stderr.on("data", (res: any) => {
+      const message = res.toString();
       // console.log(res.toString());
-      if (res.toString().match(/(context deadline exceeded|timeout)/i)) {
-        error = "No Internet!";
-      } else if (res.toString().match(/error:(.+)/i)) {
-        error = res.toString().match(/error:(.+)/i)[1];
+      if (message.match(/error:.+/)) {
+        error = message.match(/error:(.+)/)[1];
       }
     });
 
@@ -33,7 +32,7 @@ class Connect {
       await fetch("http://ipapi.co/json", {
         agent: new SocksProxyAgent(
           {
-            hostname: "127.0.0.1",
+            hostname: "0.0.0.0",
             port: port,
             protocol: "socks5",
             tls: {
@@ -72,9 +71,9 @@ class Connect {
     }
 
     await new Promise((resolve) => {
-      v2ray.kill();
+      singBox.kill();
 
-      v2ray.on("close", () => {
+      singBox.on("close", () => {
         resolve(0);
       });
     });
@@ -89,25 +88,24 @@ class Connect {
 
   async connect(account: any): Promise<ConnectServer> {
     const port = this.calculatePort();
-    const savePath = `${path}/resources/config/v2ray/test-${port}.json`;
-    let v2rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
+    const savePath = `${path}/resources/config/sing-box/test-${port}.json`;
+    let boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
 
-    v2rayConfig.inbounds[0].port = port + 1; // tproxy port
-    v2rayConfig.inbounds[1].port = port + 2; // socks port
-    v2rayConfig.routing.rules[0].port = port + 3; // dns port
-    v2rayConfig.outbounds.push(account);
+    boxConfig.inbounds[0].listen_port = port;
+    boxConfig.outbounds.push(account);
+    boxConfig.outbounds[3].outbounds.push(account.tag);
 
-    writeFileSync(savePath, JSON.stringify(v2rayConfig, null, 2));
+    writeFileSync(savePath, JSON.stringify(boxConfig, null, 2));
 
     this.connectionNumber++;
-    if (this.connectionNumber > 50) {
+    if (this.connectionNumber > 500) {
       this.connectionNumber = 1;
     }
-    return await this._connect(savePath, v2rayConfig.inbounds[1].port);
+    return await this._connect(savePath, port);
   }
 
   calculatePort(): number {
-    return this.connectionNumber * 3 + 10000;
+    return this.connectionNumber + 10000;
   }
 }
 
