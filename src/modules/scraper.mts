@@ -1,7 +1,7 @@
 import { base64Decode } from "./helper.mjs";
 import { acceptedType } from "../index.js";
 import { logger, LogLevel } from "./logger.mjs";
-import isBase64 from "is-base64";
+import { Base64 } from "js-base64";
 import fetch from "node-fetch";
 
 type ScraperType = {
@@ -31,7 +31,7 @@ class Scraper {
     const text = await res.text();
     let configs: string[];
 
-    if (isBase64(text)) {
+    if (Base64.isValid(text)) {
       configs = base64Decode(text).match(/(.+:\/\/.+)/gim) || [];
     } else {
       try {

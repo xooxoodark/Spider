@@ -1,5 +1,6 @@
 import { logger, LogLevel } from "./logger.mjs";
 import { parse, UrlWithParsedQuery } from "url";
+import { decode, encode } from "js-base64";
 import findProcess from "find-process";
 
 async function sleep(ms: number) {
@@ -12,7 +13,7 @@ async function sleep(ms: number) {
 
 function base64Decode(text: string): string {
   try {
-    return Buffer.from(text, "base64").toString();
+    return decode(text);
   } catch (e: any) {
     logger.log(LogLevel.error, e.name);
   }
@@ -22,7 +23,7 @@ function base64Decode(text: string): string {
 
 function base64Encode(text: string): string {
   try {
-    return Buffer.from(text).toString("base64");
+    return encode(text);
   } catch (e: any) {
     logger.log(LogLevel.error, e.name);
   }
