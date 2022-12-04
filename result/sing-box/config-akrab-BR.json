@@ -1,0 +1,112 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "1.1.1.1",
+        "detour": "select"
+      }
+    ],
+    "final": "cloudflare",
+    "strategy": "prefer_ipv4",
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 10800,
+      "domain_strategy": "prefer_ipv4",
+      "set_system_proxy": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "95 ⌜クモ⌟ SNI -> 🇧🇷",
+        "96 ⌜クモ⌟ CDN -> 🇧🇷"
+      ]
+    },
+    {
+      "type": "vmess",
+      "tag": "95 ⌜クモ⌟ SNI -> 🇧🇷",
+      "server": "18.228.19.203",
+      "server_port": "443",
+      "uuid": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "options.teams.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "options.teams.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "96 ⌜クモ⌟ CDN -> 🇧🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": "443",
+      "uuid": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "s.loc-m.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "s.loc-m.xyz"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "network": "tcp",
+        "outbound": "select"
+      },
+      {
+        "network": "udp",
+        "outbound": "select"
+      }
+    ],
+    "geoip": {
+      "path": "./geoip.db",
+      "download_detour": "direct-out"
+    },
+    "geosite": {
+      "path": "./geosite.db",
+      "download_detour": "direct-out"
+    },
+    "final": "select"
+  }
+}

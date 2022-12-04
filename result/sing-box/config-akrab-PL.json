@@ -1,0 +1,134 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "1.1.1.1",
+        "detour": "select"
+      }
+    ],
+    "final": "cloudflare",
+    "strategy": "prefer_ipv4",
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 10800,
+      "domain_strategy": "prefer_ipv4",
+      "set_system_proxy": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "117 ⌜クモ⌟ CDN -> 🇵🇱",
+        "132 ⌜クモ⌟ CDN -> 🇵🇱",
+        "215 ⌜クモ⌟ CDN -> 🇵🇱"
+      ]
+    },
+    {
+      "type": "vmess",
+      "tag": "117 ⌜クモ⌟ CDN -> 🇵🇱",
+      "server": "main.millionaireaisle.com",
+      "server_port": "443",
+      "uuid": "735b9f92-e4ff-4b4d-bfe2-9f093f78c66e",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "consumer-tribune-fetish-rule.trycloudflare.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "consumer-tribune-fetish-rule.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "132 ⌜クモ⌟ CDN -> 🇵🇱",
+      "server": "main.millionaireaisle.com",
+      "server_port": "2053",
+      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "foxpol.fovi.tk"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eisasqa",
+        "headers": {
+          "Host": "foxpol.fovi.tk"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "215 ⌜クモ⌟ CDN -> 🇵🇱",
+      "server": "main.millionaireaisle.com",
+      "server_port": "2053",
+      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "foxpol2.fovi.tk"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eisasqa",
+        "headers": {
+          "Host": "foxpol2.fovi.tk"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "network": "tcp",
+        "outbound": "select"
+      },
+      {
+        "network": "udp",
+        "outbound": "select"
+      }
+    ],
+    "geoip": {
+      "path": "./geoip.db",
+      "download_detour": "direct-out"
+    },
+    "geosite": {
+      "path": "./geosite.db",
+      "download_detour": "direct-out"
+    },
+    "final": "select"
+  }
+}

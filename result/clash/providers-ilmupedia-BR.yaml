@@ -1,6 +1,22 @@
 proxies:
-  - name: '108 ⌜クモ⌟ CDN -> 🇧🇷'
-    server: news.microsoft.com
+  - name: '95 ⌜クモ⌟ SNI -> 🇧🇷'
+    server: 18.228.19.203
+    type: vmess
+    port: 443
+    uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '96 ⌜クモ⌟ CDN -> 🇧🇷'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63

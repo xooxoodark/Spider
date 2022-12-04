@@ -1,0 +1,556 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "1.1.1.1",
+        "detour": "select"
+      }
+    ],
+    "final": "cloudflare",
+    "strategy": "prefer_ipv4",
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 10800,
+      "domain_strategy": "prefer_ipv4",
+      "set_system_proxy": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "54 ⌜クモ⌟ SNI -> 🇰🇷",
+        "61 ⌜クモ⌟ SNI -> 🇰🇷",
+        "63 ⌜クモ⌟ SNI -> 🇰🇷",
+        "65 ⌜クモ⌟ SNI -> 🇰🇷",
+        "66 ⌜クモ⌟ SNI -> 🇰🇷",
+        "69 ⌜クモ⌟ SNI -> 🇰🇷",
+        "72 ⌜クモ⌟ SNI -> 🇰🇷",
+        "121 ⌜クモ⌟ SNI -> 🇰🇷",
+        "139 ⌜クモ⌟ SNI -> 🇰🇷",
+        "140 ⌜クモ⌟ SNI -> 🇰🇷",
+        "141 ⌜クモ⌟ SNI -> 🇰🇷",
+        "142 ⌜クモ⌟ SNI -> 🇰🇷",
+        "146 ⌜クモ⌟ SNI -> 🇰🇷",
+        "148 ⌜クモ⌟ SNI -> 🇰🇷",
+        "149 ⌜クモ⌟ SNI -> 🇰🇷",
+        "150 ⌜クモ⌟ SNI -> 🇰🇷",
+        "151 ⌜クモ⌟ SNI -> 🇰🇷",
+        "152 ⌜クモ⌟ SNI -> 🇰🇷",
+        "153 ⌜クモ⌟ SNI -> 🇰🇷",
+        "154 ⌜クモ⌟ SNI -> 🇰🇷",
+        "155 ⌜クモ⌟ SNI -> 🇰🇷",
+        "157 ⌜クモ⌟ SNI -> 🇰🇷",
+        "158 ⌜クモ⌟ SNI -> 🇰🇷",
+        "159 ⌜クモ⌟ SNI -> 🇰🇷",
+        "160 ⌜クモ⌟ SNI -> 🇰🇷",
+        "161 ⌜クモ⌟ SNI -> 🇰🇷",
+        "170 ⌜クモ⌟ SNI -> 🇰🇷",
+        "193 ⌜クモ⌟ CDN -> 🇰🇷",
+        "195 ⌜クモ⌟ SNI -> 🇰🇷",
+        "196 ⌜クモ⌟ SNI -> 🇰🇷",
+        "197 ⌜クモ⌟ SNI -> 🇰🇷",
+        "198 ⌜クモ⌟ SNI -> 🇰🇷",
+        "199 ⌜クモ⌟ SNI -> 🇰🇷",
+        "200 ⌜クモ⌟ SNI -> 🇰🇷",
+        "204 ⌜クモ⌟ SNI -> 🇰🇷",
+        "205 ⌜クモ⌟ SNI -> 🇰🇷"
+      ]
+    },
+    {
+      "type": "vmess",
+      "tag": "54 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.133.109",
+      "server_port": "37121",
+      "uuid": "575e4d92-1056-44c2-8cac-75ef1c859ad5",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "61 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "2e4c54a0-a780-4994-97c0-44eb92857d76",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "63 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "144.24.72.126",
+      "server_port": 443,
+      "password": "7118b5f4-0ea4-4c11-be7f-11471cb91e4a",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "65 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "161.129.34.102",
+      "server_port": "443",
+      "uuid": "ec736482-173e-3eff-9114-b49df8056e7d",
+      "security": "auto",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "66 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "138.2.113.248",
+      "server_port": 443,
+      "password": "9c822f05-cfdc-479a-9534-60f3d4127435",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "69 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "203.210.16.168",
+      "server_port": 8443,
+      "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "72 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "138.2.113.84",
+      "server_port": 443,
+      "password": "b291d129-ee55-4801-a9b8-b5316e5c37b7",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "121 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "138.2.115.240",
+      "server_port": 3052,
+      "password": "3a2c0c6c-9ee5-c05f-c951-fcd73831983e",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "139 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "21f204d3-b42e-466a-9cb2-b83d868dcd5f",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "140 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "ffd553fe-7d14-4ab2-acba-e7307d41e4f4",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "141 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "db9b6698-f01c-4fe1-93ca-d752c956c2d3",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "142 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "e3dcc71e-f058-43bf-bf0d-5bdf20dec071",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "146 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.189.146",
+      "server_port": 443,
+      "password": "f2117e99-9b6e-47fd-b0a9-634a0b15b998",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "148 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "7c953fab-2d79-4320-b208-59e07b6033fd",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "149 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "36443c4f-4487-48a6-8438-57bd7700b916",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "150 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "3753719b-eb37-4f34-ab60-ae3a70486b27",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "151 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "61f6271b-5e65-46b8-bc80-c6468a1f185e",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "152 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "65f7378f-edb8-4f5d-913a-641ecd853cea",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "153 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "23103894-eec7-4de1-a05a-c2e11e351287",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "154 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "98a68cfb-42c6-4498-ac6e-7e5c203924a7",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "155 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "f2239c58-4684-4747-8985-fbca693f352b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "157 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "80b07539-c253-4526-8a80-424708ff2ced",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "158 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "205f8ab6-cb17-4480-93a6-aece90b88742",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "159 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "881091b5-4172-4329-a0e7-17fca1e72292",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "160 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "d30afdba-ca55-463a-b26e-27080698a2a6",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "161 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "7e92d33f-6917-4c69-8eca-7fe80be58199",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "170 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "ec129ab2-3c89-4e25-8b97-aee479ac06f1",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "193 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "investors.spotify.com",
+      "server_port": "443",
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "surongwei.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/reffs7y26g0ua",
+        "headers": {
+          "Host": "surongwei.eu.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "195 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "545034ab-8179-46ea-a7d4-a5c992cce000",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "196 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "96e08c45-762a-48d2-8b65-0088c3c5e3d4",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "197 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "33073a7c-e6d5-4271-9b19-4416afcc25b5",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "198 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "3fe45691-03ac-40a1-8f4e-1317905020db",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "199 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "da647e58-8f85-450f-b123-568c492c297c",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "200 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "aa7d24e0-b60c-44bb-bcd1-8b74a297cdbc",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "204 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "036ba5aa-fcb7-4e6f-95b5-a857cb354aa8",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "205 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.176.239",
+      "server_port": 443,
+      "password": "1988268c-a841-42f2-acac-7a8c0c7e78e5",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "image-upload4.spotify.com"
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "network": "tcp",
+        "outbound": "select"
+      },
+      {
+        "network": "udp",
+        "outbound": "select"
+      }
+    ],
+    "geoip": {
+      "path": "./geoip.db",
+      "download_detour": "direct-out"
+    },
+    "geosite": {
+      "path": "./geosite.db",
+      "download_detour": "direct-out"
+    },
+    "final": "select"
+  }
+}

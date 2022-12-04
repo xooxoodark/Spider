@@ -1,0 +1,120 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "1.1.1.1",
+        "detour": "select"
+      }
+    ],
+    "final": "cloudflare",
+    "strategy": "prefer_ipv4",
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 10800,
+      "domain_strategy": "prefer_ipv4",
+      "set_system_proxy": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "35 ⌜クモ⌟ SNI -> 🇮🇳",
+        "67 ⌜クモ⌟ SNI -> 🇮🇳",
+        "84 ⌜クモ⌟ SNI -> 🇮🇳",
+        "156 ⌜クモ⌟ SNI -> 🇮🇳"
+      ]
+    },
+    {
+      "type": "trojan",
+      "tag": "35 ⌜クモ⌟ SNI -> 🇮🇳",
+      "server": "152.67.190.183",
+      "server_port": 443,
+      "password": "006baa3f-4bc3-4915-b60d-c8c5dae11a11",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "67 ⌜クモ⌟ SNI -> 🇮🇳",
+      "server": "152.67.162.166",
+      "server_port": 443,
+      "password": "e05c749b-7c6b-41b8-9c71-9dcf685edf4a",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "click.zoom.us"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "84 ⌜クモ⌟ SNI -> 🇮🇳",
+      "server": "152.67.160.174",
+      "server_port": 443,
+      "password": "54080134-2cba-4535-8599-95650bd9aa54",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "156 ⌜クモ⌟ SNI -> 🇮🇳",
+      "server": "152.67.160.174",
+      "server_port": 443,
+      "password": "54080134-2cba-4535-8599-95650bd9aa54",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "servername": "promo.ruangguru.com"
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "network": "tcp",
+        "outbound": "select"
+      },
+      {
+        "network": "udp",
+        "outbound": "select"
+      }
+    ],
+    "geoip": {
+      "path": "./geoip.db",
+      "download_detour": "direct-out"
+    },
+    "geosite": {
+      "path": "./geosite.db",
+      "download_detour": "direct-out"
+    },
+    "final": "select"
+  }
+}

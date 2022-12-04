@@ -84,7 +84,7 @@
       "settings": {
         "servers": [
           {
-            "address": "content-provider12.cdn-delivery.akamaicd.com",
+            "address": "51.77.71.134",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
@@ -102,7 +102,47 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-89 ⌜クモ⌟ SNI -> 🇮🇪"
+      "tag": "proxy-86 ⌜クモ⌟ SNI -> 🇮🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "3.250.4.53",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "3ce64cd6-8953-4c45-b084-54622c6d0e63",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "image-upload4.spotify.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "image-upload4.spotify.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-109 ⌜クモ⌟ SNI -> 🇮🇪"
     },
     {
       "mux": {
@@ -142,7 +182,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-117 ⌜クモ⌟ CDN -> 🇮🇪"
+      "tag": "proxy-110 ⌜クモ⌟ CDN -> 🇮🇪"
     },
     {
       "mux": {
@@ -153,7 +193,7 @@
       "settings": {
         "servers": [
           {
-            "address": "content-provider5.cdn-delivery.akamaicd.com",
+            "address": "51.77.71.131",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
