@@ -45,15 +45,41 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "59 ⌜クモ⌟ SNI -> 🇬🇧"
+        "65 ⌜クモ⌟ SNI -> 🇬🇧",
+        "81 ⌜クモ⌟ SNI -> 🇬🇧",
+        "85 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
       "type": "trojan",
-      "tag": "59 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "65 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "146.19.230.241",
       "server_port": 443,
       "password": "xxoo",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "81 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "132.145.51.172",
+      "server_port": 443,
+      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "85 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "132.145.51.172",
+      "server_port": 443,
+      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
       "tls": {
         "enabled": true,
         "insecure": true,

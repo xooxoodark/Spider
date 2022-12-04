@@ -45,38 +45,12 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "87 ⌜クモ⌟ SNI -> 🇫🇷",
-        "90 ⌜クモ⌟ SNI -> 🇫🇷",
-        "93 ⌜クモ⌟ CDN -> 🇫🇷"
+        "101 ⌜クモ⌟ CDN -> 🇫🇷"
       ]
     },
     {
-      "type": "trojan",
-      "tag": "87 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "90 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "93 ⌜クモ⌟ CDN -> 🇫🇷",
+      "tag": "101 ⌜クモ⌟ CDN -> 🇫🇷",
       "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",

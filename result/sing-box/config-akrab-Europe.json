@@ -46,24 +46,21 @@
       "tag": "select",
       "outbounds": [
         "1 ⌜クモ⌟ CDN -> 🇵🇱",
-        "11 ⌜クモ⌟ SNI -> 🇷🇺",
-        "28 ⌜クモ⌟ SNI -> 🇳🇱",
-        "29 ⌜クモ⌟ SNI -> 🇩🇪",
-        "39 ⌜クモ⌟ SNI -> 🇮🇪",
-        "46 ⌜クモ⌟ SNI -> 🇩🇪",
-        "59 ⌜クモ⌟ SNI -> 🇬🇧",
-        "81 ⌜クモ⌟ SNI -> 🇮🇪",
-        "87 ⌜クモ⌟ SNI -> 🇫🇷",
-        "88 ⌜クモ⌟ SNI -> 🇳🇱",
-        "90 ⌜クモ⌟ SNI -> 🇫🇷",
-        "91 ⌜クモ⌟ SNI -> 🇳🇱",
-        "93 ⌜クモ⌟ CDN -> 🇫🇷",
-        "97 ⌜クモ⌟ SNI -> 🇩🇪",
-        "99 ⌜クモ⌟ CDN -> 🇳🇱",
-        "107 ⌜クモ⌟ SNI -> 🇩🇪",
-        "110 ⌜クモ⌟ SNI -> 🇫🇮",
-        "111 ⌜クモ⌟ CDN -> 🇫🇮",
-        "112 ⌜クモ⌟ SNI -> 🇫🇮"
+        "9 ⌜クモ⌟ SNI -> 🇷🇺",
+        "21 ⌜クモ⌟ SNI -> 🇩🇪",
+        "25 ⌜クモ⌟ SNI -> 🇳🇱",
+        "27 ⌜クモ⌟ SNI -> 🇩🇪",
+        "36 ⌜クモ⌟ SNI -> 🇳🇱",
+        "54 ⌜クモ⌟ SNI -> 🇳🇱",
+        "65 ⌜クモ⌟ SNI -> 🇬🇧",
+        "81 ⌜クモ⌟ SNI -> 🇬🇧",
+        "85 ⌜クモ⌟ SNI -> 🇬🇧",
+        "101 ⌜クモ⌟ CDN -> 🇫🇷",
+        "103 ⌜クモ⌟ CDN -> 🇳🇱",
+        "108 ⌜クモ⌟ SNI -> 🇮🇪",
+        "109 ⌜クモ⌟ SNI -> 🇫🇮",
+        "110 ⌜クモ⌟ CDN -> 🇫🇮",
+        "111 ⌜クモ⌟ SNI -> 🇫🇮"
       ]
     },
     {
@@ -89,7 +86,7 @@
     },
     {
       "type": "vmess",
-      "tag": "11 ⌜クモ⌟ SNI -> 🇷🇺",
+      "tag": "9 ⌜クモ⌟ SNI -> 🇷🇺",
       "server": "194.38.9.6",
       "server_port": 48181,
       "uuid": "2F094845-E2BD-EBF7-DEB7-995992436FAF",
@@ -98,51 +95,60 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "promo.ruangguru.com"
       }
     },
     {
       "type": "trojan",
-      "tag": "28 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "47.87.238.92",
-      "server_port": 443,
-      "password": "8f70fde3-a04c-4f6a-b705-aef7406f6ac1",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "29 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "21 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "39 ⌜クモ⌟ SNI -> 🇮🇪",
-      "server": "51.77.71.134",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
         "server_name": "options.teams.microsoft.com"
       }
     },
     {
-      "type": "trojan",
-      "tag": "46 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "188.40.251.19",
+      "type": "vmess",
+      "tag": "25 ⌜クモ⌟ SNI -> 🇳🇱",
+      "server": "163.172.213.74",
       "server_port": 443,
-      "password": "origin",
+      "uuid": "45d0eb68-955c-4760-91cd-fa6bf07b693f",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastssh/sezarhacks/633be1a74319b/",
+        "headers": {
+          "Host": "options.teams.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "27 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "freesaqqanet.xyz",
+      "server_port": 48512,
+      "password": "nP2wOr91N0",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "36 ⌜クモ⌟ SNI -> 🇳🇱",
+      "server": "185.212.200.75",
+      "server_port": 443,
+      "password": "Sp3eDVp",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -151,7 +157,19 @@
     },
     {
       "type": "trojan",
-      "tag": "59 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "54 ⌜クモ⌟ SNI -> 🇳🇱",
+      "server": "47.87.238.92",
+      "server_port": 443,
+      "password": "8f70fde3-a04c-4f6a-b705-aef7406f6ac1",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "65 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "146.19.230.241",
       "server_port": 443,
       "password": "xxoo",
@@ -163,22 +181,10 @@
     },
     {
       "type": "trojan",
-      "tag": "81 ⌜クモ⌟ SNI -> 🇮🇪",
-      "server": "51.77.71.134",
+      "tag": "81 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "132.145.51.172",
       "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "87 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
+      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -187,34 +193,10 @@
     },
     {
       "type": "trojan",
-      "tag": "88 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "185.212.200.74",
+      "tag": "85 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "132.145.51.172",
       "server_port": 443,
-      "password": "Sp3eDVp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "90 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "91 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "185.212.200.75",
-      "server_port": 443,
-      "password": "Sp3eDVp",
+      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -223,7 +205,7 @@
     },
     {
       "type": "vmess",
-      "tag": "93 ⌜クモ⌟ CDN -> 🇫🇷",
+      "tag": "101 ⌜クモ⌟ CDN -> 🇫🇷",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",
@@ -243,20 +225,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "97 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "188.40.251.19",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "99 ⌜クモ⌟ CDN -> 🇳🇱",
+      "tag": "103 ⌜クモ⌟ CDN -> 🇳🇱",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "3f421e27-5bf8-40c9-86cb-7b8c41dddea2",
@@ -277,19 +247,19 @@
     },
     {
       "type": "trojan",
-      "tag": "107 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "freesaqqanet.xyz",
-      "server_port": 48512,
-      "password": "nP2wOr91N0",
+      "tag": "108 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "51.77.71.134",
+      "server_port": 443,
+      "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "110 ⌜クモ⌟ SNI -> 🇫🇮",
+      "tag": "109 ⌜クモ⌟ SNI -> 🇫🇮",
       "server": "65.108.147.129",
       "server_port": 443,
       "uuid": "a110fb8d-5f71-41d6-9386-208d3f501438",
@@ -310,7 +280,7 @@
     },
     {
       "type": "vmess",
-      "tag": "111 ⌜クモ⌟ CDN -> 🇫🇮",
+      "tag": "110 ⌜クモ⌟ CDN -> 🇫🇮",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "a110fb8d-5f71-41d6-9386-208d3f501438",
@@ -331,7 +301,7 @@
     },
     {
       "type": "vmess",
-      "tag": "112 ⌜クモ⌟ SNI -> 🇫🇮",
+      "tag": "111 ⌜クモ⌟ SNI -> 🇫🇮",
       "server": "65.108.147.129",
       "server_port": 443,
       "uuid": "a110fb8d-5f71-41d6-9386-208d3f501438",
@@ -340,13 +310,13 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/ugbovws",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "promo.ruangguru.com"
         }
       }
     }
