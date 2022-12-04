@@ -21,7 +21,7 @@ const modes: string[] = ["cdn", "sni"];
 const maxConcurrentTest = 20;
 
 // Kill all v2ray process
-exec("pkill v2ray");
+exec("pkill sing-box");
 
 (async () => {
   // Scavenge accounts but doesn't fill the bugs
@@ -279,14 +279,15 @@ exec("pkill v2ray");
         proxyMode += `,${remark}`;
       }
 
-      proxyBoard.push(proxyMode);
+      boardConfig += `${proxyMode}\n`;
     }
 
     boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}.conf`);
+    boardConfig = boardConfig.replace(/PROXIES_PLACEHOLDER/, proxyBoard.join("\n"));
     writeFileSync(`./result/sing-box/config-${bugBundle}.json`, JSON.stringify(boxConfig, null, 2));
     writeFileSync(`./result/v2ray/config-${bugBundle}.json`, JSON.stringify(rayConfig, null, 2));
     writeFileSync(`./result/clash/providers-${bugBundle}.yaml`, clashProxies.join("\n"));
-    writeFileSync(`./result/surfboard/board-${bugBundle}.conf`, `${boardConfig}${proxyBoard.join("\n")}`);
+    writeFileSync(`./result/surfboard/board-${bugBundle}.conf`, boardConfig);
 
     // Per country
     for (const country of Object.keys(proxiesByCountry)) {
@@ -311,14 +312,15 @@ exec("pkill v2ray");
           proxyMode += `,${remark}`;
         }
 
-        proxyBoard.push(proxyMode);
+        boardConfig += `${proxyMode}\n`;
       }
 
       boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}-${country}.conf`);
+      boardConfig = boardConfig.replace(/PROXIES_PLACEHOLDER/, proxyBoard.join("\n"));
       writeFileSync(`./result/v2ray/config-${bugBundle}-${country}.json`, JSON.stringify(rayConfig, null, 2));
       writeFileSync(`./result/sing-box/config-${bugBundle}-${country}.json`, JSON.stringify(boxConfig, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${country}.yaml`, clashProxies.join("\n"));
-      writeFileSync(`./result/surfboard/board-${bugBundle}-${country}.conf`, `${boardConfig}${proxyBoard.join("\n")}`);
+      writeFileSync(`./result/surfboard/board-${bugBundle}-${country}.conf`, boardConfig);
     }
 
     // Per region
@@ -344,14 +346,15 @@ exec("pkill v2ray");
           proxyMode += `,${remark}`;
         }
 
-        proxyBoard.push(proxyMode);
+        boardConfig += `${proxyMode}\n`;
       }
 
       boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}-${region}.conf`);
+      boardConfig = boardConfig.replace(/PROXIES_PLACEHOLDER/, proxyBoard.join("\n"));
       writeFileSync(`./result/v2ray/config-${bugBundle}-${region}.json`, JSON.stringify(rayConfig, null, 2));
       writeFileSync(`./result/sing-box/config-${bugBundle}-${region}.json`, JSON.stringify(boxConfig, null, 2));
       writeFileSync(`./result/clash/providers-${bugBundle}-${region}.yaml`, clashProxies.join("\n"));
-      writeFileSync(`./result/surfboard/board-${bugBundle}-${region}.conf`, `${boardConfig}${proxyBoard.join("\n")}`);
+      writeFileSync(`./result/surfboard/board-${bugBundle}-${region}.conf`, boardConfig);
     }
   }
 
