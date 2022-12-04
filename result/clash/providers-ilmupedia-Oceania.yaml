@@ -1,27 +1,9 @@
 proxies:
-  - name: '53 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: jgwxn3.gaox.ml
-    type: trojan
-    port: 443
-    password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '112 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: jgwxn4.gaox.ml
-    type: trojan
-    port: 443
-    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '151 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.69.167.11
+  - name: '26 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: vau1.0bad.com
     type: vmess
     port: 443
-    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     tls: true
@@ -30,10 +12,28 @@ proxies:
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /v2ray
+      path: /chat
       headers:
         Host: news.microsoft.com
-  - name: '157 ⌜クモ⌟ CDN -> 🇦🇺'
+  - name: '57 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: jgwxn3.gaox.ml
+    type: trojan
+    port: 443
+    password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '122 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: jgwxn4.gaox.ml
+    type: trojan
+    port: 443
+    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '165 ⌜クモ⌟ CDN -> 🇦🇺'
     server: news.microsoft.com
     type: vmess
     port: 443

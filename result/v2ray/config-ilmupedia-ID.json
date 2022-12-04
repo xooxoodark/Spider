@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -113,7 +113,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-7 ⌜クモ⌟ CDN -> 🇮🇩"
+      "tag": "proxy-8 ⌜クモ⌟ CDN -> 🇮🇩"
     },
     {
       "mux": {
@@ -153,7 +153,7 @@
           "path": "/worryfree/?u=testiej&p=638725f558253"
         }
       },
-      "tag": "proxy-29 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-28 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -182,7 +182,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-77 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-79 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -211,7 +211,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-94 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-109 ⌜クモ⌟ SNI -> 🇮🇩"
     },
     {
       "mux": {
@@ -222,7 +222,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 443,
             "users": [
               {
@@ -251,7 +251,7 @@
           "path": "/sshkit/dfsdafdsa/63848baf653eb/"
         }
       },
-      "tag": "proxy-120 ⌜クモ⌟ CDN -> 🇮🇩"
+      "tag": "proxy-130 ⌜クモ⌟ CDN -> 🇮🇩"
     },
     {
       "mux": {
@@ -291,7 +291,47 @@
           "path": "/fastssh/jdjdjdn/6347fefa86953/"
         }
       },
-      "tag": "proxy-143 ⌜クモ⌟ SNI -> 🇮🇩"
+      "tag": "proxy-146 ⌜クモ⌟ SNI -> 🇮🇩"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sg-atha.v2-ray.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "854fc069-23bc-4dd9-9c14-9f3bc50a3b76",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/fastssh/jdjdjdn/6347fefa86953/"
+        }
+      },
+      "tag": "proxy-147 ⌜クモ⌟ SNI -> 🇮🇩"
     }
   ],
   "dns": {
