@@ -1,5 +1,5 @@
 proxies:
-  - name: '4 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '5 ⌜クモ⌟ SNI -> 🇯🇵'
     server: f1f3227.v3.glados-config.net
     type: vmess
     port: 3331
@@ -10,11 +10,20 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: promo.ruangguru.com
+    servername: click.zoom.us
     ws-opts: 
       path: /s/f1f3227.fm.apple.com:111548
       headers:
-        Host: promo.ruangguru.com
+        Host: click.zoom.us
+  - name: '6 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 138.2.45.243
+    type: trojan
+    port: 443
+    password: c19d1432-8b3e-4818-8837-3d160cf65908
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: click.zoom.us
   - name: '31 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 153.121.74.146
     type: trojan
@@ -23,7 +32,7 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
   - name: '32 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 219.94.250.108
     type: trojan
@@ -33,16 +42,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: options.teams.microsoft.com
-  - name: '37 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 168.138.44.176
-    type: trojan
-    port: 443
-    password: 8d2d5953-d649-4034-94f2-72f2df2623da
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: promo.ruangguru.com
-  - name: '40 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '34 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 202.181.102.180
     type: trojan
     port: 2053
@@ -51,7 +51,43 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: options.teams.microsoft.com
-  - name: '43 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '35 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 168.138.44.176
+    type: trojan
+    port: 443
+    password: 8d2d5953-d649-4034-94f2-72f2df2623da
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: options.teams.microsoft.com
+  - name: '44 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 49.212.221.47
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: options.teams.microsoft.com
+  - name: '47 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 45.32.45.156
+    type: trojan
+    port: 443
+    password: d13a3a08-411b-46eb-87c5-023bc8b61db9
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: click.zoom.us
+  - name: '48 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 172.104.120.194
+    type: trojan
+    port: 17003
+    password: e198c059-18e0-4c5e-8358-b4b7850d4d86
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: click.zoom.us
+  - name: '49 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 160.16.145.107
     type: trojan
     port: 2053
@@ -60,34 +96,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: click.zoom.us
-  - name: '47 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 49.212.221.47
-    type: trojan
-    port: 2053
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: promo.ruangguru.com
-  - name: '58 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 45.32.45.156
-    type: trojan
-    port: 443
-    password: d13a3a08-411b-46eb-87c5-023bc8b61db9
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: promo.ruangguru.com
-  - name: '59 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 172.104.120.194
-    type: trojan
-    port: 17003
-    password: e198c059-18e0-4c5e-8358-b4b7850d4d86
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: options.teams.microsoft.com
-  - name: '62 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '51 ⌜クモ⌟ SNI -> 🇯🇵'
     server: jp1.dog.fastcleaner.net
     type: trojan
     port: 50002
@@ -96,7 +105,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: promo.ruangguru.com
-  - name: '76 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '71 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 168.138.44.176
     type: trojan
     port: 443
@@ -105,7 +114,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: click.zoom.us
-  - name: '82 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '72 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 168.138.43.89
     type: trojan
     port: 443
@@ -113,7 +122,16 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: promo.ruangguru.com
+    servername: click.zoom.us
+  - name: '75 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 138.2.45.243
+    type: trojan
+    port: 443
+    password: c19d1432-8b3e-4818-8837-3d160cf65908
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: options.teams.microsoft.com
   - name: '83 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 168.138.43.89
     type: trojan
@@ -122,24 +140,8 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: options.teams.microsoft.com
-  - name: '114 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 141.147.181.219
-    type: vmess
-    port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: click.zoom.us
-    ws-opts: 
-      path: /roewesu
-      headers:
-        Host: click.zoom.us
-  - name: '133 ⌜クモ⌟ SNI -> 🇯🇵'
+    servername: promo.ruangguru.com
+  - name: '122 ⌜クモ⌟ SNI -> 🇯🇵'
     server: 18.183.18.218
     type: trojan
     port: 35114
@@ -148,3 +150,35 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: promo.ruangguru.com
+  - name: '124 ⌜クモ⌟ CDN -> 🇯🇵'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: 141.147.181.219
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: 141.147.181.219
+  - name: '125 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 141.147.181.219
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: promo.ruangguru.com
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: promo.ruangguru.com

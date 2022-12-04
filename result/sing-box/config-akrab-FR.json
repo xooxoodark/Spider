@@ -45,17 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "9 ⌜クモ⌟ SNI -> 🇫🇷",
-        "38 ⌜クモ⌟ SNI -> 🇫🇷",
-        "109 ⌜クモ⌟ SNI -> 🇫🇷",
-        "112 ⌜クモ⌟ SNI -> 🇫🇷",
-        "116 ⌜クモ⌟ CDN -> 🇫🇷",
-        "137 ⌜クモ⌟ CDN -> 🇫🇷"
+        "11 ⌜クモ⌟ SNI -> 🇫🇷",
+        "101 ⌜クモ⌟ SNI -> 🇫🇷",
+        "112 ⌜クモ⌟ CDN -> 🇫🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "9 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "11 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "5.249.165.96",
       "server_port": 443,
       "uuid": "f72b4ccd-9bb9-4682-8401-3d8affed53f2",
@@ -64,31 +61,19 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "click.zoom.us"
       },
       "transport": {
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "promo.ruangguru.com"
+          "Host": "click.zoom.us"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "38 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "109 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "101 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
@@ -99,20 +84,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "112 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "116 ⌜クモ⌟ CDN -> 🇫🇷",
+      "tag": "112 ⌜クモ⌟ CDN -> 🇫🇷",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",
@@ -128,27 +101,6 @@
         "path": "/dongtaiwang.com",
         "headers": {
           "Host": "62.210.85.207"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "137 ⌜クモ⌟ CDN -> 🇫🇷",
-      "server": "main.millionaireaisle.com",
-      "server_port": 443,
-      "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "104.28.243.187"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/p9Dq67Nx/",
-        "headers": {
-          "Host": "104.28.243.187"
         }
       }
     }

@@ -45,14 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "25 ⌜クモ⌟ SNI -> 🇩🇪",
-        "73 ⌜クモ⌟ CDN -> 🇩🇪",
-        "117 ⌜クモ⌟ SNI -> 🇩🇪"
+        "20 ⌜クモ⌟ SNI -> 🇩🇪",
+        "46 ⌜クモ⌟ SNI -> 🇩🇪",
+        "64 ⌜クモ⌟ CDN -> 🇩🇪",
+        "104 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "25 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "20 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -63,8 +64,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "46 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "188.40.251.19",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "73 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "64 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "d217db0c-0faa-4270-ea38-e6093d9774e3",
@@ -85,7 +98,7 @@
     },
     {
       "type": "trojan",
-      "tag": "117 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "104 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",

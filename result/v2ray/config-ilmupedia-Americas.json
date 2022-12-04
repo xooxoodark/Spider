@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 2053,
             "users": [
               {
@@ -153,7 +153,7 @@
           "path": "/path/120208301422"
         }
       },
-      "tag": "proxy-2 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-3 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -193,7 +193,7 @@
           "path": "/home"
         }
       },
-      "tag": "proxy-3 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-4 ⌜クモ⌟ CDN -> 🇺🇸"
     },
     {
       "mux": {
@@ -204,7 +204,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 2053,
             "users": [
               {
@@ -233,7 +233,7 @@
           "path": "/DQsafRJn/"
         }
       },
-      "tag": "proxy-7 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-9 ⌜クモ⌟ CDN -> 🇺🇸"
     },
     {
       "mux": {
@@ -273,7 +273,7 @@
           "path": "/DQsafRJn/"
         }
       },
-      "tag": "proxy-8 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-10 ⌜クモ⌟ CDN -> 🇺🇸"
     },
     {
       "mux": {
@@ -353,7 +353,7 @@
           "path": "/path/321113221131"
         }
       },
-      "tag": "proxy-18 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-19 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -393,7 +393,7 @@
           "path": "/s/f1f3227.fm.apple.com:111548"
         }
       },
-      "tag": "proxy-20 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-23 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -433,7 +433,7 @@
           "path": "/s/f1f3227.fm.apple.com:111548"
         }
       },
-      "tag": "proxy-21 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-24 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -462,7 +462,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-22 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-25 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -491,7 +491,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-23 ⌜クモ⌟ SNI -> 🇨🇦"
+      "tag": "proxy-26 ⌜クモ⌟ SNI -> 🇨🇦"
     },
     {
       "mux": {
@@ -520,145 +520,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-24 ⌜クモ⌟ SNI -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "138.124.183.216",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "xxoo",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-28 ⌜クモ⌟ SNI -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "138.124.183.226",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "xxoo",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-34 ⌜クモ⌟ SNI -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.216.72.172",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "6d11cad4-be87-4b05-aa1d-0d19b011a6d3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/zvtyvws"
-        }
-      },
-      "tag": "proxy-56 ⌜クモ⌟ SNI -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.216.72.172",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "6d11cad4-be87-4b05-aa1d-0d19b011a6d3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/zvtyvws"
-        }
-      },
-      "tag": "proxy-60 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-27 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -670,46 +532,6 @@
         "vnext": [
           {
             "address": "cacerts.digicert.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "6d11cad4-be87-4b05-aa1d-0d19b011a6d3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "185.216.72.172"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "185.216.72.172"
-          },
-          "path": "/zvtyvws"
-        }
-      },
-      "tag": "proxy-61 ⌜クモ⌟ CDN -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "news.microsoft.com",
             "port": 2053,
             "users": [
               {
@@ -738,7 +560,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-63 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-59 ⌜クモ⌟ CDN -> 🇺🇸"
     },
     {
       "mux": {
@@ -767,87 +589,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-66 ⌜クモ⌟ SNI -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cacerts.digicert.com",
-            "port": 2053,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "2c23eb31-1133-4807-818e-484d9a473b9b",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "v2ray.wefuckgfw.ga"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "v2ray.wefuckgfw.ga"
-          },
-          "path": "/DQsafRJn/"
-        }
-      },
-      "tag": "proxy-69 ⌜クモ⌟ CDN -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cacerts.digicert.com",
-            "port": 2053,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ce02a636-88ac-4c29-963d-e09961ec3b3d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "v2ray.wefuckgfw.ga"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "v2ray.wefuckgfw.ga"
-          },
-          "path": "/DQsafRJn/"
-        }
-      },
-      "tag": "proxy-70 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-62 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -887,47 +629,36 @@
           "path": "/DQsafRJn/"
         }
       },
-      "tag": "proxy-71 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-63 ⌜クモ⌟ CDN -> 🇺🇸"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "cacerts.digicert.com",
-            "port": 2053,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ce02a636-88ac-4c29-963d-e09961ec3b3d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "149.56.141.11",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "v2ray.wefuckgfw.ga"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "v2ray.wefuckgfw.ga"
-          },
-          "path": "/DQsafRJn/"
+          "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-72 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-67 ⌜クモ⌟ SNI -> 🇨🇦"
     },
     {
       "mux": {
@@ -967,12 +698,12 @@
       "settings": {
         "servers": [
           {
-            "address": "129.146.242.130",
+            "address": "138.124.183.222",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "05742120-ce23-4cc8-88f5-6d221ce45bf4",
+            "password": "xxoo",
             "port": 443
           }
         ]
@@ -985,7 +716,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-87 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-81 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -1014,7 +745,185 @@
           "serverName": "news.microsoft.com"
         }
       },
+      "tag": "proxy-82 ⌜クモ⌟ SNI -> 🇺🇸"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "138.124.183.226",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "xxoo",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-85 ⌜クモ⌟ SNI -> 🇺🇸"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "129.146.190.42",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "dbf9bf9c-2c3f-474a-8031-d4c00666a989",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-86 ⌜クモ⌟ SNI -> 🇺🇸"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "67.21.72.34",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 64,
+                "encryption": "",
+                "flow": "",
+                "id": "2566d00f-218c-48f7-9a36-13d3d6f1a724",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/path/120208301422"
+        }
+      },
+      "tag": "proxy-87 ⌜クモ⌟ SNI -> 🇺🇸"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "67.21.72.34",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 64,
+                "encryption": "",
+                "flow": "",
+                "id": "2566d00f-218c-48f7-9a36-13d3d6f1a724",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/path/120208301422"
+        }
+      },
       "tag": "proxy-88 ⌜クモ⌟ SNI -> 🇺🇸"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sg2.v2-ray.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/fastssh/jrjjfggg/63419a0211ed5/"
+        }
+      },
+      "tag": "proxy-96 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -1061,86 +970,6 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sg2.v2-ray.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/fastssh/jrjjfggg/63419a0211ed5/"
-        }
-      },
-      "tag": "proxy-103 ⌜クモ⌟ SNI -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "67.21.72.34",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 64,
-                "encryption": "",
-                "flow": "",
-                "id": "2566d00f-218c-48f7-9a36-13d3d6f1a724",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "news.microsoft.com"
-          },
-          "path": "/path/120208301422"
-        }
-      },
-      "tag": "proxy-104 ⌜クモ⌟ SNI -> 🇺🇸"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1169,7 +998,7 @@
           "path": "/aries"
         }
       },
-      "tag": "proxy-105 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-102 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -1180,14 +1009,54 @@
       "settings": {
         "vnext": [
           {
-            "address": "67.21.72.34",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
-                "alterId": 64,
+                "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "2566d00f-218c-48f7-9a36-13d3d6f1a724",
+                "id": "267a9f38-40d8-4ed6-ab58-cafc67e9c933",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "185.216.72.3"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "185.216.72.3"
+          },
+          "path": "/VHONOFZ3"
+        }
+      },
+      "tag": "proxy-103 ⌜クモ⌟ CDN -> 🇺🇸"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.81.82.129",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "6fea1649-425b-4092-bf53-29792152c925",
                 "level": 8,
                 "security": "auto"
               }
@@ -1206,10 +1075,10 @@
           "headers": {
             "Host": "news.microsoft.com"
           },
-          "path": "/path/120208301422"
+          "path": "/sshkit/Variu88/634dab7abadf1/"
         }
       },
-      "tag": "proxy-106 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-109 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -1249,7 +1118,7 @@
           "path": "/sshkit/Variu88/634dab7abadf1/"
         }
       },
-      "tag": "proxy-113 ⌜クモ⌟ SNI -> 🇺🇸"
+      "tag": "proxy-110 ⌜クモ⌟ SNI -> 🇺🇸"
     },
     {
       "mux": {
@@ -1260,7 +1129,47 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
+            "port": 2053,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "2c23eb31-1133-4807-818e-484d9a473b9b",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "v2ray.wefuckgfw.ga"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "v2ray.wefuckgfw.ga"
+          },
+          "path": "/DQsafRJn/"
+        }
+      },
+      "tag": "proxy-116 ⌜クモ⌟ CDN -> 🇺🇸"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cacerts.digicert.com",
             "port": 8443,
             "users": [
               {
@@ -1289,7 +1198,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-131 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-119 ⌜クモ⌟ CDN -> 🇺🇸"
     },
     {
       "mux": {
@@ -1300,7 +1209,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 2096,
             "users": [
               {
@@ -1329,7 +1238,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-132 ⌜クモ⌟ CDN -> 🇺🇸"
+      "tag": "proxy-120 ⌜クモ⌟ CDN -> 🇺🇸"
     }
   ],
   "dns": {

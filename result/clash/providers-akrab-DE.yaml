@@ -1,5 +1,5 @@
 proxies:
-  - name: '25 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '20 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 207.154.243.252
     type: trojan
     port: 443
@@ -8,7 +8,16 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: promo.ruangguru.com
-  - name: '73 ⌜クモ⌟ CDN -> 🇩🇪'
+  - name: '46 ⌜クモ⌟ SNI -> 🇩🇪'
+    server: 188.40.251.19
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: click.zoom.us
+  - name: '64 ⌜クモ⌟ CDN -> 🇩🇪'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -24,7 +33,7 @@ proxies:
       path: /
       headers:
         Host: h2.800876.xyz
-  - name: '117 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '104 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 188.40.251.19
     type: trojan
     port: 443
@@ -32,4 +41,4 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: promo.ruangguru.com
+    servername: click.zoom.us

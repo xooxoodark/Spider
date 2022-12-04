@@ -45,13 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "41 ⌜クモ⌟ SNI -> 🇮🇪",
-        "91 ⌜クモ⌟ SNI -> 🇮🇪"
+        "45 ⌜クモ⌟ SNI -> 🇮🇪",
+        "89 ⌜クモ⌟ SNI -> 🇮🇪",
+        "95 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "41 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "45 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
@@ -63,10 +64,22 @@
     },
     {
       "type": "trojan",
-      "tag": "91 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "89 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "95 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "51.77.71.131",
+      "server_port": 443,
+      "password": "Sp3eDVp",
       "tls": {
         "enabled": true,
         "insecure": true,
