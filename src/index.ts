@@ -139,7 +139,12 @@ exec("pkill v2ray");
             }
             // ID filter by IP address
             if (connect.ip) {
-              account.address = connect.ip;
+              if (connect.mode == "cdn") {
+                account.host = connect.ip;
+                account.sni = connect.ip;
+              } else {
+                account.address = connect.ip;
+              }
               if (scannedAccount[connect.ip]) {
                 if (!scannedAccount[connect.ip].includes(account.id)) scannedAccount[connect.ip].push(account.id);
               } else {
