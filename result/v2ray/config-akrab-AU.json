@@ -99,10 +99,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-20 ⌜クモ⌟ SNI -> 🇦🇺"
+      "tag": "proxy-33 ⌜クモ⌟ SNI -> 🇦🇺"
     },
     {
       "mux": {
@@ -131,7 +131,36 @@
           "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-60 ⌜クモ⌟ SNI -> 🇦🇺"
+      "tag": "proxy-64 ⌜クモ⌟ SNI -> 🇦🇺"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "152.67.98.30",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        }
+      },
+      "tag": "proxy-83 ⌜クモ⌟ SNI -> 🇦🇺"
     },
     {
       "mux": {
@@ -142,7 +171,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.79.118.251",
+            "address": "172.105.188.27",
             "port": 443,
             "users": [
               {
@@ -162,45 +191,16 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
+          "serverName": "promo.ruangguru.com"
         },
         "wsSettings": {
           "headers": {
-            "Host": "click.zoom.us"
+            "Host": "promo.ruangguru.com"
           },
           "path": "/chat"
         }
       },
-      "tag": "proxy-70 ⌜クモ⌟ SNI -> 🇦🇺"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.67.98.30",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
-        }
-      },
-      "tag": "proxy-78 ⌜クモ⌟ SNI -> 🇦🇺"
+      "tag": "proxy-87 ⌜クモ⌟ SNI -> 🇦🇺"
     }
   ],
   "dns": {

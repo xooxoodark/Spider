@@ -45,15 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "52 ⌜クモ⌟ SNI -> 🇫🇷",
-        "116 ⌜クモ⌟ SNI -> 🇫🇷",
-        "117 ⌜クモ⌟ SNI -> 🇫🇷",
-        "123 ⌜クモ⌟ CDN -> 🇫🇷"
+        "56 ⌜クモ⌟ SNI -> 🇫🇷",
+        "109 ⌜クモ⌟ SNI -> 🇫🇷"
       ]
     },
     {
       "type": "trojan",
-      "tag": "52 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "56 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
@@ -65,7 +63,7 @@
     },
     {
       "type": "trojan",
-      "tag": "116 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "109 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
@@ -73,39 +71,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "117 ⌜クモ⌟ SNI -> 🇫🇷",
-      "server": "176.31.83.90",
-      "server_port": 443,
-      "password": "origin",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "123 ⌜クモ⌟ CDN -> 🇫🇷",
-      "server": "news.microsoft.com",
-      "server_port": 443,
-      "uuid": "4679f00e-90ce-430d-9714-6a19367ba112",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "62.210.85.207"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/dongtaiwang.com",
-        "headers": {
-          "Host": "62.210.85.207"
-        }
       }
     }
   ],

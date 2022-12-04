@@ -15,7 +15,7 @@ proxies:
       path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: image-upload4.spotify.com
-  - name: '56 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '59 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 47.87.238.92
     type: trojan
     port: 443
@@ -24,16 +24,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '114 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 185.212.200.74
-    type: trojan
-    port: 443
-    password: Sp3eDVp
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '118 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '111 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 185.212.200.75
     type: trojan
     port: 443
@@ -42,7 +33,16 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '122 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '115 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 185.212.200.74
+    type: trojan
+    port: 443
+    password: Sp3eDVp
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '124 ⌜クモ⌟ CDN -> 🇳🇱'
     server: investors.spotify.com
     type: vmess
     port: 443
@@ -58,3 +58,35 @@ proxies:
       path: /lXvA0Vse/
       headers:
         Host: 5.255.106.210
+  - name: '131 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 163.172.213.74
+    type: vmess
+    port: 443
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /fastssh/hkgzs01/6315d407657f6/
+      headers:
+        Host: image-upload4.spotify.com
+  - name: '132 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: investors.spotify.com
+    type: vmess
+    port: 443
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: 163.172.213.74
+    ws-opts: 
+      path: /fastssh/hkgzs01/6315d407657f6/
+      headers:
+        Host: 163.172.213.74

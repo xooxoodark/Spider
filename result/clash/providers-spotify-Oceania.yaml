@@ -1,5 +1,5 @@
 proxies:
-  - name: '20 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '33 ⌜クモ⌟ SNI -> 🇦🇺'
     server: 140.238.205.173
     type: trojan
     port: 443
@@ -8,7 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '60 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '64 ⌜クモ⌟ SNI -> 🇦🇺'
     server: 152.67.98.30
     type: trojan
     port: 443
@@ -17,8 +17,17 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '70 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 45.79.118.251
+  - name: '83 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 152.67.98.30
+    type: trojan
+    port: 443
+    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '87 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 172.105.188.27
     type: vmess
     port: 443
     uuid: 927094d3-d678-4763-8591-e240d0bcae87
@@ -33,12 +42,3 @@ proxies:
       path: /chat
       headers:
         Host: image-upload4.spotify.com
-  - name: '78 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.67.98.30
-    type: trojan
-    port: 443
-    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
