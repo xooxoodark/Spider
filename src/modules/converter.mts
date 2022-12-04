@@ -256,7 +256,7 @@ class Converter {
   toSurfboard(account: V2Object) {
     let config: string[] = [];
     if (account.vpn == "vmess") {
-      config.push(`${account.remark} = vmess`);
+      config.push(`${account.remark}=vmess`);
       config.push(`${account.address}`);
       config.push(`${account.port}`);
       config.push(`username=${account.id}`);
@@ -271,7 +271,7 @@ class Converter {
         config.push(`ws-headers=Host:${account.host}`);
       }
     } else if (account.vpn == "trojan") {
-      config.push(`${account.remark} = trojan`);
+      config.push(`${account.remark}=trojan`);
       config.push(`${account.address}`);
       config.push(`${account.port}`);
       config.push(`password=${account.id}`);
@@ -286,7 +286,7 @@ class Converter {
       }
     }
 
-    return config.join(", ");
+    return config.join(",");
   }
 
   toUrl(account: V2Object) {

@@ -326,7 +326,7 @@ exec("pkill v2ray");
     do {
       const account = proxiesByRegion["Asia"][Math.floor(Math.random() * proxiesByRegion["Asia"].length)];
       if (
-        !(await connect.connect(new Bugs().fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni")))
+        !(await connect.connect(new Bugs().fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni")))
           .error
       ) {
         connected = true;
