@@ -45,19 +45,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "41 ⌜クモ⌟ SNI -> 🇬🇧",
-        "43 ⌜クモ⌟ SNI -> 🇬🇧",
         "53 ⌜クモ⌟ SNI -> 🇬🇧",
-        "72 ⌜クモ⌟ SNI -> 🇬🇧",
-        "92 ⌜クモ⌟ SNI -> 🇬🇧",
+        "54 ⌜クモ⌟ SNI -> 🇬🇧",
+        "58 ⌜クモ⌟ SNI -> 🇬🇧",
         "132 ⌜クモ⌟ SNI -> 🇬🇧",
-        "142 ⌜クモ⌟ CDN -> 🇬🇧",
-        "143 ⌜クモ⌟ CDN -> 🇬🇧"
+        "142 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
       "type": "trojan",
-      "tag": "41 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "53 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "51.210.146.186",
       "server_port": 443,
       "password": "7c332773-7c11-4d19-a35a-f4e599d408bf",
@@ -69,7 +66,7 @@
     },
     {
       "type": "trojan",
-      "tag": "43 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "54 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "146.19.230.241",
       "server_port": 443,
       "password": "xxoo",
@@ -81,10 +78,10 @@
     },
     {
       "type": "trojan",
-      "tag": "53 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "185.16.206.209",
+      "tag": "58 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "51.210.146.186",
       "server_port": 443,
-      "password": "shefelnak",
+      "password": "7c332773-7c11-4d19-a35a-f4e599d408bf",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -92,32 +89,29 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "72 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "132.145.51.172",
-      "server_port": 443,
-      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "92 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "132.145.51.172",
-      "server_port": 443,
-      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "132 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "139.162.216.166",
+      "server_port": 443,
+      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/chat",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "142 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "185.16.206.212",
       "server_port": 443,
       "password": "shefelnak",
@@ -125,48 +119,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "142 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "investors.spotify.com",
-      "server_port": 2053,
-      "uuid": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "v15.583181.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "v15.583181.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "143 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "investors.spotify.com",
-      "server_port": 8443,
-      "uuid": "a9ce394c-2b69-4802-b02c-e4bbc881d9ac",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "v16.583181.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "v16.583181.xyz"
-        }
       }
     }
   ],
