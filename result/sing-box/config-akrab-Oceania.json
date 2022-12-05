@@ -45,15 +45,37 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "27 ⌜クモ⌟ SNI -> 🇦🇺"
+        "200 ⌜クモ⌟ SNI -> 🇦🇺",
+        "284 ⌜クモ⌟ SNI -> 🇦🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "27 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "200 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "vau1.0bad.com",
       "server_port": 443,
       "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/chat",
+        "headers": {
+          "Host": "options.teams.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "284 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "aus01.paopaocloud.cyou",
+      "server_port": 443,
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
       "security": "auto",
       "alter_id": 0,
       "tls": {
@@ -63,7 +85,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/chat",
+        "path": "/v2ray",
         "headers": {
           "Host": "promo.ruangguru.com"
         }

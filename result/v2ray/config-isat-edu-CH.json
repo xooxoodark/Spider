@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "141.193.213.20",
+            "address": "104.17.70.206",
             "port": 443,
             "users": [
               {
@@ -113,7 +113,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-342 ⌜クモ⌟ CDN -> 🇨🇭"
+      "tag": "proxy-264 ⌜クモ⌟ CDN -> 🇨🇭"
     },
     {
       "mux": {
@@ -124,7 +124,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "141.193.213.20",
+            "address": "104.17.70.206",
             "port": 443,
             "users": [
               {
@@ -153,7 +153,47 @@
           "path": "/"
         }
       },
-      "tag": "proxy-384 ⌜クモ⌟ CDN -> 🇨🇭"
+      "tag": "proxy-267 ⌜クモ⌟ CDN -> 🇨🇭"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.70.206",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "ad48ebeb-f949-472b-9717-e8c8f0f7984d",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "www.liuyiyang19891222.tk"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "www.liuyiyang19891222.tk"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-268 ⌜クモ⌟ CDN -> 🇨🇭"
     }
   ],
   "dns": {

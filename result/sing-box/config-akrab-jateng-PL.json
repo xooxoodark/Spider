@@ -1,0 +1,98 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "error",
+    "output": "",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "1.1.1.1",
+        "detour": "direct-out"
+      }
+    ],
+    "final": "cloudflare",
+    "strategy": "prefer_ipv4",
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 10800,
+      "domain_strategy": "prefer_ipv4",
+      "set_system_proxy": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "32 ⌜クモ⌟ CDN -> 🇵🇱"
+      ]
+    },
+    {
+      "type": "vmess",
+      "tag": "32 ⌜クモ⌟ CDN -> 🇵🇱",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "c13be7b9-bb72-4424-bb2f-00c468f4f282",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "w.800876.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "w.800876.xyz"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "network": "tcp",
+        "outbound": "select"
+      },
+      {
+        "network": "udp",
+        "outbound": "select"
+      }
+    ],
+    "geoip": {
+      "path": "./geoip.db",
+      "download_detour": "direct-out"
+    },
+    "geosite": {
+      "path": "./geosite.db",
+      "download_detour": "direct-out"
+    },
+    "final": "select"
+  }
+}

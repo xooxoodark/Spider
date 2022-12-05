@@ -1,5 +1,5 @@
 proxies:
-  - name: '27 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '200 ⌜クモ⌟ SNI -> 🇦🇺'
     server: vau1.0bad.com
     type: vmess
     port: 443
@@ -8,10 +8,26 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: promo.ruangguru.com
     ws-opts: 
       path: /chat
       headers:
         Host: promo.ruangguru.com
+  - name: '284 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: aus01.paopaocloud.cyou
+    type: vmess
+    port: 443
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: options.teams.microsoft.com
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: options.teams.microsoft.com

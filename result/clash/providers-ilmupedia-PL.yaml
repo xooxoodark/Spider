@@ -1,6 +1,6 @@
 proxies:
-  - name: '70 ⌜クモ⌟ CDN -> 🇵🇱'
-    server: news.microsoft.com
+  - name: '32 ⌜クモ⌟ CDN -> 🇵🇱'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: c13be7b9-bb72-4424-bb2f-00c468f4f282
@@ -15,3 +15,19 @@ proxies:
       path: /
       headers:
         Host: w.800876.xyz
+  - name: '98 ⌜クモ⌟ SNI -> 🇵🇱'
+    server: hk-core.pvpgames.net
+    type: vmess
+    port: 63077
+    uuid: c1517df4-6454-39ce-9037-d5eccfc703b7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
