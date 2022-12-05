@@ -45,19 +45,76 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "38 ⌜クモ⌟ SNI -> 🇩🇪"
+        "62 ⌜クモ⌟ SNI -> 🇩🇪",
+        "77 ⌜クモ⌟ SNI -> 🇩🇪",
+        "195 ⌜クモ⌟ CDN -> 🇩🇪",
+        "212 ⌜クモ⌟ CDN -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "38 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "62 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "bdvasxmahl.injafarvpnwebelieve.gq",
+      "server_port": 443,
+      "password": "TvBypqQJ9b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "77 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "195 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "main.millionaireaisle.com",
+      "server_port": 2053,
+      "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "haxeu2.zikkcc.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "haxeu2.zikkcc.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "212 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "d217db0c-0faa-4270-ea38-e6093d9774e3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "h2.800876.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "h2.800876.xyz"
+        }
       }
     }
   ],

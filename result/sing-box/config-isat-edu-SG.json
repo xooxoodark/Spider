@@ -45,14 +45,40 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "14 ⌜クモ⌟ CDN -> 🇸🇬",
-        "45 ⌜クモ⌟ CDN -> 🇸🇬"
+        "27 ⌜クモ⌟ CDN -> 🇸🇬",
+        "41 ⌜クモ⌟ CDN -> 🇸🇬",
+        "56 ⌜クモ⌟ CDN -> 🇸🇬",
+        "161 ⌜クモ⌟ CDN -> 🇸🇬",
+        "169 ⌜クモ⌟ CDN -> 🇸🇬",
+        "190 ⌜クモ⌟ CDN -> 🇸🇬",
+        "207 ⌜クモ⌟ CDN -> 🇸🇬"
       ]
     },
     {
       "type": "vmess",
-      "tag": "14 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "104.26.14.59",
+      "tag": "27 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.21",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg1-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859b5b38f53/",
+        "headers": {
+          "Host": "sg1-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "41 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.21",
       "server_port": 443,
       "uuid": "ceb8a921-ec72-4804-ae92-cbd309f2f213",
       "security": "auto",
@@ -72,8 +98,8 @@
     },
     {
       "type": "vmess",
-      "tag": "45 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "104.17.71.206",
+      "tag": "56 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.21",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
       "security": "auto",
@@ -88,6 +114,86 @@
         "path": "/sshkit/1736960111/63859b95e5be4/",
         "headers": {
           "Host": "sg2-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "161 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.21",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg3-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859bc177a33/",
+        "headers": {
+          "Host": "sg3-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "169 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "104.26.14.59",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg4-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859be1a762c/",
+        "headers": {
+          "Host": "sg4-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "190 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.20",
+      "server_port": 443,
+      "password": "4X1ebJpQWg",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg.yydsdy.top"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/c6c05fbac0e4",
+        "headers": {
+          "Host": "sg.yydsdy.top"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "207 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "104.17.71.206",
+      "server_port": 443,
+      "password": "4X1ebJpQWg",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg.yydsdy.top"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/c6c05fbac0e4",
+        "headers": {
+          "Host": "sg.yydsdy.top"
         }
       }
     }

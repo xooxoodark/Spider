@@ -1,5 +1,14 @@
 proxies:
-  - name: '24 ⌜クモ⌟ SNI -> 🇨🇦'
+  - name: '59 ⌜クモ⌟ SNI -> 🇨🇦'
+    server: 148.113.141.99
+    type: trojan
+    port: 443
+    password: HdsUZmsHQW
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '112 ⌜クモ⌟ SNI -> 🇨🇦'
     server: cat1.sshocean.net
     type: trojan
     port: 443
@@ -8,7 +17,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '40 ⌜クモ⌟ SNI -> 🇨🇦'
+  - name: '113 ⌜クモ⌟ SNI -> 🇨🇦'
     server: 149.56.141.11
     type: trojan
     port: 443
@@ -17,7 +26,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '50 ⌜クモ⌟ SNI -> 🇨🇦'
+  - name: '147 ⌜クモ⌟ SNI -> 🇨🇦'
     server: 35.182.165.120
     type: vmess
     port: 443
@@ -33,12 +42,3 @@ proxies:
       path: /v2ray
       headers:
         Host: news.microsoft.com
-  - name: '51 ⌜クモ⌟ SNI -> 🇨🇦'
-    server: 148.113.141.99
-    type: trojan
-    port: 443
-    password: HdsUZmsHQW
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
