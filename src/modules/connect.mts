@@ -98,7 +98,7 @@ class Connect {
     writeFileSync(savePath, JSON.stringify(boxConfig, null, 2));
 
     this.connectionNumber++;
-    if (this.connectionNumber > 500) {
+    if (this.connectionNumber > 750) {
       this.connectionNumber = 1;
     }
     return await this._connect(savePath, port);

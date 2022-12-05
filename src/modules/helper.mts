@@ -56,10 +56,16 @@ function duplicateFilter(accounts: V2Object[]): V2Object[] {
     for (let j = parseInt(i) + 1; j < accounts.length; j++) {
       if (address == accounts[j].address) {
         if (port == accounts[j].port) {
-          if (path == accounts[j].path) {
-            if (id == accounts[j].id) {
-              console.log("Duplicate account removed!");
+          if (id == accounts[j].id) {
+            if (accounts[j].network == "ws") {
+              if (path == accounts[j].path) {
+                accounts.splice(j, 1);
+                console.log("Duplicate account removed!");
+                return duplicateFilter(accounts);
+              }
+            } else {
               accounts.splice(j, 1);
+              console.log("Duplicate account removed!");
               return duplicateFilter(accounts);
             }
           }
