@@ -1,6 +1,15 @@
 proxies:
-  - name: '329 ⌜クモ⌟ SNI -> 🇮🇪'
+  - name: '146 ⌜クモ⌟ SNI -> 🇮🇪'
     server: content-provider12.cdn-delivery.akamaicd.com
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '214 ⌜クモ⌟ SNI -> 🇮🇪'
+    server: 51.77.71.134
     type: trojan
     port: 443
     password: origin

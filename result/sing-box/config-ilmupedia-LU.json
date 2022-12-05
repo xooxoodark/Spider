@@ -45,13 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "136 ⌜クモ⌟ SNI -> 🇱🇺",
-        "141 ⌜クモ⌟ CDN -> 🇱🇺"
+        "150 ⌜クモ⌟ SNI -> 🇱🇺",
+        "176 ⌜クモ⌟ CDN -> 🇱🇺",
+        "232 ⌜クモ⌟ CDN -> 🇱🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "136 ⌜クモ⌟ SNI -> 🇱🇺",
+      "tag": "150 ⌜クモ⌟ SNI -> 🇱🇺",
       "server": "104.244.73.218",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -72,7 +73,28 @@
     },
     {
       "type": "vmess",
-      "tag": "141 ⌜クモ⌟ CDN -> 🇱🇺",
+      "tag": "176 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "cacerts.digicert.com",
+      "server_port": 443,
+      "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "lu1.gogogoo.cyou"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/go",
+        "headers": {
+          "Host": "lu1.gogogoo.cyou"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "232 ⌜クモ⌟ CDN -> 🇱🇺",
       "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
