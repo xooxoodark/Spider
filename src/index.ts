@@ -132,7 +132,6 @@ exec("pkill sing-box");
             // ID filter by hostname
             if (scannedAccount[server]) {
               if (!scannedAccount[server].includes(account.id)) scannedAccount[server].push(account.id);
-              else continue;
             } else {
               scannedAccount[server] = [account.id];
             }
@@ -146,7 +145,6 @@ exec("pkill sing-box");
               }
               if (scannedAccount[connect.ip]) {
                 if (!scannedAccount[connect.ip].includes(account.id)) scannedAccount[connect.ip].push(account.id);
-                else continue;
               } else {
                 scannedAccount[connect.ip] = [account.id];
               }
