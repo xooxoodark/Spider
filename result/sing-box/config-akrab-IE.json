@@ -45,19 +45,32 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "343 ⌜クモ⌟ SNI -> 🇮🇪"
+        "63 ⌜クモ⌟ SNI -> 🇮🇪",
+        "338 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "343 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "63 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "content-provider12.cdn-delivery.akamaicd.com",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "338 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       }
     }
   ],

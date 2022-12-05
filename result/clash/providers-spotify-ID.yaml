@@ -1,5 +1,21 @@
 proxies:
-  - name: '24 ⌜クモ⌟ CDN -> 🇮🇩'
+  - name: '30 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: sg-atha.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /fastssh/amrozi87/6350416ec330b/
+      headers:
+        Host: image-upload4.spotify.com
+  - name: '42 ⌜クモ⌟ CDN -> 🇮🇩'
     server: investors.spotify.com
     type: vmess
     port: 443
@@ -15,23 +31,7 @@ proxies:
       path: /
       headers:
         Host: id5.v2rayserv.com
-  - name: '29 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: sg-atha.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /fastssh/amrozi87/6350416ec330b/
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '74 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '139 ⌜クモ⌟ SNI -> 🇮🇩'
     server: 103.167.34.206
     type: trojan
     port: 443
@@ -40,16 +40,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '79 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: id3tr.jagoan.vip
-    type: trojan
-    port: 443
-    password: vvip-periantara
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '149 ⌜クモ⌟ CDN -> 🇮🇩'
+  - name: '179 ⌜クモ⌟ CDN -> 🇮🇩'
     server: investors.spotify.com
     type: vmess
     port: 443
@@ -65,7 +56,7 @@ proxies:
       path: /sshkit/dfsdafdsa/63848baf653eb/
       headers:
         Host: id-lb.vhax.net
-  - name: '201 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '220 ⌜クモ⌟ SNI -> 🇮🇩'
     server: sg-atha.v2-ray.com
     type: vmess
     port: 443
@@ -81,28 +72,3 @@ proxies:
       path: /fastssh/jdjdjdn/6347fefa86953/
       headers:
         Host: image-upload4.spotify.com
-  - name: '346 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: 45.12.80.151
-    type: vmess
-    port: 443
-    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /fastssh/amrozi87/6350416ec330b/
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '354 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: 38.9.140.66
-    type: trojan
-    port: 443
-    password: vvip-periantara
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com

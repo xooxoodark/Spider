@@ -84,6 +84,35 @@
       "settings": {
         "servers": [
           {
+            "address": "content-provider12.cdn-delivery.akamaicd.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "origin",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        }
+      },
+      "tag": "proxy-63 ⌜クモ⌟ SNI -> 🇮🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "51.77.71.134",
             "flow": "",
             "level": 8,
@@ -102,7 +131,7 @@
           "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-343 ⌜クモ⌟ SNI -> 🇮🇪"
+      "tag": "proxy-338 ⌜クモ⌟ SNI -> 🇮🇪"
     }
   ],
   "dns": {

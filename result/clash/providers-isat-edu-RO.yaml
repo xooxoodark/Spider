@@ -1,6 +1,22 @@
 proxies:
-  - name: '229 ⌜クモ⌟ CDN -> 🇷🇴'
+  - name: '36 ⌜クモ⌟ CDN -> 🇷🇴'
     server: 141.193.213.21
+    type: vmess
+    port: 8443
+    uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: ca.0112233.xyz
+    ws-opts: 
+      path: /home
+      headers:
+        Host: ca.0112233.xyz
+  - name: '181 ⌜クモ⌟ CDN -> 🇷🇴'
+    server: 104.26.14.59
     type: vmess
     port: 8443
     uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d
@@ -15,8 +31,8 @@ proxies:
       path: /
       headers:
         Host: ca.0112233.xyz
-  - name: '230 ⌜クモ⌟ CDN -> 🇷🇴'
-    server: 104.17.70.206
+  - name: '182 ⌜クモ⌟ CDN -> 🇷🇴'
+    server: 104.26.14.59
     type: vmess
     port: 443
     uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d
