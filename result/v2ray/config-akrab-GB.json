@@ -113,7 +113,7 @@
           "path": "/chat"
         }
       },
-      "tag": "proxy-49 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-82 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -139,10 +139,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
+          "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-91 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-84 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -171,7 +171,7 @@
           "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-144 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-142 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -197,50 +197,39 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
+          "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-229 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-341 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "54.36.162.144",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "132.145.51.172",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "click.zoom.us"
-          },
-          "path": "/vmess"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-417 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-433 ⌜クモ⌟ SNI -> 🇬🇧"
     }
   ],
   "dns": {

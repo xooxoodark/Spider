@@ -45,13 +45,26 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "53 ⌜クモ⌟ SNI -> 🇮🇪"
+        "305 ⌜クモ⌟ SNI -> 🇮🇪",
+        "312 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "53 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "305 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "312 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "content-provider12.cdn-delivery.akamaicd.com",
       "server_port": 443,
       "password": "origin",
       "tls": {

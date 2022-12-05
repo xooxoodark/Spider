@@ -45,14 +45,56 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "20 ⌜クモ⌟ CDN -> 🇷🇴",
-        "208 ⌜クモ⌟ CDN -> 🇷🇴",
-        "436 ⌜クモ⌟ CDN -> 🇷🇴"
+        "67 ⌜クモ⌟ CDN -> 🇷🇴",
+        "149 ⌜クモ⌟ CDN -> 🇷🇴",
+        "212 ⌜クモ⌟ CDN -> 🇷🇴"
       ]
     },
     {
       "type": "vmess",
-      "tag": "20 ⌜クモ⌟ CDN -> 🇷🇴",
+      "tag": "67 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "104.26.14.59",
+      "server_port": 443,
+      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ca.0112233.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ca.0112233.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "149 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "104.17.70.206",
+      "server_port": 8443,
+      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ca.0112233.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ca.0112233.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "212 ⌜クモ⌟ CDN -> 🇷🇴",
       "server": "141.193.213.20",
       "server_port": 8443,
       "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
@@ -66,48 +108,6 @@
       "transport": {
         "type": "ws",
         "path": "/home",
-        "headers": {
-          "Host": "ca.0112233.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "208 ⌜クモ⌟ CDN -> 🇷🇴",
-      "server": "104.17.71.206",
-      "server_port": 8443,
-      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "ca.0112233.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ca.0112233.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "436 ⌜クモ⌟ CDN -> 🇷🇴",
-      "server": "141.193.213.21",
-      "server_port": 443,
-      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "ca.0112233.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "ca.0112233.xyz"
         }

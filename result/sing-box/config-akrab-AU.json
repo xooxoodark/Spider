@@ -45,14 +45,17 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "50 ⌜クモ⌟ SNI -> 🇦🇺",
-        "69 ⌜クモ⌟ SNI -> 🇦🇺",
-        "151 ⌜クモ⌟ SNI -> 🇦🇺"
+        "55 ⌜クモ⌟ SNI -> 🇦🇺",
+        "73 ⌜クモ⌟ SNI -> 🇦🇺",
+        "79 ⌜クモ⌟ SNI -> 🇦🇺",
+        "99 ⌜クモ⌟ SNI -> 🇦🇺",
+        "143 ⌜クモ⌟ SNI -> 🇦🇺",
+        "441 ⌜クモ⌟ SNI -> 🇦🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "50 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "55 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "vau1.0bad.com",
       "server_port": 443,
       "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
@@ -61,19 +64,52 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       },
       "transport": {
         "type": "ws",
         "path": "/chat",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "options.teams.microsoft.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "69 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "73 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "jgwxn3.gaox.ml",
+      "server_port": 443,
+      "password": "cb43b7c2-b744-41c5-bcc2-fd7467b332cf",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "79 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "aus01.paopaocloud.cyou",
+      "server_port": 443,
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v2ray",
+        "headers": {
+          "Host": "options.teams.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "99 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "jgwxn4.gaox.ml",
       "server_port": 443,
       "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
@@ -85,10 +121,22 @@
     },
     {
       "type": "trojan",
-      "tag": "151 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "143 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "140.238.205.173",
       "server_port": 443,
       "password": "cb43b7c2-b744-41c5-bcc2-fd7467b332cf",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "441 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.67.98.30",
+      "server_port": 443,
+      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
       "tls": {
         "enabled": true,
         "insecure": true,
