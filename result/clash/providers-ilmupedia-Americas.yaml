@@ -15,48 +15,7 @@ proxies:
       path: /share
       headers:
         Host: us.awsbest.com
-  - name: '2 ⌜クモ⌟ SNI -> 🇨🇦'
-    server: 148.113.141.99
-    type: trojan
-    port: 443
-    password: HdsUZmsHQW
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '5 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
-    type: vmess
-    port: 2053
-    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '6 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
-    type: vmess
-    port: 2053
-    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '7 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '3 ⌜クモ⌟ SNI -> 🇺🇸'
     server: sg1.v2-ray.com
     type: vmess
     port: 443
@@ -72,16 +31,25 @@ proxies:
       path: /fastssh/fartf76g/6350442c996e3/
       headers:
         Host: news.microsoft.com
+  - name: '5 ⌜クモ⌟ SNI -> 🇨🇦'
+    server: 148.113.141.99
+    type: trojan
+    port: 443
+    password: HdsUZmsHQW
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
   - name: '9 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: cacerts.digicert.com
+    server: news.microsoft.com
     type: vmess
     port: 2053
-    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
+    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: v2ray.wefuckgfw.ga
     ws-opts: 
@@ -89,7 +57,7 @@ proxies:
       headers:
         Host: v2ray.wefuckgfw.ga
   - name: '10 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: news.microsoft.com
+    server: cacerts.digicert.com
     type: vmess
     port: 2053
     uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
@@ -104,11 +72,43 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
+  - name: '11 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: news.microsoft.com
+    type: vmess
+    port: 2053
+    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
   - name: '12 ⌜クモ⌟ CDN -> 🇺🇸'
     server: news.microsoft.com
     type: vmess
     port: 2053
-    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
+    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '13 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 2053
+    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
     alterId: 0
     cipher: auto
     tls: true
@@ -136,7 +136,7 @@ proxies:
       path: /fastssh/jrjjfggg/63419a0211ed5/
       headers:
         Host: news.microsoft.com
-  - name: '21 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '18 ⌜クモ⌟ SNI -> 🇺🇸'
     server: sg1.v2-ray.com
     type: vmess
     port: 443
@@ -152,7 +152,7 @@ proxies:
       path: /fastssh/gafsg65g/635045dc30ee6/
       headers:
         Host: news.microsoft.com
-  - name: '23 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '21 ⌜クモ⌟ SNI -> 🇺🇸'
     server: cloudcone-879.wisdomfree.tk
     type: vmess
     port: 60006

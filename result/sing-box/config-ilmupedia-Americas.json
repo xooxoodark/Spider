@@ -46,16 +46,16 @@
       "tag": "select",
       "outbounds": [
         "1 ⌜クモ⌟ CDN -> 🇺🇸",
-        "2 ⌜クモ⌟ SNI -> 🇨🇦",
-        "5 ⌜クモ⌟ CDN -> 🇺🇸",
-        "6 ⌜クモ⌟ CDN -> 🇺🇸",
-        "7 ⌜クモ⌟ SNI -> 🇺🇸",
+        "3 ⌜クモ⌟ SNI -> 🇺🇸",
+        "5 ⌜クモ⌟ SNI -> 🇨🇦",
         "9 ⌜クモ⌟ CDN -> 🇺🇸",
         "10 ⌜クモ⌟ CDN -> 🇺🇸",
+        "11 ⌜クモ⌟ CDN -> 🇺🇸",
         "12 ⌜クモ⌟ CDN -> 🇺🇸",
+        "13 ⌜クモ⌟ CDN -> 🇺🇸",
         "16 ⌜クモ⌟ SNI -> 🇺🇸",
-        "21 ⌜クモ⌟ SNI -> 🇺🇸",
-        "23 ⌜クモ⌟ SNI -> 🇺🇸"
+        "18 ⌜クモ⌟ SNI -> 🇺🇸",
+        "21 ⌜クモ⌟ SNI -> 🇺🇸"
       ]
     },
     {
@@ -80,62 +80,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "2 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "148.113.141.99",
-      "server_port": 443,
-      "password": "HdsUZmsHQW",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "5 ⌜クモ⌟ CDN -> 🇺🇸",
-      "server": "cacerts.digicert.com",
-      "server_port": 2053,
-      "uuid": "8947fbe5-c1c7-4716-8564-2092ce776f92",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "v2ray.wefuckgfw.ga"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/DQsafRJn/",
-        "headers": {
-          "Host": "v2ray.wefuckgfw.ga"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "6 ⌜クモ⌟ CDN -> 🇺🇸",
-      "server": "cacerts.digicert.com",
-      "server_port": 2053,
-      "uuid": "ce02a636-88ac-4c29-963d-e09961ec3b3d",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "v2ray.wefuckgfw.ga"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/DQsafRJn/",
-        "headers": {
-          "Host": "v2ray.wefuckgfw.ga"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "7 ⌜クモ⌟ SNI -> 🇺🇸",
+      "tag": "3 ⌜クモ⌟ SNI -> 🇺🇸",
       "server": "sg1.v2-ray.com",
       "server_port": 443,
       "uuid": "aa72613d-188c-4d7b-be46-6011d75a5f7a",
@@ -155,11 +101,23 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "5 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "148.113.141.99",
+      "server_port": 443,
+      "password": "HdsUZmsHQW",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
       "type": "vmess",
       "tag": "9 ⌜クモ⌟ CDN -> 🇺🇸",
-      "server": "cacerts.digicert.com",
+      "server": "news.microsoft.com",
       "server_port": 2053,
-      "uuid": "ce3f0dd3-8a04-4daa-9416-e67c5d42083a",
+      "uuid": "2c23eb31-1133-4807-818e-484d9a473b9b",
       "security": "auto",
       "alter_id": 0,
       "tls": {
@@ -178,9 +136,30 @@
     {
       "type": "vmess",
       "tag": "10 ⌜クモ⌟ CDN -> 🇺🇸",
-      "server": "cacerts.digicert.com",
+      "server": "news.microsoft.com",
       "server_port": 2053,
       "uuid": "ab323ed9-dda5-4feb-9f17-c77c7fd811b6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v2ray.wefuckgfw.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/DQsafRJn/",
+        "headers": {
+          "Host": "v2ray.wefuckgfw.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "11 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "news.microsoft.com",
+      "server_port": 2053,
+      "uuid": "8947fbe5-c1c7-4716-8564-2092ce776f92",
       "security": "auto",
       "alter_id": 0,
       "tls": {
@@ -201,7 +180,28 @@
       "tag": "12 ⌜クモ⌟ CDN -> 🇺🇸",
       "server": "cacerts.digicert.com",
       "server_port": 2053,
-      "uuid": "2c23eb31-1133-4807-818e-484d9a473b9b",
+      "uuid": "ce3f0dd3-8a04-4daa-9416-e67c5d42083a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v2ray.wefuckgfw.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/DQsafRJn/",
+        "headers": {
+          "Host": "v2ray.wefuckgfw.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "13 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "cacerts.digicert.com",
+      "server_port": 2053,
+      "uuid": "ce02a636-88ac-4c29-963d-e09961ec3b3d",
       "security": "auto",
       "alter_id": 0,
       "tls": {
@@ -240,7 +240,7 @@
     },
     {
       "type": "vmess",
-      "tag": "21 ⌜クモ⌟ SNI -> 🇺🇸",
+      "tag": "18 ⌜クモ⌟ SNI -> 🇺🇸",
       "server": "sg1.v2-ray.com",
       "server_port": 443,
       "uuid": "698f55cc-d74a-4c90-bf69-973b3b67674e",
@@ -261,7 +261,7 @@
     },
     {
       "type": "vmess",
-      "tag": "23 ⌜クモ⌟ SNI -> 🇺🇸",
+      "tag": "21 ⌜クモ⌟ SNI -> 🇺🇸",
       "server": "cloudcone-879.wisdomfree.tk",
       "server_port": 60006,
       "uuid": "4596acf5-98da-4832-84bd-e792681a132a",

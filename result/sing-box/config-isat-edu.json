@@ -1,0 +1,296 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "error",
+    "output": "",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "1.1.1.1",
+        "detour": "direct-out"
+      }
+    ],
+    "final": "cloudflare",
+    "strategy": "prefer_ipv4",
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 10800,
+      "domain_strategy": "prefer_ipv4",
+      "set_system_proxy": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "1 ⌜クモ⌟ CDN -> 🇺🇸",
+        "4 ⌜クモ⌟ CDN -> 🇷🇴",
+        "7 ⌜クモ⌟ CDN -> 🇫🇷",
+        "9 ⌜クモ⌟ CDN -> 🇺🇸",
+        "10 ⌜クモ⌟ CDN -> 🇺🇸",
+        "11 ⌜クモ⌟ CDN -> 🇺🇸",
+        "12 ⌜クモ⌟ CDN -> 🇺🇸",
+        "13 ⌜クモ⌟ CDN -> 🇺🇸",
+        "17 ⌜クモ⌟ CDN -> 🇩🇪",
+        "19 ⌜クモ⌟ CDN -> 🇵🇱"
+      ]
+    },
+    {
+      "type": "vmess",
+      "tag": "1 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "141.193.213.20",
+      "server_port": 443,
+      "uuid": "615a1285-5848-42a1-9859-d4cb37b1fbd8",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "us.awsbest.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/share",
+        "headers": {
+          "Host": "us.awsbest.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "4 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "141.193.213.20",
+      "server_port": 8443,
+      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ca.0112233.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/home",
+        "headers": {
+          "Host": "ca.0112233.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "7 ⌜クモ⌟ CDN -> 🇫🇷",
+      "server": "141.193.213.20",
+      "server_port": 443,
+      "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "fr1.cachexy.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/p9Dq67Nx/",
+        "headers": {
+          "Host": "fr1.cachexy.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "9 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "141.193.213.20",
+      "server_port": 2053,
+      "uuid": "2c23eb31-1133-4807-818e-484d9a473b9b",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v2ray.wefuckgfw.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/DQsafRJn/",
+        "headers": {
+          "Host": "v2ray.wefuckgfw.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "10 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "141.193.213.20",
+      "server_port": 2053,
+      "uuid": "ab323ed9-dda5-4feb-9f17-c77c7fd811b6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v2ray.wefuckgfw.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/DQsafRJn/",
+        "headers": {
+          "Host": "v2ray.wefuckgfw.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "11 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "141.193.213.20",
+      "server_port": 2053,
+      "uuid": "8947fbe5-c1c7-4716-8564-2092ce776f92",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v2ray.wefuckgfw.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/DQsafRJn/",
+        "headers": {
+          "Host": "v2ray.wefuckgfw.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "12 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "141.193.213.20",
+      "server_port": 2053,
+      "uuid": "ce3f0dd3-8a04-4daa-9416-e67c5d42083a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v2ray.wefuckgfw.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/DQsafRJn/",
+        "headers": {
+          "Host": "v2ray.wefuckgfw.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "13 ⌜クモ⌟ CDN -> 🇺🇸",
+      "server": "141.193.213.20",
+      "server_port": 2053,
+      "uuid": "ce02a636-88ac-4c29-963d-e09961ec3b3d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "v2ray.wefuckgfw.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/DQsafRJn/",
+        "headers": {
+          "Host": "v2ray.wefuckgfw.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "17 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "141.193.213.20",
+      "server_port": 443,
+      "uuid": "1197321c-eb59-4159-959f-5d81f53c1792",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "h1.800876.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "h1.800876.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "19 ⌜クモ⌟ CDN -> 🇵🇱",
+      "server": "141.193.213.20",
+      "server_port": 443,
+      "uuid": "c13be7b9-bb72-4424-bb2f-00c468f4f282",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "w.800876.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "w.800876.xyz"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "network": "tcp",
+        "outbound": "select"
+      },
+      {
+        "network": "udp",
+        "outbound": "select"
+      }
+    ],
+    "geoip": {
+      "path": "./geoip.db",
+      "download_detour": "direct-out"
+    },
+    "geosite": {
+      "path": "./geosite.db",
+      "download_detour": "direct-out"
+    },
+    "final": "select"
+  }
+}
