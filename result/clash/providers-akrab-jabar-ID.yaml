@@ -1,5 +1,21 @@
 proxies:
-  - name: '120 ⌜クモ⌟ CDN -> 🇮🇩'
+  - name: '20 ⌜クモ⌟ CDN -> 🇮🇩'
+    server: 172.67.199.34
+    type: vmess
+    port: 443
+    uuid: 781be00e-1e09-4e27-a464-e14197418c8f
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: id5.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: id5.v2rayserv.com
+  - name: '138 ⌜クモ⌟ CDN -> 🇮🇩'
     server: 172.67.199.34
     type: vmess
     port: 443

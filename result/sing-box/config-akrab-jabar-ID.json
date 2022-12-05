@@ -45,12 +45,34 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "120 ⌜クモ⌟ CDN -> 🇮🇩"
+        "20 ⌜クモ⌟ CDN -> 🇮🇩",
+        "138 ⌜クモ⌟ CDN -> 🇮🇩"
       ]
     },
     {
       "type": "vmess",
-      "tag": "120 ⌜クモ⌟ CDN -> 🇮🇩",
+      "tag": "20 ⌜クモ⌟ CDN -> 🇮🇩",
+      "server": "172.67.199.34",
+      "server_port": 443,
+      "uuid": "781be00e-1e09-4e27-a464-e14197418c8f",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "id5.v2rayserv.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "id5.v2rayserv.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "138 ⌜クモ⌟ CDN -> 🇮🇩",
       "server": "172.67.199.34",
       "server_port": 443,
       "uuid": "6fea1649-425b-4092-bf53-29792152c925",

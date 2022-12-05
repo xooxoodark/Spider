@@ -45,19 +45,44 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "21 ⌜クモ⌟ CDN -> 🇸🇬",
-        "24 ⌜クモ⌟ CDN -> 🇸🇬",
-        "27 ⌜クモ⌟ CDN -> 🇸🇬",
-        "34 ⌜クモ⌟ CDN -> 🇸🇬",
-        "120 ⌜クモ⌟ CDN -> 🇮🇩",
-        "160 ⌜クモ⌟ CDN -> 🇸🇬",
-        "161 ⌜クモ⌟ CDN -> 🇸🇬",
-        "365 ⌜クモ⌟ CDN -> 🇸🇬"
+        "20 ⌜クモ⌟ CDN -> 🇮🇩",
+        "31 ⌜クモ⌟ CDN -> 🇸🇬",
+        "32 ⌜クモ⌟ CDN -> 🇸🇬",
+        "52 ⌜クモ⌟ CDN -> 🇸🇬",
+        "138 ⌜クモ⌟ CDN -> 🇮🇩",
+        "140 ⌜クモ⌟ CDN -> 🇸🇬",
+        "202 ⌜クモ⌟ CDN -> 🇰🇷",
+        "223 ⌜クモ⌟ CDN -> 🇸🇬",
+        "224 ⌜クモ⌟ CDN -> 🇸🇬",
+        "350 ⌜クモ⌟ CDN -> 🇰🇷",
+        "354 ⌜クモ⌟ CDN -> 🇸🇬",
+        "364 ⌜クモ⌟ CDN -> 🇹🇼"
       ]
     },
     {
       "type": "vmess",
-      "tag": "21 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "20 ⌜クモ⌟ CDN -> 🇮🇩",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "781be00e-1e09-4e27-a464-e14197418c8f",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "id5.v2rayserv.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "id5.v2rayserv.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "31 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
@@ -78,49 +103,7 @@
     },
     {
       "type": "vmess",
-      "tag": "24 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "main.millionaireaisle.com",
-      "server_port": 443,
-      "uuid": "ceb8a921-ec72-4804-ae92-cbd309f2f213",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "sg-v.sshmax.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vmess",
-        "headers": {
-          "Host": "sg-v.sshmax.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "27 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "main.millionaireaisle.com",
-      "server_port": 443,
-      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "sg4-v2ray.sshkit.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sshkit/1736960111/63859be1a762c/",
-        "headers": {
-          "Host": "sg4-v2ray.sshkit.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "34 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "32 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
@@ -141,7 +124,28 @@
     },
     {
       "type": "vmess",
-      "tag": "120 ⌜クモ⌟ CDN -> 🇮🇩",
+      "tag": "52 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg4-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859be1a762c/",
+        "headers": {
+          "Host": "sg4-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "138 ⌜クモ⌟ CDN -> 🇮🇩",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "6fea1649-425b-4092-bf53-29792152c925",
@@ -161,8 +165,50 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "140 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg3-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859bc177a33/",
+        "headers": {
+          "Host": "sg3-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "202 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "surongwei.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/reffs7y26g0ua",
+        "headers": {
+          "Host": "surongwei.eu.org"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "160 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "223 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "password": "4X1ebJpQWg",
@@ -181,7 +227,7 @@
     },
     {
       "type": "trojan",
-      "tag": "161 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "224 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "password": "4X1ebJpQWg",
@@ -200,22 +246,64 @@
     },
     {
       "type": "vmess",
-      "tag": "365 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "350 ⌜クモ⌟ CDN -> 🇰🇷",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
-      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "sg3-v2ray.sshkit.org"
+        "server_name": "kr1.sanfen001.pics"
       },
       "transport": {
         "type": "ws",
-        "path": "/sshkit/1736960111/63859bc177a33/",
+        "path": "/zh-cn",
         "headers": {
-          "Host": "sg3-v2ray.sshkit.org"
+          "Host": "kr1.sanfen001.pics"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "354 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg1.sanfen001.pics"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "sg1.sanfen001.pics"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "364 ⌜クモ⌟ CDN -> 🇹🇼",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "tw1.sanfen001.pics"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "tw1.sanfen001.pics"
         }
       }
     }
