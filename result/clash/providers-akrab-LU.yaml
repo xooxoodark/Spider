@@ -1,5 +1,5 @@
 proxies:
-  - name: '20 ⌜クモ⌟ CDN -> 🇱🇺'
+  - name: '11 ⌜クモ⌟ CDN -> 🇱🇺'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -15,7 +15,7 @@ proxies:
       path: /go
       headers:
         Host: lu1.gogogoo.cyou
-  - name: '181 ⌜クモ⌟ SNI -> 🇱🇺'
+  - name: '138 ⌜クモ⌟ SNI -> 🇱🇺'
     server: 104.244.73.218
     type: vmess
     port: 443
@@ -26,8 +26,24 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: promo.ruangguru.com
+    servername: click.zoom.us
     ws-opts: 
       path: /v2ray
       headers:
-        Host: promo.ruangguru.com
+        Host: click.zoom.us
+  - name: '253 ⌜クモ⌟ CDN -> 🇱🇺'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lu1.gogogoo.cyou
+    ws-opts: 
+      path: /go
+      headers:
+        Host: lu1.gogogoo.cyou

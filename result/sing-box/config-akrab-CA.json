@@ -45,15 +45,26 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "54 ⌜クモ⌟ SNI -> 🇨🇦",
-        "59 ⌜クモ⌟ SNI -> 🇨🇦",
-        "152 ⌜クモ⌟ SNI -> 🇨🇦",
-        "162 ⌜クモ⌟ SNI -> 🇨🇦"
+        "43 ⌜クモ⌟ SNI -> 🇨🇦",
+        "182 ⌜クモ⌟ SNI -> 🇨🇦",
+        "334 ⌜クモ⌟ SNI -> 🇨🇦"
       ]
     },
     {
       "type": "trojan",
-      "tag": "54 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "43 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "148.113.141.99",
+      "server_port": 443,
+      "password": "HdsUZmsHQW",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "182 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "cat1.sshocean.net",
       "server_port": 443,
       "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
@@ -65,19 +76,7 @@
     },
     {
       "type": "trojan",
-      "tag": "59 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "148.113.141.99",
-      "server_port": 443,
-      "password": "HdsUZmsHQW",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "152 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "334 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "149.56.141.11",
       "server_port": 443,
       "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
@@ -85,27 +84,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "162 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "35.182.165.120",
-      "server_port": 443,
-      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/v2ray",
-        "headers": {
-          "Host": "promo.ruangguru.com"
-        }
       }
     }
   ],

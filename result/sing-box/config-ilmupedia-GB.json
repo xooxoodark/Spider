@@ -45,13 +45,52 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "63 ⌜クモ⌟ SNI -> 🇬🇧",
-        "71 ⌜クモ⌟ SNI -> 🇬🇧"
+        "46 ⌜クモ⌟ SNI -> 🇬🇧",
+        "132 ⌜クモ⌟ SNI -> 🇬🇧",
+        "272 ⌜クモ⌟ SNI -> 🇬🇧",
+        "295 ⌜クモ⌟ SNI -> 🇬🇧",
+        "359 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
       "type": "trojan",
-      "tag": "63 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "46 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "uk.520748.xyz",
+      "server_port": 10003,
+      "password": "d7616325-e7cf-4901-b2b2-f1ea3669d022",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "132 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "146.19.230.241",
+      "server_port": 443,
+      "password": "xxoo",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "272 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "jgwld1.gaox.ml",
+      "server_port": 443,
+      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "295 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "51.195.202.124",
       "server_port": 443,
       "password": "267af089-734c-48ca-9d47-88b0435d541b",
@@ -62,15 +101,24 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "71 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "uk.520748.xyz",
-      "server_port": 10003,
-      "password": "d7616325-e7cf-4901-b2b2-f1ea3669d022",
+      "type": "vmess",
+      "tag": "359 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "54.36.162.144",
+      "server_port": 443,
+      "uuid": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
       }
     }
   ],

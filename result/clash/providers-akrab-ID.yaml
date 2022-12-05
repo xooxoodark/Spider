@@ -1,5 +1,21 @@
 proxies:
-  - name: '15 ⌜クモ⌟ CDN -> 🇮🇩'
+  - name: '18 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: sg-atha.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: options.teams.microsoft.com
+    ws-opts: 
+      path: /fastssh/amrozi87/6350416ec330b/
+      headers:
+        Host: options.teams.microsoft.com
+  - name: '20 ⌜クモ⌟ CDN -> 🇮🇩'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -15,23 +31,7 @@ proxies:
       path: /
       headers:
         Host: id5.v2rayserv.com
-  - name: '31 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: sg-atha.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: promo.ruangguru.com
-    ws-opts: 
-      path: /fastssh/amrozi87/6350416ec330b/
-      headers:
-        Host: promo.ruangguru.com
-  - name: '84 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '58 ⌜クモ⌟ SNI -> 🇮🇩'
     server: id3tr.jagoan.vip
     type: trojan
     port: 443
@@ -39,8 +39,8 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: click.zoom.us
-  - name: '95 ⌜クモ⌟ SNI -> 🇮🇩'
+    servername: options.teams.microsoft.com
+  - name: '63 ⌜クモ⌟ SNI -> 🇮🇩'
     server: 103.167.34.206
     type: trojan
     port: 443
@@ -48,8 +48,8 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: options.teams.microsoft.com
-  - name: '138 ⌜クモ⌟ CDN -> 🇮🇩'
+    servername: click.zoom.us
+  - name: '112 ⌜クモ⌟ CDN -> 🇮🇩'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -65,19 +65,3 @@ proxies:
       path: /sshkit/dfsdafdsa/63848baf653eb/
       headers:
         Host: id-lb.vhax.net
-  - name: '178 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: sg-atha.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: promo.ruangguru.com
-    ws-opts: 
-      path: /fastssh/jdjdjdn/6347fefa86953/
-      headers:
-        Host: promo.ruangguru.com

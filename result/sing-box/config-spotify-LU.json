@@ -45,13 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "20 ⌜クモ⌟ CDN -> 🇱🇺",
-        "181 ⌜クモ⌟ SNI -> 🇱🇺"
+        "11 ⌜クモ⌟ CDN -> 🇱🇺",
+        "138 ⌜クモ⌟ SNI -> 🇱🇺",
+        "253 ⌜クモ⌟ CDN -> 🇱🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "20 ⌜クモ⌟ CDN -> 🇱🇺",
+      "tag": "11 ⌜クモ⌟ CDN -> 🇱🇺",
       "server": "investors.spotify.com",
       "server_port": 443,
       "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
@@ -72,7 +73,7 @@
     },
     {
       "type": "vmess",
-      "tag": "181 ⌜クモ⌟ SNI -> 🇱🇺",
+      "tag": "138 ⌜クモ⌟ SNI -> 🇱🇺",
       "server": "104.244.73.218",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -88,6 +89,27 @@
         "path": "/v2ray",
         "headers": {
           "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "253 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "investors.spotify.com",
+      "server_port": 443,
+      "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "lu1.gogogoo.cyou"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/go",
+        "headers": {
+          "Host": "lu1.gogogoo.cyou"
         }
       }
     }
