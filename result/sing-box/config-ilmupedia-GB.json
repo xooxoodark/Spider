@@ -45,61 +45,17 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "31 ⌜クモ⌟ SNI -> 🇬🇧",
-        "34 ⌜クモ⌟ SNI -> 🇬🇧",
-        "72 ⌜クモ⌟ SNI -> 🇬🇧",
-        "112 ⌜クモ⌟ SNI -> 🇬🇧",
-        "117 ⌜クモ⌟ SNI -> 🇬🇧",
-        "118 ⌜クモ⌟ SNI -> 🇬🇧",
-        "136 ⌜クモ⌟ SNI -> 🇬🇧",
-        "138 ⌜クモ⌟ SNI -> 🇬🇧",
-        "144 ⌜クモ⌟ SNI -> 🇬🇧",
-        "145 ⌜クモ⌟ CDN -> 🇬🇧"
+        "75 ⌜クモ⌟ SNI -> 🇬🇧",
+        "89 ⌜クモ⌟ SNI -> 🇬🇧",
+        "90 ⌜クモ⌟ SNI -> 🇬🇧",
+        "104 ⌜クモ⌟ SNI -> 🇬🇧",
+        "113 ⌜クモ⌟ SNI -> 🇬🇧",
+        "117 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
-      "type": "vmess",
-      "tag": "31 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "11yg.mealstream.xyz",
-      "server_port": 15111,
-      "uuid": "8578dc92-3097-4dd5-941a-5e6ebeaa91ba",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "34 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "132.145.51.172",
-      "server_port": 443,
-      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "72 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "12yg.mealstream.xyz",
-      "server_port": 443,
-      "uuid": "8578dc92-3097-4dd5-941a-5e6ebeaa91ba",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "112 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "75 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "146.19.230.241",
       "server_port": 443,
       "password": "xxoo",
@@ -111,7 +67,7 @@
     },
     {
       "type": "trojan",
-      "tag": "117 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "89 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "185.16.206.212",
       "server_port": 443,
       "password": "shefelnak",
@@ -123,7 +79,7 @@
     },
     {
       "type": "trojan",
-      "tag": "118 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "90 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "185.16.206.209",
       "server_port": 443,
       "password": "shefelnak",
@@ -134,29 +90,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "136 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "178.79.153.238",
-      "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/chat",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "138 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "104 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "51.195.202.124",
       "server_port": 443,
       "password": "267af089-734c-48ca-9d47-88b0435d541b",
@@ -168,7 +103,7 @@
     },
     {
       "type": "vmess",
-      "tag": "144 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "113 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "54.36.162.144",
       "server_port": 443,
       "uuid": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
@@ -188,24 +123,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "145 ⌜クモ⌟ CDN -> 🇬🇧",
-      "server": "cacerts.digicert.com",
-      "server_port": 2053,
-      "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "trojan",
+      "tag": "117 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "132.145.51.172",
+      "server_port": 443,
+      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "foxuk2.fovi.tk"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eisasqa",
-        "headers": {
-          "Host": "foxuk2.fovi.tk"
-        }
+        "server_name": "news.microsoft.com"
       }
     }
   ],

@@ -84,14 +84,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "08fg.mealstream.xyz",
-            "port": 15208,
+            "address": "main.millionaireaisle.com",
+            "port": 443,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "8578dc92-3097-4dd5-941a-5e6ebeaa91ba",
+                "id": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
                 "level": 8,
                 "security": "auto"
               }
@@ -100,14 +100,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "fr1.cachexy.ga"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "fr1.cachexy.ga"
+          },
+          "path": "/p9Dq67Nx/"
         }
       },
-      "tag": "proxy-86 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-57 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -147,76 +153,7 @@
           "path": "/p9Dq67Nx/"
         }
       },
-      "tag": "proxy-89 ⌜クモ⌟ CDN -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "main.millionaireaisle.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "fr1.cachexy.ga"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "fr1.cachexy.ga"
-          },
-          "path": "/p9Dq67Nx/"
-        }
-      },
-      "tag": "proxy-90 ⌜クモ⌟ CDN -> 🇫🇷"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "176.31.83.90",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "origin",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "promo.ruangguru.com"
-        }
-      },
-      "tag": "proxy-131 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-58 ⌜クモ⌟ CDN -> 🇫🇷"
     },
     {
       "mux": {
@@ -245,7 +182,7 @@
           "serverName": "click.zoom.us"
         }
       },
-      "tag": "proxy-133 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-85 ⌜クモ⌟ SNI -> 🇫🇷"
     },
     {
       "mux": {
@@ -274,7 +211,7 @@
           "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-139 ⌜クモ⌟ SNI -> 🇫🇷"
+      "tag": "proxy-106 ⌜クモ⌟ SNI -> 🇫🇷"
     }
   ],
   "dns": {

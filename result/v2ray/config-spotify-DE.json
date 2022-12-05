@@ -102,7 +102,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-35 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-22 ⌜クモ⌟ SNI -> 🇩🇪"
     },
     {
       "mux": {
@@ -131,7 +131,47 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-114 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-86 ⌜クモ⌟ SNI -> 🇩🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "investors.spotify.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "1197321c-eb59-4159-959f-5d81f53c1792",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "104.28.221.34"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "104.28.221.34"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-111 ⌜クモ⌟ CDN -> 🇩🇪"
     },
     {
       "mux": {
@@ -160,7 +200,7 @@
           "serverName": "image-upload4.spotify.com"
         }
       },
-      "tag": "proxy-140 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-112 ⌜クモ⌟ SNI -> 🇩🇪"
     }
   ],
   "dns": {
