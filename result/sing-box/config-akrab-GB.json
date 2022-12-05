@@ -45,41 +45,19 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "124 ⌜クモ⌟ SNI -> 🇬🇧",
-        "350 ⌜クモ⌟ SNI -> 🇬🇧"
+        "66 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
       "type": "trojan",
-      "tag": "124 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "66 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "146.19.230.241",
       "server_port": 443,
       "password": "xxoo",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "350 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "54.36.162.144",
-      "server_port": 443,
-      "uuid": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
         "server_name": "click.zoom.us"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vmess",
-        "headers": {
-          "Host": "click.zoom.us"
-        }
       }
     }
   ],
