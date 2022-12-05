@@ -1,5 +1,21 @@
 proxies:
-  - name: '32 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '12 ⌜クモ⌟ CDN -> 🇮🇩'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 781be00e-1e09-4e27-a464-e14197418c8f
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: id5.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: id5.v2rayserv.com
+  - name: '21 ⌜クモ⌟ SNI -> 🇮🇩'
     server: sg-atha.v2-ray.com
     type: vmess
     port: 443
@@ -15,23 +31,7 @@ proxies:
       path: /fastssh/amrozi87/6350416ec330b/
       headers:
         Host: news.microsoft.com
-  - name: '37 ⌜クモ⌟ CDN -> 🇮🇩'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 443
-    uuid: 781be00e-1e09-4e27-a464-e14197418c8f
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: id5.v2rayserv.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: id5.v2rayserv.com
-  - name: '98 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '55 ⌜クモ⌟ SNI -> 🇮🇩'
     server: 103.167.34.206
     type: trojan
     port: 443
@@ -40,16 +40,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '112 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: id3tr.jagoan.vip
-    type: trojan
-    port: 443
-    password: vvip-periantara
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '135 ⌜クモ⌟ CDN -> 🇮🇩'
+  - name: '147 ⌜クモ⌟ CDN -> 🇮🇩'
     server: cacerts.digicert.com
     type: vmess
     port: 443

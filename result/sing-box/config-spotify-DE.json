@@ -45,15 +45,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "35 ⌜クモ⌟ CDN -> 🇩🇪",
-        "62 ⌜クモ⌟ SNI -> 🇩🇪",
-        "99 ⌜クモ⌟ SNI -> 🇩🇪",
-        "217 ⌜クモ⌟ SNI -> 🇩🇪"
+        "24 ⌜クモ⌟ CDN -> 🇩🇪",
+        "52 ⌜クモ⌟ SNI -> 🇩🇪",
+        "91 ⌜クモ⌟ SNI -> 🇩🇪",
+        "112 ⌜クモ⌟ CDN -> 🇩🇪",
+        "195 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "vmess",
-      "tag": "35 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "24 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "investors.spotify.com",
       "server_port": 2053,
       "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
@@ -74,7 +75,7 @@
     },
     {
       "type": "trojan",
-      "tag": "62 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "52 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "bdvasxmahl.injafarvpnwebelieve.gq",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -86,7 +87,7 @@
     },
     {
       "type": "trojan",
-      "tag": "99 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "91 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
@@ -97,8 +98,29 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "112 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "investors.spotify.com",
+      "server_port": 2083,
+      "uuid": "1ffeca67-a2bc-471b-b138-369d6762967d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "30.tehvp.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "30.tehvp.xyz"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "217 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "195 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "content-provider28.cdn-delivery.akamaicd.com",
       "server_port": 443,
       "password": "origin",

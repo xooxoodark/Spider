@@ -45,12 +45,34 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "196 ⌜クモ⌟ SNI -> 🇱🇺"
+        "46 ⌜クモ⌟ CDN -> 🇱🇺",
+        "143 ⌜クモ⌟ SNI -> 🇱🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "196 ⌜クモ⌟ SNI -> 🇱🇺",
+      "tag": "46 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "lu1.gogogoo.cyou"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/go",
+        "headers": {
+          "Host": "lu1.gogogoo.cyou"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "143 ⌜クモ⌟ SNI -> 🇱🇺",
       "server": "104.244.73.218",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -59,13 +81,13 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/v2ray",
         "headers": {
-          "Host": "options.teams.microsoft.com"
+          "Host": "promo.ruangguru.com"
         }
       }
     }
