@@ -8,7 +8,7 @@ import { exit } from "process";
 import { Bugs } from "./modules/bugs.mjs";
 import { connect } from "./modules/connect.mjs";
 import { converter } from "./modules/converter.mjs";
-import { isSingBoxRunning, sleep } from "./modules/helper.mjs";
+import { duplicateFilter, isSingBoxRunning, sleep } from "./modules/helper.mjs";
 import { logger, LogLevel } from "./modules/logger.mjs";
 import { Scraper } from "./modules/scraper.mjs";
 import { bot } from "./modules/tg.mjs";
@@ -65,11 +65,10 @@ exec("pkill sing-box");
 
   // Test the result
   logger.log(LogLevel.info, "Start the test!");
-  const connectedAccounts = await (async () => {
+  let connectedAccounts = await (async () => {
     const bugs = new Bugs();
     const result: V2Object[] = [];
 
-    let scannedAccount: any = {};
     let isCompleteScan: boolean = false;
 
     for (const i in accounts) {
@@ -80,19 +79,14 @@ exec("pkill sing-box");
         const onTest: string[] = [];
         for (const mode of modes) {
           // Filter account
-          let server = account.address;
           if (mode == "cdn") {
             if (!account.host) continue;
-            server = account.host;
           } else {
             account.tls = "tls";
 
             if (account.port == 80) {
               account.port = 443;
             }
-          }
-          if (scannedAccount[server]) {
-            if (scannedAccount[server].includes(account.id)) break;
           }
 
           onTest.push(mode);
@@ -125,30 +119,6 @@ exec("pkill sing-box");
               LogLevel.success,
               `[${account.vpn}] ${result.length} -> ${account.remark}: ${mode} -> ${countryFlag}`
             );
-
-            let server = account.address;
-            if (mode == "CDN") server = account.host;
-
-            // ID filter by hostname
-            if (scannedAccount[server]) {
-              if (!scannedAccount[server].includes(account.id)) scannedAccount[server].push(account.id);
-            } else {
-              scannedAccount[server] = [account.id];
-            }
-            // ID filter by IP address
-            if (connect.ip) {
-              if (connect.mode == "cdn") {
-                account.host = connect.ip;
-                account.sni = connect.ip;
-              } else {
-                account.address = connect.ip;
-              }
-              if (scannedAccount[connect.ip]) {
-                if (!scannedAccount[connect.ip].includes(account.id)) scannedAccount[connect.ip].push(account.id);
-              } else {
-                scannedAccount[connect.ip] = [account.id];
-              }
-            }
 
             result.push({
               ...account,
@@ -190,6 +160,9 @@ exec("pkill sing-box");
     } while (await isSingBoxRunning());
     return result;
   })();
+
+  // Filter duplicate
+  connectedAccounts = duplicateFilter(connectedAccounts);
 
   // If the url is valid url, save the result to ./resources
   if (url) {

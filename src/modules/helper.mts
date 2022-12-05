@@ -2,6 +2,7 @@ import { logger, LogLevel } from "./logger.mjs";
 import { parse, UrlWithParsedQuery } from "url";
 import { decode, encode } from "js-base64";
 import findProcess from "find-process";
+import { V2Object } from "./types.mjs";
 
 async function sleep(ms: number) {
   return await new Promise((resolve) => {
@@ -40,4 +41,30 @@ async function isSingBoxRunning(): Promise<number> {
   return list.length;
 }
 
-export { sleep, base64Decode, base64Encode, urlParser, isSingBoxRunning };
+function duplicateFilter(accounts: V2Object[]): V2Object[] {
+  let address: string;
+  let path: string;
+  let id: string;
+
+  for (const i in accounts) {
+    address = accounts[i].address;
+    path = accounts[i].path;
+    id = accounts[i].id;
+
+    for (let j = parseInt(i) + 1; j < accounts.length; j++) {
+      if (address == accounts[j].address) {
+        if (path == accounts[j].path) {
+          if (id == accounts[j].id) {
+            console.log("Duplicate found!");
+            accounts.splice(j, 1);
+            return duplicateFilter(accounts);
+          }
+        }
+      }
+    }
+  }
+
+  return accounts;
+}
+
+export { sleep, base64Decode, base64Encode, urlParser, isSingBoxRunning, duplicateFilter };
