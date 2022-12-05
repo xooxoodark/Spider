@@ -18,7 +18,7 @@ const countries: Country[] = JSON.parse(readFileSync("./countries.json").toStrin
 const bugBundles: string[] = readdirSync("./resources/bugs");
 const { url, filename } = JSON.parse(process.argv[2]) as Data;
 const modes: string[] = ["cdn", "sni"];
-const maxConcurrentTest = 50;
+const maxConcurrentTest = 70;
 
 // Kill all v2ray process
 exec("pkill sing-box");
@@ -132,6 +132,7 @@ exec("pkill sing-box");
             // ID filter by hostname
             if (scannedAccount[server]) {
               if (!scannedAccount[server].includes(account.id)) scannedAccount[server].push(account.id);
+              else continue;
             } else {
               scannedAccount[server] = [account.id];
             }
@@ -145,6 +146,7 @@ exec("pkill sing-box");
               }
               if (scannedAccount[connect.ip]) {
                 if (!scannedAccount[connect.ip].includes(account.id)) scannedAccount[connect.ip].push(account.id);
+                else continue;
               } else {
                 scannedAccount[connect.ip] = [account.id];
               }
@@ -263,6 +265,12 @@ exec("pkill sing-box");
     let rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
     let boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
     for (const account of connectedAccounts) {
+      if (account.cdn) {
+        if (!bugs.cdn) continue;
+      } else {
+        if (!bugs.sni) continue;
+      }
+
       remarks.push(account.remark);
       clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
       rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
@@ -296,6 +304,12 @@ exec("pkill sing-box");
       rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
       boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
       for (const account of proxiesByCountry[country]) {
+        if (account.cdn) {
+          if (!bugs.cdn) continue;
+        } else {
+          if (!bugs.sni) continue;
+        }
+
         remarks.push(account.remark);
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
@@ -330,6 +344,12 @@ exec("pkill sing-box");
       rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
       boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
       for (const account of proxiesByRegion[region as Region]) {
+        if (account.cdn) {
+          if (!bugs.cdn) continue;
+        } else {
+          if (!bugs.sni) continue;
+        }
+
         remarks.push(account.remark);
         clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
         rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
