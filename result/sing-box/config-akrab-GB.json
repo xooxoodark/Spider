@@ -45,15 +45,37 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "83 ⌜クモ⌟ SNI -> 🇬🇧",
-        "149 ⌜クモ⌟ SNI -> 🇬🇧",
-        "163 ⌜クモ⌟ SNI -> 🇬🇧",
-        "221 ⌜クモ⌟ SNI -> 🇬🇧"
+        "49 ⌜クモ⌟ SNI -> 🇬🇧",
+        "91 ⌜クモ⌟ SNI -> 🇬🇧",
+        "144 ⌜クモ⌟ SNI -> 🇬🇧",
+        "229 ⌜クモ⌟ SNI -> 🇬🇧",
+        "417 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
+      "type": "vmess",
+      "tag": "49 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "vuk2.0bad.com",
+      "server_port": 443,
+      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/chat",
+        "headers": {
+          "Host": "click.zoom.us"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "83 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "91 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "jgwld1.gaox.ml",
       "server_port": 443,
       "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
@@ -65,10 +87,22 @@
     },
     {
       "type": "trojan",
-      "tag": "149 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "132.145.51.172",
+      "tag": "144 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "146.19.230.241",
       "server_port": 443,
-      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+      "password": "xxoo",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "229 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "185.16.206.209",
+      "server_port": 443,
+      "password": "shefelnak",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -76,35 +110,23 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "163 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "146.19.230.241",
-      "server_port": 443,
-      "password": "xxoo",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "221 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "vuk2.0bad.com",
+      "tag": "417 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "54.36.162.144",
       "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
+      "uuid": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "click.zoom.us"
       },
       "transport": {
         "type": "ws",
-        "path": "/chat",
+        "path": "/vmess",
         "headers": {
-          "Host": "promo.ruangguru.com"
+          "Host": "click.zoom.us"
         }
       }
     }

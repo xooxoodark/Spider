@@ -1,32 +1,5 @@
 proxies:
-  - name: '83 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: jgwld1.gaox.ml
-    type: trojan
-    port: 443
-    password: 02e653c9-7c93-46a9-999d-11834bd0c577
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '149 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 132.145.51.172
-    type: trojan
-    port: 443
-    password: 02e653c9-7c93-46a9-999d-11834bd0c577
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '163 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 146.19.230.241
-    type: trojan
-    port: 443
-    password: xxoo
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '221 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '49 ⌜クモ⌟ SNI -> 🇬🇧'
     server: vuk2.0bad.com
     type: vmess
     port: 443
@@ -40,5 +13,48 @@ proxies:
     servername: image-upload4.spotify.com
     ws-opts: 
       path: /chat
+      headers:
+        Host: image-upload4.spotify.com
+  - name: '91 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: jgwld1.gaox.ml
+    type: trojan
+    port: 443
+    password: 02e653c9-7c93-46a9-999d-11834bd0c577
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '144 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 146.19.230.241
+    type: trojan
+    port: 443
+    password: xxoo
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '229 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 185.16.206.209
+    type: trojan
+    port: 443
+    password: shefelnak
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '417 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 54.36.162.144
+    type: vmess
+    port: 443
+    uuid: 0a4b28c1-4d88-46a0-8a43-6098bac35a8f
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /vmess
       headers:
         Host: image-upload4.spotify.com
