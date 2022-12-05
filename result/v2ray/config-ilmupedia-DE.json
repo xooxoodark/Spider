@@ -102,7 +102,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-44 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-33 ⌜クモ⌟ SNI -> 🇩🇪"
     },
     {
       "mux": {
@@ -131,7 +131,47 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-118 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-159 ⌜クモ⌟ SNI -> 🇩🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cacerts.digicert.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "1197321c-eb59-4159-959f-5d81f53c1792",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "h1.800876.xyz"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "h1.800876.xyz"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-179 ⌜クモ⌟ CDN -> 🇩🇪"
     },
     {
       "mux": {
@@ -171,47 +211,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-145 ⌜クモ⌟ CDN -> 🇩🇪"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "news.microsoft.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "1197321c-eb59-4159-959f-5d81f53c1792",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "h1.800876.xyz"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "h1.800876.xyz"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-146 ⌜クモ⌟ CDN -> 🇩🇪"
+      "tag": "proxy-184 ⌜クモ⌟ CDN -> 🇩🇪"
     },
     {
       "mux": {
@@ -240,7 +240,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-158 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-190 ⌜クモ⌟ SNI -> 🇩🇪"
     }
   ],
   "dns": {
