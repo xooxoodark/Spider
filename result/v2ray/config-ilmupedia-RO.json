@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 8443,
             "users": [
               {
@@ -113,7 +113,7 @@
           "path": "/home"
         }
       },
-      "tag": "proxy-21 ⌜クモ⌟ CDN -> 🇷🇴"
+      "tag": "proxy-19 ⌜クモ⌟ CDN -> 🇷🇴"
     },
     {
       "mux": {
@@ -124,7 +124,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -153,7 +153,47 @@
           "path": "/"
         }
       },
-      "tag": "proxy-219 ⌜クモ⌟ CDN -> 🇷🇴"
+      "tag": "proxy-123 ⌜クモ⌟ CDN -> 🇷🇴"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cacerts.digicert.com",
+            "port": 8443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "ca.0112233.xyz"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "ca.0112233.xyz"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-189 ⌜クモ⌟ CDN -> 🇷🇴"
     }
   ],
   "dns": {

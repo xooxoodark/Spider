@@ -113,7 +113,47 @@
           "path": "/"
         }
       },
-      "tag": "proxy-231 ⌜クモ⌟ CDN -> 🇵🇱"
+      "tag": "proxy-24 ⌜クモ⌟ CDN -> 🇵🇱"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hk-core.pvpgames.net",
+            "port": 63077,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "c1517df4-6454-39ce-9037-d5eccfc703b7",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "news.microsoft.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-305 ⌜クモ⌟ SNI -> 🇵🇱"
     }
   ],
   "dns": {

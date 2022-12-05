@@ -45,14 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "21 ⌜クモ⌟ CDN -> 🇷🇴",
-        "219 ⌜クモ⌟ CDN -> 🇷🇴"
+        "19 ⌜クモ⌟ CDN -> 🇷🇴",
+        "123 ⌜クモ⌟ CDN -> 🇷🇴",
+        "189 ⌜クモ⌟ CDN -> 🇷🇴"
       ]
     },
     {
       "type": "vmess",
-      "tag": "21 ⌜クモ⌟ CDN -> 🇷🇴",
-      "server": "141.193.213.20",
+      "tag": "19 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "141.193.213.21",
       "server_port": 8443,
       "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
       "security": "auto",
@@ -72,9 +73,30 @@
     },
     {
       "type": "vmess",
-      "tag": "219 ⌜クモ⌟ CDN -> 🇷🇴",
-      "server": "104.26.14.59",
+      "tag": "123 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "141.193.213.20",
       "server_port": 443,
+      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ca.0112233.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ca.0112233.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "189 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "141.193.213.20",
+      "server_port": 8443,
       "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
       "security": "auto",
       "alter_id": 0,
