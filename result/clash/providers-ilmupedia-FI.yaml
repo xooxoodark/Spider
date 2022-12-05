@@ -1,5 +1,5 @@
 proxies:
-  - name: '83 ⌜クモ⌟ SNI -> 🇫🇮'
+  - name: '73 ⌜クモ⌟ SNI -> 🇫🇮'
     server: 65.108.147.129
     type: vmess
     port: 443
@@ -15,8 +15,24 @@ proxies:
       path: /ugbovws
       headers:
         Host: news.microsoft.com
-  - name: '84 ⌜クモ⌟ CDN -> 🇫🇮'
-    server: news.microsoft.com
+  - name: '75 ⌜クモ⌟ SNI -> 🇫🇮'
+    server: 65.108.147.129
+    type: vmess
+    port: 443
+    uuid: a110fb8d-5f71-41d6-9386-208d3f501438
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /ugbovws
+      headers:
+        Host: news.microsoft.com
+  - name: '76 ⌜クモ⌟ CDN -> 🇫🇮'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: a110fb8d-5f71-41d6-9386-208d3f501438
@@ -31,19 +47,3 @@ proxies:
       path: /ugbovws
       headers:
         Host: 65.108.147.129
-  - name: '85 ⌜クモ⌟ SNI -> 🇫🇮'
-    server: 65.108.147.129
-    type: vmess
-    port: 443
-    uuid: a110fb8d-5f71-41d6-9386-208d3f501438
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /ugbovws
-      headers:
-        Host: news.microsoft.com
