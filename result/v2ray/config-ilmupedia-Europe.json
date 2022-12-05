@@ -84,7 +84,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 8443,
             "users": [
               {
@@ -113,7 +113,7 @@
           "path": "/home"
         }
       },
-      "tag": "proxy-6 ⌜クモ⌟ CDN -> 🇷🇴"
+      "tag": "proxy-4 ⌜クモ⌟ CDN -> 🇷🇴"
     },
     {
       "mux": {
@@ -124,7 +124,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -193,7 +193,47 @@
           "path": "/ugbovws"
         }
       },
-      "tag": "proxy-10 ⌜クモ⌟ SNI -> 🇫🇮"
+      "tag": "proxy-11 ⌜クモ⌟ SNI -> 🇫🇮"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cacerts.digicert.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "bb97ee0a-6d57-40c0-a446-45b78c303603",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "163.172.213.74"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "163.172.213.74"
+          },
+          "path": "/fastssh/hkgzs01/6315d407657f6/"
+        }
+      },
+      "tag": "proxy-17 ⌜クモ⌟ CDN -> 🇳🇱"
     },
     {
       "mux": {
@@ -233,7 +273,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-13 ⌜クモ⌟ CDN -> 🇩🇪"
+      "tag": "proxy-18 ⌜クモ⌟ CDN -> 🇩🇪"
     },
     {
       "mux": {
@@ -244,7 +284,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
@@ -273,7 +313,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-17 ⌜クモ⌟ CDN -> 🇵🇱"
+      "tag": "proxy-20 ⌜クモ⌟ CDN -> 🇵🇱"
     }
   ],
   "dns": {

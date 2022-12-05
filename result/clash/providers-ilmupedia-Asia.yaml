@@ -1,5 +1,5 @@
 proxies:
-  - name: '4 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '3 ⌜クモ⌟ SNI -> 🇯🇵'
     server: f1f3227.v3.glados-config.net
     type: vmess
     port: 3331
@@ -15,19 +15,7 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: news.microsoft.com
-  - name: '9 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jp1.a100.sbs
-    type: vmess
-    port: 2001
-    uuid: d13a3a08-411b-46eb-87c5-023bc8b61db9
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '11 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '13 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 139.162.45.139
     type: trojan
     port: 443
@@ -36,7 +24,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '12 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '14 ⌜クモ⌟ SNI -> 🇸🇬'
     server: lll.277428.xyz
     type: vmess
     port: 40771
@@ -48,7 +36,28 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
+  - name: '15 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: jp1.a100.sbs
+    type: vmess
+    port: 2001
+    uuid: d13a3a08-411b-46eb-87c5-023bc8b61db9
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
   - name: '19 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: jp1.dog.fastcleaner.net
+    type: trojan
+    port: 50002
+    password: 36cccfc3-00ef-e65d-8b05-ada36c90ca77
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '22 ⌜クモ⌟ SNI -> 🇯🇵'
     server: jp1.a100.sbs
     type: vmess
     port: 2001

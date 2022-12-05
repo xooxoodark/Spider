@@ -15,7 +15,7 @@ proxies:
       path: /share
       headers:
         Host: us.awsbest.com
-  - name: '2 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '5 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
@@ -31,7 +31,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '3 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '6 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
@@ -47,7 +47,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '5 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '7 ⌜クモ⌟ SNI -> 🇺🇸'
     server: sg1.v2-ray.com
     type: vmess
     port: 443
@@ -63,23 +63,23 @@ proxies:
       path: /fastssh/fartf76g/6350442c996e3/
       headers:
         Host: image-upload4.spotify.com
-  - name: '14 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: sg1.v2-ray.com
+  - name: '9 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: investors.spotify.com
     type: vmess
-    port: 443
-    uuid: 698f55cc-d74a-4c90-bf69-973b3b67674e
+    port: 2053
+    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
-    servername: image-upload4.spotify.com
+    servername: v2ray.wefuckgfw.ga
     ws-opts: 
-      path: /fastssh/gafsg65g/635045dc30ee6/
+      path: /DQsafRJn/
       headers:
-        Host: image-upload4.spotify.com
-  - name: '15 ⌜クモ⌟ CDN -> 🇺🇸'
+        Host: v2ray.wefuckgfw.ga
+  - name: '10 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
@@ -88,14 +88,14 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     servername: v2ray.wefuckgfw.ga
     ws-opts: 
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '16 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '12 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
@@ -111,23 +111,39 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '18 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: investors.spotify.com
+  - name: '16 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: sg2.v2-ray.com
     type: vmess
-    port: 2053
-    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
+    port: 443
+    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: v2ray.wefuckgfw.ga
+    servername: image-upload4.spotify.com
     ws-opts: 
-      path: /DQsafRJn/
+      path: /fastssh/jrjjfggg/63419a0211ed5/
       headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '20 ⌜クモ⌟ SNI -> 🇺🇸'
+        Host: image-upload4.spotify.com
+  - name: '21 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: sg1.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: 698f55cc-d74a-4c90-bf69-973b3b67674e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /fastssh/gafsg65g/635045dc30ee6/
+      headers:
+        Host: image-upload4.spotify.com
+  - name: '23 ⌜クモ⌟ SNI -> 🇺🇸'
     server: cloudcone-879.wisdomfree.tk
     type: vmess
     port: 60006
