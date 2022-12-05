@@ -1,5 +1,5 @@
 proxies:
-  - name: '55 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '38 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 207.154.243.252
     type: trojan
     port: 443
@@ -8,11 +8,36 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '135 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '131 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 188.40.251.19
     type: trojan
     port: 443
     password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '149 ⌜クモ⌟ CDN -> 🇩🇪'
+    server: investors.spotify.com
+    type: vmess
+    port: 443
+    uuid: d217db0c-0faa-4270-ea38-e6093d9774e3
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: h2.800876.xyz
+    ws-opts: 
+      path: /
+      headers:
+        Host: h2.800876.xyz
+  - name: '154 ⌜クモ⌟ SNI -> 🇩🇪'
+    server: 5.75.152.12
+    type: trojan
+    port: 443
+    password: d76294c5-a31f-408d-ba0b-89880107cab5
     udp: true
     skip-cert-verify: true
     network: tcp
