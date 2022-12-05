@@ -113,7 +113,65 @@
           "path": "/"
         }
       },
-      "tag": "proxy-18 ⌜クモ⌟ CDN -> 🇩🇪"
+      "tag": "proxy-48 ⌜クモ⌟ CDN -> 🇩🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bdvasxmahl.injafarvpnwebelieve.gq",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "TvBypqQJ9b",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        }
+      },
+      "tag": "proxy-76 ⌜クモ⌟ SNI -> 🇩🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.40.251.19",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "origin",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        }
+      },
+      "tag": "proxy-107 ⌜クモ⌟ SNI -> 🇩🇪"
     },
     {
       "mux": {
@@ -153,7 +211,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-48 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-156 ⌜クモ⌟ SNI -> 🇩🇪"
     },
     {
       "mux": {
@@ -164,7 +222,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.202.233.237",
+            "address": "213.202.233.12",
             "port": 443,
             "users": [
               {
@@ -193,7 +251,47 @@
           "path": "/path/243535322906"
         }
       },
-      "tag": "proxy-91 ⌜クモ⌟ SNI -> 🇩🇪"
+      "tag": "proxy-312 ⌜クモ⌟ SNI -> 🇩🇪"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.30.144.68",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 64,
+                "encryption": "",
+                "flow": "",
+                "id": "418048af-a293-4b99-9b0c-98ca3580dd24",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "options.teams.microsoft.com"
+          },
+          "path": "/path/243535322906"
+        }
+      },
+      "tag": "proxy-314 ⌜クモ⌟ SNI -> 🇩🇪"
     }
   ],
   "dns": {

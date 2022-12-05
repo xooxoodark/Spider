@@ -45,16 +45,45 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "21 ⌜クモ⌟ SNI -> 🇯🇵",
-        "32 ⌜クモ⌟ SNI -> 🇯🇵",
-        "36 ⌜クモ⌟ SNI -> 🇯🇵",
-        "40 ⌜クモ⌟ SNI -> 🇯🇵",
-        "45 ⌜クモ⌟ SNI -> 🇯🇵"
+        "44 ⌜クモ⌟ SNI -> 🇯🇵",
+        "51 ⌜クモ⌟ SNI -> 🇯🇵",
+        "81 ⌜クモ⌟ SNI -> 🇯🇵",
+        "83 ⌜クモ⌟ SNI -> 🇯🇵",
+        "86 ⌜クモ⌟ SNI -> 🇯🇵",
+        "101 ⌜クモ⌟ SNI -> 🇯🇵",
+        "135 ⌜クモ⌟ SNI -> 🇯🇵",
+        "136 ⌜クモ⌟ SNI -> 🇯🇵",
+        "163 ⌜クモ⌟ SNI -> 🇯🇵",
+        "200 ⌜クモ⌟ SNI -> 🇯🇵",
+        "203 ⌜クモ⌟ SNI -> 🇯🇵",
+        "269 ⌜クモ⌟ SNI -> 🇯🇵",
+        "298 ⌜クモ⌟ SNI -> 🇯🇵"
       ]
     },
     {
       "type": "vmess",
-      "tag": "21 ⌜クモ⌟ SNI -> 🇯🇵",
+      "tag": "44 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "suzhihan.eu.org",
+      "server_port": 443,
+      "uuid": "0b873cff-11ab-4716-c41a-04f886135091",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/roewesu",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "51 ⌜クモ⌟ SNI -> 🇯🇵",
       "server": "f1f3227.v3.glados-config.net",
       "server_port": 3331,
       "uuid": "57e0cb4d-eae5-48ec-8091-149dc2b309e0",
@@ -74,29 +103,20 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "32 ⌜クモ⌟ SNI -> 🇯🇵",
-      "server": "vjp1.0bad.com",
-      "server_port": 443,
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "trojan",
+      "tag": "81 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "160.16.145.107",
+      "server_port": 2053,
+      "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "news.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/chat",
-        "headers": {
-          "Host": "news.microsoft.com"
-        }
       }
     },
     {
       "type": "trojan",
-      "tag": "36 ⌜クモ⌟ SNI -> 🇯🇵",
+      "tag": "83 ⌜クモ⌟ SNI -> 🇯🇵",
       "server": "49.212.221.47",
       "server_port": 2053,
       "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
@@ -107,8 +127,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "86 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "sg.liangyuandian.top",
+      "server_port": 443,
+      "password": "1bf16b43-0ad5-4512-a0e8-34bb8966278e",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "40 ⌜クモ⌟ SNI -> 🇯🇵",
+      "tag": "101 ⌜クモ⌟ SNI -> 🇯🇵",
       "server": "oracle-tky-free-1.wisdomfree.tk",
       "server_port": 60001,
       "uuid": "4596acf5-98da-4832-84bd-e792681a132a",
@@ -129,10 +161,91 @@
     },
     {
       "type": "trojan",
-      "tag": "45 ⌜クモ⌟ SNI -> 🇯🇵",
+      "tag": "135 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "jgwdb4.gaox.ml",
+      "server_port": 443,
+      "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "136 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "168.138.43.89",
+      "server_port": 443,
+      "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "163 ⌜クモ⌟ SNI -> 🇯🇵",
       "server": "jgwdb3.gaox.ml",
       "server_port": 443,
       "password": "8d2d5953-d649-4034-94f2-72f2df2623da",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "200 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "jgwdj4.gaox.ml",
+      "server_port": 443,
+      "password": "c09eb137-bf68-4658-84e0-102d94b74168",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "203 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "141.147.181.219",
+      "server_port": 443,
+      "uuid": "0b873cff-11ab-4716-c41a-04f886135091",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/roewesu",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "269 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "219.94.250.108",
+      "server_port": 2053,
+      "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "298 ⌜クモ⌟ SNI -> 🇯🇵",
+      "server": "apulnion.com",
+      "server_port": 47185,
+      "password": "C3U0I9sHEW",
       "tls": {
         "enabled": true,
         "insecure": true,

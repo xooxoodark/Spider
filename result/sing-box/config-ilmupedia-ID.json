@@ -45,13 +45,79 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "62 ⌜クモ⌟ SNI -> 🇮🇩"
+        "85 ⌜クモ⌟ SNI -> 🇮🇩",
+        "151 ⌜クモ⌟ CDN -> 🇮🇩",
+        "176 ⌜クモ⌟ SNI -> 🇮🇩",
+        "319 ⌜クモ⌟ SNI -> 🇮🇩"
       ]
     },
     {
+      "type": "vmess",
+      "tag": "85 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "sg-atha.v2-ray.com",
+      "server_port": 443,
+      "uuid": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastssh/amrozi87/6350416ec330b/",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "151 ⌜クモ⌟ CDN -> 🇮🇩",
+      "server": "cacerts.digicert.com",
+      "server_port": 443,
+      "uuid": "6fea1649-425b-4092-bf53-29792152c925",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "id-lb.vhax.net"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/dfsdafdsa/63848baf653eb/",
+        "headers": {
+          "Host": "id-lb.vhax.net"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "176 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "sg-atha.v2-ray.com",
+      "server_port": 443,
+      "uuid": "854fc069-23bc-4dd9-9c14-9f3bc50a3b76",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastssh/jdjdjdn/6347fefa86953/",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "62 ⌜クモ⌟ SNI -> 🇮🇩",
-      "server": "id3tr.jagoan.vip",
+      "tag": "319 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "38.9.140.66",
       "server_port": 443,
       "password": "vvip-periantara",
       "tls": {

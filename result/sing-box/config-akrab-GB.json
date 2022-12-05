@@ -45,12 +45,25 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "534 ⌜クモ⌟ SNI -> 🇬🇧"
+        "139 ⌜クモ⌟ SNI -> 🇬🇧",
+        "348 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
+      "type": "trojan",
+      "tag": "139 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "146.19.230.241",
+      "server_port": 443,
+      "password": "xxoo",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "534 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "348 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "54.36.162.144",
       "server_port": 443,
       "uuid": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
@@ -59,13 +72,13 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       },
       "transport": {
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "promo.ruangguru.com"
+          "Host": "options.teams.microsoft.com"
         }
       }
     }
