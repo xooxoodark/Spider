@@ -1,5 +1,14 @@
 proxies:
-  - name: '72 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '76 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: tj2.dalazhi.cyou
+    type: trojan
+    port: 443
+    password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '181 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -15,17 +24,8 @@ proxies:
       path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: news.microsoft.com
-  - name: '73 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: tj2.dalazhi.cyou
-    type: trojan
-    port: 443
-    password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '192 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: nl.v2-ray.com
+  - name: '182 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
@@ -35,13 +35,13 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: news.microsoft.com
+    servername: nl.v2-ray.com
     ws-opts: 
       path: /fastssh/hkgzs01/6315d407657f6/
       headers:
-        Host: news.microsoft.com
-  - name: '200 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: content-provider23.cdn-delivery.akamaicd.com
+        Host: nl.v2-ray.com
+  - name: '184 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: content-provider24.cdn-delivery.akamaicd.com
     type: trojan
     port: 443
     password: Sp3eDVp
@@ -49,7 +49,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '227 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '207 ⌜クモ⌟ CDN -> 🇳🇱'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -65,7 +65,7 @@ proxies:
       path: /lXvA0Vse/
       headers:
         Host: hl1.cachexy.ga
-  - name: '337 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '262 ⌜クモ⌟ CDN -> 🇳🇱'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -81,23 +81,7 @@ proxies:
       path: /pkhhvws
       headers:
         Host: amshare.jingledev.me
-  - name: '343 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: news.microsoft.com
-    type: vmess
-    port: 443
-    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: amshare.jingledev.me
-    ws-opts: 
-      path: /pkhhvws
-      headers:
-        Host: amshare.jingledev.me
-  - name: '345 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '275 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 185.212.200.74
     type: trojan
     port: 443
@@ -106,7 +90,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '354 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '277 ⌜クモ⌟ CDN -> 🇳🇱'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -122,32 +106,7 @@ proxies:
       path: /pkhhvws
       headers:
         Host: amshare.jingledev.me
-  - name: '358 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: nl.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: 341ceac8-4d54-4b4c-ac1b-88d7615b10b6
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /fastssh/vghrayang/634931ec14667/
-      headers:
-        Host: news.microsoft.com
-  - name: '461 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: content-provider24.cdn-delivery.akamaicd.com
-    type: trojan
-    port: 443
-    password: Sp3eDVp
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '511 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '380 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 47.87.238.92
     type: trojan
     port: 443
