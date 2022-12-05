@@ -57,7 +57,7 @@ function duplicateFilter(accounts: V2Object[]): V2Object[] {
       if (address == accounts[j].address) {
         if (port == accounts[j].port) {
           if (id == accounts[j].id) {
-            if (accounts[j].network == "ws") {
+            if (path && accounts[j].path) {
               if (path == accounts[j].path) {
                 accounts.splice(j, 1);
                 console.log("Duplicate account removed!");
