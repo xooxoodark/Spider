@@ -1,6 +1,22 @@
 proxies:
-  - name: '100 ⌜クモ⌟ CDN -> 🇮🇩'
-    server: cacerts.digicert.com
+  - name: '61 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: sg-atha.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /fastssh/amrozi87/6350416ec330b/
+      headers:
+        Host: news.microsoft.com
+  - name: '126 ⌜クモ⌟ CDN -> 🇮🇩'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -15,7 +31,7 @@ proxies:
       path: /sshkit/dfsdafdsa/63848baf653eb/
       headers:
         Host: id-lb.vhax.net
-  - name: '149 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '166 ⌜クモ⌟ SNI -> 🇮🇩'
     server: sg-atha.v2-ray.com
     type: vmess
     port: 443
@@ -31,7 +47,7 @@ proxies:
       path: /fastssh/jdjdjdn/6347fefa86953/
       headers:
         Host: news.microsoft.com
-  - name: '220 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '260 ⌜クモ⌟ SNI -> 🇮🇩'
     server: id3tr.jagoan.vip
     type: trojan
     port: 443
@@ -40,7 +56,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '313 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '371 ⌜クモ⌟ SNI -> 🇮🇩'
     server: 38.9.140.66
     type: trojan
     port: 443
@@ -49,19 +65,3 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '417 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: sg-atha.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /fastssh/amrozi87/6350416ec330b/
-      headers:
-        Host: news.microsoft.com

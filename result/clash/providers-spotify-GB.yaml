@@ -1,5 +1,5 @@
 proxies:
-  - name: '127 ⌜クモ⌟ SNI -> 🇬🇧'
+  - name: '163 ⌜クモ⌟ SNI -> 🇬🇧'
     server: 146.19.230.241
     type: trojan
     port: 443
@@ -8,19 +8,3 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '413 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 54.36.162.144
-    type: vmess
-    port: 443
-    uuid: 0a4b28c1-4d88-46a0-8a43-6098bac35a8f
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: image-upload4.spotify.com

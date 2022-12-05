@@ -45,16 +45,37 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "100 ⌜クモ⌟ CDN -> 🇮🇩",
-        "149 ⌜クモ⌟ SNI -> 🇮🇩",
-        "220 ⌜クモ⌟ SNI -> 🇮🇩",
-        "313 ⌜クモ⌟ SNI -> 🇮🇩",
-        "417 ⌜クモ⌟ SNI -> 🇮🇩"
+        "61 ⌜クモ⌟ SNI -> 🇮🇩",
+        "126 ⌜クモ⌟ CDN -> 🇮🇩",
+        "166 ⌜クモ⌟ SNI -> 🇮🇩",
+        "260 ⌜クモ⌟ SNI -> 🇮🇩",
+        "371 ⌜クモ⌟ SNI -> 🇮🇩"
       ]
     },
     {
       "type": "vmess",
-      "tag": "100 ⌜クモ⌟ CDN -> 🇮🇩",
+      "tag": "61 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "sg-atha.v2-ray.com",
+      "server_port": 443,
+      "uuid": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastssh/amrozi87/6350416ec330b/",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "126 ⌜クモ⌟ CDN -> 🇮🇩",
       "server": "investors.spotify.com",
       "server_port": 443,
       "uuid": "6fea1649-425b-4092-bf53-29792152c925",
@@ -75,7 +96,7 @@
     },
     {
       "type": "vmess",
-      "tag": "149 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "166 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "sg-atha.v2-ray.com",
       "server_port": 443,
       "uuid": "854fc069-23bc-4dd9-9c14-9f3bc50a3b76",
@@ -96,7 +117,7 @@
     },
     {
       "type": "trojan",
-      "tag": "220 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "260 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "id3tr.jagoan.vip",
       "server_port": 443,
       "password": "vvip-periantara",
@@ -108,7 +129,7 @@
     },
     {
       "type": "trojan",
-      "tag": "313 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "371 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "38.9.140.66",
       "server_port": 443,
       "password": "vvip-periantara",
@@ -116,27 +137,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "417 ⌜クモ⌟ SNI -> 🇮🇩",
-      "server": "sg-atha.v2-ray.com",
-      "server_port": 443,
-      "uuid": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fastssh/amrozi87/6350416ec330b/",
-        "headers": {
-          "Host": "image-upload4.spotify.com"
-        }
       }
     }
   ],
