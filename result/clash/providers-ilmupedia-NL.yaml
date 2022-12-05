@@ -1,5 +1,14 @@
 proxies:
-  - name: '43 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '15 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: tj2.dalazhi.cyou
+    type: trojan
+    port: 443
+    password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '23 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -15,7 +24,7 @@ proxies:
       path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: news.microsoft.com
-  - name: '47 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '81 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 185.212.200.74
     type: trojan
     port: 443
@@ -24,7 +33,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '107 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '157 ⌜クモ⌟ CDN -> 🇳🇱'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -40,7 +49,7 @@ proxies:
       path: /fastssh/hkgzs01/6315d407657f6/
       headers:
         Host: nl.v2-ray.com
-  - name: '112 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '164 ⌜クモ⌟ SNI -> 🇳🇱'
     server: content-provider24.cdn-delivery.akamaicd.com
     type: trojan
     port: 443
@@ -49,23 +58,23 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '180 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: nl.v2-ray.com
+  - name: '207 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
     type: vmess
     port: 443
-    uuid: 341ceac8-4d54-4b4c-ac1b-88d7615b10b6
+    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: news.microsoft.com
+    servername: amshare.jingledev.me
     ws-opts: 
-      path: /fastssh/vghrayang/634931ec14667/
+      path: /pkhhvws
       headers:
-        Host: news.microsoft.com
-  - name: '199 ⌜クモ⌟ CDN -> 🇳🇱'
+        Host: amshare.jingledev.me
+  - name: '261 ⌜クモ⌟ CDN -> 🇳🇱'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -81,7 +90,23 @@ proxies:
       path: /lXvA0Vse/
       headers:
         Host: hl1.cachexy.ga
-  - name: '251 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '277 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: nl.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: 341ceac8-4d54-4b4c-ac1b-88d7615b10b6
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /fastssh/vghrayang/634931ec14667/
+      headers:
+        Host: news.microsoft.com
+  - name: '357 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 185.212.200.75
     type: trojan
     port: 443
@@ -90,17 +115,8 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '317 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '429 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 47.87.238.92
-    type: trojan
-    port: 443
-    password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '322 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: tj2.dalazhi.cyou
     type: trojan
     port: 443
     password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1

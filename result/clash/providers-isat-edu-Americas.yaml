@@ -1,5 +1,21 @@
 proxies:
   - name: '1 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: oplg1.zhujicn2.com
+    ws-opts: 
+      path: /5QNROSRV
+      headers:
+        Host: oplg1.zhujicn2.com
+  - name: '2 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.17.71.206
     type: vmess
     port: 443
@@ -15,24 +31,136 @@ proxies:
       path: /ECTCJ0DF
       headers:
         Host: lg1.trump2023.us
-  - name: '4 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.70.206
+  - name: '3 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
     type: vmess
     port: 443
-    uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
-    servername: us.awsbest.com
+    servername: oplg1.zhujicn2.com
     ws-opts: 
-      path: /share
+      path: /5QNROSRV
       headers:
-        Host: us.awsbest.com
-  - name: '6 ⌜クモ⌟ CDN -> 🇺🇸'
+        Host: oplg1.zhujicn2.com
+  - name: '4 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: clash1.trump2023.net
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: clash1.trump2023.net
+  - name: '5 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '8 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '9 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 33aa57df-1c93-4318-9fce-e850437ee781
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.cfcdn3.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: lg1.cfcdn3.xyz
+  - name: '19 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '20 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '21 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '24 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
     type: vmess
     port: 443
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -47,72 +175,8 @@ proxies:
       path: /sshkit/fdfadsfa/63848bfe228fd/
       headers:
         Host: us-lb.sshkit.org
-  - name: '7 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg30.cfcdn3.xyz
-    ws-opts: 
-      path: /ray
-      headers:
-        Host: lg30.cfcdn3.xyz
-  - name: '8 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
-    type: vmess
-    port: 443
-    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg30.cfcdn3.xyz
-    ws-opts: 
-      path: /ray
-      headers:
-        Host: lg30.cfcdn3.xyz
-  - name: '10 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: clash6.ssr-free.xyz
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: clash6.ssr-free.xyz
-  - name: '14 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
-    type: vmess
-    port: 443
-    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg30.cfcdn3.xyz
-    ws-opts: 
-      path: /ray
-      headers:
-        Host: lg30.cfcdn3.xyz
-  - name: '49 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
+  - name: '45 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
     type: vmess
     port: 8443
     uuid: 4596acf5-98da-4832-84bd-e792681a132a
@@ -127,8 +191,8 @@ proxies:
       path: /
       headers:
         Host: dns01.wisdomfree.ml
-  - name: '64 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.70.206
+  - name: '50 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
     type: vmess
     port: 443
     uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -143,7 +207,7 @@ proxies:
       path: /5QNROSRV
       headers:
         Host: oplg1.zhujicn2.com
-  - name: '65 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '51 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.26.14.59
     type: vmess
     port: 443
@@ -159,7 +223,7 @@ proxies:
       path: /5QNROSRV
       headers:
         Host: oplg1.zhujicn2.com
-  - name: '67 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '52 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.17.71.206
     type: vmess
     port: 443
@@ -175,91 +239,43 @@ proxies:
       path: /5QNROSRV
       headers:
         Host: oplg1.zhujicn2.com
-  - name: '71 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
   - name: '91 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.21
     type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    port: 2053
+    uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: lg1.trump2023.us
+    servername: v2ray.wefuckgfw.ga
     ws-opts: 
-      path: /ECTCJ0DF
+      path: /DQsafRJn/
       headers:
-        Host: lg1.trump2023.us
-  - name: '104 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.cfcdn2.xyz
-    ws-opts: 
-      path: /VHONOFZ3
-      headers:
-        Host: lg1.cfcdn2.xyz
-  - name: '106 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '115 ⌜クモ⌟ CDN -> 🇺🇸'
+        Host: v2ray.wefuckgfw.ga
+  - name: '92 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.20
     type: vmess
-    port: 2053
-    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
+    port: 443
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
-    servername: v2ray.wefuckgfw.ga
+    servername: oplg1.zhujicn2.com
     ws-opts: 
-      path: /DQsafRJn/
+      path: /5QNROSRV
       headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '116 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
+        Host: oplg1.zhujicn2.com
+  - name: '110 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
     type: vmess
     port: 2053
-    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
+    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
     alterId: 0
     cipher: auto
     tls: true
@@ -271,7 +287,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '117 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '111 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.21
     type: vmess
     port: 2053
@@ -287,440 +303,8 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '118 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '113 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.20
-    type: vmess
-    port: 2053
-    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '120 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 2053
-    uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '121 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 4bd74c27-d23a-4083-be2a-5c2c139dadb4
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: g.pgypgykmoljklj.xyz
-    ws-opts: 
-      path: /P3gjm
-      headers:
-        Host: g.pgypgykmoljklj.xyz
-  - name: '126 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: oplg1.zhujicn2.com
-    ws-opts: 
-      path: /5QNROSRV
-      headers:
-        Host: oplg1.zhujicn2.com
-  - name: '127 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
-    type: vmess
-    port: 443
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg10.cfcdn1.xyz
-    ws-opts: 
-      path: /A2DJOPFT
-      headers:
-        Host: lg10.cfcdn1.xyz
-  - name: '128 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg10.cfcdn1.xyz
-    ws-opts: 
-      path: /A2DJOPFT
-      headers:
-        Host: lg10.cfcdn1.xyz
-  - name: '130 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
-    type: vmess
-    port: 443
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: oplg1.zhujicn2.com
-    ws-opts: 
-      path: /5QNROSRV
-      headers:
-        Host: oplg1.zhujicn2.com
-  - name: '138 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '139 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '140 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
-    type: vmess
-    port: 443
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg10.cfcdn1.xyz
-    ws-opts: 
-      path: /A2DJOPFT
-      headers:
-        Host: lg10.cfcdn1.xyz
-  - name: '141 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
-    type: vmess
-    port: 443
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg10.cfcdn1.xyz
-    ws-opts: 
-      path: /A2DJOPFT
-      headers:
-        Host: lg10.cfcdn1.xyz
-  - name: '142 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
-    type: vmess
-    port: 443
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg10.cfcdn1.xyz
-    ws-opts: 
-      path: /A2DJOPFT
-      headers:
-        Host: lg10.cfcdn1.xyz
-  - name: '143 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.70.206
-    type: vmess
-    port: 443
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: oplg1.zhujicn2.com
-    ws-opts: 
-      path: /5QNROSRV
-      headers:
-        Host: oplg1.zhujicn2.com
-  - name: '146 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray2.ssr-free2.xyz
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: v2ray2.ssr-free2.xyz
-  - name: '149 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.cfcdn2.xyz
-    ws-opts: 
-      path: /VHONOFZ3
-      headers:
-        Host: lg1.cfcdn2.xyz
-  - name: '157 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
-    type: vmess
-    port: 443
-    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray2.ssr-free2.xyz
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: v2ray2.ssr-free2.xyz
-  - name: '158 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '160 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: us-lb.sshkit.org
-    ws-opts: 
-      path: /sshkit/Variu88/634dab7abadf1/
-      headers:
-        Host: us-lb.sshkit.org
-  - name: '164 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '165 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.70.206
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '166 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
-    type: vmess
-    port: 443
-    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg30.cfcdn3.xyz
-    ws-opts: 
-      path: /ray
-      headers:
-        Host: lg30.cfcdn3.xyz
-  - name: '168 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
-    type: vmess
-    port: 443
-    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray2.ssr-free2.xyz
-    ws-opts: 
-      path: /dongtaiwang.com
-      headers:
-        Host: v2ray2.ssr-free2.xyz
-  - name: '170 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '177 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg30.cfcdn3.xyz
-    ws-opts: 
-      path: /ray
-      headers:
-        Host: lg30.cfcdn3.xyz
-  - name: '185 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 2053
-    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '186 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
-    type: vmess
-    port: 2053
-    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '188 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 2053
-    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '190 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
     type: vmess
     port: 2053
     uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
@@ -735,7 +319,23 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '192 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '114 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 2053
+    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '115 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.26.14.59
     type: vmess
     port: 2053
@@ -751,8 +351,88 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '201 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '117 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 2053
+    uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '118 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 2053
+    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '129 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
+    type: vmess
+    port: 2053
+    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '130 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.26.14.59
+    type: vmess
+    port: 2053
+    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '133 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray2.ssr-free2.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray2.ssr-free2.xyz
+  - name: '140 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
     type: vmess
     port: 443
     uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
@@ -767,7 +447,151 @@ proxies:
       path: /VHONOFZ3
       headers:
         Host: lg1.cfcdn2.xyz
-  - name: '202 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '151 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '165 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '168 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '172 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg10.cfcdn1.xyz
+    ws-opts: 
+      path: /A2DJOPFT
+      headers:
+        Host: lg10.cfcdn1.xyz
+  - name: '173 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg10.cfcdn1.xyz
+    ws-opts: 
+      path: /A2DJOPFT
+      headers:
+        Host: lg10.cfcdn1.xyz
+  - name: '174 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg10.cfcdn1.xyz
+    ws-opts: 
+      path: /A2DJOPFT
+      headers:
+        Host: lg10.cfcdn1.xyz
+  - name: '176 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: oplg1.zhujicn2.com
+    ws-opts: 
+      path: /5QNROSRV
+      headers:
+        Host: oplg1.zhujicn2.com
+  - name: '184 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray2.ssr-free2.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray2.ssr-free2.xyz
+  - name: '197 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '199 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.17.70.206
     type: vmess
     port: 443
@@ -783,7 +607,199 @@ proxies:
       path: /VHONOFZ3
       headers:
         Host: lg1.cfcdn2.xyz
-  - name: '207 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '203 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
+    type: vmess
+    port: 443
+    uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: clash6.ssr-free.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: clash6.ssr-free.xyz
+  - name: '205 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
+    type: vmess
+    port: 443
+    uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: clash6.ssr-free.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: clash6.ssr-free.xyz
+  - name: '206 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.cfcdn2.xyz
+    ws-opts: 
+      path: /VHONOFZ3
+      headers:
+        Host: lg1.cfcdn2.xyz
+  - name: '208 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: oplg1.zhujicn2.com
+    ws-opts: 
+      path: /5QNROSRV
+      headers:
+        Host: oplg1.zhujicn2.com
+  - name: '209 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: oplg1.zhujicn2.com
+    ws-opts: 
+      path: /5QNROSRV
+      headers:
+        Host: oplg1.zhujicn2.com
+  - name: '215 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '217 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '218 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '220 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray2.ssr-free2.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray2.ssr-free2.xyz
+  - name: '222 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
+    type: vmess
+    port: 443
+    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray2.ssr-free2.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray2.ssr-free2.xyz
+  - name: '223 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '226 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '230 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.20
     type: vmess
     port: 443
@@ -799,24 +815,40 @@ proxies:
       path: /ray
       headers:
         Host: lg30.cfcdn3.xyz
-  - name: '225 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
+  - name: '231 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
     type: vmess
     port: 443
-    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: v2ray2.ssr-free2.xyz
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '232 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
+    type: vmess
+    port: 443
+    uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: clash6.ssr-free.xyz
     ws-opts: 
       path: /dongtaiwang.com
       headers:
-        Host: v2ray2.ssr-free2.xyz
-  - name: '226 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
+        Host: clash6.ssr-free.xyz
+  - name: '234 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
     type: vmess
     port: 443
     uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -834,6 +866,86 @@ proxies:
   - name: '236 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.20
     type: vmess
+    port: 2053
+    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '237 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 2053
+    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '238 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: us-lb.sshkit.org
+    ws-opts: 
+      path: /sshkit/Variu88/634dab7abadf1/
+      headers:
+        Host: us-lb.sshkit.org
+  - name: '242 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg10.cfcdn1.xyz
+    ws-opts: 
+      path: /A2DJOPFT
+      headers:
+        Host: lg10.cfcdn1.xyz
+  - name: '243 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg10.cfcdn1.xyz
+    ws-opts: 
+      path: /A2DJOPFT
+      headers:
+        Host: lg10.cfcdn1.xyz
+  - name: '244 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
     port: 443
     uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
     alterId: 0
@@ -847,27 +959,59 @@ proxies:
       path: /ECTCJ0DF
       headers:
         Host: lg1.trump2023.us
-  - name: '237 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '249 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.21
     type: vmess
-    port: 2053
-    uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
+    port: 443
+    uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: v2ray.wefuckgfw.ga
+    servername: us.awsbest.com
     ws-opts: 
-      path: /DQsafRJn/
+      path: /share
       headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '238 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.70.206
+        Host: us.awsbest.com
+  - name: '250 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: oplg1.zhujicn2.com
+    ws-opts: 
+      path: /5QNROSRV
+      headers:
+        Host: oplg1.zhujicn2.com
+  - name: '256 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg30.cfcdn3.xyz
+    ws-opts: 
+      path: /ray
+      headers:
+        Host: lg30.cfcdn3.xyz
+  - name: '260 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
     type: vmess
     port: 2053
-    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
+    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
     alterId: 0
     cipher: auto
     tls: true
@@ -879,7 +1023,39 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '245 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '283 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '295 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray2.ssr-free2.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: v2ray2.ssr-free2.xyz
+  - name: '321 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.20
     type: vmess
     port: 443
@@ -895,24 +1071,8 @@ proxies:
       path: /ray
       headers:
         Host: lg30.cfcdn3.xyz
-  - name: '246 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
-    type: vmess
-    port: 443
-    uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.cfcdn2.xyz
-    ws-opts: 
-      path: /VHONOFZ3
-      headers:
-        Host: lg1.cfcdn2.xyz
-  - name: '257 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.70.206
+  - name: '324 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
     type: vmess
     port: 443
     uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -927,8 +1087,24 @@ proxies:
       path: /ray
       headers:
         Host: lg30.cfcdn3.xyz
-  - name: '274 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.17.71.206
+  - name: '331 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 2053
+    uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: v2ray.wefuckgfw.ga
+    ws-opts: 
+      path: /DQsafRJn/
+      headers:
+        Host: v2ray.wefuckgfw.ga
+  - name: '342 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
     type: vmess
     port: 443
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -943,39 +1119,7 @@ proxies:
       path: /sshkit/Variu88/634dab7abadf1/
       headers:
         Host: us-lb.sshkit.org
-  - name: '281 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
-    type: vmess
-    port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: lg1.trump2023.us
-    ws-opts: 
-      path: /ECTCJ0DF
-      headers:
-        Host: lg1.trump2023.us
-  - name: '293 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
-    type: vmess
-    port: 443
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: oplg1.zhujicn2.com
-    ws-opts: 
-      path: /5QNROSRV
-      headers:
-        Host: oplg1.zhujicn2.com
-  - name: '298 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '364 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.26.14.59
     type: vmess
     port: 443
@@ -991,8 +1135,40 @@ proxies:
       path: /A2DJOPFT
       headers:
         Host: lg10.cfcdn1.xyz
-  - name: '299 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
+  - name: '366 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
+    type: vmess
+    port: 443
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg10.cfcdn1.xyz
+    ws-opts: 
+      path: /A2DJOPFT
+      headers:
+        Host: lg10.cfcdn1.xyz
+  - name: '368 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: us.awsbest.com
+    ws-opts: 
+      path: /share
+      headers:
+        Host: us.awsbest.com
+  - name: '370 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.21
     type: vmess
     port: 443
     uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -1007,7 +1183,23 @@ proxies:
       path: /5QNROSRV
       headers:
         Host: oplg1.zhujicn2.com
-  - name: '303 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '389 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '400 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 141.193.213.21
     type: vmess
     port: 443
@@ -1023,40 +1215,40 @@ proxies:
       path: /ray
       headers:
         Host: lg30.cfcdn3.xyz
-  - name: '307 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.21
+  - name: '402 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.71.206
     type: vmess
     port: 443
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    uuid: 4bd74c27-d23a-4083-be2a-5c2c139dadb4
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: oplg1.zhujicn2.com
+    servername: g.pgypgykmoljklj.xyz
     ws-opts: 
-      path: /5QNROSRV
+      path: /P3gjm
       headers:
-        Host: oplg1.zhujicn2.com
-  - name: '313 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
+        Host: g.pgypgykmoljklj.xyz
+  - name: '403 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
     type: vmess
     port: 443
-    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: lg1.trump2023.us
+    servername: lg10.cfcdn1.xyz
     ws-opts: 
-      path: /ECTCJ0DF
+      path: /A2DJOPFT
       headers:
-        Host: lg1.trump2023.us
-  - name: '326 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 141.193.213.20
+        Host: lg10.cfcdn1.xyz
+  - name: '412 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
     type: vmess
     port: 2053
     uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
@@ -1071,7 +1263,23 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '330 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '415 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
+    type: vmess
+    port: 443
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: lg10.cfcdn1.xyz
+    ws-opts: 
+      path: /A2DJOPFT
+      headers:
+        Host: lg10.cfcdn1.xyz
+  - name: '428 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.17.71.206
     type: vmess
     port: 443
@@ -1087,8 +1295,40 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: lg1.cfcdn3.xyz
-  - name: '337 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '433 ⌜クモ⌟ CDN -> 🇺🇸'
     server: 104.17.71.206
+    type: vmess
+    port: 443
+    uuid: 33aa57df-1c93-4318-9fce-e850437ee781
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: lg1.cfcdn3.xyz
+    ws-opts: 
+      path: /dongtaiwang.com
+      headers:
+        Host: lg1.cfcdn3.xyz
+  - name: '438 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
+    type: vmess
+    port: 443
+    uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: lg1.cfcdn2.xyz
+    ws-opts: 
+      path: /VHONOFZ3
+      headers:
+        Host: lg1.cfcdn2.xyz
+  - name: '442 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.26.14.59
     type: vmess
     port: 443
     uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -1103,8 +1343,24 @@ proxies:
       path: /dongtaiwang.com
       headers:
         Host: clash6.ssr-free.xyz
-  - name: '342 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: 104.26.14.59
+  - name: '444 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 141.193.213.20
+    type: vmess
+    port: 443
+    uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: lg1.trump2023.us
+    ws-opts: 
+      path: /ECTCJ0DF
+      headers:
+        Host: lg1.trump2023.us
+  - name: '459 ⌜クモ⌟ CDN -> 🇺🇸'
+    server: 104.17.70.206
     type: vmess
     port: 443
     uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958

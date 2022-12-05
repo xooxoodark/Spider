@@ -80,6 +80,35 @@
         "concurrency": 8,
         "enabled": false
       },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "tj2.dalazhi.cyou",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8f70fde3-a04c-4f6a-b705-aef7406f6ac1",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-15 ⌜クモ⌟ SNI -> 🇳🇱"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -113,7 +142,7 @@
           "path": "/fastssh/sezarhacks/633be1a74319b/"
         }
       },
-      "tag": "proxy-43 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-23 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -142,7 +171,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-47 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-81 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -153,7 +182,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "news.microsoft.com",
+            "address": "cacerts.digicert.com",
             "port": 443,
             "users": [
               {
@@ -182,7 +211,7 @@
           "path": "/fastssh/hkgzs01/6315d407657f6/"
         }
       },
-      "tag": "proxy-107 ⌜クモ⌟ CDN -> 🇳🇱"
+      "tag": "proxy-157 ⌜クモ⌟ CDN -> 🇳🇱"
     },
     {
       "mux": {
@@ -211,7 +240,87 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-112 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-164 ⌜クモ⌟ SNI -> 🇳🇱"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "news.microsoft.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "532a5f12-cadb-46e4-963f-ee7c075e40f0",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "amshare.jingledev.me"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "amshare.jingledev.me"
+          },
+          "path": "/pkhhvws"
+        }
+      },
+      "tag": "proxy-207 ⌜クモ⌟ CDN -> 🇳🇱"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cacerts.digicert.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "3f421e27-5bf8-40c9-86cb-7b8c41dddea2",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "hl1.cachexy.ga"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "hl1.cachexy.ga"
+          },
+          "path": "/lXvA0Vse/"
+        }
+      },
+      "tag": "proxy-261 ⌜クモ⌟ CDN -> 🇳🇱"
     },
     {
       "mux": {
@@ -251,47 +360,7 @@
           "path": "/fastssh/vghrayang/634931ec14667/"
         }
       },
-      "tag": "proxy-180 ⌜クモ⌟ SNI -> 🇳🇱"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "news.microsoft.com",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "3f421e27-5bf8-40c9-86cb-7b8c41dddea2",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "hl1.cachexy.ga"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hl1.cachexy.ga"
-          },
-          "path": "/lXvA0Vse/"
-        }
-      },
-      "tag": "proxy-199 ⌜クモ⌟ CDN -> 🇳🇱"
+      "tag": "proxy-277 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -320,7 +389,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-251 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-357 ⌜クモ⌟ SNI -> 🇳🇱"
     },
     {
       "mux": {
@@ -349,36 +418,7 @@
           "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-317 ⌜クモ⌟ SNI -> 🇳🇱"
-    },
-    {
-      "mux": {
-        "concurrency": 8,
-        "enabled": false
-      },
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "tj2.dalazhi.cyou",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "8f70fde3-a04c-4f6a-b705-aef7406f6ac1",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "news.microsoft.com"
-        }
-      },
-      "tag": "proxy-322 ⌜クモ⌟ SNI -> 🇳🇱"
+      "tag": "proxy-429 ⌜クモ⌟ SNI -> 🇳🇱"
     }
   ],
   "dns": {
