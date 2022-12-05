@@ -1,5 +1,5 @@
 proxies:
-  - name: '31 ⌜クモ⌟ SNI -> 🇨🇦'
+  - name: '37 ⌜クモ⌟ SNI -> 🇨🇦'
     server: 148.113.141.99
     type: trojan
     port: 443
@@ -8,19 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: options.teams.microsoft.com
-  - name: '74 ⌜クモ⌟ SNI -> 🇨🇦'
-    server: 23jnd.mealstream.xyz
-    type: vmess
-    port: 15223
-    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: options.teams.microsoft.com
-  - name: '78 ⌜クモ⌟ SNI -> 🇨🇦'
+  - name: '81 ⌜クモ⌟ SNI -> 🇨🇦'
     server: 23jnd.mealstream.xyz
     type: vmess
     port: 15223
@@ -31,4 +19,38 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: tcp
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
+  - name: '100 ⌜クモ⌟ SNI -> 🇨🇦'
+    server: 35.182.165.120
+    type: vmess
+    port: 443
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: click.zoom.us
+  - name: '109 ⌜クモ⌟ SNI -> 🇨🇦'
+    server: 149.56.141.11
+    type: trojan
+    port: 443
+    password: 8b6daf15-8342-482d-b894-1239fd98ce7f
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: click.zoom.us
+  - name: '110 ⌜クモ⌟ SNI -> 🇨🇦'
+    server: 149.56.141.11
+    type: trojan
+    port: 443
+    password: 8b6daf15-8342-482d-b894-1239fd98ce7f
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: click.zoom.us

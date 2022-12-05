@@ -102,7 +102,7 @@
           "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-31 ⌜クモ⌟ SNI -> 🇨🇦"
+      "tag": "proxy-37 ⌜クモ⌟ SNI -> 🇨🇦"
     },
     {
       "mux": {
@@ -133,10 +133,10 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
+          "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-74 ⌜クモ⌟ SNI -> 🇨🇦"
+      "tag": "proxy-81 ⌜クモ⌟ SNI -> 🇨🇦"
     },
     {
       "mux": {
@@ -147,18 +147,82 @@
       "settings": {
         "vnext": [
           {
-            "address": "23jnd.mealstream.xyz",
-            "port": 15223,
+            "address": "35.182.165.120",
+            "port": 443,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "8578dc92-3097-4dd5-941a-5e6ebeaa91ba",
+                "id": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
                 "level": 8,
                 "security": "auto"
               }
             ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "options.teams.microsoft.com"
+          },
+          "path": "/v2ray"
+        }
+      },
+      "tag": "proxy-100 ⌜クモ⌟ SNI -> 🇨🇦"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "149.56.141.11",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "options.teams.microsoft.com"
+        }
+      },
+      "tag": "proxy-109 ⌜クモ⌟ SNI -> 🇨🇦"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "149.56.141.11",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
+            "port": 443
           }
         ]
       },
@@ -170,7 +234,7 @@
           "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-78 ⌜クモ⌟ SNI -> 🇨🇦"
+      "tag": "proxy-110 ⌜クモ⌟ SNI -> 🇨🇦"
     }
   ],
   "dns": {

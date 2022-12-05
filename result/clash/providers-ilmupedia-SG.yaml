@@ -1,5 +1,5 @@
 proxies:
-  - name: '8 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '7 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 168.138.171.65
     type: vmess
     port: 443
@@ -11,22 +11,6 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '12 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 194.233.81.125
-    type: vmess
-    port: 443
-    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: news.microsoft.com
   - name: '13 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 194.233.81.125
     type: vmess
@@ -43,7 +27,23 @@ proxies:
       path: /vmess
       headers:
         Host: news.microsoft.com
-  - name: '24 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '15 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 194.233.81.125
+    type: vmess
+    port: 443
+    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /vmess
+      headers:
+        Host: news.microsoft.com
+  - name: '26 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 5.44.249.45
     type: vmess
     port: 3331
@@ -59,12 +59,99 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: news.microsoft.com
-  - name: '66 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '64 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 159.223.89.239
     type: trojan
     port: 443
     password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
     udp: true
     skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '78 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 06xjp.mealstream.xyz
+    type: vmess
+    port: 15506
+    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '79 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 27xjp.mealstream.xyz
+    type: vmess
+    port: 15227
+    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '80 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 05xjp.mealstream.xyz
+    type: vmess
+    port: 15205
+    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '106 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 139.162.45.139
+    type: trojan
+    port: 443
+    password: FLpONjB2Lb
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '113 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: lll.277428.xyz
+    type: vmess
+    port: 40771
+    uuid: 61194810-5193-48bc-eb0a-7978a059d681
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '115 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 194.233.88.109
+    type: trojan
+    port: 443
+    password: 123456
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '116 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 194.233.88.109
+    type: trojan
+    port: 443
+    password: 123456
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '141 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 19xjp.mealstream.xyz
+    type: vmess
+    port: 15119
+    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
