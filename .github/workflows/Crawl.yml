@@ -1,8 +1,8 @@
 name: Crawling Internet
 
 on:
-  repository_dispatch:
-    types: ["Crawl"]
+  schedule:
+    - cron:  '*/5 * * * *'
 
 jobs:
   scrape:
