@@ -8,6 +8,11 @@
 Proper Readme will be available real soon!.
 
 Anyway, i hate spider <^>
+
+
+I'm real sorry for that bad looking, weird, ugly code.
+I know that, so please keep in mind this project is still on alpha.
+I have schedule to make the code better, later...
 ```
 
 ### Todos
@@ -15,4 +20,6 @@ Anyway, i hate spider <^>
 - [ ] Support
   - [x] Vmess
   - [x] Trojan
-  - [ ] Shadowsocks
+  - [ ] Shadowsocks(R)
+- [ ] Release Base64 Encoded Result
+- [ ] Codefining
