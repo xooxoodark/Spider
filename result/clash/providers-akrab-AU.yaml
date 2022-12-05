@@ -1,5 +1,14 @@
 proxies:
-  - name: '286 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '77 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 140.238.205.173
+    type: trojan
+    port: 443
+    password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: options.teams.microsoft.com
+  - name: '81 ⌜クモ⌟ SNI -> 🇦🇺'
     server: jgwxn4.gaox.ml
     type: trojan
     port: 443
@@ -7,20 +16,20 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: click.zoom.us
-  - name: '299 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: vau1.0bad.com
+    servername: options.teams.microsoft.com
+  - name: '126 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: aus01.paopaocloud.cyou
     type: vmess
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
     ws-opts: 
-      path: /chat
+      path: /v2ray
       headers:
-        Host: options.teams.microsoft.com
+        Host: click.zoom.us
