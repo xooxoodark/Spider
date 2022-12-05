@@ -45,15 +45,17 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "62 ⌜クモ⌟ SNI -> 🇩🇪",
-        "77 ⌜クモ⌟ SNI -> 🇩🇪",
-        "195 ⌜クモ⌟ CDN -> 🇩🇪",
-        "212 ⌜クモ⌟ CDN -> 🇩🇪"
+        "61 ⌜クモ⌟ SNI -> 🇩🇪",
+        "86 ⌜クモ⌟ SNI -> 🇩🇪",
+        "87 ⌜クモ⌟ SNI -> 🇩🇪",
+        "143 ⌜クモ⌟ SNI -> 🇩🇪",
+        "206 ⌜クモ⌟ CDN -> 🇩🇪",
+        "268 ⌜クモ⌟ CDN -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "62 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "61 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "bdvasxmahl.injafarvpnwebelieve.gq",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -65,7 +67,19 @@
     },
     {
       "type": "trojan",
-      "tag": "77 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "86 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "aleph-tj015.thatfreeservicewhicheveryoneuse.uk",
+      "server_port": 443,
+      "password": "d76294c5-a31f-408d-ba0b-89880107cab5",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "87 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
@@ -77,7 +91,28 @@
     },
     {
       "type": "vmess",
-      "tag": "195 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "143 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "oracle-ffm-free-1.wisdomfree.tk",
+      "server_port": 60001,
+      "uuid": "4596acf5-98da-4832-84bd-e792681a132a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "click.zoom.us"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "206 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "main.millionaireaisle.com",
       "server_port": 2053,
       "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
@@ -98,7 +133,7 @@
     },
     {
       "type": "vmess",
-      "tag": "212 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "268 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "d217db0c-0faa-4270-ea38-e6093d9774e3",
