@@ -45,12 +45,38 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "17 ⌜クモ⌟ CDN -> 🇩🇪"
+        "24 ⌜クモ⌟ SNI -> 🇩🇪",
+        "70 ⌜クモ⌟ SNI -> 🇩🇪",
+        "75 ⌜クモ⌟ CDN -> 🇩🇪"
       ]
     },
     {
+      "type": "trojan",
+      "tag": "24 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "207.154.243.252",
+      "server_port": 443,
+      "password": "TvBypqQJ9b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "70 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "188.40.251.19",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "17 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "75 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "investors.spotify.com",
       "server_port": 443,
       "uuid": "1197321c-eb59-4159-959f-5d81f53c1792",
