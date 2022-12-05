@@ -43,21 +43,25 @@ async function isSingBoxRunning(): Promise<number> {
 
 function duplicateFilter(accounts: V2Object[]): V2Object[] {
   let address: string;
+  let port: number;
   let path: string;
   let id: string;
 
   for (const i in accounts) {
     address = accounts[i].address;
+    port = accounts[i].port;
     path = accounts[i].path;
     id = accounts[i].id;
 
     for (let j = parseInt(i) + 1; j < accounts.length; j++) {
       if (address == accounts[j].address) {
-        if (path == accounts[j].path) {
-          if (id == accounts[j].id) {
-            console.log("Duplicate found!");
-            accounts.splice(j, 1);
-            return duplicateFilter(accounts);
+        if (port == accounts[j].port) {
+          if (path == accounts[j].path) {
+            if (id == accounts[j].id) {
+              console.log("Duplicate account removed!");
+              accounts.splice(j, 1);
+              return duplicateFilter(accounts);
+            }
           }
         }
       }
