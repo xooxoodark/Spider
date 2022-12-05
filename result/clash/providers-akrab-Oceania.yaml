@@ -1,5 +1,5 @@
 proxies:
-  - name: '26 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '34 ⌜クモ⌟ SNI -> 🇦🇺'
     server: 140.238.205.173
     type: trojan
     port: 443
@@ -7,7 +7,7 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: promo.ruangguru.com
+    servername: click.zoom.us
   - name: '63 ⌜クモ⌟ SNI -> 🇦🇺'
     server: 152.67.98.30
     type: trojan
@@ -17,3 +17,19 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: options.teams.microsoft.com
+  - name: '141 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 194.195.126.65
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: options.teams.microsoft.com
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: options.teams.microsoft.com

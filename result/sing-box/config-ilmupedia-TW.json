@@ -45,12 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "53 ⌜クモ⌟ SNI -> 🇹🇼"
+        "56 ⌜クモ⌟ SNI -> 🇹🇼",
+        "73 ⌜クモ⌟ SNI -> 🇹🇼"
       ]
     },
     {
       "type": "trojan",
-      "tag": "53 ⌜クモ⌟ SNI -> 🇹🇼",
+      "tag": "56 ⌜クモ⌟ SNI -> 🇹🇼",
       "server": "211.72.35.152",
       "server_port": 3389,
       "password": "b84d16a244460e09",
@@ -58,6 +59,27 @@
         "enabled": true,
         "insecure": true,
         "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "73 ⌜クモ⌟ SNI -> 🇹🇼",
+      "server": "36.231.190.56",
+      "server_port": 101,
+      "uuid": "4753033a-3779-4459-adf7-88970190c90a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "news.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "news.microsoft.com"
+        }
       }
     }
   ],

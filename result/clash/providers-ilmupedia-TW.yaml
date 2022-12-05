@@ -1,5 +1,5 @@
 proxies:
-  - name: '53 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '56 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 211.72.35.152
     type: trojan
     port: 3389
@@ -8,3 +8,19 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
+  - name: '73 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 36.231.190.56
+    type: vmess
+    port: 101
+    uuid: 4753033a-3779-4459-adf7-88970190c90a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
