@@ -1,5 +1,5 @@
 proxies:
-  - name: '14 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '16 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 168.138.171.65
     type: vmess
     port: 443
@@ -11,39 +11,39 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: options.teams.microsoft.com
-  - name: '18 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 194.233.81.125
-    type: vmess
-    port: 443
-    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: promo.ruangguru.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: promo.ruangguru.com
-  - name: '19 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 194.233.81.125
-    type: vmess
-    port: 443
-    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: promo.ruangguru.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: promo.ruangguru.com
   - name: '22 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 194.233.81.125
+    type: vmess
+    port: 443
+    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /vmess
+      headers:
+        Host: click.zoom.us
+  - name: '23 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 194.233.81.125
+    type: vmess
+    port: 443
+    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /vmess
+      headers:
+        Host: click.zoom.us
+  - name: '27 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 5.44.249.45
     type: vmess
     port: 3331
@@ -54,12 +54,30 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: promo.ruangguru.com
+    servername: options.teams.microsoft.com
     ws-opts: 
       path: /s/f1f3227.fm.apple.com:111548
       headers:
-        Host: promo.ruangguru.com
-  - name: '65 ⌜クモ⌟ SNI -> 🇸🇬'
+        Host: options.teams.microsoft.com
+  - name: '59 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 13.212.6.234
+    type: trojan
+    port: 35112
+    password: bbab60b8-779f-31e2-916e-571f7d7023c4
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: promo.ruangguru.com
+  - name: '61 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 159.223.89.239
+    type: trojan
+    port: 443
+    password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: options.teams.microsoft.com
+  - name: '68 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 139.162.16.228
     type: vmess
     port: 40771
@@ -71,24 +89,6 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: options.teams.microsoft.com
-  - name: '66 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 13.212.6.234
-    type: trojan
-    port: 35112
-    password: bbab60b8-779f-31e2-916e-571f7d7023c4
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: click.zoom.us
-  - name: '67 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 159.223.89.239
-    type: trojan
-    port: 443
-    password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: promo.ruangguru.com
   - name: '82 ⌜クモ⌟ SNI -> 🇸🇬'
     server: lll.277428.xyz
     type: vmess
@@ -100,8 +100,8 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: click.zoom.us
-  - name: '108 ⌜クモ⌟ SNI -> 🇸🇬'
+    servername: options.teams.microsoft.com
+  - name: '109 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 194.233.88.109
     type: trojan
     port: 443
@@ -109,8 +109,8 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: tcp
-    servername: promo.ruangguru.com
-  - name: '109 ⌜クモ⌟ SNI -> 🇸🇬'
+    servername: options.teams.microsoft.com
+  - name: '112 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 23.106.249.2
     type: vmess
     port: 443
@@ -121,11 +121,11 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: options.teams.microsoft.com
+    servername: promo.ruangguru.com
     ws-opts: 
       path: /path/243535322906
       headers:
-        Host: options.teams.microsoft.com
+        Host: promo.ruangguru.com
   - name: '116 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 51.79.164.157
     type: vmess
@@ -153,12 +153,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: click.zoom.us
+    servername: promo.ruangguru.com
     ws-opts: 
       path: /fastssh/dghh/6347fe8113b09/
       headers:
-        Host: click.zoom.us
-  - name: '140 ⌜クモ⌟ SNI -> 🇸🇬'
+        Host: promo.ruangguru.com
+  - name: '133 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 139.162.45.139
     type: trojan
     port: 443

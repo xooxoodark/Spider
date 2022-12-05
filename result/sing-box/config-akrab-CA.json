@@ -45,17 +45,29 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "33 ⌜クモ⌟ SNI -> 🇨🇦",
-        "81 ⌜クモ⌟ SNI -> 🇨🇦",
-        "83 ⌜クモ⌟ SNI -> 🇨🇦"
+        "36 ⌜クモ⌟ SNI -> 🇨🇦",
+        "73 ⌜クモ⌟ SNI -> 🇨🇦",
+        "87 ⌜クモ⌟ SNI -> 🇨🇦"
       ]
     },
     {
       "type": "trojan",
-      "tag": "33 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "36 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "148.113.141.99",
       "server_port": 443,
       "password": "HdsUZmsHQW",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "73 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "149.56.141.11",
+      "server_port": 443,
+      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -64,7 +76,7 @@
     },
     {
       "type": "vmess",
-      "tag": "81 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "87 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "35.182.165.120",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -73,26 +85,14 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "click.zoom.us"
       },
       "transport": {
         "type": "ws",
         "path": "/v2ray",
         "headers": {
-          "Host": "options.teams.microsoft.com"
+          "Host": "click.zoom.us"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "83 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "149.56.141.11",
-      "server_port": 443,
-      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
       }
     }
   ],
