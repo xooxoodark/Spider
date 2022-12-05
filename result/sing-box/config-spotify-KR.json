@@ -45,26 +45,49 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "99 ⌜クモ⌟ SNI -> 🇰🇷",
-        "100 ⌜クモ⌟ SNI -> 🇰🇷",
-        "102 ⌜クモ⌟ SNI -> 🇰🇷",
-        "108 ⌜クモ⌟ SNI -> 🇰🇷",
-        "132 ⌜クモ⌟ SNI -> 🇰🇷",
-        "133 ⌜クモ⌟ SNI -> 🇰🇷",
-        "140 ⌜クモ⌟ SNI -> 🇰🇷",
-        "143 ⌜クモ⌟ SNI -> 🇰🇷",
-        "144 ⌜クモ⌟ SNI -> 🇰🇷",
-        "145 ⌜クモ⌟ SNI -> 🇰🇷",
-        "188 ⌜クモ⌟ CDN -> 🇰🇷",
-        "191 ⌜クモ⌟ SNI -> 🇰🇷",
-        "256 ⌜クモ⌟ SNI -> 🇰🇷",
-        "299 ⌜クモ⌟ SNI -> 🇰🇷",
-        "330 ⌜クモ⌟ SNI -> 🇰🇷"
+        "59 ⌜クモ⌟ SNI -> 🇰🇷",
+        "61 ⌜クモ⌟ SNI -> 🇰🇷",
+        "62 ⌜クモ⌟ SNI -> 🇰🇷",
+        "64 ⌜クモ⌟ SNI -> 🇰🇷",
+        "87 ⌜クモ⌟ SNI -> 🇰🇷",
+        "88 ⌜クモ⌟ SNI -> 🇰🇷",
+        "95 ⌜クモ⌟ SNI -> 🇰🇷",
+        "140 ⌜クモ⌟ CDN -> 🇰🇷",
+        "226 ⌜クモ⌟ SNI -> 🇰🇷",
+        "227 ⌜クモ⌟ SNI -> 🇰🇷",
+        "304 ⌜クモ⌟ SNI -> 🇰🇷",
+        "305 ⌜クモ⌟ SNI -> 🇰🇷",
+        "307 ⌜クモ⌟ SNI -> 🇰🇷",
+        "313 ⌜クモ⌟ SNI -> 🇰🇷",
+        "323 ⌜クモ⌟ SNI -> 🇰🇷",
+        "324 ⌜クモ⌟ SNI -> 🇰🇷",
+        "351 ⌜クモ⌟ SNI -> 🇰🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "99 ⌜クモ⌟ SNI -> 🇰🇷",
+      "tag": "59 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "202.79.171.157",
+      "server_port": 443,
+      "uuid": "fb3583a3-7717-4fe5-9146-3301861f9f41",
+      "security": "auto",
+      "alter_id": 64,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/path/243535322906",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "61 ⌜クモ⌟ SNI -> 🇰🇷",
       "server": "oracle-sel-free-1.wisdomfree.tk",
       "server_port": 60001,
       "uuid": "4596acf5-98da-4832-84bd-e792681a132a",
@@ -85,7 +108,7 @@
     },
     {
       "type": "vmess",
-      "tag": "100 ⌜クモ⌟ SNI -> 🇰🇷",
+      "tag": "62 ⌜クモ⌟ SNI -> 🇰🇷",
       "server": "oracle-gia-cc-free-arm.wisdomfree.tk",
       "server_port": 60002,
       "uuid": "4596acf5-98da-4832-84bd-e792681a132a",
@@ -106,7 +129,7 @@
     },
     {
       "type": "vmess",
-      "tag": "102 ⌜クモ⌟ SNI -> 🇰🇷",
+      "tag": "64 ⌜クモ⌟ SNI -> 🇰🇷",
       "server": "oracle-rknc-free-1.wisdomfree.tk",
       "server_port": 60001,
       "uuid": "4596acf5-98da-4832-84bd-e792681a132a",
@@ -126,29 +149,20 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "108 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "202.79.171.157",
+      "type": "trojan",
+      "tag": "87 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "138.2.113.248",
       "server_port": 443,
-      "uuid": "fb3583a3-7717-4fe5-9146-3301861f9f41",
-      "security": "auto",
-      "alter_id": 64,
+      "password": "9c822f05-cfdc-479a-9534-60f3d4127435",
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "image-upload4.spotify.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/path/243535322906",
-        "headers": {
-          "Host": "image-upload4.spotify.com"
-        }
       }
     },
     {
       "type": "trojan",
-      "tag": "132 ⌜クモ⌟ SNI -> 🇰🇷",
+      "tag": "88 ⌜クモ⌟ SNI -> 🇰🇷",
       "server": "jgwcc1.gaox.ml",
       "server_port": 443,
       "password": "7118b5f4-0ea4-4c11-be7f-11471cb91e4a",
@@ -160,55 +174,7 @@
     },
     {
       "type": "trojan",
-      "tag": "133 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "jgw2.gaox.ml",
-      "server_port": 443,
-      "password": "f2117e99-9b6e-47fd-b0a9-634a0b15b998",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "140 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "144.24.72.126",
-      "server_port": 443,
-      "password": "7118b5f4-0ea4-4c11-be7f-11471cb91e4a",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "143 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "138.2.113.84",
-      "server_port": 443,
-      "password": "b291d129-ee55-4801-a9b8-b5316e5c37b7",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "144 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "146.56.189.146",
-      "server_port": 443,
-      "password": "f2117e99-9b6e-47fd-b0a9-634a0b15b998",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "145 ⌜クモ⌟ SNI -> 🇰🇷",
+      "tag": "95 ⌜クモ⌟ SNI -> 🇰🇷",
       "server": "jgwcc3.gaox.ml",
       "server_port": 443,
       "password": "b291d129-ee55-4801-a9b8-b5316e5c37b7",
@@ -220,7 +186,7 @@
     },
     {
       "type": "vmess",
-      "tag": "188 ⌜クモ⌟ CDN -> 🇰🇷",
+      "tag": "140 ⌜クモ⌟ CDN -> 🇰🇷",
       "server": "investors.spotify.com",
       "server_port": 443,
       "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
@@ -241,10 +207,10 @@
     },
     {
       "type": "trojan",
-      "tag": "191 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "kr1.api-aws.com",
+      "tag": "226 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "144.24.72.126",
       "server_port": 443,
-      "password": "545034ab-8179-46ea-a7d4-a5c992cce000",
+      "password": "7118b5f4-0ea4-4c11-be7f-11471cb91e4a",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -253,10 +219,22 @@
     },
     {
       "type": "trojan",
-      "tag": "256 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "jgwcc2.gaox.ml",
+      "tag": "227 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "146.56.189.146",
       "server_port": 443,
-      "password": "9c822f05-cfdc-479a-9534-60f3d4127435",
+      "password": "f2117e99-9b6e-47fd-b0a9-634a0b15b998",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "304 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "jgw2.gaox.ml",
+      "server_port": 443,
+      "password": "f2117e99-9b6e-47fd-b0a9-634a0b15b998",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -265,7 +243,7 @@
     },
     {
       "type": "vmess",
-      "tag": "299 ⌜クモ⌟ SNI -> 🇰🇷",
+      "tag": "305 ⌜クモ⌟ SNI -> 🇰🇷",
       "server": "kr1.sanfen001.pics",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -286,10 +264,58 @@
     },
     {
       "type": "trojan",
-      "tag": "330 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "138.2.113.248",
+      "tag": "307 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "kr1.api-aws.com",
       "server_port": 443,
-      "password": "9c822f05-cfdc-479a-9534-60f3d4127435",
+      "password": "b70b2ed8-6d35-4fe0-8ae7-4e8fa45ff326",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "313 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "kr1.api-aws.com",
+      "server_port": 443,
+      "password": "ed9a202f-7871-4a15-a4c1-f3a47c1f5493",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "323 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "kr1.api-aws.com",
+      "server_port": 443,
+      "password": "33073a7c-e6d5-4271-9b19-4416afcc25b5",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "324 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "kr1.api-aws.com",
+      "server_port": 443,
+      "password": "545034ab-8179-46ea-a7d4-a5c992cce000",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "351 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "138.2.113.84",
+      "server_port": 443,
+      "password": "b291d129-ee55-4801-a9b8-b5316e5c37b7",
       "tls": {
         "enabled": true,
         "insecure": true,

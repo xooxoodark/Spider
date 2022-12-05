@@ -45,15 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "14 ⌜クモ⌟ SNI -> 🇨🇦",
-        "68 ⌜クモ⌟ SNI -> 🇨🇦",
-        "70 ⌜クモ⌟ SNI -> 🇨🇦",
-        "115 ⌜クモ⌟ SNI -> 🇨🇦"
+        "4 ⌜クモ⌟ SNI -> 🇨🇦",
+        "47 ⌜クモ⌟ SNI -> 🇨🇦",
+        "74 ⌜クモ⌟ SNI -> 🇨🇦",
+        "94 ⌜クモ⌟ SNI -> 🇨🇦"
       ]
     },
     {
       "type": "vmess",
-      "tag": "14 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "4 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "165.22.229.248",
       "server_port": 443,
       "uuid": "6b7261aa-1dea-4ab4-8e96-fa726b5a9feb",
@@ -62,43 +62,31 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "options.teams.microsoft.com"
+          "Host": "promo.ruangguru.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "68 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "cat1.sshocean.net",
-      "server_port": 443,
-      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "70 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "47 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "148.113.141.99",
       "server_port": 443,
       "password": "HdsUZmsHQW",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "115 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "74 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "35.182.165.120",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -107,14 +95,26 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/v2ray",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "promo.ruangguru.com"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "94 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "cat1.sshocean.net",
+      "server_port": 443,
+      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
       }
     }
   ],
