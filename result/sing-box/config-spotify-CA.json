@@ -45,15 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "51 ⌜クモ⌟ SNI -> 🇨🇦",
-        "142 ⌜クモ⌟ SNI -> 🇨🇦",
-        "143 ⌜クモ⌟ SNI -> 🇨🇦",
-        "197 ⌜クモ⌟ SNI -> 🇨🇦"
+        "43 ⌜クモ⌟ SNI -> 🇨🇦",
+        "146 ⌜クモ⌟ SNI -> 🇨🇦",
+        "399 ⌜クモ⌟ SNI -> 🇨🇦",
+        "516 ⌜クモ⌟ SNI -> 🇨🇦"
       ]
     },
     {
       "type": "trojan",
-      "tag": "51 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "43 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "148.113.141.99",
       "server_port": 443,
       "password": "HdsUZmsHQW",
@@ -65,19 +65,7 @@
     },
     {
       "type": "trojan",
-      "tag": "142 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "149.56.141.11",
-      "server_port": 443,
-      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "143 ⌜クモ⌟ SNI -> 🇨🇦",
+      "tag": "146 ⌜クモ⌟ SNI -> 🇨🇦",
       "server": "cat1.sshocean.net",
       "server_port": 443,
       "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
@@ -88,11 +76,23 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "197 ⌜クモ⌟ SNI -> 🇨🇦",
-      "server": "35.182.165.120",
+      "type": "trojan",
+      "tag": "399 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "149.56.141.11",
       "server_port": 443,
-      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+      "password": "8b6daf15-8342-482d-b894-1239fd98ce7f",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "516 ⌜クモ⌟ SNI -> 🇨🇦",
+      "server": "165.22.229.248",
+      "server_port": 443,
+      "uuid": "6b7261aa-1dea-4ab4-8e96-fa726b5a9feb",
       "security": "auto",
       "alter_id": 0,
       "tls": {
@@ -102,7 +102,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/v2ray",
+        "path": "/vmess",
         "headers": {
           "Host": "image-upload4.spotify.com"
         }

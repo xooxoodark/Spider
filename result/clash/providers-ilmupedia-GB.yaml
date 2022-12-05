@@ -1,10 +1,17 @@
 proxies:
-  - name: '163 ⌜クモ⌟ SNI -> 🇬🇧'
-    server: 146.19.230.241
-    type: trojan
+  - name: '534 ⌜クモ⌟ SNI -> 🇬🇧'
+    server: 54.36.162.144
+    type: vmess
     port: 443
-    password: xxoo
+    uuid: 0a4b28c1-4d88-46a0-8a43-6098bac35a8f
+    alterId: 0
+    cipher: auto
+    tls: true
     udp: true
     skip-cert-verify: true
-    network: tcp
+    network: ws
     servername: news.microsoft.com
+    ws-opts: 
+      path: /vmess
+      headers:
+        Host: news.microsoft.com

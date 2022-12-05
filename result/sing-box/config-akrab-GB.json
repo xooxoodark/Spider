@@ -45,19 +45,28 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "163 ⌜クモ⌟ SNI -> 🇬🇧"
+        "534 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
-      "type": "trojan",
-      "tag": "163 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "146.19.230.241",
+      "type": "vmess",
+      "tag": "534 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "54.36.162.144",
       "server_port": 443,
-      "password": "xxoo",
+      "uuid": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "promo.ruangguru.com"
+        }
       }
     }
   ],
