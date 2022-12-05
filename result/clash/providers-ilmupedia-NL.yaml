@@ -1,5 +1,5 @@
 proxies:
-  - name: '29 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '18 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 47.87.238.92
     type: trojan
     port: 443
@@ -8,7 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '36 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '38 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -24,7 +24,16 @@ proxies:
       path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: news.microsoft.com
-  - name: '142 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '48 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 185.212.200.74
+    type: trojan
+    port: 443
+    password: Sp3eDVp
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '49 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 185.212.200.75
     type: trojan
     port: 443
@@ -33,7 +42,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '149 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '83 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -49,7 +58,23 @@ proxies:
       path: /fastssh/hkgzs01/6315d407657f6/
       headers:
         Host: news.microsoft.com
-  - name: '178 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '84 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 163.172.213.74
+    type: vmess
+    port: 443
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /fastssh/hkgzs01/6315d407657f6/
+      headers:
+        Host: news.microsoft.com
+  - name: '99 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -65,21 +90,3 @@ proxies:
       path: /fastssh/vghrayang/634931ec14667/
       headers:
         Host: news.microsoft.com
-  - name: '186 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 185.212.200.74
-    type: trojan
-    port: 443
-    password: Sp3eDVp
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '188 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 185.212.200.74
-    type: trojan
-    port: 443
-    password: Sp3eDVp
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com

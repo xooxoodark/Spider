@@ -45,59 +45,17 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "61 ⌜クモ⌟ SNI -> 🇬🇧",
-        "69 ⌜クモ⌟ SNI -> 🇬🇧",
-        "85 ⌜クモ⌟ SNI -> 🇬🇧",
-        "100 ⌜クモ⌟ SNI -> 🇬🇧",
-        "158 ⌜クモ⌟ SNI -> 🇬🇧",
-        "170 ⌜クモ⌟ SNI -> 🇬🇧",
-        "180 ⌜クモ⌟ SNI -> 🇬🇧",
-        "181 ⌜クモ⌟ SNI -> 🇬🇧"
+        "75 ⌜クモ⌟ SNI -> 🇬🇧",
+        "89 ⌜クモ⌟ SNI -> 🇬🇧",
+        "90 ⌜クモ⌟ SNI -> 🇬🇧",
+        "104 ⌜クモ⌟ SNI -> 🇬🇧",
+        "113 ⌜クモ⌟ SNI -> 🇬🇧",
+        "117 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
-      "type": "vmess",
-      "tag": "61 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "11yg.mealstream.xyz",
-      "server_port": 15111,
-      "uuid": "8578dc92-3097-4dd5-941a-5e6ebeaa91ba",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "69 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "12yg.mealstream.xyz",
-      "server_port": 443,
-      "uuid": "8578dc92-3097-4dd5-941a-5e6ebeaa91ba",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "85 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "51.195.202.124",
-      "server_port": 443,
-      "password": "267af089-734c-48ca-9d47-88b0435d541b",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "100 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "75 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "146.19.230.241",
       "server_port": 443,
       "password": "xxoo",
@@ -109,31 +67,64 @@
     },
     {
       "type": "trojan",
-      "tag": "158 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "185.16.206.209",
-      "server_port": 443,
-      "password": "shefelnak",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "170 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "89 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "185.16.206.212",
       "server_port": 443,
       "password": "shefelnak",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "click.zoom.us"
       }
     },
     {
       "type": "trojan",
-      "tag": "180 ⌜クモ⌟ SNI -> 🇬🇧",
+      "tag": "90 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "185.16.206.209",
+      "server_port": 443,
+      "password": "shefelnak",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "104 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "51.195.202.124",
+      "server_port": 443,
+      "password": "267af089-734c-48ca-9d47-88b0435d541b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "113 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "54.36.162.144",
+      "server_port": 443,
+      "uuid": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "click.zoom.us"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "117 ⌜クモ⌟ SNI -> 🇬🇧",
       "server": "132.145.51.172",
       "server_port": 443,
       "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
@@ -141,18 +132,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "promo.ruangguru.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "181 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "132.145.51.172",
-      "server_port": 443,
-      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
       }
     }
   ],

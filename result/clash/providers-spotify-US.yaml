@@ -2,35 +2,35 @@ proxies:
   - name: '1 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
-    port: 2053
-    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
+    port: 443
+    uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: v2ray.wefuckgfw.ga
+    servername: us.awsbest.com
     ws-opts: 
-      path: /DQsafRJn/
+      path: /share
       headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '2 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: investors.spotify.com
+        Host: us.awsbest.com
+  - name: '2 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 67.21.72.34
     type: vmess
-    port: 2053
-    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
-    alterId: 0
+    port: 443
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    alterId: 64
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: v2ray.wefuckgfw.ga
+    servername: image-upload4.spotify.com
     ws-opts: 
-      path: /DQsafRJn/
+      path: /path/120208301422
       headers:
-        Host: v2ray.wefuckgfw.ga
+        Host: image-upload4.spotify.com
   - name: '3 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
@@ -56,62 +56,14 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     servername: us.awsbest.com
     ws-opts: 
       path: /share
       headers:
         Host: us.awsbest.com
-  - name: '5 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 67.21.72.34
-    type: vmess
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
-    alterId: 64
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /path/120208301422
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '7 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 67.21.72.34
-    type: vmess
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
-    alterId: 64
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /path/173418141123
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '9 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 67.21.72.34
-    type: vmess
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
-    alterId: 64
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /path/120208301422
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '16 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '13 ⌜クモ⌟ SNI -> 🇺🇸'
     server: sg1.v2-ray.com
     type: vmess
     port: 443
@@ -127,73 +79,7 @@ proxies:
       path: /fastssh/fartf76g/6350442c996e3/
       headers:
         Host: image-upload4.spotify.com
-  - name: '25 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 45.79.67.6
-    type: vmess
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /chat
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '26 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 185.216.72.172
-    type: vmess
-    port: 443
-    uuid: 6d11cad4-be87-4b05-aa1d-0d19b011a6d3
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /zvtyvws
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '27 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 185.216.72.172
-    type: vmess
-    port: 443
-    uuid: 6d11cad4-be87-4b05-aa1d-0d19b011a6d3
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /zvtyvws
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '28 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 138.124.183.222
-    type: trojan
-    port: 443
-    password: xxoo
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '31 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 129.146.255.158
-    type: trojan
-    port: 443
-    password: f39bd244-f5fe-415c-8b98-a1e5250bf178
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '32 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '20 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 185.250.220.106
     type: vmess
     port: 443
@@ -209,7 +95,16 @@ proxies:
       path: /path/321113221131
       headers:
         Host: image-upload4.spotify.com
-  - name: '34 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '21 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 138.124.183.226
+    type: trojan
+    port: 443
+    password: xxoo
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '23 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 129.146.242.130
     type: trojan
     port: 443
@@ -218,16 +113,16 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '35 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 129.146.190.42
+  - name: '24 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 51.81.211.171
     type: trojan
     port: 443
-    password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
+    password: 2dab5d78-5c56-4252-850d-c037753a40db
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '60 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '40 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 95.174.71.27
     type: vmess
     port: 3331
@@ -243,8 +138,8 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: image-upload4.spotify.com
-  - name: '62 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 138.124.183.216
+  - name: '44 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 138.124.183.222
     type: trojan
     port: 443
     password: xxoo
@@ -252,16 +147,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '65 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 51.81.211.171
-    type: trojan
-    port: 443
-    password: 2dab5d78-5c56-4252-850d-c037753a40db
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '66 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '46 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 205.185.119.163
     type: vmess
     port: 443
@@ -277,7 +163,7 @@ proxies:
       path: /
       headers:
         Host: image-upload4.spotify.com
-  - name: '67 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '47 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 205.185.119.163
     type: vmess
     port: 443
@@ -293,93 +179,48 @@ proxies:
       path: /
       headers:
         Host: image-upload4.spotify.com
-  - name: '72 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 09mg.mealstream.xyz
-    type: vmess
-    port: 15109
-    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '73 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 24mg.mealstream.xyz
-    type: vmess
-    port: 15224
-    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '74 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 10mg.mealstream.xyz
-    type: vmess
-    port: 15310
-    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '91 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 23.175.144.181
+  - name: '59 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 129.146.255.158
     type: trojan
-    port: 8443
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    port: 443
+    password: f39bd244-f5fe-415c-8b98-a1e5250bf178
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '92 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 23.175.144.181
-    type: trojan
-    port: 8443
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '117 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '63 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
-    uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a
+    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: v2ray.wefuckgfw.ga
     ws-opts: 
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '118 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '64 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
-    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
+    uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
     alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: v2ray.wefuckgfw.ga
     ws-opts: 
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '119 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '66 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
@@ -388,14 +229,14 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     servername: v2ray.wefuckgfw.ga
     ws-opts: 
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '120 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '67 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
@@ -411,7 +252,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '121 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '68 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
@@ -427,11 +268,11 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '122 ⌜クモ⌟ CDN -> 🇺🇸'
+  - name: '69 ⌜クモ⌟ CDN -> 🇺🇸'
     server: investors.spotify.com
     type: vmess
     port: 2053
-    uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
+    uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d
     alterId: 0
     cipher: auto
     tls: true
@@ -443,39 +284,7 @@ proxies:
       path: /DQsafRJn/
       headers:
         Host: v2ray.wefuckgfw.ga
-  - name: '123 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: investors.spotify.com
-    type: vmess
-    port: 2053
-    uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '124 ⌜クモ⌟ CDN -> 🇺🇸'
-    server: investors.spotify.com
-    type: vmess
-    port: 2053
-    uuid: 2c23eb31-1133-4807-818e-484d9a473b9b
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: v2ray.wefuckgfw.ga
-    ws-opts: 
-      path: /DQsafRJn/
-      headers:
-        Host: v2ray.wefuckgfw.ga
-  - name: '138 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '71 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 23.224.82.170
     type: vmess
     port: 443
@@ -491,7 +300,7 @@ proxies:
       path: /path/051111230910
       headers:
         Host: image-upload4.spotify.com
-  - name: '146 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '72 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 72.44.68.150
     type: trojan
     port: 2077
@@ -504,39 +313,25 @@ proxies:
       path: /aries
       headers:
         Host: image-upload4.spotify.com
-  - name: '150 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: sg2.v2-ray.com
-    type: vmess
+  - name: '91 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 138.124.183.216
+    type: trojan
     port: 443
-    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
-    alterId: 0
-    cipher: auto
-    tls: true
+    password: xxoo
     udp: true
-    skip-cert-verify: false
-    network: ws
+    skip-cert-verify: true
+    network: tcp
     servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /fastssh/jrjjfggg/63419a0211ed5/
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '151 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: sg2.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
-    alterId: 0
-    cipher: auto
-    tls: true
+  - name: '92 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 154.208.10.19
+    type: trojan
+    port: 35100
+    password: bbab60b8-779f-31e2-916e-571f7d7023c4
     udp: true
-    skip-cert-verify: false
-    network: ws
+    skip-cert-verify: true
+    network: tcp
     servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /fastssh/jrjjfggg/63419a0211ed5/
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '176 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '94 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 23.94.212.45
     type: trojan
     port: 35116
@@ -545,7 +340,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '177 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '96 ⌜クモ⌟ SNI -> 🇺🇸'
     server: sg1.v2-ray.com
     type: vmess
     port: 443
@@ -561,7 +356,25 @@ proxies:
       path: /fastssh/gafsg65g/635045dc30ee6/
       headers:
         Host: image-upload4.spotify.com
-  - name: '187 ⌜クモ⌟ SNI -> 🇺🇸'
+  - name: '100 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 129.146.190.42
+    type: trojan
+    port: 443
+    password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '101 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 129.146.190.42
+    type: trojan
+    port: 443
+    password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '105 ⌜クモ⌟ SNI -> 🇺🇸'
     server: 51.81.211.171
     type: trojan
     port: 443
@@ -570,20 +383,11 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '200 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 138.124.183.226
-    type: trojan
-    port: 443
-    password: xxoo
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: image-upload4.spotify.com
-  - name: '201 ⌜クモ⌟ SNI -> 🇺🇸'
-    server: 51.81.82.129
+  - name: '109 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: 47.87.171.143
     type: vmess
-    port: 443
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    port: 60001
+    uuid: 4596acf5-98da-4832-84bd-e792681a132a
     alterId: 0
     cipher: auto
     tls: true
@@ -592,6 +396,22 @@ proxies:
     network: ws
     servername: image-upload4.spotify.com
     ws-opts: 
-      path: /sshkit/Variu88/634dab7abadf1/
+      path: /
+      headers:
+        Host: image-upload4.spotify.com
+  - name: '110 ⌜クモ⌟ SNI -> 🇺🇸'
+    server: cloudcone-879.wisdomfree.tk
+    type: vmess
+    port: 60006
+    uuid: 4596acf5-98da-4832-84bd-e792681a132a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /
       headers:
         Host: image-upload4.spotify.com

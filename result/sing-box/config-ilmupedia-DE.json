@@ -45,16 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "33 ⌜クモ⌟ SNI -> 🇩🇪",
-        "159 ⌜クモ⌟ SNI -> 🇩🇪",
-        "179 ⌜クモ⌟ CDN -> 🇩🇪",
-        "184 ⌜クモ⌟ CDN -> 🇩🇪",
-        "190 ⌜クモ⌟ SNI -> 🇩🇪"
+        "22 ⌜クモ⌟ SNI -> 🇩🇪",
+        "86 ⌜クモ⌟ SNI -> 🇩🇪",
+        "111 ⌜クモ⌟ CDN -> 🇩🇪",
+        "112 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "33 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "22 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -66,7 +65,7 @@
     },
     {
       "type": "trojan",
-      "tag": "159 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "86 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
@@ -78,8 +77,8 @@
     },
     {
       "type": "vmess",
-      "tag": "179 ⌜クモ⌟ CDN -> 🇩🇪",
-      "server": "news.microsoft.com",
+      "tag": "111 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "1197321c-eb59-4159-959f-5d81f53c1792",
       "security": "auto",
@@ -87,40 +86,19 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "h1.800876.xyz"
+        "server_name": "104.28.221.34"
       },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "h1.800876.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "184 ⌜クモ⌟ CDN -> 🇩🇪",
-      "server": "cacerts.digicert.com",
-      "server_port": 443,
-      "uuid": "d217db0c-0faa-4270-ea38-e6093d9774e3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "h2.800876.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "h2.800876.xyz"
+          "Host": "104.28.221.34"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "190 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "112 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "5.75.152.12",
       "server_port": 443,
       "password": "d76294c5-a31f-408d-ba0b-89880107cab5",
