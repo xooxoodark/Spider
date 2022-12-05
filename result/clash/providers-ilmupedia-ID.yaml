@@ -1,5 +1,5 @@
 proxies:
-  - name: '30 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '32 ⌜クモ⌟ SNI -> 🇮🇩'
     server: sg-atha.v2-ray.com
     type: vmess
     port: 443
@@ -15,7 +15,23 @@ proxies:
       path: /fastssh/amrozi87/6350416ec330b/
       headers:
         Host: news.microsoft.com
-  - name: '36 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '37 ⌜クモ⌟ CDN -> 🇮🇩'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 781be00e-1e09-4e27-a464-e14197418c8f
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: id5.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: id5.v2rayserv.com
+  - name: '98 ⌜クモ⌟ SNI -> 🇮🇩'
     server: 103.167.34.206
     type: trojan
     port: 443
@@ -24,7 +40,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '49 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '112 ⌜クモ⌟ SNI -> 🇮🇩'
     server: id3tr.jagoan.vip
     type: trojan
     port: 443
@@ -33,8 +49,8 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '90 ⌜クモ⌟ CDN -> 🇮🇩'
-    server: news.microsoft.com
+  - name: '135 ⌜クモ⌟ CDN -> 🇮🇩'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -49,7 +65,7 @@ proxies:
       path: /sshkit/dfsdafdsa/63848baf653eb/
       headers:
         Host: id-lb.vhax.net
-  - name: '105 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '153 ⌜クモ⌟ SNI -> 🇮🇩'
     server: sg-atha.v2-ray.com
     type: vmess
     port: 443
@@ -63,21 +79,5 @@ proxies:
     servername: news.microsoft.com
     ws-opts: 
       path: /fastssh/jdjdjdn/6347fefa86953/
-      headers:
-        Host: news.microsoft.com
-  - name: '173 ⌜クモ⌟ SNI -> 🇮🇩'
-    server: 45.12.80.151
-    type: vmess
-    port: 443
-    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /fastssh/amrozi87/6350416ec330b/
       headers:
         Host: news.microsoft.com

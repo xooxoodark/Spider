@@ -45,20 +45,20 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "26 ⌜クモ⌟ SNI -> 🇭🇰",
-        "54 ⌜クモ⌟ SNI -> 🇭🇰",
+        "77 ⌜クモ⌟ SNI -> 🇭🇰",
         "78 ⌜クモ⌟ SNI -> 🇭🇰",
-        "110 ⌜クモ⌟ SNI -> 🇭🇰",
-        "158 ⌜クモ⌟ SNI -> 🇭🇰",
-        "198 ⌜クモ⌟ SNI -> 🇭🇰",
-        "216 ⌜クモ⌟ SNI -> 🇭🇰",
-        "218 ⌜クモ⌟ SNI -> 🇭🇰",
-        "236 ⌜クモ⌟ SNI -> 🇭🇰"
+        "79 ⌜クモ⌟ SNI -> 🇭🇰",
+        "106 ⌜クモ⌟ SNI -> 🇭🇰",
+        "140 ⌜クモ⌟ SNI -> 🇭🇰",
+        "205 ⌜クモ⌟ SNI -> 🇭🇰",
+        "283 ⌜クモ⌟ SNI -> 🇭🇰",
+        "356 ⌜クモ⌟ SNI -> 🇭🇰",
+        "361 ⌜クモ⌟ SNI -> 🇭🇰"
       ]
     },
     {
       "type": "trojan",
-      "tag": "26 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "77 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "45.136.14.70",
       "server_port": 15410,
       "password": "6A30qqSh8W",
@@ -70,7 +70,7 @@
     },
     {
       "type": "trojan",
-      "tag": "54 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "78 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk3.520748.xyz",
       "server_port": 10007,
       "password": "d7616325-e7cf-4901-b2b2-f1ea3669d022",
@@ -81,13 +81,11 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "78 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "dsj17.1062cdn.top",
-      "server_port": 443,
-      "uuid": "caf2e1ff-cf38-11eb-b239-00163cc6d021",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "trojan",
+      "tag": "79 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "34.96.143.229",
+      "server_port": 23444,
+      "password": "KshsCdgYST",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -96,7 +94,33 @@
     },
     {
       "type": "vmess",
-      "tag": "110 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "106 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "hk1vdf-node.aiqiche123.com",
+      "server_port": 8189,
+      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
+      "security": "auto",
+      "alter_id": 10,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "140 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "194.156.99.39",
+      "server_port": 443,
+      "password": "xxoo",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "205 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "206.119.112.6",
       "server_port": 8189,
       "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
@@ -109,46 +133,29 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "158 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "194.156.99.39",
-      "server_port": 443,
-      "password": "xxoo",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "198 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "206.119.112.5",
-      "server_port": 8189,
-      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
+      "tag": "283 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "ah.yd01.paopaocloud.cyou",
+      "server_port": 10002,
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
       "security": "auto",
-      "alter_id": 10,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "216 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "34.96.143.229",
-      "server_port": 23444,
-      "password": "KshsCdgYST",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "218 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "356 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "34.96.143.229",
       "server_port": 23442,
       "password": "cQfwTIN1SC",
@@ -160,7 +167,7 @@
     },
     {
       "type": "trojan",
-      "tag": "236 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "361 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "gcp2.goodcc.fun",
       "server_port": 23442,
       "password": "cQfwTIN1SC",

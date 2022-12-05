@@ -45,39 +45,61 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "77 ⌜クモ⌟ SNI -> 🇦🇺",
-        "81 ⌜クモ⌟ SNI -> 🇦🇺",
-        "126 ⌜クモ⌟ SNI -> 🇦🇺"
+        "134 ⌜クモ⌟ SNI -> 🇦🇺",
+        "143 ⌜クモ⌟ SNI -> 🇦🇺",
+        "232 ⌜クモ⌟ SNI -> 🇦🇺",
+        "233 ⌜クモ⌟ SNI -> 🇦🇺"
       ]
     },
     {
       "type": "trojan",
-      "tag": "77 ⌜クモ⌟ SNI -> 🇦🇺",
-      "server": "140.238.205.173",
-      "server_port": 443,
-      "password": "cb43b7c2-b744-41c5-bcc2-fd7467b332cf",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "81 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "134 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "jgwxn4.gaox.ml",
       "server_port": 443,
       "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "143 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.67.98.30",
+      "server_port": 443,
+      "password": "e8c1ab3c-89b3-4933-92df-682e6dce7819",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "126 ⌜クモ⌟ SNI -> 🇦🇺",
+      "tag": "232 ⌜クモ⌟ SNI -> 🇦🇺",
       "server": "aus01.paopaocloud.cyou",
+      "server_port": 443,
+      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v2ray",
+        "headers": {
+          "Host": "click.zoom.us"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "233 ⌜クモ⌟ SNI -> 🇦🇺",
+      "server": "152.69.167.11",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
       "security": "auto",
