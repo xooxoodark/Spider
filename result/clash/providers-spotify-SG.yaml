@@ -1,5 +1,5 @@
 proxies:
-  - name: '8 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '9 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 168.138.171.65
     type: vmess
     port: 443
@@ -11,6 +11,22 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: image-upload4.spotify.com
+  - name: '15 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 194.233.81.125
+    type: vmess
+    port: 443
+    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /vmess
+      headers:
+        Host: image-upload4.spotify.com
   - name: '16 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 194.233.81.125
     type: vmess
@@ -28,22 +44,6 @@ proxies:
       headers:
         Host: image-upload4.spotify.com
   - name: '17 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 194.233.81.125
-    type: vmess
-    port: 443
-    uuid: ceb8a921-ec72-4804-ae92-cbd309f2f213
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: image-upload4.spotify.com
-    ws-opts: 
-      path: /vmess
-      headers:
-        Host: image-upload4.spotify.com
-  - name: '18 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 5.44.249.45
     type: vmess
     port: 3331
@@ -59,7 +59,7 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: image-upload4.spotify.com
-  - name: '48 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '51 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 159.223.89.239
     type: trojan
     port: 443
@@ -68,7 +68,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '52 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '54 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 13.214.234.224
     type: vmess
     port: 1001
@@ -80,7 +80,7 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '61 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '66 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 194.233.88.109
     type: trojan
     port: 443
@@ -89,7 +89,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '62 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '71 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 51.79.164.157
     type: vmess
     port: 443
@@ -105,7 +105,39 @@ proxies:
       path: /fastssh/dghh/6347fe8113b09/
       headers:
         Host: image-upload4.spotify.com
-  - name: '64 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '73 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 23.106.249.2
+    type: vmess
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /path/243535322906
+      headers:
+        Host: image-upload4.spotify.com
+  - name: '74 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 51.79.164.157
+    type: vmess
+    port: 443
+    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /fastssh/dghh/6347fe8113b09/
+      headers:
+        Host: image-upload4.spotify.com
+  - name: '87 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 139.162.45.139
     type: trojan
     port: 443
@@ -114,7 +146,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '65 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '88 ⌜クモ⌟ SNI -> 🇸🇬'
     server: lll.277428.xyz
     type: vmess
     port: 40771
@@ -126,3 +158,31 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: image-upload4.spotify.com
+  - name: '89 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: lll.277428.xyz
+    type: vmess
+    port: 40771
+    uuid: 61194810-5193-48bc-eb0a-7978a059d681
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '111 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 103.253.24.98
+    type: vmess
+    port: 443
+    uuid: 698f55cc-d74a-4c90-bf69-973b3b67674e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: image-upload4.spotify.com
+    ws-opts: 
+      path: /fastssh/gafsg65g/635045dc30ee6/
+      headers:
+        Host: image-upload4.spotify.com

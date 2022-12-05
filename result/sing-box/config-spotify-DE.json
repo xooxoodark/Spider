@@ -45,14 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "24 ⌜クモ⌟ SNI -> 🇩🇪",
-        "70 ⌜クモ⌟ SNI -> 🇩🇪",
-        "75 ⌜クモ⌟ CDN -> 🇩🇪"
+        "23 ⌜クモ⌟ SNI -> 🇩🇪",
+        "93 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "24 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "23 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -64,7 +63,7 @@
     },
     {
       "type": "trojan",
-      "tag": "70 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "93 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
@@ -72,27 +71,6 @@
         "enabled": true,
         "insecure": true,
         "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "75 ⌜クモ⌟ CDN -> 🇩🇪",
-      "server": "investors.spotify.com",
-      "server_port": 443,
-      "uuid": "1197321c-eb59-4159-959f-5d81f53c1792",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "h1.800876.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "h1.800876.xyz"
-        }
       }
     }
   ],
