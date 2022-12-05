@@ -1,14 +1,5 @@
 proxies:
-  - name: '39 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 47.87.238.92
-    type: trojan
-    port: 443
-    password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '47 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '42 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -24,7 +15,16 @@ proxies:
       path: /fastssh/sezarhacks/633be1a74319b/
       headers:
         Host: news.microsoft.com
-  - name: '53 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '47 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 47.87.238.92
+    type: trojan
+    port: 443
+    password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '51 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 185.212.200.75
     type: trojan
     port: 443
@@ -33,7 +33,16 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '124 ⌜クモ⌟ SNI -> 🇳🇱'
+  - name: '125 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 185.212.200.74
+    type: trojan
+    port: 443
+    password: Sp3eDVp
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '130 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
@@ -49,16 +58,23 @@ proxies:
       path: /fastssh/hkgzs01/6315d407657f6/
       headers:
         Host: news.microsoft.com
-  - name: '143 ⌜クモ⌟ SNI -> 🇳🇱'
-    server: 185.212.200.74
-    type: trojan
+  - name: '131 ⌜クモ⌟ SNI -> 🇳🇱'
+    server: 163.172.213.74
+    type: vmess
     port: 443
-    password: Sp3eDVp
+    uuid: bb97ee0a-6d57-40c0-a446-45b78c303603
+    alterId: 0
+    cipher: auto
+    tls: true
     udp: true
-    skip-cert-verify: true
-    network: tcp
+    skip-cert-verify: false
+    network: ws
     servername: news.microsoft.com
-  - name: '144 ⌜クモ⌟ SNI -> 🇳🇱'
+    ws-opts: 
+      path: /fastssh/hkgzs01/6315d407657f6/
+      headers:
+        Host: news.microsoft.com
+  - name: '149 ⌜クモ⌟ SNI -> 🇳🇱'
     server: 163.172.213.74
     type: vmess
     port: 443
