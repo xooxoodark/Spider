@@ -1,14 +1,5 @@
 proxies:
-  - name: '54 ⌜クモ⌟ SNI -> 🇮🇪'
-    server: 51.77.71.134
-    type: trojan
-    port: 443
-    password: origin
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: click.zoom.us
-  - name: '89 ⌜クモ⌟ SNI -> 🇮🇪'
+  - name: '27 ⌜クモ⌟ SNI -> 🇮🇪'
     server: 14ael.mealstream.xyz
     type: vmess
     port: 15114
@@ -18,5 +9,14 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: false
+    network: tcp
+    servername: options.teams.microsoft.com
+  - name: '43 ⌜クモ⌟ SNI -> 🇮🇪'
+    server: 51.77.71.134
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
     network: tcp
     servername: click.zoom.us
