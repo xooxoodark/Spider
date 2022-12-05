@@ -45,13 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "94 ⌜クモ⌟ CDN -> 🇷🇴"
+        "177 ⌜クモ⌟ CDN -> 🇷🇴",
+        "228 ⌜クモ⌟ CDN -> 🇷🇴",
+        "266 ⌜クモ⌟ CDN -> 🇷🇴"
       ]
     },
     {
       "type": "vmess",
-      "tag": "94 ⌜クモ⌟ CDN -> 🇷🇴",
-      "server": "news.microsoft.com",
+      "tag": "177 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "cacerts.digicert.com",
       "server_port": 8443,
       "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
       "security": "auto",
@@ -64,6 +66,48 @@
       "transport": {
         "type": "ws",
         "path": "/home",
+        "headers": {
+          "Host": "ca.0112233.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "228 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "news.microsoft.com",
+      "server_port": 8443,
+      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ca.0112233.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ca.0112233.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "266 ⌜クモ⌟ CDN -> 🇷🇴",
+      "server": "news.microsoft.com",
+      "server_port": 443,
+      "uuid": "c3000e9d-bee7-4fdb-b312-dd07030f325d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ca.0112233.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "ca.0112233.xyz"
         }

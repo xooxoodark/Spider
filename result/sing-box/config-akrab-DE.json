@@ -45,13 +45,39 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "23 ⌜クモ⌟ SNI -> 🇩🇪",
-        "93 ⌜クモ⌟ SNI -> 🇩🇪"
+        "12 ⌜クモ⌟ CDN -> 🇩🇪",
+        "43 ⌜クモ⌟ SNI -> 🇩🇪",
+        "78 ⌜クモ⌟ SNI -> 🇩🇪",
+        "173 ⌜クモ⌟ SNI -> 🇩🇪",
+        "225 ⌜クモ⌟ CDN -> 🇩🇪",
+        "316 ⌜クモ⌟ SNI -> 🇩🇪",
+        "320 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
+      "type": "vmess",
+      "tag": "12 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "main.millionaireaisle.com",
+      "server_port": 2053,
+      "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "haxeu2.zikkcc.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "haxeu2.zikkcc.ga"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "23 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "43 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "207.154.243.252",
       "server_port": 443,
       "password": "TvBypqQJ9b",
@@ -63,7 +89,19 @@
     },
     {
       "type": "trojan",
-      "tag": "93 ⌜クモ⌟ SNI -> 🇩🇪",
+      "tag": "78 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "207.154.243.252",
+      "server_port": 443,
+      "password": "TvBypqQJ9b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "173 ⌜クモ⌟ SNI -> 🇩🇪",
       "server": "188.40.251.19",
       "server_port": 443,
       "password": "origin",
@@ -71,6 +109,51 @@
         "enabled": true,
         "insecure": true,
         "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "225 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "1197321c-eb59-4159-959f-5d81f53c1792",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "h1.800876.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "h1.800876.xyz"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "316 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "bdvasxmahl.injafarvpnwebelieve.gq",
+      "server_port": 443,
+      "password": "TvBypqQJ9b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "320 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "188.40.251.19",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
       }
     }
   ],

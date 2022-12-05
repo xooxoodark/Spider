@@ -45,12 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "108 ⌜クモ⌟ CDN -> 🇨🇭"
+        "342 ⌜クモ⌟ CDN -> 🇨🇭",
+        "384 ⌜クモ⌟ CDN -> 🇨🇭"
       ]
     },
     {
       "type": "vmess",
-      "tag": "108 ⌜クモ⌟ CDN -> 🇨🇭",
+      "tag": "342 ⌜クモ⌟ CDN -> 🇨🇭",
       "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "ad48ebeb-f949-472b-9717-e8c8f0f7984d",
@@ -59,12 +60,34 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "140.238.170.195"
+        "server_name": "www.liuyiyang19891222.tk"
       },
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
-          "Host": "140.238.170.195"
+          "Host": "www.liuyiyang19891222.tk"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "384 ⌜クモ⌟ CDN -> 🇨🇭",
+      "server": "news.microsoft.com",
+      "server_port": 443,
+      "uuid": "ad48ebeb-f949-472b-9717-e8c8f0f7984d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "www.liuyiyang19891222.tk"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "www.liuyiyang19891222.tk"
         }
       }
     }

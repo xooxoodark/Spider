@@ -45,12 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "70 ⌜クモ⌟ SNI -> 🇱🇺"
+        "145 ⌜クモ⌟ SNI -> 🇱🇺",
+        "325 ⌜クモ⌟ CDN -> 🇱🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "70 ⌜クモ⌟ SNI -> 🇱🇺",
+      "tag": "145 ⌜クモ⌟ SNI -> 🇱🇺",
       "server": "104.244.73.218",
       "server_port": 443,
       "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
@@ -59,13 +60,34 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "click.zoom.us"
       },
       "transport": {
         "type": "ws",
         "path": "/v2ray",
         "headers": {
-          "Host": "promo.ruangguru.com"
+          "Host": "click.zoom.us"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "325 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "6fb9a750-55b8-4e6e-857b-242b795399dc",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "buyvm.imkcp.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/imkcpyyds",
+        "headers": {
+          "Host": "buyvm.imkcp.eu.org"
         }
       }
     }

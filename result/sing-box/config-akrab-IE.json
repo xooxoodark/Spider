@@ -45,12 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "53 ⌜クモ⌟ SNI -> 🇮🇪"
+        "44 ⌜クモ⌟ SNI -> 🇮🇪",
+        "131 ⌜クモ⌟ SNI -> 🇮🇪",
+        "324 ⌜クモ⌟ SNI -> 🇮🇪"
       ]
     },
     {
       "type": "trojan",
-      "tag": "53 ⌜クモ⌟ SNI -> 🇮🇪",
+      "tag": "44 ⌜クモ⌟ SNI -> 🇮🇪",
       "server": "51.77.71.134",
       "server_port": 443,
       "password": "origin",
@@ -58,6 +60,30 @@
         "enabled": true,
         "insecure": true,
         "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "131 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "51.77.71.134",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "324 ⌜クモ⌟ SNI -> 🇮🇪",
+      "server": "content-provider12.cdn-delivery.akamaicd.com",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
       }
     }
   ],

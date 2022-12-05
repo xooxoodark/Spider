@@ -1,5 +1,21 @@
 proxies:
-  - name: '23 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '12 ⌜クモ⌟ CDN -> 🇩🇪'
+    server: investors.spotify.com
+    type: vmess
+    port: 2053
+    uuid: 8afc6cdf-4f0a-4725-a44c-5dacdc2b2784
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: haxeu2.zikkcc.ga
+    ws-opts: 
+      path: /
+      headers:
+        Host: haxeu2.zikkcc.ga
+  - name: '43 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 207.154.243.252
     type: trojan
     port: 443
@@ -8,7 +24,50 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: image-upload4.spotify.com
-  - name: '93 ⌜クモ⌟ SNI -> 🇩🇪'
+  - name: '78 ⌜クモ⌟ SNI -> 🇩🇪'
+    server: 207.154.243.252
+    type: trojan
+    port: 443
+    password: TvBypqQJ9b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '173 ⌜クモ⌟ SNI -> 🇩🇪'
+    server: 188.40.251.19
+    type: trojan
+    port: 443
+    password: origin
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '225 ⌜クモ⌟ CDN -> 🇩🇪'
+    server: investors.spotify.com
+    type: vmess
+    port: 443
+    uuid: 1197321c-eb59-4159-959f-5d81f53c1792
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: h1.800876.xyz
+    ws-opts: 
+      path: /
+      headers:
+        Host: h1.800876.xyz
+  - name: '316 ⌜クモ⌟ SNI -> 🇩🇪'
+    server: bdvasxmahl.injafarvpnwebelieve.gq
+    type: trojan
+    port: 443
+    password: TvBypqQJ9b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: image-upload4.spotify.com
+  - name: '320 ⌜クモ⌟ SNI -> 🇩🇪'
     server: 188.40.251.19
     type: trojan
     port: 443
