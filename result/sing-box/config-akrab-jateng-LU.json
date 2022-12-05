@@ -45,12 +45,34 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "90 ⌜クモ⌟ CDN -> 🇱🇺"
+        "178 ⌜クモ⌟ CDN -> 🇱🇺",
+        "253 ⌜クモ⌟ CDN -> 🇱🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "90 ⌜クモ⌟ CDN -> 🇱🇺",
+      "tag": "178 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "lu1.gogogoo.cyou"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/go",
+        "headers": {
+          "Host": "lu1.gogogoo.cyou"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "253 ⌜クモ⌟ CDN -> 🇱🇺",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
