@@ -1,5 +1,5 @@
 proxies:
-  - name: '39 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '28 ⌜クモ⌟ SNI -> 🇦🇺'
     server: 140.238.205.173
     type: trojan
     port: 443
@@ -8,34 +8,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: options.teams.microsoft.com
-  - name: '71 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.67.98.30
-    type: trojan
-    port: 443
-    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: options.teams.microsoft.com
-  - name: '81 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.67.98.30
-    type: trojan
-    port: 443
-    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: options.teams.microsoft.com
-  - name: '82 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.67.98.30
-    type: trojan
-    port: 443
-    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: options.teams.microsoft.com
-  - name: '84 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '70 ⌜クモ⌟ SNI -> 🇦🇺'
     server: 152.67.98.30
     type: trojan
     port: 443
@@ -44,67 +17,42 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: click.zoom.us
-  - name: '119 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 45.79.118.99
-    type: vmess
+  - name: '78 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 152.67.98.30
+    type: trojan
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    tls: true
+    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
     udp: true
-    skip-cert-verify: false
-    network: ws
+    skip-cert-verify: true
+    network: tcp
+    servername: options.teams.microsoft.com
+  - name: '79 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 152.67.98.30
+    type: trojan
+    port: 443
+    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+    udp: true
+    skip-cert-verify: true
+    network: tcp
     servername: click.zoom.us
-    ws-opts: 
-      path: /chat
-      headers:
-        Host: click.zoom.us
-  - name: '133 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.69.167.11
-    type: vmess
+  - name: '83 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 152.67.98.30
+    type: trojan
     port: 443
-    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
-    alterId: 0
-    cipher: auto
-    tls: true
+    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
     udp: true
-    skip-cert-verify: false
-    network: ws
+    skip-cert-verify: true
+    network: tcp
     servername: options.teams.microsoft.com
-    ws-opts: 
-      path: /v2ray
-      headers:
-        Host: options.teams.microsoft.com
-  - name: '134 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.69.167.11
+  - name: '165 ⌜クモ⌟ SNI -> 🇦🇺'
+    server: 21adly.mealstream.xyz
     type: vmess
-    port: 443
-    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    port: 15221
+    uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
-    network: ws
-    servername: options.teams.microsoft.com
-    ws-opts: 
-      path: /v2ray
-      headers:
-        Host: options.teams.microsoft.com
-  - name: '154 ⌜クモ⌟ CDN -> 🇦🇺'
-    server: main.millionaireaisle.com
-    type: vmess
-    port: 443
-    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: 152.69.167.11
-    ws-opts: 
-      path: /v2ray
-      headers:
-        Host: 152.69.167.11
+    network: tcp
+    servername: click.zoom.us

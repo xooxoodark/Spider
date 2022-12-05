@@ -45,25 +45,26 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "59 ⌜クモ⌟ SNI -> 🇫🇷",
-        "139 ⌜クモ⌟ CDN -> 🇫🇷"
+        "39 ⌜クモ⌟ SNI -> 🇫🇷",
+        "114 ⌜クモ⌟ CDN -> 🇫🇷",
+        "166 ⌜クモ⌟ SNI -> 🇫🇷"
       ]
     },
     {
       "type": "trojan",
-      "tag": "59 ⌜クモ⌟ SNI -> 🇫🇷",
+      "tag": "39 ⌜クモ⌟ SNI -> 🇫🇷",
       "server": "176.31.83.90",
       "server_port": 443,
       "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       }
     },
     {
       "type": "vmess",
-      "tag": "139 ⌜クモ⌟ CDN -> 🇫🇷",
+      "tag": "114 ⌜クモ⌟ CDN -> 🇫🇷",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "4e21574f-1796-4f0a-86c0-4430fe99d3a1",
@@ -80,6 +81,20 @@
         "headers": {
           "Host": "fr1.cachexy.ga"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "166 ⌜クモ⌟ SNI -> 🇫🇷",
+      "server": "08fg.mealstream.xyz",
+      "server_port": 15208,
+      "uuid": "8578dc92-3097-4dd5-941a-5e6ebeaa91ba",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
       }
     }
   ],
