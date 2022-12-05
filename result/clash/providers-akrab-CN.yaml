@@ -1,5 +1,5 @@
 proxies:
-  - name: '325 ⌜クモ⌟ SNI -> 🇨🇳'
+  - name: '499 ⌜クモ⌟ SNI -> 🇨🇳'
     server: 137.175.57.195
     type: vmess
     port: 443
@@ -10,8 +10,24 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: options.teams.microsoft.com
+    servername: click.zoom.us
     ws-opts: 
       path: /path/243535322906
       headers:
-        Host: options.teams.microsoft.com
+        Host: click.zoom.us
+  - name: '500 ⌜クモ⌟ SNI -> 🇨🇳'
+    server: 142.0.129.99
+    type: vmess
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: promo.ruangguru.com
+    ws-opts: 
+      path: /path/243535322906
+      headers:
+        Host: promo.ruangguru.com

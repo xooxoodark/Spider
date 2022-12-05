@@ -1,5 +1,21 @@
 proxies:
-  - name: '16 ⌜クモ⌟ CDN -> 🇸🇬'
+  - name: '36 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: suzhihan.eu.org
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: news.microsoft.com
+  - name: '39 ⌜クモ⌟ CDN -> 🇸🇬'
     server: news.microsoft.com
     type: vmess
     port: 443
@@ -15,7 +31,23 @@ proxies:
       path: /sshkit/1736960111/63859b5b38f53/
       headers:
         Host: sg1-v2ray.sshkit.org
-  - name: '19 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '42 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: sg4-v2ray.sshkit.org
+    ws-opts: 
+      path: /sshkit/1736960111/63859be1a762c/
+      headers:
+        Host: sg4-v2ray.sshkit.org
+  - name: '44 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 15.235.147.186
     type: vmess
     port: 443
@@ -31,23 +63,7 @@ proxies:
       path: /sshkit/Ertusg86/635014638c264/
       headers:
         Host: news.microsoft.com
-  - name: '21 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: vsg1.0bad.com
-    type: vmess
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /chat
-      headers:
-        Host: news.microsoft.com
-  - name: '26 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '45 ⌜クモ⌟ SNI -> 🇯🇵'
     server: f1f3227.v3.glados-config.net
     type: vmess
     port: 3331
@@ -63,7 +79,23 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: news.microsoft.com
-  - name: '48 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '47 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: vsg1.0bad.com
+    type: vmess
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /chat
+      headers:
+        Host: news.microsoft.com
+  - name: '65 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 168.138.171.65
     type: vmess
     port: 443
@@ -75,7 +107,16 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '50 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '71 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 49.212.221.47
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '74 ⌜クモ⌟ SNI -> 🇮🇩'
     server: sg-atha.v2-ray.com
     type: vmess
     port: 443
@@ -91,290 +132,7 @@ proxies:
       path: /fastssh/amrozi87/6350416ec330b/
       headers:
         Host: news.microsoft.com
-  - name: '52 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jgwdb3.gaox.ml
-    type: trojan
-    port: 443
-    password: 8d2d5953-d649-4034-94f2-72f2df2623da
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '54 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: sg-01.tiktokcdn.top
-    type: trojan
-    port: 443
-    password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '55 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: sg.liangyuandian.top
-    type: trojan
-    port: 443
-    password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '56 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
-    type: trojan
-    port: 3389
-    password: b84d16a244460e09
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '58 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.157
-    type: trojan
-    port: 3389
-    password: 7ac49a893e0bd10c
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '59 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 202.79.171.157
-    type: vmess
-    port: 443
-    uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
-    alterId: 64
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /path/243535322906
-      headers:
-        Host: news.microsoft.com
-  - name: '61 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: oracle-sel-free-1.wisdomfree.tk
-    type: vmess
-    port: 60001
-    uuid: 4596acf5-98da-4832-84bd-e792681a132a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '62 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: oracle-gia-cc-free-arm.wisdomfree.tk
-    type: vmess
-    port: 60002
-    uuid: 4596acf5-98da-4832-84bd-e792681a132a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '63 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: oracle-tky-free-1.wisdomfree.tk
-    type: vmess
-    port: 60001
-    uuid: 4596acf5-98da-4832-84bd-e792681a132a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '64 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: oracle-rknc-free-1.wisdomfree.tk
-    type: vmess
-    port: 60001
-    uuid: 4596acf5-98da-4832-84bd-e792681a132a
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /
-      headers:
-        Host: news.microsoft.com
-  - name: '68 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.155
-    type: trojan
-    port: 3389
-    password: b84d16a244460e09
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '77 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: gcp2.goodcc.fun
-    type: trojan
-    port: 23442
-    password: cQfwTIN1SC
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '79 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: gcp2.goodcc.fun
-    type: trojan
-    port: 23444
-    password: KshsCdgYST
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '87 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 138.2.113.248
-    type: trojan
-    port: 443
-    password: 9c822f05-cfdc-479a-9534-60f3d4127435
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '88 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: jgwcc1.gaox.ml
-    type: trojan
-    port: 443
-    password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '89 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jgwdb4.gaox.ml
-    type: trojan
-    port: 443
-    password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '90 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 168.138.43.89
-    type: trojan
-    port: 443
-    password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '91 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 159.223.89.239
-    type: trojan
-    port: 443
-    password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '92 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 168.138.44.176
-    type: trojan
-    port: 443
-    password: 8d2d5953-d649-4034-94f2-72f2df2623da
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '93 ⌜クモ⌟ SNI -> 🇮🇳'
-    server: 152.67.160.174
-    type: trojan
-    port: 443
-    password: 54080134-2cba-4535-8599-95650bd9aa54
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '95 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: jgwcc3.gaox.ml
-    type: trojan
-    port: 443
-    password: b291d129-ee55-4801-a9b8-b5316e5c37b7
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '96 ⌜クモ⌟ CDN -> 🇮🇩'
-    server: cacerts.digicert.com
-    type: vmess
-    port: 443
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: id-lb.vhax.net
-    ws-opts: 
-      path: /sshkit/dfsdafdsa/63848baf653eb/
-      headers:
-        Host: id-lb.vhax.net
-  - name: '99 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: sg-ovh2.v2-ray.com
-    type: vmess
-    port: 443
-    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /fastssh/dghh/6347fe8113b09/
-      headers:
-        Host: news.microsoft.com
-  - name: '123 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: 45.136.14.70
-    type: trojan
-    port: 15410
-    password: 6A30qqSh8W
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '127 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: 139.162.45.139
-    type: trojan
-    port: 443
-    password: FLpONjB2Lb
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '128 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jgwdj3.gaox.ml
-    type: trojan
-    port: 443
-    password: da777aae-defb-41d0-a183-2c27da2b4677
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '129 ⌜クモ⌟ SNI -> 🇮🇱'
+  - name: '76 ⌜クモ⌟ SNI -> 🇮🇱'
     server: 129.159.139.101
     type: vmess
     port: 443
@@ -390,24 +148,66 @@ proxies:
       path: /
       headers:
         Host: news.microsoft.com
-  - name: '130 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: lll.277428.xyz
-    type: vmess
-    port: 40771
-    uuid: 61194810-5193-48bc-eb0a-7978a059d681
-    alterId: 0
-    cipher: auto
-    tls: true
+  - name: '80 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 160.16.145.107
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '131 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: hk3.sanfen001.pics
+  - name: '81 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 45.136.14.70
+    type: trojan
+    port: 15410
+    password: 6A30qqSh8W
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '82 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: sg.liangyuandian.top
+    type: trojan
+    port: 443
+    password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '83 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: b84d16a244460e09
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '86 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.157
+    type: trojan
+    port: 3389
+    password: 7ac49a893e0bd10c
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '87 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: sg-01.tiktokcdn.top
+    type: trojan
+    port: 443
+    password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '90 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 202.79.171.157
     type: vmess
     port: 443
-    uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
-    alterId: 0
+    uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
+    alterId: 64
     cipher: auto
     tls: true
     udp: true
@@ -415,125 +215,19 @@ proxies:
     network: ws
     servername: news.microsoft.com
     ws-opts: 
-      path: /zh-cn
+      path: /path/243535322906
       headers:
         Host: news.microsoft.com
-  - name: '135 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
-    type: trojan
-    port: 3389
-    password: 8b475d9e868e43e0
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '136 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: 206.119.112.6
-    type: vmess
-    port: 8189
-    uuid: a90597c1-bab3-4217-ad6f-0838675c8638
-    alterId: 10
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
-  - name: '137 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '91 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 211.72.35.155
     type: trojan
     port: 3389
-    password: 0cc6b4268dea0ba8
+    password: b84d16a244460e09
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '138 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
-    type: trojan
-    port: 3389
-    password: 0cc6b4268dea0ba8
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '140 ⌜クモ⌟ CDN -> 🇰🇷'
-    server: news.microsoft.com
-    type: vmess
-    port: 443
-    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    servername: surongwei.eu.org
-    ws-opts: 
-      path: /reffs7y26g0ua
-      headers:
-        Host: surongwei.eu.org
-  - name: '149 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 141.147.181.219
-    type: vmess
-    port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /roewesu
-      headers:
-        Host: news.microsoft.com
-  - name: '153 ⌜クモ⌟ SNI -> 🇮🇳'
-    server: jgwhdlb1.gaox.ml
-    type: trojan
-    port: 443
-    password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '154 ⌜クモ⌟ CDN -> 🇸🇬'
-    server: cacerts.digicert.com
-    type: trojan
-    port: 443
-    password: 4X1ebJpQWg
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: sg.yydsdy.top
-    ws-opts: 
-      path: /c6c05fbac0e4
-      headers:
-        Host: sg.yydsdy.top
-  - name: '155 ⌜クモ⌟ CDN -> 🇸🇬'
-    server: cacerts.digicert.com
-    type: trojan
-    port: 443
-    password: 4X1ebJpQWg
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: sg.yydsdy.top
-    ws-opts: 
-      path: /c6c05fbac0e4
-      headers:
-        Host: sg.yydsdy.top
-  - name: '158 ⌜クモ⌟ SNI -> 🇮🇳'
-    server: 152.67.162.166
-    type: trojan
-    port: 443
-    password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '163 ⌜クモ⌟ SNI -> 🇮🇳'
+  - name: '92 ⌜クモ⌟ SNI -> 🇮🇳'
     server: jgwhdlb3.gaox.ml
     type: trojan
     port: 443
@@ -542,97 +236,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '167 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.157
-    type: trojan
-    port: 3389
-    password: b84d16a244460e09
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '168 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: jgwdj4.gaox.ml
-    type: trojan
-    port: 443
-    password: c09eb137-bf68-4658-84e0-102d94b74168
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '172 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.155
-    type: trojan
-    port: 3389
-    password: b09d2aaa443af97a
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '174 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
-    type: trojan
-    port: 3389
-    password: 182228812d1e0f23
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '182 ⌜クモ⌟ SNI -> 🇸🇬'
-    server: trojan-ctb-sg01.globalssh.xyz
-    type: trojan
-    port: 443
-    password: 123456
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '187 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 202.181.102.180
-    type: trojan
-    port: 2053
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '189 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.155
-    type: trojan
-    port: 3389
-    password: 7b06d22a8a7c764f
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '190 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.157
-    type: trojan
-    port: 3389
-    password: 6c8b18adb11737af
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '192 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.157
-    type: trojan
-    port: 3389
-    password: 8b475d9e868e43e0
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '193 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
-    type: trojan
-    port: 3389
-    password: 4bacb8f1a089763b
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '194 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '93 ⌜クモ⌟ SNI -> 🇸🇬'
     server: f1f3227.f3.glados-config.net
     type: vmess
     port: 3331
@@ -648,52 +252,143 @@ proxies:
       path: /s/f1f3227.fm.apple.com:111548
       headers:
         Host: news.microsoft.com
-  - name: '196 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.157
+  - name: '94 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: oracle-sel-free-1.wisdomfree.tk
+    type: vmess
+    port: 60001
+    uuid: 4596acf5-98da-4832-84bd-e792681a132a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '95 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: oracle-gia-cc-free-arm.wisdomfree.tk
+    type: vmess
+    port: 60002
+    uuid: 4596acf5-98da-4832-84bd-e792681a132a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '96 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: oracle-tky-free-1.wisdomfree.tk
+    type: vmess
+    port: 60001
+    uuid: 4596acf5-98da-4832-84bd-e792681a132a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '97 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: oracle-rknc-free-1.wisdomfree.tk
+    type: vmess
+    port: 60001
+    uuid: 4596acf5-98da-4832-84bd-e792681a132a
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '109 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgwcc2.gaox.ml
     type: trojan
-    port: 3389
-    password: 7b06d22a8a7c764f
+    port: 443
+    password: 9c822f05-cfdc-479a-9534-60f3d4127435
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '197 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
+  - name: '110 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: gcp2.goodcc.fun
     type: trojan
-    port: 3389
-    password: 6c8b18adb11737af
+    port: 23442
+    password: cQfwTIN1SC
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '200 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.157
+  - name: '125 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgwcc1.gaox.ml
     type: trojan
-    port: 3389
-    password: 26a663656e575c0b
+    port: 443
+    password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '203 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 49.212.221.47
+  - name: '126 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: trojan-ctb-sg01.globalssh.xyz
     type: trojan
-    port: 2053
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    port: 443
+    password: 123456
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '204 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.155
+  - name: '128 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: jgwdb4.gaox.ml
     type: trojan
-    port: 3389
-    password: 4bacb8f1a089763b
+    port: 443
+    password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '226 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '130 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 168.138.43.89
+    type: trojan
+    port: 443
+    password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '131 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 159.223.89.239
+    type: trojan
+    port: 443
+    password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '132 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: gcp2.goodcc.fun
+    type: trojan
+    port: 23444
+    password: KshsCdgYST
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '133 ⌜クモ⌟ SNI -> 🇰🇷'
     server: 144.24.72.126
     type: trojan
     port: 443
@@ -702,43 +397,77 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '227 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 146.56.189.146
+  - name: '134 ⌜クモ⌟ SNI -> 🇮🇳'
+    server: 152.67.160.174
     type: trojan
     port: 443
-    password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
+    password: 54080134-2cba-4535-8599-95650bd9aa54
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '248 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 150.230.217.213
+  - name: '135 ⌜クモ⌟ SNI -> 🇮🇳'
+    server: 152.67.190.183
     type: trojan
     port: 443
-    password: c09eb137-bf68-4658-84e0-102d94b74168
+    password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '255 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 160.16.145.107
+  - name: '137 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 138.2.113.248
     type: trojan
-    port: 2053
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    port: 443
+    password: 9c822f05-cfdc-479a-9534-60f3d4127435
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '256 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 153.121.74.146
+  - name: '138 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 138.2.113.84
     type: trojan
-    port: 2053
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    port: 443
+    password: b291d129-ee55-4801-a9b8-b5316e5c37b7
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '260 ⌜クモ⌟ SNI -> 🇮🇳'
+  - name: '139 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgwcc3.gaox.ml
+    type: trojan
+    port: 443
+    password: b291d129-ee55-4801-a9b8-b5316e5c37b7
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '141 ⌜クモ⌟ SNI -> 🇮🇳'
+    server: jgwhdlb1.gaox.ml
+    type: trojan
+    port: 443
+    password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '145 ⌜クモ⌟ CDN -> 🇮🇩'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: id-lb.vhax.net
+    ws-opts: 
+      path: /sshkit/dfsdafdsa/63848baf653eb/
+      headers:
+        Host: id-lb.vhax.net
+  - name: '146 ⌜クモ⌟ SNI -> 🇮🇳'
     server: jgwhdlb2.gaox.ml
     type: trojan
     port: 443
@@ -747,26 +476,152 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '263 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '148 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: sg-ovh2.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /fastssh/dghh/6347fe8113b09/
+      headers:
+        Host: news.microsoft.com
+  - name: '149 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: sg-atha.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /fastssh/jdjdjdn/6347fefa86953/
+      headers:
+        Host: news.microsoft.com
+  - name: '150 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: jgw2.gaox.ml
+    type: trojan
+    port: 443
+    password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '151 ⌜クモ⌟ SNI -> 🇮🇳'
+    server: 152.67.162.166
+    type: trojan
+    port: 443
+    password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '160 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 146.56.189.146
+    type: trojan
+    port: 443
+    password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '162 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr1.api-aws.com
+    type: trojan
+    port: 443
+    password: 7e92d33f-6917-4c69-8eca-7fe80be58199
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '163 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr1.api-aws.com
+    type: trojan
+    port: 443
+    password: 3753719b-eb37-4f34-ab60-ae3a70486b27
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '188 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 206.119.112.6
+    type: vmess
+    port: 8189
+    uuid: a90597c1-bab3-4217-ad6f-0838675c8638
+    alterId: 10
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '195 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: 139.162.45.139
+    type: trojan
+    port: 443
+    password: FLpONjB2Lb
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '196 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: hk3.sanfen001.pics
+    type: vmess
+    port: 443
+    uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: news.microsoft.com
+  - name: '199 ⌜クモ⌟ SNI -> 🇸🇬'
+    server: lll.277428.xyz
+    type: vmess
+    port: 40771
+    uuid: 61194810-5193-48bc-eb0a-7978a059d681
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '201 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 211.72.35.155
     type: trojan
     port: 3389
-    password: 6c8b18adb11737af
+    password: 0cc6b4268dea0ba8
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '265 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '202 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 211.72.35.157
     type: trojan
     port: 3389
-    password: b09d2aaa443af97a
+    password: 8b475d9e868e43e0
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '268 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
+  - name: '204 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.155
     type: trojan
     port: 3389
     password: 3febb05ea76a940f
@@ -774,7 +629,299 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '270 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '205 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 0cc6b4268dea0ba8
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '206 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.155
+    type: trojan
+    port: 3389
+    password: b09d2aaa443af97a
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '207 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: hk1vdf-node.aiqiche123.com
+    type: vmess
+    port: 8189
+    uuid: a90597c1-bab3-4217-ad6f-0838675c8638
+    alterId: 10
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '208 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 8b475d9e868e43e0
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '210 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: cacerts.digicert.com
+    type: vmess
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: surongwei.eu.org
+    ws-opts: 
+      path: /reffs7y26g0ua
+      headers:
+        Host: surongwei.eu.org
+  - name: '211 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr1.api-aws.com
+    type: trojan
+    port: 443
+    password: d30afdba-ca55-463a-b26e-27080698a2a6
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '213 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr1.api-aws.com
+    type: trojan
+    port: 443
+    password: 545034ab-8179-46ea-a7d4-a5c992cce000
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '215 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: jgwdb3.gaox.ml
+    type: trojan
+    port: 443
+    password: 8d2d5953-d649-4034-94f2-72f2df2623da
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '217 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: id3tr.jagoan.vip
+    type: trojan
+    port: 443
+    password: vvip-periantara
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '232 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: jgwdj4.gaox.ml
+    type: trojan
+    port: 443
+    password: c09eb137-bf68-4658-84e0-102d94b74168
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '249 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: news.microsoft.com
+    type: trojan
+    port: 443
+    password: 4X1ebJpQWg
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sg.yydsdy.top
+    ws-opts: 
+      path: /c6c05fbac0e4
+      headers:
+        Host: sg.yydsdy.top
+  - name: '250 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: news.microsoft.com
+    type: trojan
+    port: 443
+    password: 4X1ebJpQWg
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sg.yydsdy.top
+    ws-opts: 
+      path: /c6c05fbac0e4
+      headers:
+        Host: sg.yydsdy.top
+  - name: '252 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: news.microsoft.com
+    type: trojan
+    port: 443
+    password: 4X1ebJpQWg
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sg.yydsdy.top
+    ws-opts: 
+      path: /c6c05fbac0e4
+      headers:
+        Host: sg.yydsdy.top
+  - name: '254 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: news.microsoft.com
+    type: trojan
+    port: 443
+    password: 4X1ebJpQWg
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sg.yydsdy.top
+    ws-opts: 
+      path: /c6c05fbac0e4
+      headers:
+        Host: sg.yydsdy.top
+  - name: '256 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 141.147.181.219
+    type: vmess
+    port: 443
+    uuid: 0b873cff-11ab-4716-c41a-04f886135091
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /roewesu
+      headers:
+        Host: news.microsoft.com
+  - name: '258 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.157
+    type: trojan
+    port: 3389
+    password: b84d16a244460e09
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '262 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: 161.129.34.102
+    type: vmess
+    port: 443
+    uuid: ec736482-173e-3eff-9114-b49df8056e7d
+    alterId: 2
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '263 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr1.api-aws.com
+    type: trojan
+    port: 443
+    password: 3fe45691-03ac-40a1-8f4e-1317905020db
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '269 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr1.api-aws.com
+    type: trojan
+    port: 443
+    password: 36443c4f-4487-48a6-8438-57bd7700b916
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '284 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 150.230.217.213
+    type: trojan
+    port: 443
+    password: c09eb137-bf68-4658-84e0-102d94b74168
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '288 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 202.181.102.180
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '299 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 6c8b18adb11737af
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '301 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.157
+    type: trojan
+    port: 3389
+    password: 26a663656e575c0b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '303 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.155
+    type: trojan
+    port: 3389
+    password: 4bacb8f1a089763b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '306 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 182228812d1e0f23
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '307 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.157
+    type: trojan
+    port: 3389
+    password: 7b06d22a8a7c764f
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '308 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.157
+    type: trojan
+    port: 3389
+    password: 6c8b18adb11737af
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '310 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.155
+    type: trojan
+    port: 3389
+    password: 26a663656e575c0b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '312 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 211.72.35.152
     type: trojan
     port: 3389
@@ -783,25 +930,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '272 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
-    type: trojan
-    port: 3389
-    password: faf42aa0a9ad4c1e
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '274 ⌜クモ⌟ SNI -> 🇹🇼'
-    server: 211.72.35.152
-    type: trojan
-    port: 3389
-    password: 26a663656e575c0b
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '285 ⌜クモ⌟ SNI -> 🇹🇼'
+  - name: '313 ⌜クモ⌟ SNI -> 🇹🇼'
     server: 211.72.35.157
     type: trojan
     port: 3389
@@ -810,7 +939,160 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '294 ⌜クモ⌟ CDN -> 🇸🇬'
+  - name: '315 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.155
+    type: trojan
+    port: 3389
+    password: 7b06d22a8a7c764f
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '316 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 4bacb8f1a089763b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '381 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: kr05.wangxd.life
+    type: trojan
+    port: 3052
+    password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '383 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 194.156.99.39
+    type: trojan
+    port: 443
+    password: xxoo
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '388 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 219.94.250.108
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '396 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 168.138.44.176
+    type: trojan
+    port: 443
+    password: 8d2d5953-d649-4034-94f2-72f2df2623da
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '398 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 153.121.74.146
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '401 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 210.64.18.98
+    type: trojan
+    port: 8080
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '409 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.157
+    type: trojan
+    port: 3389
+    password: 0cc6b4268dea0ba8
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '412 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.155
+    type: trojan
+    port: 3389
+    password: 8b475d9e868e43e0
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '413 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: faf42aa0a9ad4c1e
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '415 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.157
+    type: trojan
+    port: 3389
+    password: b09d2aaa443af97a
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '416 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 26a663656e575c0b
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '427 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.155
+    type: trojan
+    port: 3389
+    password: 6c8b18adb11737af
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '429 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: b09d2aaa443af97a
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '431 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 3febb05ea76a940f
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '435 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 7b06d22a8a7c764f
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '460 ⌜クモ⌟ CDN -> 🇸🇬'
     server: cacerts.digicert.com
     type: vmess
     port: 443
@@ -826,7 +1108,7 @@ proxies:
       path: /sshkit/1736960111/63859bc177a33/
       headers:
         Host: sg3-v2ray.sshkit.org
-  - name: '302 ⌜クモ⌟ SNI -> 🇯🇵'
+  - name: '468 ⌜クモ⌟ SNI -> 🇯🇵'
     server: jp.liangyuandian.top
     type: trojan
     port: 443
@@ -835,17 +1117,8 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '304 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: jgw2.gaox.ml
-    type: trojan
-    port: 443
-    password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '305 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: kr1.sanfen001.pics
+  - name: '470 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
@@ -855,21 +1128,12 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: news.microsoft.com
+    servername: kr1.sanfen001.pics
     ws-opts: 
       path: /zh-cn
       headers:
-        Host: news.microsoft.com
-  - name: '307 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: kr1.api-aws.com
-    type: trojan
-    port: 443
-    password: b70b2ed8-6d35-4fe0-8ae7-4e8fa45ff326
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '308 ⌜クモ⌟ SNI -> 🇸🇬'
+        Host: kr1.sanfen001.pics
+  - name: '472 ⌜クモ⌟ SNI -> 🇸🇬'
     server: sg1.sanfen001.pics
     type: vmess
     port: 443
@@ -885,28 +1149,25 @@ proxies:
       path: /zh-cn
       headers:
         Host: news.microsoft.com
-  - name: '313 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '479 ⌜クモ⌟ SNI -> 🇰🇷'
     server: kr1.api-aws.com
     type: trojan
     port: 443
-    password: ed9a202f-7871-4a15-a4c1-f3a47c1f5493
+    password: 8c20177e-d245-4ec6-9610-34c20500d10b
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '314 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: hk1vdf-node.aiqiche123.com
-    type: vmess
-    port: 8189
-    uuid: a90597c1-bab3-4217-ad6f-0838675c8638
-    alterId: 10
-    cipher: auto
-    tls: true
+  - name: '488 ⌜クモ⌟ SNI -> 🇯🇵'
+    server: 133.167.100.203
+    type: trojan
+    port: 2053
+    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '323 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '495 ⌜クモ⌟ SNI -> 🇰🇷'
     server: kr1.api-aws.com
     type: trojan
     port: 443
@@ -915,16 +1176,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '324 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: kr1.api-aws.com
-    type: trojan
-    port: 443
-    password: 545034ab-8179-46ea-a7d4-a5c992cce000
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: news.microsoft.com
-  - name: '325 ⌜クモ⌟ SNI -> 🇨🇳'
+  - name: '499 ⌜クモ⌟ SNI -> 🇨🇳'
     server: 137.175.57.195
     type: vmess
     port: 443
@@ -940,41 +1192,66 @@ proxies:
       path: /path/243535322906
       headers:
         Host: news.microsoft.com
-  - name: '335 ⌜クモ⌟ CDN -> 🇯🇵'
-    server: news.microsoft.com
+  - name: '500 ⌜クモ⌟ SNI -> 🇨🇳'
+    server: 142.0.129.99
     type: vmess
     port: 443
-    uuid: 0b873cff-11ab-4716-c41a-04f886135091
-    alterId: 0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: suzhihan.eu.org
+    servername: news.microsoft.com
     ws-opts: 
-      path: /roewesu
+      path: /path/243535322906
       headers:
-        Host: suzhihan.eu.org
-  - name: '339 ⌜クモ⌟ SNI -> 🇯🇵'
-    server: 219.94.250.108
+        Host: news.microsoft.com
+  - name: '507 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: lc-kr02-direct01.lc-kr02.lc-node.com
+    type: vmess
+    port: 443
+    uuid: ec736482-173e-3eff-9114-b49df8056e7d
+    alterId: 2
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '525 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 34.96.143.229
     type: trojan
-    port: 2053
-    password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+    port: 23444
+    password: KshsCdgYST
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '351 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: 138.2.113.84
+  - name: '530 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: 38.9.140.66
     type: trojan
     port: 443
-    password: b291d129-ee55-4801-a9b8-b5316e5c37b7
+    password: vvip-periantara
     udp: true
     skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com
-  - name: '357 ⌜クモ⌟ SNI -> 🇸🇬'
+  - name: '541 ⌜クモ⌟ SNI -> 🇹🇼'
+    server: 211.72.35.152
+    type: trojan
+    port: 3389
+    password: 7ac49a893e0bd10c
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '602 ⌜クモ⌟ SNI -> 🇸🇬'
     server: 5.44.249.43
     type: vmess
     port: 3331
