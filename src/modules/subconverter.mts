@@ -3,7 +3,9 @@ import { spawn } from "child_process";
 class SubConverter {
   async start() {
     await new Promise((resolve) => {
-      spawn("./bin/subconverter/subconverter");
+      spawn("./bin/subconverter/subconverter").stderr.on("data", (data) => {
+        console.log(data.toString());
+      });
     });
   }
 }
