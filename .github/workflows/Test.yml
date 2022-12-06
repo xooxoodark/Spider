@@ -32,6 +32,6 @@ jobs:
           sudo chmod +x ./bin/*
       - name: Start Crawling
         env:
-          DATA: '{"url":"","filename":"1"}'
+          DATA: '{"url":"https://free.jingfu.cf/clash/proxies","filename":"1"}'
         run: |
           npm install && npx tsc && node ./app/index.js $DATA
