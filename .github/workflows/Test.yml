@@ -17,13 +17,15 @@ jobs:
       - name: Get secrets
         run: |
           echo 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11 > ./bot_token
-      - name: Install sing-box
+      - name: Install binaries
         run: |
           mkdir ./bin
           curl "https://github.com/SagerNet/sing-box/releases/download/v1.1/sing-box-1.1-linux-amd64.tar.gz" -L -o ./bin/sing-box.tar.gz
+          curl "https://github.com/xxf098/LiteSpeedTest/releases/download/v0.13.1/lite-linux-amd64-v0.13.1.gz" -L -o ./bin/lite.gz
           tar -xf ./bin/sing-box.tar.gz -C ./bin
           rm -rf ./bin/sing-box.tar.gz
           mv ./bin/sing-box-1.1-linux-amd64/* ./bin/
+          gzip -dc < ./bin/lite.gz > ./bin/lite
       - name: Start Crawling
         env:
           DATA: '{"url":"","filename":"1"}'
