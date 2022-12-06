@@ -1,6 +1,8 @@
 name: Crawling Internet
 
 on:
+  workflow_dispatch:
+    branches: "dev"
   repository_dispatch:
     branches: "main"
     types: ["Crawl"]

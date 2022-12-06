@@ -17,7 +17,7 @@ I have schedule to make the code better, later...
 
 ## How to add bugs
 
-[Click this]("./AddBug.md")
+[Click this](AddBug.md)
 
 ### Todos
 
@@ -30,7 +30,7 @@ I have schedule to make the code better, later...
 
 ## License
 
-You can read the license [here]("./LICENSE.md"), also for additional information:
+You can read the license [here](LICENSE.md), also for additional information:
 
 ```
   This project JUST scrape/scavenge FREE things from the internet.
