@@ -28,7 +28,7 @@ class Connect {
       }
     });
 
-    await sleep(500);
+    await sleep(1000);
 
     try {
       await fetch("http://ipapi.co/json", {
