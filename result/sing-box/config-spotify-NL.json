@@ -45,33 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "90 ⌜クモ⌟ SNI -> 🇳🇱",
-        "165 ⌜クモ⌟ SNI -> 🇳🇱",
-        "181 ⌜クモ⌟ CDN -> 🇳🇱",
-        "210 ⌜クモ⌟ CDN -> 🇳🇱",
-        "284 ⌜クモ⌟ CDN -> 🇳🇱",
-        "354 ⌜クモ⌟ SNI -> 🇳🇱",
-        "356 ⌜クモ⌟ SNI -> 🇳🇱",
-        "437 ⌜クモ⌟ SNI -> 🇳🇱",
-        "452 ⌜クモ⌟ SNI -> 🇳🇱",
-        "471 ⌜クモ⌟ SNI -> 🇳🇱"
+        "13 ⌜クモ⌟ SNI -> 🇳🇱",
+        "25 ⌜クモ⌟ SNI -> 🇳🇱"
       ]
     },
     {
-      "type": "trojan",
-      "tag": "90 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "tj2.dalazhi.cyou",
-      "server_port": 443,
-      "password": "8f70fde3-a04c-4f6a-b705-aef7406f6ac1",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "165 ⌜クモ⌟ SNI -> 🇳🇱",
+      "tag": "13 ⌜クモ⌟ SNI -> 🇳🇱",
       "server": "163.172.213.74",
       "server_port": 443,
       "uuid": "45d0eb68-955c-4760-91cd-fa6bf07b693f",
@@ -92,8 +72,8 @@
     },
     {
       "type": "vmess",
-      "tag": "181 ⌜クモ⌟ CDN -> 🇳🇱",
-      "server": "investors.spotify.com",
+      "tag": "25 ⌜クモ⌟ SNI -> 🇳🇱",
+      "server": "nl.v2-ray.com",
       "server_port": 443,
       "uuid": "bb97ee0a-6d57-40c0-a446-45b78c303603",
       "security": "auto",
@@ -101,125 +81,14 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "nl.v2-ray.com"
+        "server_name": "image-upload4.spotify.com"
       },
       "transport": {
         "type": "ws",
         "path": "/fastssh/hkgzs01/6315d407657f6/",
         "headers": {
-          "Host": "nl.v2-ray.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "210 ⌜クモ⌟ CDN -> 🇳🇱",
-      "server": "investors.spotify.com",
-      "server_port": 443,
-      "uuid": "3f421e27-5bf8-40c9-86cb-7b8c41dddea2",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "hl1.cachexy.ga"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lXvA0Vse/",
-        "headers": {
-          "Host": "hl1.cachexy.ga"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "284 ⌜クモ⌟ CDN -> 🇳🇱",
-      "server": "investors.spotify.com",
-      "server_port": 443,
-      "uuid": "532a5f12-cadb-46e4-963f-ee7c075e40f0",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "amshare.jingledev.me"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/pkhhvws",
-        "headers": {
-          "Host": "amshare.jingledev.me"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "354 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "content-provider24.cdn-delivery.akamaicd.com",
-      "server_port": 443,
-      "password": "Sp3eDVp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "356 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "nl.v2-ray.com",
-      "server_port": 443,
-      "uuid": "341ceac8-4d54-4b4c-ac1b-88d7615b10b6",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fastssh/vghrayang/634931ec14667/",
-        "headers": {
           "Host": "image-upload4.spotify.com"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "437 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "185.212.200.75",
-      "server_port": 443,
-      "password": "Sp3eDVp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "452 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "content-provider23.cdn-delivery.akamaicd.com",
-      "server_port": 443,
-      "password": "Sp3eDVp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "471 ⌜クモ⌟ SNI -> 🇳🇱",
-      "server": "47.87.238.92",
-      "server_port": 443,
-      "password": "8f70fde3-a04c-4f6a-b705-aef7406f6ac1",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "image-upload4.spotify.com"
       }
     }
   ],
