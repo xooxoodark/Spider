@@ -1,17 +1,37 @@
 proxies:
-  - name: '23 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: m4.40010010.xyz
+  - name: '53 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: main.millionaireaisle.com
     type: vmess
-    port: 37121
-    uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5
+    port: 443
+    uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: kr1.sanfen001.pics
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: kr1.sanfen001.pics
+  - name: '90 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
-    network: tcp
-    servername: click.zoom.us
-  - name: '187 ⌜クモ⌟ CDN -> 🇰🇷'
+    network: ws
+    servername: surongwei.eu.org
+    ws-opts: 
+      path: /reffs7y26g0ua
+      headers:
+        Host: surongwei.eu.org
+  - name: '330 ⌜クモ⌟ CDN -> 🇰🇷'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
