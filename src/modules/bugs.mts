@@ -25,10 +25,11 @@ class Bugs {
     return this._cdn[Math.floor(Math.random() * this._cdn.length)];
   }
 
-  fill(account: any, format: "Clash" | "V2ray" | "Surfboard" | "Sing-Box", mode: "sni" | "cdn") {
+  fill(account: any, format: "clash" | "v2ray" | "surfboard" | "sing-box" | "v2object", mode: "sni" | "cdn") {
     const sni = this.sni;
     const cdn = this.cdn;
-    if (format == "Clash") {
+
+    if (format == "clash") {
       if (mode == "sni") {
         if (account.match(/Host:.*/)) {
           account = account.replace(account.match(/Host:.*/)[0], `Host: ${sni}`);
@@ -37,7 +38,7 @@ class Bugs {
       } else {
         account = account.replace(account.match(/server:.*/)[0], `server: ${cdn}`);
       }
-    } else if (format == "V2ray") {
+    } else if (format == "v2ray") {
       if (account.protocol == "vmess") {
         if (mode == "sni") {
           if (account.streamSettings.wsSettings) {
@@ -57,7 +58,7 @@ class Bugs {
           account.settings.servers[0].address = cdn;
         }
       }
-    } else if (format == "Surfboard") {
+    } else if (format == "surfboard") {
       if (mode == "sni") {
         if (account.match(/ws-headers=Host:.*/)) {
           account = account.replace(account.match(/ws-headers=Host:.*/)[0], `ws-headers=Host:${sni}`);
@@ -71,7 +72,7 @@ class Bugs {
           `${cdn}`
         );
       }
-    } else if (format == "Sing-Box") {
+    } else if (format == "sing-box") {
       // Both vmess and trojan have the same format
       if (account.type.match(/(vmess|trojan)/)) {
         if (mode == "sni") {
@@ -82,6 +83,15 @@ class Bugs {
         } else {
           account.server = cdn;
         }
+      }
+    } else if (format == "v2object") {
+      if (mode == "sni") {
+        if (account.network == "ws") {
+          account.host = sni;
+        }
+        account.sni = sni;
+      } else {
+        account.address = cdn;
       }
     }
 

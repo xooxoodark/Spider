@@ -12,10 +12,9 @@ import { duplicateFilter, isSingBoxRunning, sleep } from "./modules/helper.mjs";
 import { logger, LogLevel } from "./modules/logger.mjs";
 import { Scraper } from "./modules/scraper.mjs";
 import { bot } from "./modules/tg.mjs";
-import { ConnectServer, Country, Data, Region, V2Object } from "./modules/types.mjs";
+import { ConnectServer, Data, V2Object } from "./modules/types.mjs";
+import { writer } from "./modules/writer.mjs";
 
-const countries: Country[] = JSON.parse(readFileSync("./countries.json").toString());
-const bugBundles: string[] = readdirSync("./resources/bugs");
 const { url, filename } = JSON.parse(process.argv[2]) as Data;
 const modes: string[] = ["cdn", "sni"];
 const maxConcurrentTest = 75;
@@ -24,7 +23,7 @@ const maxConcurrentTest = 75;
 exec("pkill sing-box");
 
 (async () => {
-  // Scavenge accounts but doesn't fill the bugs
+  // Scavenge accounts withour fill the bugs
   const accounts: V2Object[] = await (async () => {
     let accounts: V2Object[] = [];
     if (!url) {
@@ -92,7 +91,7 @@ exec("pkill sing-box");
           onTest.push(mode);
           new Promise((resolve) => {
             connect
-              .connect(bugs.fill(converter.toSingBox(account), "Sing-Box", mode as "sni" | "cdn"))
+              .connect(bugs.fill(converter.toSingBox(account), "sing-box", mode as "sni" | "cdn"))
               .then((res: ConnectServer) =>
                 connectResult.push({
                   ...res,
@@ -124,6 +123,7 @@ exec("pkill sing-box");
               ...account,
               cc: connect.cc,
               countryName: connect.cn,
+              region: connect.region,
               cdn: connect.mode == "cdn",
               remark: `${result.length + 1} ⌜クモ⌟ ${mode} -> ${countryFlag}`, // my watermark (remark) lol
             });
@@ -146,7 +146,7 @@ exec("pkill sing-box");
         }
       }
 
-      // if (result.length > 15) break; // Test purpose
+      // if (result.length > 5) break; // Test purpose
       clearTimeout(timeout);
     }
 
@@ -179,198 +179,12 @@ exec("pkill sing-box");
     exit(0);
   }
 
-  // Convert result to various format
-  // But first, we split them by region and country
-  const proxiesByRegion: {
-    Asia: V2Object[];
-    Europe: V2Object[];
-    Africa: V2Object[];
-    Oceania: V2Object[];
-    Americas: V2Object[];
-  } = {
-    Asia: [],
-    Europe: [],
-    Africa: [],
-    Oceania: [],
-    Americas: [],
-  };
+  // Write result
+  writer.write(connectedAccounts);
 
-  const proxiesByCountry: any = {};
+  // Send sample to channel
+  await bot.send(connectedAccounts[Math.floor(Math.random() * connectedAccounts.length)], connectedAccounts.length);
 
-  process.stdout.write("Splitting result...");
-  for (const account of connectedAccounts) {
-    const cc = account.cc as string;
-    if (proxiesByCountry[cc]) {
-      proxiesByCountry[cc].push(account);
-    } else {
-      proxiesByCountry[cc] = [account];
-    }
-
-    for (const country of countries) {
-      if (country.code == cc) {
-        proxiesByRegion[country.region].push(account);
-      }
-    }
-  }
-  process.stdout.write("done\n");
-
-  // Fill the bugs and write result
-  process.stdout.write("Fill the bugs and write result...");
-  if (!existsSync("./result")) mkdirSync("./result");
-  if (!existsSync("./result/clash")) mkdirSync("./result/clash");
-  if (!existsSync("./result/v2ray")) mkdirSync("./result/v2ray");
-  if (!existsSync("./result/surfboard")) mkdirSync("./result/surfboard");
-  if (!existsSync("./result/sing-box")) mkdirSync("./result/sing-box");
-  for (let bugBundle of bugBundles) {
-    bugBundle = bugBundle.replace(".json", "");
-    if (bugBundle == "crawl") continue; // bug for test
-
-    const proxyModes = ["select", "load-balance", "url-test", "fallback"];
-    const bugs = new Bugs(bugBundle);
-
-    // Entire result
-    let remarks = [];
-    let clashProxies = ["proxies:"];
-    let proxyBoard = [];
-    let boardConfig = readFileSync("./resources/config/surfboard/surfboard.conf").toString();
-    let rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
-    let boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
-    for (const account of connectedAccounts) {
-      if (account.cdn) {
-        if (!bugs.cdn) continue;
-      } else {
-        if (!bugs.sni) continue;
-      }
-
-      remarks.push(account.remark);
-      clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
-      rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
-      proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
-      boxConfig.outbounds.push(bugs.fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni"));
-
-      boxConfig.outbounds[3].outbounds.push(account.remark);
-    }
-    for (const mode of proxyModes) {
-      let proxyMode = `${mode.toUpperCase()} = ${mode}`;
-      for (const remark of remarks) {
-        proxyMode += `,${remark}`;
-      }
-
-      boardConfig += `${proxyMode}\n`;
-    }
-
-    boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}.conf`);
-    boardConfig = boardConfig.replace(/PROXIES_PLACEHOLDER/, proxyBoard.join("\n"));
-    writeFileSync(`./result/sing-box/config-${bugBundle}.json`, JSON.stringify(boxConfig, null, 2));
-    writeFileSync(`./result/v2ray/config-${bugBundle}.json`, JSON.stringify(rayConfig, null, 2));
-    writeFileSync(`./result/clash/providers-${bugBundle}.yaml`, clashProxies.join("\n"));
-    writeFileSync(`./result/surfboard/board-${bugBundle}.conf`, boardConfig);
-
-    // Per country
-    for (const country of Object.keys(proxiesByCountry)) {
-      let remarks = [];
-      clashProxies = ["proxies:"];
-      proxyBoard = [];
-      boardConfig = readFileSync("./resources/config/surfboard/surfboard.conf").toString();
-      rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
-      boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
-      for (const account of proxiesByCountry[country]) {
-        if (account.cdn) {
-          if (!bugs.cdn) continue;
-        } else {
-          if (!bugs.sni) continue;
-        }
-
-        remarks.push(account.remark);
-        clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
-        rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
-        proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
-        boxConfig.outbounds.push(bugs.fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni"));
-
-        boxConfig.outbounds[3].outbounds.push(account.remark);
-      }
-      for (const mode of proxyModes) {
-        let proxyMode = `${mode.toUpperCase()} = ${mode}`;
-        for (const remark of remarks) {
-          proxyMode += `,${remark}`;
-        }
-
-        boardConfig += `${proxyMode}\n`;
-      }
-
-      boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}-${country}.conf`);
-      boardConfig = boardConfig.replace(/PROXIES_PLACEHOLDER/, proxyBoard.join("\n"));
-      writeFileSync(`./result/v2ray/config-${bugBundle}-${country}.json`, JSON.stringify(rayConfig, null, 2));
-      writeFileSync(`./result/sing-box/config-${bugBundle}-${country}.json`, JSON.stringify(boxConfig, null, 2));
-      writeFileSync(`./result/clash/providers-${bugBundle}-${country}.yaml`, clashProxies.join("\n"));
-      writeFileSync(`./result/surfboard/board-${bugBundle}-${country}.conf`, boardConfig);
-    }
-
-    // Per region
-    for (const region of Object.keys(proxiesByRegion)) {
-      let remarks = [];
-      clashProxies = ["proxies:"];
-      proxyBoard = [];
-      boardConfig = readFileSync("./resources/config/surfboard/surfboard.conf").toString();
-      rayConfig = JSON.parse(readFileSync("./resources/config/v2ray/config.json").toString());
-      boxConfig = JSON.parse(readFileSync("./resources/config/sing-box/config.json").toString());
-      for (const account of proxiesByRegion[region as Region]) {
-        if (account.cdn) {
-          if (!bugs.cdn) continue;
-        } else {
-          if (!bugs.sni) continue;
-        }
-
-        remarks.push(account.remark);
-        clashProxies.push(bugs.fill(converter.toClash(account), "Clash", account.cdn ? "cdn" : "sni"));
-        rayConfig.outbounds.push(bugs.fill(converter.toV2ray(account), "V2ray", account.cdn ? "cdn" : "sni"));
-        proxyBoard.push(bugs.fill(converter.toSurfboard(account), "Surfboard", account.cdn ? "cdn" : "sni"));
-        boxConfig.outbounds.push(bugs.fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni"));
-
-        boxConfig.outbounds[3].outbounds.push(account.remark);
-      }
-      for (const mode of proxyModes) {
-        let proxyMode = `${mode.toUpperCase()} = ${mode}`;
-        for (const remark of remarks) {
-          proxyMode += `,${remark}`;
-        }
-
-        boardConfig += `${proxyMode}\n`;
-      }
-
-      boardConfig = boardConfig.replace(/FILENAME_PLACEHOLDER/, `board-${bugBundle}-${region}.conf`);
-      boardConfig = boardConfig.replace(/PROXIES_PLACEHOLDER/, proxyBoard.join("\n"));
-      writeFileSync(`./result/v2ray/config-${bugBundle}-${region}.json`, JSON.stringify(rayConfig, null, 2));
-      writeFileSync(`./result/sing-box/config-${bugBundle}-${region}.json`, JSON.stringify(boxConfig, null, 2));
-      writeFileSync(`./result/clash/providers-${bugBundle}-${region}.yaml`, clashProxies.join("\n"));
-      writeFileSync(`./result/surfboard/board-${bugBundle}-${region}.conf`, boardConfig);
-    }
-  }
-
-  // Write the enitre raw result (withour edit except remark)
-  writeFileSync(`./result/result.json`, JSON.stringify(connectedAccounts, null, 2));
-  process.stdout.write("done\n");
-
-  // Send one asian server to channel
-  process.stdout.write("Send sample to channel...");
-  if (proxiesByRegion["Asia"].length >= 1) {
-    let connected = false;
-    do {
-      const account = proxiesByRegion["Asia"][Math.floor(Math.random() * proxiesByRegion["Asia"].length)];
-      if (
-        !(await connect.connect(new Bugs().fill(converter.toSingBox(account), "Sing-Box", account.cdn ? "cdn" : "sni")))
-          .error
-      ) {
-        connected = true;
-        await bot.send(account, connectedAccounts.length);
-        break;
-      }
-
-      if (proxiesByRegion["Asia"].length == 1) break;
-    } while (!connected);
-  }
-  process.stdout.write("done\n");
-
-  process.stdout.write("Process complete!");
+  console.log("Process complete!");
   exit(0);
 })();
