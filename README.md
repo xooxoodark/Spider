@@ -19,14 +19,14 @@ I have schedule to make the code better, later...
 
 [Click this](AddBug.md)
 
-### Todos
+## Features
 
 - [ ] Support
   - [x] Vmess
   - [x] Trojan
   - [ ] Shadowsocks(R)
-- [x] Release Base64 Encoded Result
-- [ ] Codefining
+- [x] Base64 Encoded Result
+- [x] Speedtest (`Well, basically just to make sure the server is up. Not a real speedtest`)
 
 ## License
 
