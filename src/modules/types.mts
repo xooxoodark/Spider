@@ -23,6 +23,7 @@ export interface V2Object {
   cc?: string;
   error?: string;
   countryName?: string;
+  region?: string;
 }
 
 export interface Vmess {
@@ -67,6 +68,7 @@ export interface ConnectServer {
   error?: string;
   cc: string;
   cn: string;
+  region: string;
   mode?: "sni" | "cdn";
   ip?: string;
 }

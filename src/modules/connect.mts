@@ -1,5 +1,5 @@
 import { spawn } from "child_process";
-import { ConnectServer } from "./types.mjs";
+import { ConnectServer, Country } from "./types.mjs";
 import { sleep } from "./helper.mjs";
 import { SocksProxyAgent } from "socks-proxy-agent";
 import fetch from "node-fetch";
@@ -9,12 +9,14 @@ import { isIPv4 } from "is-ip";
 
 class Connect {
   connectionNumber = 1;
+  countries: Country[] = JSON.parse(readFileSync("./countries.json").toString());
 
   private async _connect(config: string, port: number): Promise<ConnectServer> {
     let error: string = "";
     let cc: string = "";
     let cn: string = "";
     let ip: string = "";
+    let region: string = "";
 
     const singBox = spawn("./bin/sing-box", ["run", "-c", `${config}`]);
 
@@ -52,8 +54,19 @@ class Connect {
             cc = "XX"; // Default country code
             cn = "Other"; // Default country name
             ip = "";
+            region = "World";
+
             // Change value above if data is present
-            if (data.country_code) cc = data.country_code;
+            if (data.country_code) {
+              cc = data.country_code;
+
+              for (const country of this.countries) {
+                if (country.code == cc) {
+                  region = country.region;
+                  break;
+                }
+              }
+            }
             if (data.country_name) cn = data.country_name;
             if (data.ip) {
               if (isIPv4(data.ip)) ip = data.ip;
@@ -83,6 +96,7 @@ class Connect {
       cc,
       cn,
       ip,
+      region,
     };
   }
 
