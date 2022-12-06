@@ -1,22 +1,22 @@
 proxies:
-  - name: '109 ⌜クモ⌟ SNI -> 🇱🇺'
-    server: 104.244.73.218
+  - name: '104 ⌜クモ⌟ CDN -> 🇱🇺'
+    server: news.microsoft.com
     type: vmess
     port: 443
-    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: news.microsoft.com
+    servername: lu1.gogogoo.cyou
     ws-opts: 
-      path: /v2ray
+      path: /go
       headers:
-        Host: news.microsoft.com
-  - name: '211 ⌜クモ⌟ CDN -> 🇱🇺'
-    server: news.microsoft.com
+        Host: lu1.gogogoo.cyou
+  - name: '143 ⌜クモ⌟ CDN -> 🇱🇺'
+    server: cacerts.digicert.com
     type: vmess
     port: 443
     uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
