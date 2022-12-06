@@ -49,7 +49,7 @@ class Scraper {
 
     if (!configs.length) {
       return {
-        error: true,
+        error: false,
         result: [],
       };
     }
