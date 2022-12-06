@@ -45,12 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "143 ⌜クモ⌟ SNI -> 🇰🇷"
+        "124 ⌜クモ⌟ SNI -> 🇰🇷",
+        "247 ⌜クモ⌟ CDN -> 🇰🇷",
+        "268 ⌜クモ⌟ SNI -> 🇰🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "143 ⌜クモ⌟ SNI -> 🇰🇷",
+      "tag": "124 ⌜クモ⌟ SNI -> 🇰🇷",
       "server": "kr1.sanfen001.pics",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -59,14 +61,49 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       },
       "transport": {
         "type": "ws",
         "path": "/zh-cn",
         "headers": {
-          "Host": "promo.ruangguru.com"
+          "Host": "options.teams.microsoft.com"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "247 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "surongwei.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/reffs7y26g0ua",
+        "headers": {
+          "Host": "surongwei.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "268 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "m4.40010010.xyz",
+      "server_port": 37121,
+      "uuid": "575e4d92-1056-44c2-8cac-75ef1c859ad5",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
       }
     }
   ],

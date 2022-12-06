@@ -45,12 +45,35 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "12 ⌜クモ⌟ CDN -> 🇸🇬"
+        "6 ⌜クモ⌟ CDN -> 🇮🇩",
+        "11 ⌜クモ⌟ CDN -> 🇸🇬",
+        "247 ⌜クモ⌟ CDN -> 🇰🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "12 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "6 ⌜クモ⌟ CDN -> 🇮🇩",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "781be00e-1e09-4e27-a464-e14197418c8f",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "id5.v2rayserv.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "id5.v2rayserv.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "11 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
@@ -59,13 +82,34 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "sg2-v2ray.sshkit.org"
+        "server_name": "sg1-v2ray.sshkit.org"
       },
       "transport": {
         "type": "ws",
-        "path": "/sshkit/1736960111/63859b95e5be4/",
+        "path": "/sshkit/1736960111/63859b5b38f53/",
         "headers": {
-          "Host": "sg2-v2ray.sshkit.org"
+          "Host": "sg1-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "247 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "surongwei.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/reffs7y26g0ua",
+        "headers": {
+          "Host": "surongwei.eu.org"
         }
       }
     }
