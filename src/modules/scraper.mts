@@ -28,21 +28,26 @@ class Scraper {
       };
     }
 
-    let text = await res.text();
-    let configs: string[];
+    let repoText = await res.text();
+    let configs: string[] = [];
 
-    if (Base64.isValid(text)) {
-      configs = base64Decode(text).match(/(.+:\/\/.+)/gim) || [];
+    if (Base64.isValid(repoText)) {
+      configs = base64Decode(repoText).match(/(.+:\/\/.+)/gim) || [];
     } else {
-      res = await fetch(`http://127.0.0.1:25500/sub?target=v2ray&url=${url}`);
-      text = await res.text();
-      if (Base64.isValid(text)) {
-        configs = base64Decode(text).match(/(.+:\/\/.+)/gim) || [];
-      } else {
+      try {
+        res = await fetch(`http://127.0.0.1:25500/sub?target=v2ray&url=${url}`);
+        let subText = await res.text();
+
+        if (Base64.isValid(subText)) {
+          configs = base64Decode(subText).match(/(.+:\/\/.+)/gim) || [];
+        } else {
+          throw new Error(subText);
+        }
+      } catch (e) {
         try {
-          configs = JSON.parse(text);
+          configs = JSON.parse(repoText);
         } catch (e: any) {
-          configs = text.match(/(.+:\/\/.+)/gim) || [];
+          configs = repoText.match(/(.+:\/\/.+)/gim) || [];
         }
       }
     }
