@@ -188,7 +188,7 @@ exec("pkill sing-box");
 
     const speedFilter = (accounts: V2Object[]) => {
       for (const res of speedtestResult.nodes) {
-        if (parseInt(res.max_speed) < 256000) {
+        if (!res.isok) {
           for (const i in connectedAccounts) {
             if (connectedAccounts[i].remark == res.remarks) {
               logger.log(LogLevel.info, "Removed low/dead server!");
