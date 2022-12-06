@@ -45,12 +45,13 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "5 ⌜クモ⌟ CDN -> 🇮🇩"
+        "11 ⌜クモ⌟ CDN -> 🇮🇩",
+        "387 ⌜クモ⌟ SNI -> 🇮🇩"
       ]
     },
     {
       "type": "vmess",
-      "tag": "5 ⌜クモ⌟ CDN -> 🇮🇩",
+      "tag": "11 ⌜クモ⌟ CDN -> 🇮🇩",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "781be00e-1e09-4e27-a464-e14197418c8f",
@@ -66,6 +67,27 @@
         "path": "/",
         "headers": {
           "Host": "id5.v2rayserv.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "387 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "sg-atha.v2-ray.com",
+      "server_port": 443,
+      "uuid": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastssh/amrozi87/6350416ec330b/",
+        "headers": {
+          "Host": "click.zoom.us"
         }
       }
     }

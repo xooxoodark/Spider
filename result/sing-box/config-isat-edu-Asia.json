@@ -45,15 +45,19 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "4 ⌜クモ⌟ CDN -> 🇸🇬",
-        "5 ⌜クモ⌟ CDN -> 🇮🇩",
-        "80 ⌜クモ⌟ CDN -> 🇸🇬",
-        "81 ⌜クモ⌟ CDN -> 🇸🇬"
+        "10 ⌜クモ⌟ CDN -> 🇸🇬",
+        "11 ⌜クモ⌟ CDN -> 🇮🇩",
+        "14 ⌜クモ⌟ CDN -> 🇸🇬",
+        "15 ⌜クモ⌟ CDN -> 🇸🇬",
+        "62 ⌜クモ⌟ CDN -> 🇸🇬",
+        "63 ⌜クモ⌟ CDN -> 🇸🇬",
+        "122 ⌜クモ⌟ CDN -> 🇸🇬",
+        "400 ⌜クモ⌟ CDN -> 🇰🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "4 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "10 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "104.26.14.59",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
@@ -62,20 +66,20 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "sg1-v2ray.sshkit.org"
+        "server_name": "sg2-v2ray.sshkit.org"
       },
       "transport": {
         "type": "ws",
-        "path": "/sshkit/1736960111/63859b5b38f53/",
+        "path": "/sshkit/1736960111/63859b95e5be4/",
         "headers": {
-          "Host": "sg1-v2ray.sshkit.org"
+          "Host": "sg2-v2ray.sshkit.org"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "5 ⌜クモ⌟ CDN -> 🇮🇩",
-      "server": "141.193.213.20",
+      "tag": "11 ⌜クモ⌟ CDN -> 🇮🇩",
+      "server": "104.26.14.59",
       "server_port": 443,
       "uuid": "781be00e-1e09-4e27-a464-e14197418c8f",
       "security": "auto",
@@ -95,8 +99,92 @@
     },
     {
       "type": "vmess",
-      "tag": "80 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "104.26.14.59",
+      "tag": "14 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.20",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg1-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859b5b38f53/",
+        "headers": {
+          "Host": "sg1-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "15 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.21",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg4-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859be1a762c/",
+        "headers": {
+          "Host": "sg4-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "62 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "104.17.70.206",
+      "server_port": 8443,
+      "uuid": "706596c5-2315-41e9-c97b-5a4d32ffd5e6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "dosg.gmlovebaipiao.tech"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/GenshinMinecraft",
+        "headers": {
+          "Host": "dosg.gmlovebaipiao.tech"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "63 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.21",
+      "server_port": 8443,
+      "uuid": "706596c5-2315-41e9-c97b-5a4d32ffd5e6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "dosg.gmlovebaipiao.tech"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/GenshinMinecraft",
+        "headers": {
+          "Host": "dosg.gmlovebaipiao.tech"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "122 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "141.193.213.21",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
       "security": "auto",
@@ -116,22 +204,22 @@
     },
     {
       "type": "vmess",
-      "tag": "81 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "104.17.71.206",
+      "tag": "400 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "141.193.213.20",
       "server_port": 443,
-      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "sg4-v2ray.sshkit.org"
+        "server_name": "surongwei.eu.org"
       },
       "transport": {
         "type": "ws",
-        "path": "/sshkit/1736960111/63859be1a762c/",
+        "path": "/reffs7y26g0ua",
         "headers": {
-          "Host": "sg4-v2ray.sshkit.org"
+          "Host": "surongwei.eu.org"
         }
       }
     }
