@@ -1,23 +1,47 @@
 proxies:
-  - name: '11 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: 194.156.99.39
+  - name: '53 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 34.96.143.229
     type: trojan
+    port: 23444
+    password: KshsCdgYST
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '56 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 45.136.14.70
+    type: trojan
+    port: 15410
+    password: 6A30qqSh8W
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '74 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: dsj17.1062cdn.top
+    type: vmess
     port: 443
-    password: xxoo
+    uuid: caf2e1ff-cf38-11eb-b239-00163cc6d021
+    alterId: 0
+    cipher: auto
+    tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '61 ⌜クモ⌟ SNI -> 🇭🇰'
-    server: gcp2.goodcc.fun
-    type: trojan
-    port: 23442
-    password: cQfwTIN1SC
+  - name: '128 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 206.119.112.6
+    type: vmess
+    port: 8189
+    uuid: a90597c1-bab3-4217-ad6f-0838675c8638
+    alterId: 10
+    cipher: auto
+    tls: true
     udp: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '62 ⌜クモ⌟ SNI -> 🇭🇰'
+  - name: '131 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk1vdf-node.aiqiche123.com
     type: vmess
     port: 8189
@@ -27,5 +51,89 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '146 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: ah.yd01.paopaocloud.cyou
+    type: vmess
+    port: 10009
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /v2ray
+      headers:
+        Host: news.microsoft.com
+  - name: '236 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 194.156.99.39
+    type: trojan
+    port: 443
+    password: xxoo
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '318 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: ah.yd01.paopaocloud.cyou
+    type: vmess
+    port: 10002
+    uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: news.microsoft.com
+  - name: '340 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: gcp2.goodcc.fun
+    type: trojan
+    port: 23442
+    password: cQfwTIN1SC
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '341 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: gcp2.goodcc.fun
+    type: trojan
+    port: 23444
+    password: KshsCdgYST
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: news.microsoft.com
+  - name: '342 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: hk11.sanfen001.pics
+    type: vmess
+    port: 443
+    uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: news.microsoft.com
+  - name: '514 ⌜クモ⌟ SNI -> 🇭🇰'
+    server: 34.96.143.229
+    type: trojan
+    port: 23442
+    password: cQfwTIN1SC
+    udp: true
+    skip-cert-verify: true
     network: tcp
     servername: news.microsoft.com

@@ -45,12 +45,70 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "45 ⌜クモ⌟ SNI -> 🇮🇩"
+        "10 ⌜クモ⌟ CDN -> 🇮🇩",
+        "115 ⌜クモ⌟ SNI -> 🇮🇩",
+        "155 ⌜クモ⌟ SNI -> 🇮🇩",
+        "246 ⌜クモ⌟ SNI -> 🇮🇩",
+        "361 ⌜クモ⌟ SNI -> 🇮🇩"
       ]
     },
     {
       "type": "vmess",
-      "tag": "45 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "10 ⌜クモ⌟ CDN -> 🇮🇩",
+      "server": "investors.spotify.com",
+      "server_port": 443,
+      "uuid": "781be00e-1e09-4e27-a464-e14197418c8f",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "id5.v2rayserv.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "id5.v2rayserv.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "115 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "sg-atha.v2-ray.com",
+      "server_port": 443,
+      "uuid": "854fc069-23bc-4dd9-9c14-9f3bc50a3b76",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastssh/jdjdjdn/6347fefa86953/",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "155 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "id3tr.jagoan.vip",
+      "server_port": 443,
+      "password": "vvip-periantara",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "246 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "sg-atha.v2-ray.com",
       "server_port": 443,
       "uuid": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
@@ -67,6 +125,18 @@
         "headers": {
           "Host": "image-upload4.spotify.com"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "361 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "38.9.140.66",
+      "server_port": 443,
+      "password": "vvip-periantara",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
       }
     }
   ],

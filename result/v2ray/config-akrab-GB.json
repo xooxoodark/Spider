@@ -84,6 +84,35 @@
       "settings": {
         "servers": [
           {
+            "address": "146.19.230.241",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "xxoo",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        }
+      },
+      "tag": "proxy-63 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "132.145.51.172",
             "flow": "",
             "level": 8,
@@ -99,10 +128,68 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "options.teams.microsoft.com"
+          "serverName": "promo.ruangguru.com"
         }
       },
-      "tag": "proxy-33 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-100 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.16.206.209",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "shefelnak",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "click.zoom.us"
+        }
+      },
+      "tag": "proxy-321 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "content-provider20.cdn-delivery.akamaicd.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "shefelnak",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        }
+      },
+      "tag": "proxy-360 ⌜クモ⌟ SNI -> 🇬🇧"
     },
     {
       "mux": {
@@ -113,14 +200,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "54.36.162.144",
+            "address": "51.89.81.132",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 64,
                 "encryption": "",
                 "flow": "",
-                "id": "0a4b28c1-4d88-46a0-8a43-6098bac35a8f",
+                "id": "418048af-a293-4b99-9b0c-98ca3580dd24",
                 "level": 8,
                 "security": "auto"
               }
@@ -139,10 +226,50 @@
           "headers": {
             "Host": "click.zoom.us"
           },
-          "path": "/vmess"
+          "path": "/path/243535322906"
         }
       },
-      "tag": "proxy-90 ⌜クモ⌟ SNI -> 🇬🇧"
+      "tag": "proxy-577 ⌜クモ⌟ SNI -> 🇬🇧"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "135.125.251.216",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 64,
+                "encryption": "",
+                "flow": "",
+                "id": "9bedfe8a-7d6d-416f-9fa8-d9ba3ca1b49e",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "promo.ruangguru.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "promo.ruangguru.com"
+          },
+          "path": "/path/243535322906"
+        }
+      },
+      "tag": "proxy-612 ⌜クモ⌟ SNI -> 🇬🇧"
     }
   ],
   "dns": {

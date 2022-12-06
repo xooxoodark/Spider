@@ -1,5 +1,46 @@
 proxies:
-  - name: '45 ⌜クモ⌟ SNI -> 🇮🇩'
+  - name: '10 ⌜クモ⌟ CDN -> 🇮🇩'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: 781be00e-1e09-4e27-a464-e14197418c8f
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: id5.v2rayserv.com
+    ws-opts: 
+      path: /
+      headers:
+        Host: id5.v2rayserv.com
+  - name: '115 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: sg-atha.v2-ray.com
+    type: vmess
+    port: 443
+    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: click.zoom.us
+    ws-opts: 
+      path: /fastssh/jdjdjdn/6347fefa86953/
+      headers:
+        Host: click.zoom.us
+  - name: '155 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: id3tr.jagoan.vip
+    type: trojan
+    port: 443
+    password: vvip-periantara
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: options.teams.microsoft.com
+  - name: '246 ⌜クモ⌟ SNI -> 🇮🇩'
     server: sg-atha.v2-ray.com
     type: vmess
     port: 443
@@ -10,8 +51,17 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: promo.ruangguru.com
+    servername: click.zoom.us
     ws-opts: 
       path: /fastssh/amrozi87/6350416ec330b/
       headers:
-        Host: promo.ruangguru.com
+        Host: click.zoom.us
+  - name: '361 ⌜クモ⌟ SNI -> 🇮🇩'
+    server: 38.9.140.66
+    type: trojan
+    port: 443
+    password: vvip-periantara
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: promo.ruangguru.com

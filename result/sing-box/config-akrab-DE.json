@@ -45,15 +45,20 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "44 ⌜クモ⌟ CDN -> 🇩🇪",
-        "65 ⌜クモ⌟ SNI -> 🇩🇪",
-        "74 ⌜クモ⌟ SNI -> 🇩🇪",
-        "93 ⌜クモ⌟ SNI -> 🇩🇪"
+        "9 ⌜クモ⌟ CDN -> 🇩🇪",
+        "39 ⌜クモ⌟ CDN -> 🇩🇪",
+        "171 ⌜クモ⌟ SNI -> 🇩🇪",
+        "234 ⌜クモ⌟ SNI -> 🇩🇪",
+        "245 ⌜クモ⌟ CDN -> 🇩🇪",
+        "345 ⌜クモ⌟ SNI -> 🇩🇪",
+        "346 ⌜クモ⌟ SNI -> 🇩🇪",
+        "354 ⌜クモ⌟ SNI -> 🇩🇪",
+        "356 ⌜クモ⌟ SNI -> 🇩🇪"
       ]
     },
     {
       "type": "vmess",
-      "tag": "44 ⌜クモ⌟ CDN -> 🇩🇪",
+      "tag": "9 ⌜クモ⌟ CDN -> 🇩🇪",
       "server": "main.millionaireaisle.com",
       "server_port": 2053,
       "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
@@ -74,29 +79,74 @@
     },
     {
       "type": "vmess",
-      "tag": "65 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "93.186.201.63",
-      "server_port": 443,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "tag": "39 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "main.millionaireaisle.com",
+      "server_port": 2083,
+      "uuid": "1ffeca67-a2bc-471b-b138-369d6762967d",
       "security": "auto",
-      "alter_id": 64,
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "30.tehvp.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "30.tehvp.xyz"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "171 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "content-provider28.cdn-delivery.akamaicd.com",
+      "server_port": 443,
+      "password": "origin",
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "234 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "bdvasxmahl.injafarvpnwebelieve.gq",
+      "server_port": 443,
+      "password": "TvBypqQJ9b",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "245 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "d217db0c-0faa-4270-ea38-e6093d9774e3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "h2.800876.xyz"
       },
       "transport": {
         "type": "ws",
-        "path": "/path/243535322906",
+        "path": "/",
         "headers": {
-          "Host": "options.teams.microsoft.com"
+          "Host": "h2.800876.xyz"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "74 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "213.202.233.245",
+      "tag": "345 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "213.202.233.24",
       "server_port": 443,
       "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
       "security": "auto",
@@ -115,15 +165,57 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "93 ⌜クモ⌟ SNI -> 🇩🇪",
-      "server": "bdvasxmahl.injafarvpnwebelieve.gq",
+      "type": "vmess",
+      "tag": "346 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "213.202.233.147",
       "server_port": 443,
-      "password": "TvBypqQJ9b",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "options.teams.microsoft.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/path/243535322906",
+        "headers": {
+          "Host": "options.teams.microsoft.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "354 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "188.40.251.19",
+      "server_port": 443,
+      "password": "origin",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "356 ⌜クモ⌟ SNI -> 🇩🇪",
+      "server": "93.186.201.63",
+      "server_port": 443,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64,
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "click.zoom.us"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/path/243535322906",
+        "headers": {
+          "Host": "click.zoom.us"
+        }
       }
     }
   ],

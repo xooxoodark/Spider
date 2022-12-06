@@ -74,6 +74,46 @@
       "settings": {
         "address": "8.8.8.8"
       }
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.67.199.34",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "781be00e-1e09-4e27-a464-e14197418c8f",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "id5.v2rayserv.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "id5.v2rayserv.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-10 ⌜クモ⌟ CDN -> 🇮🇩"
     }
   ],
   "dns": {
