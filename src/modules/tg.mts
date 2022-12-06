@@ -26,8 +26,8 @@ class Bot {
     message += `Mode: <code>${account.cdn ? "CDN" : "SNI"}</code>\n`;
     message += `SNI: <code>${account.sni || account.host}</code>\n\n`;
     message += `⌜<code>${converter.toUrl(account)}</code>⌟\n\n`;
-    message += `Config: <a href="https://github.com/dickymuliafiqri/Spider/tree/master/resources/config">Config Example</a>\n`;
-    message += `Sub: <a href="https://github.com/dickymuliafiqri/Spider/tree/master/result">Subscription</a>\n`;
+    message += `Config: <a href="https://github.com/dickymuliafiqri/Spider/tree/main/resources/config">Config Example</a>\n`;
+    message += `Sub: <a href="https://github.com/dickymuliafiqri/Spider/tree/main/result">Subscription</a>\n`;
     message += `Join: @v2scrape\n\n`;
     message += `Contact: @d_fordlalatina`;
 
