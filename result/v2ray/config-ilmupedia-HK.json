@@ -113,7 +113,7 @@
           "path": "/zh-cn"
         }
       },
-      "tag": "proxy-48 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-53 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -124,14 +124,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "cacerts.digicert.com",
-            "port": 443,
+            "address": "hk1vdf-node.aiqiche123.com",
+            "port": 8189,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 10,
                 "encryption": "",
                 "flow": "",
-                "id": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+                "id": "a90597c1-bab3-4217-ad6f-0838675c8638",
                 "level": 8,
                 "security": "auto"
               }
@@ -140,20 +140,48 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "hk11.sanfen001.pics"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hk11.sanfen001.pics"
-          },
-          "path": "/zh-cn"
+          "serverName": "news.microsoft.com"
         }
       },
-      "tag": "proxy-512 ⌜クモ⌟ CDN -> 🇭🇰"
+      "tag": "proxy-218 ⌜クモ⌟ SNI -> 🇭🇰"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hk1vdf-node.aiqiche123.com",
+            "port": 8189,
+            "users": [
+              {
+                "alterId": 10,
+                "encryption": "",
+                "flow": "",
+                "id": "a90597c1-bab3-4217-ad6f-0838675c8638",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "news.microsoft.com"
+        }
+      },
+      "tag": "proxy-370 ⌜クモ⌟ SNI -> 🇭🇰"
     }
   ],
   "dns": {

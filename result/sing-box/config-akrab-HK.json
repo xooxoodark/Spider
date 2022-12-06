@@ -45,13 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "48 ⌜クモ⌟ SNI -> 🇭🇰",
-        "512 ⌜クモ⌟ CDN -> 🇭🇰"
+        "53 ⌜クモ⌟ SNI -> 🇭🇰",
+        "218 ⌜クモ⌟ SNI -> 🇭🇰",
+        "370 ⌜クモ⌟ SNI -> 🇭🇰"
       ]
     },
     {
       "type": "vmess",
-      "tag": "48 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "53 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk3.sanfen001.pics",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -60,35 +61,42 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "options.teams.microsoft.com"
       },
       "transport": {
         "type": "ws",
         "path": "/zh-cn",
         "headers": {
-          "Host": "promo.ruangguru.com"
+          "Host": "options.teams.microsoft.com"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "512 ⌜クモ⌟ CDN -> 🇭🇰",
-      "server": "main.millionaireaisle.com",
-      "server_port": 443,
-      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+      "tag": "218 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "hk1vdf-node.aiqiche123.com",
+      "server_port": 8189,
+      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
       "security": "auto",
-      "alter_id": 0,
+      "alter_id": 10,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "hk11.sanfen001.pics"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/zh-cn",
-        "headers": {
-          "Host": "hk11.sanfen001.pics"
-        }
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "370 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "hk1vdf-node.aiqiche123.com",
+      "server_port": 8189,
+      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
+      "security": "auto",
+      "alter_id": 10,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
       }
     }
   ],
