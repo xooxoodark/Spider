@@ -45,14 +45,37 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "124 ⌜クモ⌟ SNI -> 🇸🇬",
-        "184 ⌜クモ⌟ SNI -> 🇸🇬",
-        "448 ⌜クモ⌟ SNI -> 🇸🇬"
+        "5 ⌜クモ⌟ CDN -> 🇸🇬",
+        "114 ⌜クモ⌟ SNI -> 🇸🇬",
+        "170 ⌜クモ⌟ CDN -> 🇸🇬",
+        "179 ⌜クモ⌟ CDN -> 🇸🇬",
+        "645 ⌜クモ⌟ SNI -> 🇸🇬"
       ]
     },
     {
       "type": "vmess",
-      "tag": "124 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "5 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "investors.spotify.com",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg2-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859b95e5be4/",
+        "headers": {
+          "Host": "sg2-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "114 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "lll.277428.xyz",
       "server_port": 40771,
       "uuid": "61194810-5193-48bc-eb0a-7978a059d681",
@@ -66,8 +89,8 @@
     },
     {
       "type": "vmess",
-      "tag": "184 ⌜クモ⌟ SNI -> 🇸🇬",
-      "server": "sg-ovh2.v2-ray.com",
+      "tag": "170 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "investors.spotify.com",
       "server_port": 443,
       "uuid": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
       "security": "auto",
@@ -75,19 +98,40 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "image-upload4.spotify.com"
+        "server_name": "sg-ovh2.v2-ray.com"
       },
       "transport": {
         "type": "ws",
         "path": "/fastssh/dghh/6347fe8113b09/",
         "headers": {
-          "Host": "image-upload4.spotify.com"
+          "Host": "sg-ovh2.v2-ray.com"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "448 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "179 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "investors.spotify.com",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg3-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859bc177a33/",
+        "headers": {
+          "Host": "sg3-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "645 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "5.44.249.43",
       "server_port": 3331,
       "uuid": "57e0cb4d-eae5-48ec-8091-149dc2b309e0",

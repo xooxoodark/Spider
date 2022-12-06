@@ -1,5 +1,5 @@
 proxies:
-  - name: '11 ⌜クモ⌟ CDN -> 🇸🇬'
+  - name: '5 ⌜クモ⌟ CDN -> 🇸🇬'
     server: main.millionaireaisle.com
     type: vmess
     port: 443
@@ -10,8 +10,40 @@ proxies:
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: sg1-v2ray.sshkit.org
+    servername: sg2-v2ray.sshkit.org
     ws-opts: 
-      path: /sshkit/1736960111/63859b5b38f53/
+      path: /sshkit/1736960111/63859b95e5be4/
       headers:
-        Host: sg1-v2ray.sshkit.org
+        Host: sg2-v2ray.sshkit.org
+  - name: '170 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sg-ovh2.v2-ray.com
+    ws-opts: 
+      path: /fastssh/dghh/6347fe8113b09/
+      headers:
+        Host: sg-ovh2.v2-ray.com
+  - name: '179 ⌜クモ⌟ CDN -> 🇸🇬'
+    server: main.millionaireaisle.com
+    type: vmess
+    port: 443
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: sg3-v2ray.sshkit.org
+    ws-opts: 
+      path: /sshkit/1736960111/63859bc177a33/
+      headers:
+        Host: sg3-v2ray.sshkit.org
