@@ -1,5 +1,5 @@
 proxies:
-  - name: '36 ⌜クモ⌟ SNI -> 🇦🇺'
+  - name: '162 ⌜クモ⌟ SNI -> 🇦🇺'
     server: vau1.0bad.com
     type: vmess
     port: 443
@@ -8,37 +8,10 @@ proxies:
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
-    servername: options.teams.microsoft.com
+    servername: promo.ruangguru.com
     ws-opts: 
       path: /chat
       headers:
-        Host: options.teams.microsoft.com
-  - name: '69 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 152.67.98.30
-    type: trojan
-    port: 443
-    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: promo.ruangguru.com
-  - name: '77 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: 140.238.205.173
-    type: trojan
-    port: 443
-    password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: promo.ruangguru.com
-  - name: '86 ⌜クモ⌟ SNI -> 🇦🇺'
-    server: jgwxn4.gaox.ml
-    type: trojan
-    port: 443
-    password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: options.teams.microsoft.com
+        Host: promo.ruangguru.com

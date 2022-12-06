@@ -45,32 +45,50 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "24 ⌜クモ⌟ SNI -> 🇬🇧",
-        "198 ⌜クモ⌟ SNI -> 🇬🇧"
+        "593 ⌜クモ⌟ SNI -> 🇬🇧",
+        "603 ⌜クモ⌟ SNI -> 🇬🇧"
       ]
     },
     {
-      "type": "trojan",
-      "tag": "24 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "146.19.230.241",
+      "type": "vmess",
+      "tag": "593 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "51.89.81.132",
       "server_port": 443,
-      "password": "xxoo",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64,
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "promo.ruangguru.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/path/243535322906",
+        "headers": {
+          "Host": "promo.ruangguru.com"
+        }
       }
     },
     {
-      "type": "trojan",
-      "tag": "198 ⌜クモ⌟ SNI -> 🇬🇧",
-      "server": "content-provider20.cdn-delivery.akamaicd.com",
+      "type": "vmess",
+      "tag": "603 ⌜クモ⌟ SNI -> 🇬🇧",
+      "server": "135.125.251.216",
       "server_port": 443,
-      "password": "shefelnak",
+      "uuid": "9bedfe8a-7d6d-416f-9fa8-d9ba3ca1b49e",
+      "security": "auto",
+      "alter_id": 64,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "promo.ruangguru.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/path/243535322906",
+        "headers": {
+          "Host": "promo.ruangguru.com"
+        }
       }
     }
   ],
