@@ -26,6 +26,7 @@ jobs:
           rm -rf ./bin/sing-box.tar.gz
           mv ./bin/sing-box-1.1-linux-amd64/* ./bin/
           gzip -dc < ./bin/lite.gz > ./bin/lite
+          sudo chmod +x ./bin/*
       - name: Start Crawling
         env:
           DATA: '{"url":"","filename":"1"}'
