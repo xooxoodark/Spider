@@ -45,14 +45,36 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "53 ⌜クモ⌟ SNI -> 🇭🇰",
-        "218 ⌜クモ⌟ SNI -> 🇭🇰",
-        "370 ⌜クモ⌟ SNI -> 🇭🇰"
+        "22 ⌜クモ⌟ CDN -> 🇭🇰",
+        "48 ⌜クモ⌟ SNI -> 🇭🇰",
+        "434 ⌜クモ⌟ CDN -> 🇭🇰",
+        "593 ⌜クモ⌟ SNI -> 🇭🇰"
       ]
     },
     {
       "type": "vmess",
-      "tag": "53 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "22 ⌜クモ⌟ CDN -> 🇭🇰",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "hk11.sanfen001.pics"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "hk11.sanfen001.pics"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "48 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk3.sanfen001.pics",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -61,42 +83,49 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "options.teams.microsoft.com"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/zh-cn",
         "headers": {
-          "Host": "options.teams.microsoft.com"
+          "Host": "promo.ruangguru.com"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "218 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "hk1vdf-node.aiqiche123.com",
-      "server_port": 8189,
-      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
+      "tag": "434 ⌜クモ⌟ CDN -> 🇭🇰",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
       "security": "auto",
-      "alter_id": 10,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "hk11.sanfen001.pics"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "hk11.sanfen001.pics"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "370 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "593 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk1vdf-node.aiqiche123.com",
       "server_port": 8189,
       "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
       "security": "auto",
-      "alter_id": 10,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       }
     }
   ],
