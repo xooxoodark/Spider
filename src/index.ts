@@ -12,6 +12,7 @@ import { duplicateFilter, isSingBoxRunning, sleep } from "./modules/helper.mjs";
 import { logger, LogLevel } from "./modules/logger.mjs";
 import { Scraper } from "./modules/scraper.mjs";
 import { speedtest } from "./modules/speedtest.mjs";
+import { subconverter } from "./modules/subconverter.mjs";
 import { bot } from "./modules/tg.mjs";
 import { ConnectServer, Data, V2Object } from "./modules/types.mjs";
 import { writer } from "./modules/writer.mjs";
@@ -20,10 +21,16 @@ const { url, filename } = JSON.parse(process.argv[2]) as Data;
 const modes: string[] = ["cdn", "sni"];
 const maxConcurrentTest = 30;
 
-// Kill all v2ray process
+// Kill existing process
 exec("pkill sing-box");
+exec("pkill subconverter");
+// Start subconverter
 
 (async () => {
+  // Sleep several second after killing all process
+  await sleep(1000);
+  subconverter.start();
+
   // Scavenge accounts withour fill the bugs
   const accounts: V2Object[] = await (async () => {
     let accounts: V2Object[] = [];
@@ -214,5 +221,7 @@ exec("pkill sing-box");
   await bot.send(connectedAccounts[Math.floor(Math.random() * connectedAccounts.length)], connectedAccounts.length);
 
   console.log("Process complete!");
+  exec("pkill subconverter");
+  exec("pkill sing-box");
   exit(0);
 })();
