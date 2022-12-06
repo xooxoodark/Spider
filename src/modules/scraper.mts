@@ -13,7 +13,7 @@ class Scraper {
   static async scrape(url: string): Promise<ScraperType> {
     const result: string[] = [];
     process.stdout.write("Scraping... ");
-    const res = await fetch(url, {
+    let res = await fetch(url, {
       method: "GET",
       follow: 1,
     });
@@ -28,16 +28,22 @@ class Scraper {
       };
     }
 
-    const text = await res.text();
+    let text = await res.text();
     let configs: string[];
 
     if (Base64.isValid(text)) {
       configs = base64Decode(text).match(/(.+:\/\/.+)/gim) || [];
     } else {
-      try {
-        configs = JSON.parse(text);
-      } catch (e: any) {
-        configs = text.match(/(.+:\/\/.+)/gim) || [];
+      res = await fetch(`http://127.0.0.1:25500/sub?target=v2ray&url=${url}`);
+      text = await res.text();
+      if (Base64.isValid(text)) {
+        configs = base64Decode(text).match(/(.+:\/\/.+)/gim) || [];
+      } else {
+        try {
+          configs = JSON.parse(text);
+        } catch (e: any) {
+          configs = text.match(/(.+:\/\/.+)/gim) || [];
+        }
       }
     }
 
