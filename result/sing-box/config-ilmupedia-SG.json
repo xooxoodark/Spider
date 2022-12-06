@@ -45,24 +45,43 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "8 ⌜クモ⌟ CDN -> 🇸🇬",
-        "9 ⌜クモ⌟ CDN -> 🇸🇬",
-        "41 ⌜クモ⌟ SNI -> 🇸🇬",
-        "42 ⌜クモ⌟ SNI -> 🇸🇬",
-        "43 ⌜クモ⌟ CDN -> 🇸🇬",
-        "44 ⌜クモ⌟ CDN -> 🇸🇬",
-        "45 ⌜クモ⌟ SNI -> 🇸🇬",
-        "79 ⌜クモ⌟ CDN -> 🇸🇬",
-        "133 ⌜クモ⌟ CDN -> 🇸🇬",
-        "191 ⌜クモ⌟ SNI -> 🇸🇬",
-        "453 ⌜クモ⌟ CDN -> 🇸🇬",
-        "639 ⌜クモ⌟ CDN -> 🇸🇬"
+        "12 ⌜クモ⌟ CDN -> 🇸🇬",
+        "13 ⌜クモ⌟ CDN -> 🇸🇬",
+        "54 ⌜クモ⌟ SNI -> 🇸🇬",
+        "56 ⌜クモ⌟ CDN -> 🇸🇬",
+        "57 ⌜クモ⌟ SNI -> 🇸🇬",
+        "59 ⌜クモ⌟ CDN -> 🇸🇬",
+        "60 ⌜クモ⌟ SNI -> 🇸🇬",
+        "96 ⌜クモ⌟ CDN -> 🇸🇬",
+        "231 ⌜クモ⌟ SNI -> 🇸🇬",
+        "662 ⌜クモ⌟ CDN -> 🇸🇬"
       ]
     },
     {
       "type": "vmess",
-      "tag": "8 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "cacerts.digicert.com",
+      "tag": "12 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "news.microsoft.com",
+      "server_port": 443,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "sg1-v2ray.sshkit.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sshkit/1736960111/63859b5b38f53/",
+        "headers": {
+          "Host": "sg1-v2ray.sshkit.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "13 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "news.microsoft.com",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
       "security": "auto",
@@ -82,28 +101,7 @@
     },
     {
       "type": "vmess",
-      "tag": "9 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "news.microsoft.com",
-      "server_port": 443,
-      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "sg4-v2ray.sshkit.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sshkit/1736960111/63859be1a762c/",
-        "headers": {
-          "Host": "sg4-v2ray.sshkit.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "41 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "54 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "lll.277428.xyz",
       "server_port": 40771,
       "uuid": "61194810-5193-48bc-eb0a-7978a059d681",
@@ -117,7 +115,28 @@
     },
     {
       "type": "vmess",
-      "tag": "42 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "56 ⌜クモ⌟ CDN -> 🇸🇬",
+      "server": "cacerts.digicert.com",
+      "server_port": 8443,
+      "uuid": "706596c5-2315-41e9-c97b-5a4d32ffd5e6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "dosg.gmlovebaipiao.tech"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/GenshinMinecraft",
+        "headers": {
+          "Host": "dosg.gmlovebaipiao.tech"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "57 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "sg-ovh2.v2-ray.com",
       "server_port": 443,
       "uuid": "dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee",
@@ -138,7 +157,7 @@
     },
     {
       "type": "vmess",
-      "tag": "43 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "59 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "cacerts.digicert.com",
       "server_port": 8443,
       "uuid": "706596c5-2315-41e9-c97b-5a4d32ffd5e6",
@@ -159,28 +178,7 @@
     },
     {
       "type": "vmess",
-      "tag": "44 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "cacerts.digicert.com",
-      "server_port": 8443,
-      "uuid": "706596c5-2315-41e9-c97b-5a4d32ffd5e6",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "dosg.gmlovebaipiao.tech"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/GenshinMinecraft",
-        "headers": {
-          "Host": "dosg.gmlovebaipiao.tech"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "45 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "60 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "vsg1.0bad.com",
       "server_port": 443,
       "uuid": "927094d3-d678-4763-8591-e240d0bcae87",
@@ -201,7 +199,7 @@
     },
     {
       "type": "vmess",
-      "tag": "79 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "96 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "cacerts.digicert.com",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
@@ -222,28 +220,7 @@
     },
     {
       "type": "vmess",
-      "tag": "133 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "cacerts.digicert.com",
-      "server_port": 443,
-      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "sg1-v2ray.sshkit.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sshkit/1736960111/63859b5b38f53/",
-        "headers": {
-          "Host": "sg1-v2ray.sshkit.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "191 ⌜クモ⌟ SNI -> 🇸🇬",
+      "tag": "231 ⌜クモ⌟ SNI -> 🇸🇬",
       "server": "5.44.249.43",
       "server_port": 3331,
       "uuid": "57e0cb4d-eae5-48ec-8091-149dc2b309e0",
@@ -264,28 +241,7 @@
     },
     {
       "type": "vmess",
-      "tag": "453 ⌜クモ⌟ CDN -> 🇸🇬",
-      "server": "news.microsoft.com",
-      "server_port": 443,
-      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "sg4-v2ray.sshkit.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sshkit/1736960111/63859be1a762c/",
-        "headers": {
-          "Host": "sg4-v2ray.sshkit.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "639 ⌜クモ⌟ CDN -> 🇸🇬",
+      "tag": "662 ⌜クモ⌟ CDN -> 🇸🇬",
       "server": "news.microsoft.com",
       "server_port": 443,
       "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
