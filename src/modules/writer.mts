@@ -120,8 +120,8 @@ class Writer {
         let remarks = structuredClone(this.baseRemarks);
         let proxyBoard = structuredClone(this.baseProxyBoard);
         for (const proxy of this.finalResult[filename]) {
-          if (proxy.match(/^(.+)=/)) {
-            remarks.push(proxy.match(/^(.+)=/)[1]);
+          if (proxy.match(/^(.+?)=/)) {
+            remarks.push(proxy.match(/^(.+?)=/)[1]);
             proxyBoard.push(proxy);
           }
         }
