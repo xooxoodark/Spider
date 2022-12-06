@@ -45,15 +45,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "18 ⌜クモ⌟ SNI -> 🇭🇰",
-        "65 ⌜クモ⌟ SNI -> 🇭🇰",
-        "121 ⌜クモ⌟ SNI -> 🇭🇰",
-        "340 ⌜クモ⌟ SNI -> 🇭🇰"
+        "34 ⌜クモ⌟ SNI -> 🇭🇰",
+        "123 ⌜クモ⌟ SNI -> 🇭🇰",
+        "140 ⌜クモ⌟ SNI -> 🇭🇰",
+        "449 ⌜クモ⌟ CDN -> 🇭🇰"
       ]
     },
     {
       "type": "vmess",
-      "tag": "18 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "34 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk3.sanfen001.pics",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -74,7 +74,21 @@
     },
     {
       "type": "vmess",
-      "tag": "65 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "123 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "hk1vdf-node.aiqiche123.com",
+      "server_port": 8189,
+      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
+      "security": "auto",
+      "alter_id": 10,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "140 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk11.sanfen001.pics",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -83,42 +97,35 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/zh-cn",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "promo.ruangguru.com"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "121 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "hk1vdf-node.aiqiche123.com",
-      "server_port": 8189,
-      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
+      "tag": "449 ⌜クモ⌟ CDN -> 🇭🇰",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
       "security": "auto",
-      "alter_id": 10,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "340 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "hk1vdf-node.aiqiche123.com",
-      "server_port": 8189,
-      "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
-      "security": "auto",
-      "alter_id": 10,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "promo.ruangguru.com"
+        "server_name": "hk11.sanfen001.pics"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "hk11.sanfen001.pics"
+        }
       }
     }
   ],

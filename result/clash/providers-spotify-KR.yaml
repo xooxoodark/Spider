@@ -1,17 +1,45 @@
 proxies:
-  - name: '209 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: lc-kr02-direct01.lc-kr02.lc-node.com
+  - name: '20 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: m4.40010010.xyz
     type: vmess
-    port: 443
-    uuid: ec736482-173e-3eff-9114-b49df8056e7d
-    alterId: 2
+    port: 37121
+    uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5
+    alterId: 0
     cipher: auto
     tls: true
     udp: true
-    skip-cert-verify: true
-    network: ws
+    skip-cert-verify: false
+    network: tcp
     servername: image-upload4.spotify.com
+  - name: '273 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: investors.spotify.com
+    type: vmess
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: surongwei.eu.org
     ws-opts: 
-      path: /
+      path: /reffs7y26g0ua
       headers:
-        Host: image-upload4.spotify.com
+        Host: surongwei.eu.org
+  - name: '541 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: investors.spotify.com
+    type: vmess
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: surongwei.eu.org
+    ws-opts: 
+      path: /reffs7y26g0ua
+      headers:
+        Host: surongwei.eu.org

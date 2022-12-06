@@ -45,27 +45,64 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "209 ⌜クモ⌟ SNI -> 🇰🇷"
+        "20 ⌜クモ⌟ SNI -> 🇰🇷",
+        "273 ⌜クモ⌟ CDN -> 🇰🇷",
+        "541 ⌜クモ⌟ CDN -> 🇰🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "209 ⌜クモ⌟ SNI -> 🇰🇷",
-      "server": "lc-kr02-direct01.lc-kr02.lc-node.com",
-      "server_port": 443,
-      "uuid": "ec736482-173e-3eff-9114-b49df8056e7d",
+      "tag": "20 ⌜クモ⌟ SNI -> 🇰🇷",
+      "server": "m4.40010010.xyz",
+      "server_port": 37121,
+      "uuid": "575e4d92-1056-44c2-8cac-75ef1c859ad5",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "273 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "surongwei.eu.org"
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/reffs7y26g0ua",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "surongwei.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "541 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "surongwei.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/reffs7y26g0ua",
+        "headers": {
+          "Host": "surongwei.eu.org"
         }
       }
     }
