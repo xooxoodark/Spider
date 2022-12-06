@@ -188,7 +188,7 @@ exec("pkill sing-box");
 
     const speedFilter = (accounts: V2Object[]) => {
       for (const res of speedtestResult.nodes) {
-        if (parseInt(res.avg_speed) < 1000000) {
+        if (parseInt(res.max_speed) < 1000000) {
           for (const i in connectedAccounts) {
             if (connectedAccounts[i].remark == res.remarks) {
               logger.log(LogLevel.info, "Removed low/dead server!");
@@ -208,10 +208,10 @@ exec("pkill sing-box");
   }
 
   // Write result
-  writer.write(connectedAccounts);
+  // writer.write(connectedAccounts);
 
   // Send sample to channel
-  await bot.send(connectedAccounts[Math.floor(Math.random() * connectedAccounts.length)], connectedAccounts.length);
+  // await bot.send(connectedAccounts[Math.floor(Math.random() * connectedAccounts.length)], connectedAccounts.length);
 
   console.log("Process complete!");
   exit(0);
