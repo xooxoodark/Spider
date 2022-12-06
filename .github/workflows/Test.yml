@@ -26,6 +26,6 @@ jobs:
           mv ./bin/sing-box-1.1-linux-amd64/* ./bin/
       - name: Start Crawling
         env:
-          DATA: '{"url": "", "filename": "1"}'
+          DATA: '{"url":"","filename":"1"}'
         run: |
           npm install && npx tsc && node ./app/index.js $DATA
