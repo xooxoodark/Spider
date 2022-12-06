@@ -45,13 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "11 ⌜クモ⌟ CDN -> 🇩🇪"
+        "219 ⌜クモ⌟ CDN -> 🇩🇪",
+        "374 ⌜クモ⌟ CDN -> 🇩🇪"
       ]
     },
     {
       "type": "vmess",
-      "tag": "11 ⌜クモ⌟ CDN -> 🇩🇪",
-      "server": "104.17.71.206",
+      "tag": "219 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "141.193.213.20",
       "server_port": 2053,
       "uuid": "8afc6cdf-4f0a-4725-a44c-5dacdc2b2784",
       "security": "auto",
@@ -66,6 +67,27 @@
         "path": "/",
         "headers": {
           "Host": "haxeu2.zikkcc.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "374 ⌜クモ⌟ CDN -> 🇩🇪",
+      "server": "104.17.70.206",
+      "server_port": 443,
+      "uuid": "1197321c-eb59-4159-959f-5d81f53c1792",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "h1.800876.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "h1.800876.xyz"
         }
       }
     }

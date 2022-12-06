@@ -1,22 +1,6 @@
 proxies:
-  - name: '124 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: kr1.sanfen001.pics
-    type: vmess
-    port: 443
-    uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: news.microsoft.com
-    ws-opts: 
-      path: /zh-cn
-      headers:
-        Host: news.microsoft.com
-  - name: '247 ⌜クモ⌟ CDN -> 🇰🇷'
-    server: cacerts.digicert.com
+  - name: '268 ⌜クモ⌟ CDN -> 🇰🇷'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
@@ -31,15 +15,3 @@ proxies:
       path: /reffs7y26g0ua
       headers:
         Host: surongwei.eu.org
-  - name: '268 ⌜クモ⌟ SNI -> 🇰🇷'
-    server: m4.40010010.xyz
-    type: vmess
-    port: 37121
-    uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: false
-    network: tcp
-    servername: news.microsoft.com
