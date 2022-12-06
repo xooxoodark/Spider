@@ -45,16 +45,38 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "13 ⌜クモ⌟ SNI -> 🇨🇳",
-        "253 ⌜クモ⌟ SNI -> 🇨🇳"
+        "8 ⌜クモ⌟ SNI -> 🇨🇳",
+        "206 ⌜クモ⌟ SNI -> 🇨🇳",
+        "215 ⌜クモ⌟ SNI -> 🇨🇳"
       ]
     },
     {
       "type": "vmess",
-      "tag": "13 ⌜クモ⌟ SNI -> 🇨🇳",
+      "tag": "8 ⌜クモ⌟ SNI -> 🇨🇳",
       "server": "142.0.135.66",
       "server_port": 443,
       "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/path/243535322906",
+        "headers": {
+          "Host": "promo.ruangguru.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "206 ⌜クモ⌟ SNI -> 🇨🇳",
+      "server": "137.175.57.195",
+      "server_port": 443,
+      "uuid": "08fc4943-4c7a-4a69-9265-fb961eaea917",
       "security": "auto",
       "alter_id": 64,
       "tls": {
@@ -72,22 +94,22 @@
     },
     {
       "type": "vmess",
-      "tag": "253 ⌜クモ⌟ SNI -> 🇨🇳",
-      "server": "137.175.57.195",
+      "tag": "215 ⌜クモ⌟ SNI -> 🇨🇳",
+      "server": "142.0.129.99",
       "server_port": 443,
-      "uuid": "08fc4943-4c7a-4a69-9265-fb961eaea917",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
       "security": "auto",
       "alter_id": 64,
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "promo.ruangguru.com"
       },
       "transport": {
         "type": "ws",
         "path": "/path/243535322906",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "promo.ruangguru.com"
         }
       }
     }
