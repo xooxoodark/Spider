@@ -45,13 +45,34 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "25 ⌜クモ⌟ CDN -> 🇭🇰",
-        "63 ⌜クモ⌟ SNI -> 🇭🇰"
+        "48 ⌜クモ⌟ SNI -> 🇭🇰",
+        "512 ⌜クモ⌟ CDN -> 🇭🇰"
       ]
     },
     {
       "type": "vmess",
-      "tag": "25 ⌜クモ⌟ CDN -> 🇭🇰",
+      "tag": "48 ⌜クモ⌟ SNI -> 🇭🇰",
+      "server": "hk3.sanfen001.pics",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "promo.ruangguru.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "512 ⌜クモ⌟ CDN -> 🇭🇰",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -67,27 +88,6 @@
         "path": "/zh-cn",
         "headers": {
           "Host": "hk11.sanfen001.pics"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "63 ⌜クモ⌟ SNI -> 🇭🇰",
-      "server": "hk3.sanfen001.pics",
-      "server_port": 443,
-      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/zh-cn",
-        "headers": {
-          "Host": "options.teams.microsoft.com"
         }
       }
     }

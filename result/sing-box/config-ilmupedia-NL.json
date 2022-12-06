@@ -45,12 +45,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "39 ⌜クモ⌟ CDN -> 🇳🇱"
+        "50 ⌜クモ⌟ CDN -> 🇳🇱",
+        "378 ⌜クモ⌟ CDN -> 🇳🇱",
+        "458 ⌜クモ⌟ CDN -> 🇳🇱"
       ]
     },
     {
       "type": "vmess",
-      "tag": "39 ⌜クモ⌟ CDN -> 🇳🇱",
+      "tag": "50 ⌜クモ⌟ CDN -> 🇳🇱",
       "server": "news.microsoft.com",
       "server_port": 443,
       "uuid": "3f421e27-5bf8-40c9-86cb-7b8c41dddea2",
@@ -66,6 +68,48 @@
         "path": "/lXvA0Vse/",
         "headers": {
           "Host": "hl1.cachexy.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "378 ⌜クモ⌟ CDN -> 🇳🇱",
+      "server": "news.microsoft.com",
+      "server_port": 443,
+      "uuid": "3f421e27-5bf8-40c9-86cb-7b8c41dddea2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "hl1.cachexy.ga"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lXvA0Vse/",
+        "headers": {
+          "Host": "hl1.cachexy.ga"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "458 ⌜クモ⌟ CDN -> 🇳🇱",
+      "server": "cacerts.digicert.com",
+      "server_port": 443,
+      "uuid": "bb97ee0a-6d57-40c0-a446-45b78c303603",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "nl.v2-ray.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastssh/hkgzs01/6315d407657f6/",
+        "headers": {
+          "Host": "nl.v2-ray.com"
         }
       }
     }

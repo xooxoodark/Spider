@@ -1,9 +1,25 @@
 proxies:
-  - name: '35 ⌜クモ⌟ SNI -> 🇨🇳'
+  - name: '26 ⌜クモ⌟ SNI -> 🇨🇳'
     server: 142.0.135.66
     type: vmess
     port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: news.microsoft.com
+    ws-opts: 
+      path: /path/243535322906
+      headers:
+        Host: news.microsoft.com
+  - name: '702 ⌜クモ⌟ SNI -> 🇨🇳'
+    server: 137.175.57.195
+    type: vmess
+    port: 443
+    uuid: 08fc4943-4c7a-4a69-9265-fb961eaea917
     alterId: 64
     cipher: auto
     tls: true
