@@ -45,14 +45,36 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "65 ⌜クモ⌟ CDN -> 🇱🇺",
-        "173 ⌜クモ⌟ SNI -> 🇱🇺",
-        "342 ⌜クモ⌟ CDN -> 🇱🇺"
+        "33 ⌜クモ⌟ CDN -> 🇱🇺",
+        "89 ⌜クモ⌟ CDN -> 🇱🇺",
+        "394 ⌜クモ⌟ CDN -> 🇱🇺",
+        "550 ⌜クモ⌟ CDN -> 🇱🇺"
       ]
     },
     {
       "type": "vmess",
-      "tag": "65 ⌜クモ⌟ CDN -> 🇱🇺",
+      "tag": "33 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "lu1.gogogoo.cyou"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/go",
+        "headers": {
+          "Host": "lu1.gogogoo.cyou"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "89 ⌜クモ⌟ CDN -> 🇱🇺",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "6fb9a750-55b8-4e6e-857b-242b795399dc",
@@ -73,28 +95,7 @@
     },
     {
       "type": "vmess",
-      "tag": "173 ⌜クモ⌟ SNI -> 🇱🇺",
-      "server": "104.244.73.218",
-      "server_port": 443,
-      "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "options.teams.microsoft.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/v2ray",
-        "headers": {
-          "Host": "options.teams.microsoft.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "342 ⌜クモ⌟ CDN -> 🇱🇺",
+      "tag": "394 ⌜クモ⌟ CDN -> 🇱🇺",
       "server": "main.millionaireaisle.com",
       "server_port": 443,
       "uuid": "6fb9a750-55b8-4e6e-857b-242b795399dc",
@@ -110,6 +111,27 @@
         "path": "/imkcpyyds",
         "headers": {
           "Host": "buyvm.imkcp.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "550 ⌜クモ⌟ CDN -> 🇱🇺",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "lu1.gogogoo.cyou"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/go",
+        "headers": {
+          "Host": "lu1.gogogoo.cyou"
         }
       }
     }

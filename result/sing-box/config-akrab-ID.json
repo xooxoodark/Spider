@@ -45,12 +45,36 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "6 ⌜クモ⌟ SNI -> 🇮🇩"
+        "11 ⌜クモ⌟ CDN -> 🇮🇩",
+        "68 ⌜クモ⌟ SNI -> 🇮🇩",
+        "210 ⌜クモ⌟ SNI -> 🇮🇩",
+        "634 ⌜クモ⌟ SNI -> 🇮🇩"
       ]
     },
     {
       "type": "vmess",
-      "tag": "6 ⌜クモ⌟ SNI -> 🇮🇩",
+      "tag": "11 ⌜クモ⌟ CDN -> 🇮🇩",
+      "server": "main.millionaireaisle.com",
+      "server_port": 443,
+      "uuid": "781be00e-1e09-4e27-a464-e14197418c8f",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "id5.v2rayserv.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "id5.v2rayserv.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "68 ⌜クモ⌟ SNI -> 🇮🇩",
       "server": "sg-atha.v2-ray.com",
       "server_port": 443,
       "uuid": "5fc32973-a15e-404c-b1f7-707187f7fd6e",
@@ -59,14 +83,38 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": "click.zoom.us"
+        "server_name": "options.teams.microsoft.com"
       },
       "transport": {
         "type": "ws",
         "path": "/fastssh/amrozi87/6350416ec330b/",
         "headers": {
-          "Host": "click.zoom.us"
+          "Host": "options.teams.microsoft.com"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "210 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "id3tr.jagoan.vip",
+      "server_port": 443,
+      "password": "vvip-periantara",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "promo.ruangguru.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "634 ⌜クモ⌟ SNI -> 🇮🇩",
+      "server": "38.9.140.66",
+      "server_port": 443,
+      "password": "vvip-periantara",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "click.zoom.us"
       }
     }
   ],
