@@ -60,12 +60,12 @@ function duplicateFilter(accounts: V2Object[]): V2Object[] {
             if (path && accounts[j].path) {
               if (path == accounts[j].path) {
                 accounts.splice(j, 1);
-                console.log("Duplicate account removed!");
+                logger.log(LogLevel.info, "Duplicate account removed!");
                 return duplicateFilter(accounts);
               }
             } else {
               accounts.splice(j, 1);
-              console.log("Duplicate account removed!");
+              logger.log(LogLevel.info, "Duplicate account removed!");
               return duplicateFilter(accounts);
             }
           }

@@ -11,6 +11,7 @@ import { converter } from "./modules/converter.mjs";
 import { duplicateFilter, isSingBoxRunning, sleep } from "./modules/helper.mjs";
 import { logger, LogLevel } from "./modules/logger.mjs";
 import { Scraper } from "./modules/scraper.mjs";
+import { speedtest } from "./modules/speedtest.mjs";
 import { bot } from "./modules/tg.mjs";
 import { ConnectServer, Data, V2Object } from "./modules/types.mjs";
 import { writer } from "./modules/writer.mjs";
@@ -146,7 +147,7 @@ exec("pkill sing-box");
         }
       }
 
-      // if (result.length > 5) break; // Test purpose
+      // if (result.length >= 15) break; // Test purpose
       clearTimeout(timeout);
     }
 
@@ -177,6 +178,33 @@ exec("pkill sing-box");
       parse_mode: "HTML",
     });
     exit(0);
+  }
+
+  // Speedtest
+  try {
+    logger.log(LogLevel.info, "Start speedtest...");
+    await speedtest.start(connectedAccounts);
+    const speedtestResult = JSON.parse(readFileSync("./out.json").toString());
+
+    const speedFilter = (accounts: V2Object[]) => {
+      for (const res of speedtestResult.nodes) {
+        if (parseInt(res.max_speed) < 256000) {
+          for (const i in connectedAccounts) {
+            if (connectedAccounts[i].remark == res.remarks) {
+              logger.log(LogLevel.info, "Removed low/dead server!");
+              connectedAccounts.splice(parseInt(i), 1);
+              speedFilter(connectedAccounts);
+            }
+          }
+        }
+      }
+
+      return accounts;
+    };
+
+    connectedAccounts = speedFilter(connectedAccounts);
+  } catch (e: any) {
+    logger.log(LogLevel.error, e.message);
   }
 
   // Write result
