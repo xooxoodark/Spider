@@ -147,7 +147,7 @@ exec("pkill sing-box");
         }
       }
 
-      if (result.length >= 15) break; // Test purpose
+      // if (result.length >= 15) break; // Test purpose
       clearTimeout(timeout);
     }
 
@@ -208,10 +208,10 @@ exec("pkill sing-box");
   }
 
   // Write result
-  // writer.write(connectedAccounts);
+  writer.write(connectedAccounts);
 
   // Send sample to channel
-  // await bot.send(connectedAccounts[Math.floor(Math.random() * connectedAccounts.length)], connectedAccounts.length);
+  await bot.send(connectedAccounts[Math.floor(Math.random() * connectedAccounts.length)], connectedAccounts.length);
 
   console.log("Process complete!");
   exit(0);
