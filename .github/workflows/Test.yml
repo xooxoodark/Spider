@@ -1,15 +1,11 @@
-name: Crawling Internet
+name: Crawling Test
 
 on:
-  repository_dispatch:
-    branches: "main"
-    types: ["Crawl"]
-
+  workflow_dispatch:
+    branches: "dev"
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    concurrency:
-      group: crawl
 
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +16,7 @@ jobs:
           cache: "npm"
       - name: Get secrets
         run: |
-          echo ${{ secrets.BOT_TOKEN }} > ./bot_token
+          echo 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11 > ./bot_token
       - name: Install sing-box
         run: |
           mkdir ./bin
@@ -30,19 +26,6 @@ jobs:
           mv ./bin/sing-box-1.1-linux-amd64/* ./bin/
       - name: Start Crawling
         env:
-          DATA: ${{ github.event.client_payload.message }}
+          DATA: '{"url": "", "filename": "1"}'
         run: |
           npm install && npx tsc && node ./app/index.js $DATA
-      - name: Add & Commit
-        if: ${{ success() }}
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: '["./result --force", "./resources/database --force"]'
-          default_author: github_actions
-          fetch: false
-          tag_push: "--force"
-          message: "Update VPN"
-      - name: Scavenge next source
-        if: ${{ always() }}
-        run: |
-          curl ${{ secrets.SOURCE }} -L
