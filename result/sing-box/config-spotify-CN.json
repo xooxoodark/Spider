@@ -45,13 +45,35 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "20 ⌜クモ⌟ SNI -> 🇨🇳"
+        "13 ⌜クモ⌟ SNI -> 🇨🇳",
+        "121 ⌜クモ⌟ SNI -> 🇨🇳"
       ]
     },
     {
       "type": "vmess",
-      "tag": "20 ⌜クモ⌟ SNI -> 🇨🇳",
+      "tag": "13 ⌜クモ⌟ SNI -> 🇨🇳",
       "server": "142.0.135.66",
+      "server_port": 443,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "image-upload4.spotify.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/path/243535322906",
+        "headers": {
+          "Host": "image-upload4.spotify.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "121 ⌜クモ⌟ SNI -> 🇨🇳",
+      "server": "142.0.129.99",
       "server_port": 443,
       "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
       "security": "auto",

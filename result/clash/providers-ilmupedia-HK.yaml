@@ -1,5 +1,21 @@
 proxies:
-  - name: '48 ⌜クモ⌟ SNI -> 🇭🇰'
+  - name: '14 ⌜クモ⌟ CDN -> 🇭🇰'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: hk11.sanfen001.pics
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: hk11.sanfen001.pics
+  - name: '31 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk3.sanfen001.pics
     type: vmess
     port: 443
@@ -15,7 +31,7 @@ proxies:
       path: /zh-cn
       headers:
         Host: news.microsoft.com
-  - name: '223 ⌜クモ⌟ SNI -> 🇭🇰'
+  - name: '105 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk1vdf-node.aiqiche123.com
     type: vmess
     port: 8189
@@ -27,7 +43,7 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '354 ⌜クモ⌟ SNI -> 🇭🇰'
+  - name: '267 ⌜クモ⌟ SNI -> 🇭🇰'
     server: hk1vdf-node.aiqiche123.com
     type: vmess
     port: 8189
@@ -39,3 +55,19 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
+  - name: '306 ⌜クモ⌟ CDN -> 🇭🇰'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    servername: hk11.sanfen001.pics
+    ws-opts: 
+      path: /zh-cn
+      headers:
+        Host: hk11.sanfen001.pics

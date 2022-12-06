@@ -45,14 +45,37 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "48 ⌜クモ⌟ SNI -> 🇭🇰",
-        "223 ⌜クモ⌟ SNI -> 🇭🇰",
-        "354 ⌜クモ⌟ SNI -> 🇭🇰"
+        "14 ⌜クモ⌟ CDN -> 🇭🇰",
+        "31 ⌜クモ⌟ SNI -> 🇭🇰",
+        "105 ⌜クモ⌟ SNI -> 🇭🇰",
+        "267 ⌜クモ⌟ SNI -> 🇭🇰",
+        "306 ⌜クモ⌟ CDN -> 🇭🇰"
       ]
     },
     {
       "type": "vmess",
-      "tag": "48 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "14 ⌜クモ⌟ CDN -> 🇭🇰",
+      "server": "cacerts.digicert.com",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "hk11.sanfen001.pics"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "hk11.sanfen001.pics"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "31 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk3.sanfen001.pics",
       "server_port": 443,
       "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
@@ -73,7 +96,7 @@
     },
     {
       "type": "vmess",
-      "tag": "223 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "105 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk1vdf-node.aiqiche123.com",
       "server_port": 8189,
       "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
@@ -87,7 +110,7 @@
     },
     {
       "type": "vmess",
-      "tag": "354 ⌜クモ⌟ SNI -> 🇭🇰",
+      "tag": "267 ⌜クモ⌟ SNI -> 🇭🇰",
       "server": "hk1vdf-node.aiqiche123.com",
       "server_port": 8189,
       "uuid": "a90597c1-bab3-4217-ad6f-0838675c8638",
@@ -97,6 +120,27 @@
         "enabled": true,
         "insecure": true,
         "server_name": "news.microsoft.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "306 ⌜クモ⌟ CDN -> 🇭🇰",
+      "server": "cacerts.digicert.com",
+      "server_port": 443,
+      "uuid": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "hk11.sanfen001.pics"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/zh-cn",
+        "headers": {
+          "Host": "hk11.sanfen001.pics"
+        }
       }
     }
   ],

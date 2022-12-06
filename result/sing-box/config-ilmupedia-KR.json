@@ -45,13 +45,35 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "400 ⌜クモ⌟ CDN -> 🇰🇷"
+        "200 ⌜クモ⌟ CDN -> 🇰🇷",
+        "523 ⌜クモ⌟ CDN -> 🇰🇷"
       ]
     },
     {
       "type": "vmess",
-      "tag": "400 ⌜クモ⌟ CDN -> 🇰🇷",
+      "tag": "200 ⌜クモ⌟ CDN -> 🇰🇷",
       "server": "cacerts.digicert.com",
+      "server_port": 443,
+      "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "surongwei.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/reffs7y26g0ua",
+        "headers": {
+          "Host": "surongwei.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "523 ⌜クモ⌟ CDN -> 🇰🇷",
+      "server": "news.microsoft.com",
       "server_port": 443,
       "uuid": "6093eefb-7ab6-41df-aba0-d5fa58147e10",
       "security": "auto",
