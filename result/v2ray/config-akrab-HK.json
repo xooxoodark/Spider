@@ -84,14 +84,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "hk11.sanfen001.pics",
-            "port": 443,
+            "address": "hk1vdf-node.aiqiche123.com",
+            "port": 8189,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 10,
                 "encryption": "",
                 "flow": "",
-                "id": "4456b502-fe61-4be7-a969-aa37d924dbd2",
+                "id": "a90597c1-bab3-4217-ad6f-0838675c8638",
                 "level": 8,
                 "security": "auto"
               }
@@ -100,20 +100,14 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "click.zoom.us"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "click.zoom.us"
-          },
-          "path": "/zh-cn"
+          "serverName": "options.teams.microsoft.com"
         }
       },
-      "tag": "proxy-60 ⌜クモ⌟ SNI -> 🇭🇰"
+      "tag": "proxy-327 ⌜クモ⌟ SNI -> 🇭🇰"
     },
     {
       "mux": {
@@ -153,7 +147,41 @@
           "path": "/zh-cn"
         }
       },
-      "tag": "proxy-177 ⌜クモ⌟ CDN -> 🇭🇰"
+      "tag": "proxy-549 ⌜クモ⌟ CDN -> 🇭🇰"
+    },
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hk1vdf-node.aiqiche123.com",
+            "port": 8189,
+            "users": [
+              {
+                "alterId": 10,
+                "encryption": "",
+                "flow": "",
+                "id": "a90597c1-bab3-4217-ad6f-0838675c8638",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "click.zoom.us"
+        }
+      },
+      "tag": "proxy-563 ⌜クモ⌟ SNI -> 🇭🇰"
     }
   ],
   "dns": {

@@ -1,6 +1,6 @@
 proxies:
-  - name: '88 ⌜クモ⌟ CDN -> 🇳🇱'
-    server: cacerts.digicert.com
+  - name: '250 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
     type: vmess
     port: 443
     uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2
@@ -15,19 +15,35 @@ proxies:
       path: /lXvA0Vse/
       headers:
         Host: hl1.cachexy.ga
-  - name: '170 ⌜クモ⌟ CDN -> 🇳🇱'
+  - name: '426 ⌜クモ⌟ CDN -> 🇳🇱'
     server: cacerts.digicert.com
     type: vmess
     port: 443
-    uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2
+    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: false
     network: ws
-    servername: hl1.cachexy.ga
+    servername: amshare.jingledev.me
     ws-opts: 
-      path: /lXvA0Vse/
+      path: /pkhhvws
       headers:
-        Host: hl1.cachexy.ga
+        Host: amshare.jingledev.me
+  - name: '523 ⌜クモ⌟ CDN -> 🇳🇱'
+    server: news.microsoft.com
+    type: vmess
+    port: 443
+    uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: amshare.jingledev.me
+    ws-opts: 
+      path: /pkhhvws
+      headers:
+        Host: amshare.jingledev.me
