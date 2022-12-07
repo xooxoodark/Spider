@@ -1,5 +1,5 @@
 proxies:
-  - name: '33 ⌜クモ⌟ SNI -> 🇰🇷'
+  - name: '31 ⌜クモ⌟ SNI -> 🇰🇷'
     server: m4.40010010.xyz
     type: vmess
     port: 37121
@@ -11,7 +11,19 @@ proxies:
     skip-cert-verify: false
     network: tcp
     servername: news.microsoft.com
-  - name: '531 ⌜クモ⌟ CDN -> 🇰🇷'
+  - name: '382 ⌜クモ⌟ SNI -> 🇰🇷'
+    server: m4.40010010.xyz
+    type: vmess
+    port: 37121
+    uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: false
+    network: tcp
+    servername: news.microsoft.com
+  - name: '499 ⌜クモ⌟ CDN -> 🇰🇷'
     server: cacerts.digicert.com
     type: vmess
     port: 443
